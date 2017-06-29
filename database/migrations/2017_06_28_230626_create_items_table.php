@@ -16,23 +16,23 @@ class CreateItemsTable extends Migration
         Schema::create('items', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('feed_id')->unsigned();
-            $table->string('title');
-            $table->text('details')->nullable();
+            $table->string('item_url');
+            $table->string('title')->nullable();
             $table->text('body')->nullable();
-            $table->string('categories')->nullable();
+            $table->text('details')->nullable();
+            $table->text('se')->nullable();
+            $table->integer('categorY_id')->nullable();
             $table->decimal('raw_price')->nullable();
             $table->decimal('sell_price')->nullable();
             $table->string('discount',3)->nullable();
             $table->text('images')->nullable();
-            $table->string('seller')->nullable();
-            $table->string('seller_image')->nullable();
-            $table->integer('city_id')->unsigned()->nullable();
+            $table->integer('seller_id')->unsigned();
 
             $table->timestamps();
 
             $table->foreign('feed_id')->references('id')->on('feeds')
             ->onDelete('cascade');
-            $table->foreign('city_id')->references('id')->on('cities')
+            $table->foreign('seller_id')->references('id')->on('sellers')
             ->onDelete('cascade');
         });
     }
@@ -46,8 +46,8 @@ class CreateItemsTable extends Migration
     {
         
         Schema::table('items', function (Blueprint $table) {
-            $table->dropForeign('items_city_id_foreign');
             $table->dropForeign('items_feed_id_foreign');
+            $table->dropForeign('items_seller_id_foreign');
         });    
 
         Schema::dropIfExists('items');

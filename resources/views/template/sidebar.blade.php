@@ -25,23 +25,23 @@
       <ul class="sidebar-menu">
         <!-- <li class="header">MAIN NAVIGATION</li> -->
         <li>
-          <a href="/users">
-            <i class="fa fa-th"></i> <span>Users</span>
+          <a href="/marketplaces">
+            <i class="fa fa-th"></i> <span>Marketplace</span>
           </a>
         </li>     
         <li>
-          <a href="/roles">
-            <i class="fa fa-th"></i> <span>Roles</span>
+          <a href="/cities">
+            <i class="fa fa-th"></i> <span>City</span>
           </a>
         </li>     
         <li>
-          <a href="/products">
-            <i class="fa fa-th"></i> <span>Products</span>
+          <a href="/categories">
+            <i class="fa fa-th"></i> <span>Category</span>
           </a>
         </li> 
         <li>
-          <a href="/line-items">
-            <i class="fa fa-th"></i> <span>Line Item</span>
+          <a href="/sellers">
+            <i class="fa fa-th"></i> <span>Seller</span>
           </a>
         </li> 
 

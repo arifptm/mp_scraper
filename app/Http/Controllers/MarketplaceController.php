@@ -30,13 +30,13 @@ class MarketplaceController extends Controller
 
     public function update(Request $request, $id)
     {
-        $mp = Marketplace::findOrFail($id)-> update($request->all());
+        Marketplace::findOrFail($id)-> update($request->all());
         return redirect('/marketplaces');
     }
 
     public function destroy($id)
     {
-        $mp = Marketplace::findOrFail($id)->delete();
+        Marketplace::findOrFail($id)->delete();
         return redirect('/marketplaces');
     }
 }

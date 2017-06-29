@@ -1,7 +1,7 @@
 @extends('template.master')
 
 @section('pagetitle')
-Marketplace {!! link_to('/marketplaces/create', '+') !!}
+Sellers {!! link_to('/sellers/create', '+') !!}
 @stop
 
 @section('content')
@@ -16,21 +16,19 @@ Marketplace {!! link_to('/marketplaces/create', '+') !!}
                         <tr>
                             <th>ID</th>
                             <th>Name</th>
-                            <th>Logo</th>
                             <th></th>
                         </tr>
                     </thead>        
                     <tbody>
-                        @foreach($marketplaces as $marketplace)
+                        @foreach($sellers as $seller)
                         <tr>    
-				            <td>{{ $marketplace->id }}</td>
-                            <td>{{ $marketplace->name }}</td>
-                            <td><img src="{{ $marketplace->logo_url }}" alt="" width="100" /></td>
+				            <td>{{ $seller->id }}</td>
+                            <td>{{ $seller->name }}</td>
                             <td>
                                 <div class="inline-block">
-                                {!! link_to('/marketplaces/'.$marketplace->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
+                                {!! link_to('/sellers/'.$seller->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
                                 
-                                {!! Form::open(['route' => ['marketplaces.destroy', $marketplace->id], 'method' => 'delete']) !!}
+                                {!! Form::open(['route' => ['sellers.destroy', $seller->id], 'method' => 'delete']) !!}
                                 {!! Form::button('Hapus',['type' => 'submit', 'class' => 'btn btn-default']) !!}
                                 {!! Form::close() !!}
                                 </div>
@@ -38,13 +36,12 @@ Marketplace {!! link_to('/marketplaces/create', '+') !!}
                         </tr>                
                         @endforeach
                     </tbody>
-                </table>
-            </div>
-            
-            <div class="box-footer">
-                {{ $marketplaces->links() }}
+                </table>                       
             </div>
 
+            <div class="box-footer">
+                {{ $sellers->links() }}
+            </div>
         </div>
     </div>
 </div>
