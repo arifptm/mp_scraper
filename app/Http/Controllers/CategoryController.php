@@ -7,12 +7,20 @@ use App\Category;
 
 class CategoryController extends Controller
 {
+        
+
+
     public function index()
     {
-       $s = Category::whereParent(null)->get();
-       dd($s);
+        $r = Category::whereParent(null)->get();
+        $c = Category::pluck('name','id')->all();
+        
+        return view('category.index', ['roots' => $r, 'categories' => $c ]);        
 
-       // return view('category.index', [ 'categories' => Category::orderBy('id', 'desc')->paginate(25) ]); 
+
+       
+
+       //return view('category.index', [ 'categories' => Category::orderBy('id', 'desc')->paginate(25) ]); 
     }
 
     public function create()
