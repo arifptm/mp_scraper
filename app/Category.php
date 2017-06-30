@@ -3,15 +3,16 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\City;
+use App\Feed;
+use App\Item;
 
-class Seller extends Model
+class Category extends Model
 {
     protected $guarded = ['id'];
     public $timestamps = false;
 
-    public function city()
+	public function item()
     {
-    	return $this->hasOne('App\City');
-    }
+    	return $this->belongsToMany('App\Item');
+    }    
 }

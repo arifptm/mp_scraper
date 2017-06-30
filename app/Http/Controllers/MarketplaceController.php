@@ -9,7 +9,7 @@ class MarketplaceController extends Controller
 {
     public function index()
     {
-        return view('marketplace.index', [ 'marketplaces' => Marketplace::orderBy('id', 'desc')->paginate(2) ]);
+        return view('marketplace.index', [ 'marketplaces' => Marketplace::orderBy('id', 'desc')->paginate(25) ]);
     }
 
     public function create()

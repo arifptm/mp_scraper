@@ -17,6 +17,8 @@ class CreateFeedsTable extends Migration
             $table->increments('id');
             $table->integer('marketplace_id')->unsigned();
             $table->string('url');
+            $table->string('department',63);
+            $table->string('replacer',63);
             $table->boolean('processed')->default(0);
             $table->boolean('enabled')->default(1);
             $table->timestamps();

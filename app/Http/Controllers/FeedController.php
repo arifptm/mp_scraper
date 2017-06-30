@@ -11,7 +11,7 @@ class FeedController extends Controller
     public function index()
     {
         $feeds = Feed::orderBy('id', 'desc')->paginate(25);
-        dd($feeds);
+        
         return view('feed.index', [ 'feeds' => $feeds ]);
     }
 
@@ -21,7 +21,6 @@ class FeedController extends Controller
         foreach ($mps as $key=>$mp) {
             $mpss[$mp->id] = $mp->name;
         }
-
 
         return view('feed.create', ['marketplaces' => $mpss ]);
     }
@@ -34,7 +33,12 @@ class FeedController extends Controller
 
     public function edit($id)
     {
-        return view('feed.edit', [ 'feed' => Feed::findOrFail($id) ]);
+        $mps = Marketplace::all();
+        foreach ($mps as $key=>$mp) {
+            $mpss[$mp->id] = $mp->name;
+        }
+
+        return view('feed.edit', [ 'feed' => Feed::findOrFail($id), 'marketplaces' => $mpss ]);
     }
 
     public function update(Request $request, $id)

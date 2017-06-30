@@ -1,7 +1,7 @@
 @extends('template.master')
 
 @section('pagetitle')
-Feeds {!! link_to('/feeds/create', '+') !!}
+Categories {!! link_to('/categories/create', '+') !!}
 @stop
 
 @section('content')
@@ -15,25 +15,21 @@ Feeds {!! link_to('/feeds/create', '+') !!}
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Marketplace</th>
-                            <th>URL</th>
-                            <th>Department</th>
-                            <th>Dept. Repaced with</th>
-                            <th></th>
+                            <th>Name</th>
+                            <th>Parent</th>
                         </tr>
                     </thead>        
                     <tbody>
-                        @foreach($feeds as $feed)
+                        @foreach($categories as $category)
                         <tr>    
-				            <td>{{ $feed->id }}</td>
-                            <td>{{ $feed->marketplace->name }}</td>
-                            <td>{{ $feed->url }}</td>
-                            <td>{{ $feed->department }}</td>
-                            <td>{{ $feed->replacer }}</td>
+				            <td>{{ $category->id }}</td>
+                            <td>{{ $category->name }}</td>
+                            <td>{{ $category->parent }}</td>
                             <td>
                                 <div class="inline-block">
-                                {!! link_to('/feeds/'.$feed->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
-                                {!! Form::open(['route' => ['feeds.destroy', $feed->id], 'method' => 'delete']) !!}
+                                {!! link_to('/categories/'.$category->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
+                                
+                                {!! Form::open(['route' => ['categories.destroy', $category->id], 'method' => 'delete']) !!}
                                 {!! Form::button('Hapus',['type' => 'submit', 'class' => 'btn btn-default']) !!}
                                 {!! Form::close() !!}
                                 </div>
@@ -41,13 +37,12 @@ Feeds {!! link_to('/feeds/create', '+') !!}
                         </tr>                
                         @endforeach
                     </tbody>
-                </table>
-            </div>
-            
-            <div class="box-footer">
-                {{ $feeds->links() }}
+                </table>                       
             </div>
 
+            <div class="box-footer">
+                {{ $categories->links() }}
+            </div>
         </div>
     </div>
 </div>

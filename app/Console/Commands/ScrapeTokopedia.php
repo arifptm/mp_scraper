@@ -22,6 +22,10 @@ class ScrapeTokopedia extends Command
 
     public function handle()
     {
+        $feeds = Feed::where([ 'enabled' => 1, 'processed' => 0, 'marketplace_id' => 1 ])->get();
+        dd($feeds);
+
+
         $crawler = Goutte::request('GET', 'https://www.tokopedia.com/fashionislandsho/sepatu-platform-heels-murah-size-37-sofft-usa-authentic-preloved-ori');
          
         $title = $crawler->filter('h1')->text();

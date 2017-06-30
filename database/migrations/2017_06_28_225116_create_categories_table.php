@@ -16,14 +16,8 @@ class CreateCategoriesTable extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name',63);
-            $table->integer('feed_id')->unsigned();
-            $table->string('replacer',63)->nullable();
             $table->integer('parent')->unsigned()->nullable();
             //$table->timestamps();
-
-            $table->foreign('feed_id')->references('id')->on('feeds')
-            ->onDelete('cascade');
-
         });
     }
 
@@ -33,10 +27,7 @@ class CreateCategoriesTable extends Migration
      * @return void
      */
     public function down()
-    {
-        Schema::table('categories', function (Blueprint $table) {
-            $table->dropForeign('categories_feed_id_foreign');
-        });        
+    {       
         Schema::dropIfExists('categories');
     }
 }

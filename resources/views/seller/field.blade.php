@@ -10,11 +10,11 @@
 	</div>
 
 	<div class="form-group">
-		{!! Form::label('city', 'Seller City',['class'=>'control-label']) !!}
-		{!! Form::text('city', null, ['class' => 'form-control']) !!}
-		@if ($errors->has('city'))
+		{!! Form::label('city_id', 'Seller City',['class'=>'control-label']) !!}
+		{!! Form::select('city_id', $cities , null, ['class' => 'form-control']) !!}
+		@if ($errors->has('city_id'))
 		    <div class="label label-danger">
-		        {{ $errors->first('city') }}
+		        {{ $errors->first('city_id') }}
 		    </div>
 		@endif
 	</div>	

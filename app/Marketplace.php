@@ -12,6 +12,6 @@ class Marketplace extends Model
 
     public function feed()
     {
-    	return $this->belongsTo('App\Feed','id');
+    	return $this->hasMany('App\Feed');
     }
 }

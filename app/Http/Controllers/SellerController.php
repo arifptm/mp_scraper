@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Seller;
+use App\City;
 
 class SellerController extends Controller
 {
@@ -14,7 +15,12 @@ class SellerController extends Controller
 
     public function create()
     {
-        return view('seller.create');
+        $cts = City::all();
+        foreach ($cts as $key=>$ct) {
+            $ctss[$ct->id] = $ct->name;
+        }
+
+        return view('seller.create', ['cities' => $ctss ]);        
     }
 
     public function store(Request $request)
