@@ -24,3 +24,6 @@ Route::get('/sc/toped', 'TokopediaController@index');
 Route::resource('/marketplaces','MarketplaceController', ['except' => ['show']]);
 Route::resource('/cities','CityController', ['except' => ['show']]);
 Route::resource('/sellers','SellerController', ['except' => ['show']]);
+Route::resource('/feeds','FeedController', ['except' => ['show']]);
+
+Route::get('/test', 'TestController@index');

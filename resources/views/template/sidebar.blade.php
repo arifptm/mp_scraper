@@ -45,6 +45,11 @@
           </a>
         </li> 
 
+        <li>
+          <a href="/feeds">
+            <i class="fa fa-th"></i> <span>Feed</span>
+          </a>
+        </li> 
 
 
 

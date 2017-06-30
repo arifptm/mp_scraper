@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use GuzzleHttp\Client as GuzzleClient;
+use GuzzleHttp\RequestOptions;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +15,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->app->afterResolving('Goutte\Client', function($goutte) {
+            $goutte->setClient(new GuzzleClient([
+                RequestOptions::VERIFY => false,
+            ]));
+        });
     }
 
     /**
