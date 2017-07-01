@@ -21,8 +21,7 @@ class FeedController extends Controller
 
     public function index()
     {
-        $feeds = Feed::orderBy('id', 'desc')->paginate(25);
-        
+        $feeds = Feed::orderBy('id', 'desc')->paginate(25);      
         return view('feed.index', [ 'feeds' => $feeds ]);
     }
 

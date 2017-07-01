@@ -26,8 +26,9 @@ class ItemController extends Controller
 
     public function create()
     {
-        return view('item.create', ['sellers' => $this->sellers() ]);        
+        return view('item.create');
     }
+
 
     public function store(Request $request)
     {

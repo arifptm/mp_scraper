@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Marketplace;
+use App\Item;
 
 class Feed extends Model
 {
@@ -12,5 +13,10 @@ class Feed extends Model
     public function marketplace()
     {
     	return $this->belongsTo('App\Marketplace');
+    }
+
+    public function item()
+    {
+    	return $this->hasMany('App\Item');
     }
 }

@@ -26,14 +26,14 @@ Items {!! link_to('/items/create', '+') !!}
                         @foreach($items as $item)
                         <tr>    
 				            <td>{{ $item->id }}</td>
-                            <td>{{ $item->marketplace->name }}</td>
-                            <td>{{ $item->url }}</td>
-                            <td>{{ $item->category }}</td>
+                            <td>{{ $item->feed->marketplace->name }}</td>
+                            <td>{{ $item->item_url }}</td>
+                           
                             
                             <td>
                                 <div class="inline-block">
                                 {!! link_to('/items/'.$item->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
-                                {!! Form::open(['route' => ['items.destroy', $feed->id], 'method' => 'delete']) !!}
+                                {!! Form::open(['route' => ['items.destroy', $item->id], 'method' => 'delete']) !!}
                                 {!! Form::button('Hapus',['type' => 'submit', 'class' => 'btn btn-default']) !!}
                                 {!! Form::close() !!}
                                 </div>

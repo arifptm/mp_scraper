@@ -39,30 +39,7 @@ class CategoryController extends Controller
             $key1 = $key+1;
             ${'depth'.$key1} = Category::firstOrCreate(['name' => $name, 'level' => $key, 'parent' => ${'depth'.$key}['id'] ]);
             ${'depth'.$key1}->save();
-            //print_r($depth[$key]);
-            
         }    
-
-        //dd($depth2);
-
-        //print_r($depth);
-
-        //is_null($depth[0]) ?: 0      
-
-        //$depth[0] = Category::firstOrCreate(['name' => $name[0], 'level' => 0, 'parent' => 0 ]);
-        //Category::create($depth[0]]);
-
-
-        //$depth[1] = Category::firstOrCreate(['name' => $name[1], 'level' => 1, 'parent' =>  $depth[0]['id']]);
-        //Category::create($depth[1]]);
-            
-        //}
-
-
-
-
-        //dd($depth);
-        //Category::create($depth);
         return redirect('/categories');
     }
 

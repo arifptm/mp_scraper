@@ -18,6 +18,8 @@ Feeds {!! link_to('/feeds/create', '+') !!}
                             <th>Marketplace</th>
                             <th>URL</th>
                             <th>Department</th>
+                            <th>Processed</th>
+                            <th>Enabled</th>
                             <th>Dept. Repaced with</th>
                             <th></th>
                         </tr>
@@ -29,6 +31,8 @@ Feeds {!! link_to('/feeds/create', '+') !!}
                             <td>{{ $feed->marketplace->name }}</td>
                             <td>{{ $feed->url }}</td>
                             <td>{{ $feed->department }}</td>
+                            <td>{{ $feed->processed }}</td>
+                            <td>{{ $feed->enabled }}</td>
                             <td>{{ $feed->replacer }}</td>
                             <td>
                                 <div class="inline-block">
