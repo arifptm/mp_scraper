@@ -17,6 +17,7 @@ Marketplace {!! link_to('/marketplaces/create', '+') !!}
                             <th>ID</th>
                             <th>Name</th>
                             <th>Logo</th>
+                            <th>Child</th>
                             <th></th>
                         </tr>
                     </thead>        
@@ -26,6 +27,7 @@ Marketplace {!! link_to('/marketplaces/create', '+') !!}
 				            <td>{{ $marketplace->id }}</td>
                             <td>{{ $marketplace->name }}</td>
                             <td><img src="{{ $marketplace->logo_url }}" alt="" width="100" /></td>
+                            <td>{{ $marketplace->feed->count() }} </td>
                             <td>
                                 <div class="inline-block">
                                 {!! link_to('/marketplaces/'.$marketplace->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}

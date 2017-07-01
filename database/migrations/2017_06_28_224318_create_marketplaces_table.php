@@ -17,7 +17,8 @@ class CreateMarketplacesTable extends Migration
             $table->increments('id');
             $table->string('name',31);
             $table->string('logo_url');
-            //$table->timestamps();
+            
+            $table->engine = 'InnoDB';
         });
     }
 

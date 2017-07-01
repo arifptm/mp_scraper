@@ -25,6 +25,8 @@ class CreateFeedsTable extends Migration
 
             $table->foreign('marketplace_id')->references('id')
             ->on('marketplaces')->onDelete('cascade');
+
+            $table->engine = 'InnoDB';
         });
     }
 

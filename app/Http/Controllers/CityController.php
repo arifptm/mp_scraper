@@ -19,7 +19,7 @@ class CityController extends Controller
 
     public function store(Request $request)
     {
-        City::create($request->all());
+        $city = City::firstOrCreate(['name' => $request->name])->save();
         return redirect('/cities');
     }
 

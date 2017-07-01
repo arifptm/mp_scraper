@@ -1,7 +1,7 @@
 @extends('template.master')
 
 @section('pagetitle')
-Cities {!! link_to('/cities/create', '+') !!}
+Cities
 @stop
 
 @section('content')

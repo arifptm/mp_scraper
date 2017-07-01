@@ -9,14 +9,14 @@ use App\City;
 class SellerController extends Controller
 {
     
-    public function cities()
-    {
-        $cts = City::all();
-        foreach ($cts as $key=>$ct) {
-            $ctss[$ct->id] = $ct->name;
-        }
-        return $ctss;
-    }
+    // public function cities()
+    // {
+    //     $cts = City::all();
+    //     foreach ($cts as $key=>$ct) {
+    //         $ctss[$ct->id] = $ct->name;
+    //     }
+    //     return $ctss;
+    // }
 
     public function index()
     {
@@ -25,11 +25,13 @@ class SellerController extends Controller
 
     public function create()
     {
-        return view('seller.create', ['cities' => $this->cities() ]);        
+        return view('seller.create');        
     }
 
     public function store(Request $request)
     {
+        $city = City::firstOrCreate(['name' => $request->name])->save();
+        $seller = Seller::firstOrCreate('');
         Seller::create($request->all());
         return redirect('/sellers');
     }

@@ -31,16 +31,16 @@
         </li> 
 
         <li>
-          <a href="/categories">
-            <i class="fa fa-envelope"></i> <span>Category</span>
-          </a>
-        </li>         
-
-        <li>
           <a href="/feeds">
             <i class="fa fa-circle-o"></i> <span>Feed</span>
           </a>
         </li> 
+
+        <li>
+          <a href="/categories">
+            <i class="fa fa-envelope"></i> <span>Category</span>
+          </a>
+        </li>         
 
         <li>
           <a href="/cities">

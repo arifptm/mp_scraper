@@ -34,6 +34,8 @@ class CreateItemsTable extends Migration
             ->onDelete('cascade');
             $table->foreign('seller_id')->references('id')->on('sellers')
             ->onDelete('cascade');
+
+            $table->engine = 'InnoDB';
         });
     }
 

@@ -18,7 +18,8 @@ class CreateCategoriesTable extends Migration
             $table->string('name',63);
             $table->tinyInteger('level')->unsigned()->nullable();
             $table->integer('parent')->unsigned()->nullable();
-            //$table->timestamps();
+            
+            $table->engine = 'InnoDB';
         });
     }
 
