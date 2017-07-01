@@ -1,7 +1,7 @@
 @extends('template.master')
 
 @section('pagetitle')
-Sellers {!! link_to('/sellers/create', '+') !!}
+Items {!! link_to('/items/create', '+') !!}
 @stop
 
 @section('content')
@@ -15,22 +15,25 @@ Sellers {!! link_to('/sellers/create', '+') !!}
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Name</th>
+                            <th>Marketplace</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            
                             <th></th>
                         </tr>
                     </thead>        
                     <tbody>
-                        @foreach($sellers as $seller)
+                        @foreach($items as $item)
                         <tr>    
-				            <td>{{ $seller->id }}</td>
-                            <td>{{ $seller->name }}</td>
-                            <td>{{ $seller->city->name }}</td>
-                            <td><img src="{{ $seller->image_url }}" height="30" alt="" /></td>
+				            <td>{{ $item->id }}</td>
+                            <td>{{ $item->marketplace->name }}</td>
+                            <td>{{ $item->url }}</td>
+                            <td>{{ $item->category }}</td>
+                            
                             <td>
                                 <div class="inline-block">
-                                {!! link_to('/sellers/'.$seller->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
-                                
-                                {!! Form::open(['route' => ['sellers.destroy', $seller->id], 'method' => 'delete']) !!}
+                                {!! link_to('/items/'.$item->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
+                                {!! Form::open(['route' => ['items.destroy', $feed->id], 'method' => 'delete']) !!}
                                 {!! Form::button('Hapus',['type' => 'submit', 'class' => 'btn btn-default']) !!}
                                 {!! Form::close() !!}
                                 </div>
@@ -38,12 +41,13 @@ Sellers {!! link_to('/sellers/create', '+') !!}
                         </tr>                
                         @endforeach
                     </tbody>
-                </table>                       
+                </table>
+            </div>
+            
+            <div class="box-footer">
+                {{ $items->links() }}
             </div>
 
-            <div class="box-footer">
-                {{ $sellers->links() }}
-            </div>
         </div>
     </div>
 </div>

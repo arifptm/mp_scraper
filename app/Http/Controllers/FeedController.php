@@ -8,6 +8,17 @@ use App\Marketplace;
 
 class FeedController extends Controller
 {
+
+    public function marketplaces()
+    {
+        $mps = Marketplace::all();
+        foreach ($mps as $key=>$mp) {
+            $mpss[$mp->id] = $mp->name;
+        }
+        return $mpss;
+    }
+
+
     public function index()
     {
         $feeds = Feed::orderBy('id', 'desc')->paginate(25);
@@ -17,12 +28,7 @@ class FeedController extends Controller
 
     public function create()
     {
-        $mps = Marketplace::all();
-        foreach ($mps as $key=>$mp) {
-            $mpss[$mp->id] = $mp->name;
-        }
-
-        return view('feed.create', ['marketplaces' => $mpss ]);
+        return view('feed.create', ['marketplaces' => $this->marketplaces() ]);
     }
 
     public function store(Request $request)
@@ -33,12 +39,7 @@ class FeedController extends Controller
 
     public function edit($id)
     {
-        $mps = Marketplace::all();
-        foreach ($mps as $key=>$mp) {
-            $mpss[$mp->id] = $mp->name;
-        }
-
-        return view('feed.edit', [ 'feed' => Feed::findOrFail($id), 'marketplaces' => $mpss ]);
+        return view('feed.edit', [ 'feed' => Feed::findOrFail($id), 'marketplaces' => $this->marketplaces() ]);
     }
 
     public function update(Request $request, $id)
