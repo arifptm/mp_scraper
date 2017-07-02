@@ -21,7 +21,7 @@ class ItemController extends Controller
 
     public function index()
     {
-        return view('item.index', [ 'items' => Item::orderBy('id', 'desc')->paginate(25) ]);
+        return view('item.index', [ 'items' => Item::orderBy('id', 'desc')->paginate(20) ]);
     }
 
     public function create()

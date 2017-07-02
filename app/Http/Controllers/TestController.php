@@ -26,9 +26,6 @@ class TestController extends Controller
     	->whereEnabled('1')
     	->whereProcessed('0');
 
-
-
-
    		if ($feed->count() != 0)
     	{
     		$selected_feed = $feed->get()->random();
@@ -38,7 +35,7 @@ class TestController extends Controller
 					});   	
 	     	
 	     	foreach ($urls as $url) {
-	     		Item::firstOrCreate(['item_url' => trim($url), 'feed_id' => $mp->id]);
+	     		Item::firstOrCreate(['item_url' => trim($url), 'feed_id' => $mp->feed->first()->id]);
 	     	}	
 
     		Feed::whereId($selected_feed->id)->update(['processed' => 1]);
