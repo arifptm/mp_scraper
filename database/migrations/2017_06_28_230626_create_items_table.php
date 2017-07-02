@@ -27,6 +27,7 @@ class CreateItemsTable extends Migration
             $table->string('discount',3)->nullable();
             $table->text('images')->nullable();
             $table->integer('seller_id')->unsigned()->nullable();
+            $table->boolean('processed')->default(0);
 
             $table->timestamps();
 

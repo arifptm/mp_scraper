@@ -19,36 +19,40 @@ class TestController extends Controller
 
     public function t1()
     {
-    	$mp = Marketplace::whereName('bukalapak')->first(); 
+    	$input = "bukalapak";
+    	$mp = Marketplace::whereName($input)->first(); 
     	
-    	$feed = Feed::where('marketplace_id', $mp->id)->whereEnabled('15');
-    	$feed_had_proc	= $feed->whereProcessed('1');
-    	$feed_yet_proc	= $feed->whereProcessed('0');
+    	$feed = Feed::where('marketplace_id', $mp->id)
+    	->whereEnabled('1')
+    	->whereProcessed('0');
 
-    	if ($feed_yet_proc->count() == 0)
+
+
+
+   		if ($feed->count() != 0)
     	{
-    		$feed_had_proc->update( ['processed' => 0] );
-    		return;
+    		$selected_feed = $feed->get()->random();
+    		$crawler = Goutte::request('GET', $selected_feed->url);
+      		$urls = $crawler->filter('item > guid')->each (function ($node){
+						return $node->text();
+					});   	
+	     	
+	     	foreach ($urls as $url) {
+	     		Item::firstOrCreate(['item_url' => trim($url), 'feed_id' => $mp->id]);
+	     	}	
+
+    		Feed::whereId($selected_feed->id)->update(['processed' => 1]);
     	}
 
 
-
-
-
-
-  //   	$item_will_processed = $feed->random();
-
-  //   	dd($item_will_processed);
-
-  //    	$crawler = Goutte::request('GET', $item_will_processed->url);
     	
-  //    	$urls = $crawler->filter('item > guid')->each (function ($node){
-		// 	return $node->text();
-		// });
-  //   	foreach ($urls as $url) {
-  //   		Item::firstOrCreate(['item_url' => trim($url), 'feed_id' => $item_will_processed->id]);
-  //   	}
-  //   	$item_will_processed->update(['processed' => 1]);
+    	$selected_item = Item::whereFeed_id($mp->feed->first()->id)->first();
+    	$item_url = $selected_item->item_url;
+    	$crawler = Goutte::request('GET', $item_url);    	
+    	$title = $crawler->filter('h1')->text();
     	
+    	echo $title;
+    	echo "<br>";
+    	echo $item_url;
     }
 }
