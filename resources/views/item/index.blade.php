@@ -30,7 +30,7 @@ Items {!! link_to('/items/create', '+') !!}
 				            <td>{{ $item->id }}</td>
                             <td>{{ $item->feed->marketplace->name }}</td>
                             
-                           <td>{!! link_to('/items/'. $item->id, $item->title) !!}</td>
+                           <td>{!! link_to('/items/'. $item->id, $item->title ) !!}</td>
                             <td>
                                 <div class="inline-block">
                                 {!! link_to('/items/'.$item->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}

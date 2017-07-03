@@ -44,13 +44,17 @@ class TestController extends Controller
     	}
 
         // start scraping   	
-    	$selected_item = Item::whereFeed_id($mp->feed->first()->id)
+    	$select = Item::whereFeed_id($mp->feed->first()->id)
             ->whereProcessed(0)
-            //->first();
-            ->get()
-            ->random();
-    	
-        //dd($selected_item);
+            ->get();
+        if ($select->count() != 0 )    {
+        	$selected_item = $select->random();
+        } else {
+        	Feed::whereMarketplace_id($mp->id)->update(['processed' => 0]);
+        	return "$mp->name Feed Reset";
+        }
+
+        
     	$item_url = $selected_item->item_url;
     	
     	//$scraped['item_url'] = $item_url;
@@ -116,6 +120,19 @@ class TestController extends Controller
 		
 		$scraped['seller_id'] = $seller->id;		
 
+		if ($crawler->filter('.c-product-image-gallery__thumbnails')->count() != 0 )
+		{
+			$image = $crawler->filter('a.c-product-image-gallery__thumbnail')
+			->each (function ($node){
+				return str_replace("/m-1000-1000/","/rawimage/",$node->attr('href'));
+			});
+		} else {
+			$image = $crawler->filter('.c-product-image-gallery a.qa-pd-image')->attr('href');
+			$image = str_replace("/m-1000-1000/","/rawimage/",$image);
+		}
+
+		$image = serialize($image);
+		$scraped['images'] = str_replace("/rawimage/","/w-500/",$image);
 
 		$crawler -> filter('.qa-pd-description a, .qa-pd-description span, .qa-pd-description img')->each(function($nodes){
 			foreach ($nodes as $node) {

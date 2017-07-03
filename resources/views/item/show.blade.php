@@ -6,6 +6,9 @@
 
 @section('content')
 
+
+{!! unserialize($item->images) !!}
+<br>
 Marketplace: {{ $item->feed->marketplace->name }}
 <br>
 Category: {{ $item->category->name }}
