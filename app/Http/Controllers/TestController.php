@@ -124,16 +124,14 @@ class TestController extends Controller
 		{
 			$image = $crawler->filter('a.c-product-image-gallery__thumbnail')
 			->each (function ($node){
-				return str_replace("/m-1000-1000/","/rawimage/",$node->attr('href'));
+				return str_replace("/m-1000-1000/","/rawimage/",trim($node->attr('href')));
 			});
+            $scraped['images'] = implode("|", $image);
 		} else {
 			$image = $crawler->filter('.c-product-image-gallery a.qa-pd-image')->attr('href');
-			$image = str_replace("/m-1000-1000/","/rawimage/",$image);
+			$scraped['images'] = str_replace("/m-1000-1000/","/rawimage/",$image);
 		}
-
-		$image = serialize($image);
-		$scraped['images'] = str_replace("/rawimage/","/w-500/",$image);
-
+    
 		$crawler -> filter('.qa-pd-description a, .qa-pd-description span, .qa-pd-description img')->each(function($nodes){
 			foreach ($nodes as $node) {
         		$node->parentNode->removeChild($node);

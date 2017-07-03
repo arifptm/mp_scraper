@@ -26,7 +26,10 @@ class ItemController extends Controller
 
     public function show($id)
     {
-        return view('item.show', [ 'item' => Item::find($id) ]);
+    	$item = Item::find($id);
+    	$images = str_replace("/rawimage/", "/w-300/", $item->images);
+    	$images = explode("|",$images);
+        return view('item.show', [ 'item' => $item, 'images'=>$images ]);
     }
 
 

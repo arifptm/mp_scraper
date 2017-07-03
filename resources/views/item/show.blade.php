@@ -4,10 +4,23 @@
 	{{ $item->title }}
 @endsection	
 
+@section('footer_script')
+	<script src="{{ asset('/plugins/blazy/blazy.min.js') }}"></script>
+	 <script>
+        ;(function() {
+            // Initialize
+            var bLazy = new Blazy();
+        })();
+    </script>
+@endsection	
+
 @section('content')
 
 
-{!! unserialize($item->images) !!}
+@foreach ($images as $image)
+	<img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $image }}" alt="tes"  />
+@endforeach	
+
 <br>
 Marketplace: {{ $item->feed->marketplace->name }}
 <br>
