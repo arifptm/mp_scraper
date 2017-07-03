@@ -18,10 +18,11 @@ class CreateItemsTable extends Migration
             $table->integer('feed_id')->unsigned();
             $table->string('item_url',511);
             $table->string('title')->nullable();
+            $table->string('slug')->nullable();
             $table->text('body')->nullable();
             $table->text('details')->nullable();
             $table->text('se')->nullable();
-            $table->integer('category_id')->nullable();
+            $table->string('categories')->nullable();
             $table->decimal('raw_price')->nullable();
             $table->decimal('sell_price')->nullable();
             $table->string('discount',3)->nullable();
