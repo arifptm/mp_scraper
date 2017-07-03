@@ -16,6 +16,7 @@ Items {!! link_to('/items/create', '+') !!}
                         <tr>
                             <th>ID</th>
                             <th>Marketplace</th>
+                        
                             <th>Title</th>
                             <th>Category</th>
                             
@@ -23,13 +24,13 @@ Items {!! link_to('/items/create', '+') !!}
                         </tr>
                     </thead>        
                     <tbody>
+
                         @foreach($items as $item)
                         <tr>    
 				            <td>{{ $item->id }}</td>
                             <td>{{ $item->feed->marketplace->name }}</td>
-                            <td>{{ $item->item_url }}</td>
-                           
                             
+                           <td>{!! link_to('/items/'. $item->id, $item->title) !!}</td>
                             <td>
                                 <div class="inline-block">
                                 {!! link_to('/items/'.$item->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}

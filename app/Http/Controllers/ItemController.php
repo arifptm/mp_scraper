@@ -24,6 +24,12 @@ class ItemController extends Controller
         return view('item.index', [ 'items' => Item::orderBy('id', 'desc')->paginate(20) ]);
     }
 
+    public function show($id)
+    {
+        return view('item.show', [ 'item' => Item::find($id) ]);
+    }
+
+
     public function create()
     {
         return view('item.create');

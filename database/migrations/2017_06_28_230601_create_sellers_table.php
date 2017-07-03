@@ -16,6 +16,7 @@ class CreateSellersTable extends Migration
         Schema::create('sellers', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name',63);
+            $table->string('slug',63);
             $table->string('image_url')->nullable();
             $table->integer('city_id')->unsigned();
             $table->integer('marketplace_id')->unsigned();

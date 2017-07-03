@@ -22,7 +22,7 @@ class CreateItemsTable extends Migration
             $table->text('body')->nullable();
             $table->text('details')->nullable();
             $table->text('se')->nullable();
-            $table->string('categories')->nullable();
+            $table->integer('category_id')->nullable();
             $table->decimal('raw_price')->nullable();
             $table->decimal('sell_price')->nullable();
             $table->string('discount',3)->nullable();

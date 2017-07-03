@@ -15,18 +15,13 @@ use \App\Services\SearchResult;
 
 class TestController extends Controller
 {
-    public function index()
-    {
-   	$crawler = Goutte::request('GET', 'https://duckduckgo.com/html/?q=Laravel');
-    $crawler->filter('.result__title .result__a');
-    dd($crawler->first());
-    }
 
     public function t1()
     {
     	//echo date('m/d/Y h:i:s a', time())." - ";
     	$input = "bukalapak";
-    	$mp = Marketplace::whereName($input)->first(); 
+    	
+        $mp = Marketplace::whereName($input)->first(); 
     	
     	$feed = Feed::where('marketplace_id', $mp->id)
     	->whereEnabled('1')
@@ -35,6 +30,7 @@ class TestController extends Controller
    		if ($feed->count() != 0)
     	{
     		$selected_feed = $feed->get()->random();
+
     		$crawler = Goutte::request('GET', $selected_feed->url);
       		$urls = $crawler->filter('item > guid')->each (function ($node){
 						return trim($node->text());
@@ -47,15 +43,19 @@ class TestController extends Controller
     		Feed::whereId($selected_feed->id)->update(['processed' => 1]);
     	}
 
-
+        // start scraping   	
+    	$selected_item = Item::whereFeed_id($mp->feed->first()->id)
+            ->whereProcessed(0)
+            //->first();
+            ->get()
+            ->random();
     	
-    	$selected_item = Item::whereFeed_id($mp->feed->first()->id)->first();
-    	
+        //dd($selected_item);
     	$item_url = $selected_item->item_url;
     	
-    	$scraped['item_url'] = $item_url;
+    	//$scraped['item_url'] = $item_url;
     	
-    	$crawler 	= Goutte::request('GET', $item_url);
+    	$crawler = Goutte::request('GET', $item_url);
     	
     	$scraped['title']= $crawler->filter('h1')->text();
 
@@ -67,17 +67,24 @@ class TestController extends Controller
 		});
 
 		$cats = array_slice($cats, 1);
-		
+
         $depth0 = null;
         foreach ($cats as $key=>$cat)
         {
             $key1 = $key+1;
-            ${'depth'.$key1} = Category::firstOrCreate(['name' => $cat, 'level' => $key, 'parent' => ${'depth'.$key}['id'] ]);
+            $slug = new Slug;
+            $cat_slug = $slug -> createSlug($cat);
+
+            ${'depth'.$key1} = Category::firstOrCreate([
+                'name' => $cat, 
+                'level' => $key, 
+                'parent' => ${'depth'.$key}['id'],
+                'slug' => $cat_slug ]);
+            
             ${'depth'.$key1} -> save();
-            $categories_id[] = ${'depth'.$key1}->id;
         }    
                 
-      	$scraped['categories'] = json_encode($categories_id);
+      	$scraped['category_id'] = ${'depth'.$key1}->id;
 
 		if (($crawler->filter('.c-product-detail-price__original .amount') === true ) AND ($crawler->filter('.c-product-detail-price__reduced .amount') === true )){
 			$scraped['raw_price'] = preg_replace("/[^0-9]/","",$crawler->filter('div.c-product-detail-price__original .amount')->text());
@@ -86,31 +93,29 @@ class TestController extends Controller
 			$item_discount = round($discount,0,PHP_ROUND_HALF_UP);	
 		} else {
 			$scraped['sell_price'] = preg_replace("/[^0-9]/","",$crawler->filter('div.c-product-detail-price .amount')->text());
-			$scraped['raw_price'] = "";
-			$scraped['discount'] = "";	
+			$scraped['raw_price'] = null;
+			$scraped['discount'] = null;	
 		}   
 
 		$seller_city = trim($crawler->filter('.c-user-identification .qa-seller-location')->text());
-		$city = City::firstOrCreate(['name' => $seller_city]);
-		$city ->save();
-
+		$slug = new Slug;
+        $city_slug = $slug->createSlug($seller_city);
+        $city = City::firstOrCreate([ 'name' => $seller_city, 'slug' => $city_slug ]);
+		$city -> save();
 
 		$seller['name']= trim($crawler->filter('.c-user-identification .qa-seller-name')->text());
 		$seller['image_url'] = $crawler->filter('.c-user-identification img.c-avatar__image')->attr('src') ?: "https://ecs12.tokopedia.net/newimg/cache/100-square/default_v3-shopnophoto.png";
 		
+        $slug = new Slug;
+        $seller['slug'] = $slug->createSlug($seller['name']);
 		$seller['marketplace_id'] = $mp->id;
+        $seller['city_id'] = $city->id;
 
-
-
-		$seller['city_id'] = $city->id;
 		$seller = Seller::firstOrCreate($seller);
 		$seller ->save();
+		
+		$scraped['seller_id'] = $seller->id;		
 
-
-		
-		$scraped['seller_id'] = $seller->id;
-		
-		
 
 		$crawler -> filter('.qa-pd-description a, .qa-pd-description span, .qa-pd-description img')->each(function($nodes){
 			foreach ($nodes as $node) {
@@ -133,15 +138,12 @@ class TestController extends Controller
 		$scraped['details'] = "<dl>".implode($details)."</dl>";
 		
 		$se = new SearchResult;
-    	$scraped['se'] = $se->Geevv('metal');
+    	$scraped['se'] = $se->Geevv($scraped['title']);
 
     	$scraped['processed'] = 1 ;
 
-
+       
     	$selected_item->update($scraped);
-		
-
- 	    	
-    	
+    	dd($scraped);
     }
 }
