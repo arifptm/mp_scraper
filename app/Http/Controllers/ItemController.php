@@ -21,15 +21,18 @@ class ItemController extends Controller
 
     public function index()
     {
-        return view('item.index', [ 'items' => Item::orderBy('id', 'desc')->paginate(20) ]);
+        return view('item.index', [ 'items' => Item::orderBy('updated_at', 'desc')->paginate(20) ]);
     }
 
     public function show($id)
     {
     	$item = Item::find($id);
-    	$images = str_replace("/rawimage/", "/w-300/", $item->images);
-    	$images = explode("|",$images);
-        return view('item.show', [ 'item' => $item, 'images'=>$images ]);
+        $images = explode("|", $item->images);
+        $fi = str_replace("/rawimage/", "/m-".config('node_image_hsize')."-".config('node_image_vsize')."/", $images[0]);
+
+        $thumbs = str_replace("/rawimage/", "/s-".config('thumbsize')."-".config('thumbsize')."/", $images);
+    	
+        return view('item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi ]);
     }
 
 

@@ -15,8 +15,8 @@ Items {!! link_to('/items/create', '+') !!}
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Marketplace</th>
-                        
+                            <th>Marketplace{{ config('node_image_hzise') }}</th>
+                            
                             <th>Title</th>
                             <th>Category</th>
                             
@@ -30,7 +30,12 @@ Items {!! link_to('/items/create', '+') !!}
 				            <td>{{ $item->id }}</td>
                             <td>{{ $item->feed->marketplace->name }}</td>
                             
-                           <td>{!! link_to('/items/'. $item->id, $item->title ) !!}</td>
+                            <td>
+                                
+                                    {{ $item->title ? link_to('/items/'. $item->id, $item->title) : "Unscraped" }}
+                                
+                                
+                            </td>
                             <td>
                                 <div class="inline-block">
                                 {!! link_to('/items/'.$item->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
