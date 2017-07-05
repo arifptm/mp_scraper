@@ -11,9 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('public.index');
+// });
+
+Route::get('/', 'PublicController@index');
+
 
 Auth::routes();
 
@@ -32,3 +35,9 @@ Route::resource('/items','ItemController', ['except' => []]);
 
 Route::get('/test', 'TestController@index');
 Route::get('/t1', 'TestController@t1');
+
+
+
+
+
+Route::get('/c/{slug}', 'CategoryController@publicIndex');

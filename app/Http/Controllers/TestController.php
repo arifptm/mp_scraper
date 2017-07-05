@@ -44,9 +44,10 @@ class TestController extends Controller
     	}
 
         // start scraping   	
-    	$select = Item::whereFeed_id($mp->feed->first()->id)
+    	$select = Item::whereIn('feed_id', $mp->feed->pluck('id') )
             ->whereProcessed(0)
             ->get();
+            
         if ($select->count() != 0 )    {
         	$selected_item = $select->random();
         } else {
@@ -55,6 +56,7 @@ class TestController extends Controller
         }
 
         
+
     	$item_url = $selected_item->item_url;
     	
     	//$scraped['item_url'] = $item_url;
