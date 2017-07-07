@@ -1,7 +1,7 @@
 @extends('template.master')
 
 @section('pagetitle')
-Feeds {!! link_to('/feeds/create', '+') !!}
+Feeds {!! link_to('/feeds/create', '+') !!} | {!! link_to('/seed/bl', 'Seed BL') !!}
 @stop
 
 @section('content')

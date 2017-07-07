@@ -23,8 +23,8 @@ class CreateItemsTable extends Migration
             $table->text('details')->nullable();
             $table->text('se')->nullable();
             $table->integer('category_id')->nullable();
-            $table->decimal('raw_price')->nullable();
-            $table->decimal('sell_price')->nullable();
+            $table->string('raw_price',15)->nullable();
+            $table->string('sell_price',15)->nullable();
             $table->string('discount',3)->nullable();
             $table->text('images')->nullable();
             $table->integer('seller_id')->unsigned()->nullable();

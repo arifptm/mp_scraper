@@ -16,10 +16,16 @@ use \App\Services\SearchResult;
 class TestController extends Controller
 {
 
+    public function test(){
+
+    }
+
+
+
     public function t1()
     {
     	//echo date('m/d/Y h:i:s a', time())." - ";
-    	$input = "bukalapak";
+    	$input = "Bukalapak";
     	
         $mp = Marketplace::whereName($input)->first(); 
     	
@@ -75,9 +81,18 @@ class TestController extends Controller
 		$cats = array_slice($cats, 1);
 
         $depth0 = null;
-        foreach ($cats as $key=>$cat)
+
+        foreach ($cats as $key=>$ct)
         {
             $key1 = $key+1;
+            $rep = Feed::where('department',$ct)->first();
+            if (count($rep) != 0)
+            {
+                $cat = $rep->replacer;
+            }
+
+
+
             $slug = new Slug;
             $cat_slug = $slug -> createSlug($cat);
 

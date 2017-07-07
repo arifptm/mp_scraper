@@ -16,7 +16,7 @@ class CreateMarketplacesTable extends Migration
         Schema::create('marketplaces', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name',31);
-            $table->string('logo_url');
+            $table->string('logo_url')->nullable();
             
             $table->engine = 'InnoDB';
         });

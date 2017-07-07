@@ -21,7 +21,8 @@ class CreateFeedsTable extends Migration
             $table->string('replacer',63);
             $table->boolean('processed')->default(0);
             $table->boolean('enabled')->default(1);
-            $table->timestamps();
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
 
             $table->foreign('marketplace_id')->references('id')
             ->on('marketplaces')->onDelete('cascade');

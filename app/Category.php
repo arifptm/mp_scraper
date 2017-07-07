@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Item;
+use App\Feed;
 
 class Category extends Model
 {
@@ -23,5 +24,13 @@ class Category extends Model
 	public function item()
     {
     	return $this->belongsTo('App\Item');
-    }    
+    }   
+
+    // function setNameAttribute($val)   
+    // {
+    // 	$org = Feed::where('department', $val)->first();
+    // 	if 
+    // 	return $this->org->replacer;
+    // }
+
 }

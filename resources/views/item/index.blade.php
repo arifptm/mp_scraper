@@ -18,6 +18,8 @@ Items {!! link_to('/items/create', '+') !!}
                             <th>Marketplace{{ config('node_image_hzise') }}</th>
                             
                             <th>Title</th>
+                            <th>Price</th>
+
                             <th>Category</th>
                             
                             <th></th>
@@ -31,11 +33,9 @@ Items {!! link_to('/items/create', '+') !!}
                             <td>{{ $item->feed->marketplace->name }}</td>
                             
                             <td>
-                                
                                     {{ $item->title ? link_to('/items/'. $item->id, $item->title) : "Unscraped" }}
-                                
-                                
                             </td>
+                            <td>{{ $item->sell_price }}</td>
                             <td>
                                 <div class="inline-block">
                                 {!! link_to('/items/'.$item->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
