@@ -169,6 +169,7 @@ return [
         Laravel\Tinker\TinkerServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Weidner\Goutte\GoutteServiceProvider::class,
+        App\Providers\ComposerServiceProvider::class,
 
         /*
          * Application Service Providers...

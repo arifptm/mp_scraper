@@ -7,10 +7,15 @@ use App\City;
 
 class CityController extends Controller
 {
-     public function index()
+    public function index()
     {
         return view('city.index', [ 'cities' => City::orderBy('id', 'desc')->paginate(25) ]);
     }
+
+
+
+
+
 
     public function create()
     {

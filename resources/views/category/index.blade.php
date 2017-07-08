@@ -7,15 +7,20 @@ Categories {!! link_to('/categories/create', '+') !!}
 @section('content')
 	
 <div class="row">
-    <div class="col-xs-12">
+    <div class="col-lg-6 col-md-12">
         <div class="box">
             <div class="box-body">
                 <ul>
                 @foreach($roots as $root)
                     <li>
-                        {{ $root->name }}
+                        {{ $root->name }} 
+                        <div class="pull-right">
+                            <i class="fa fa-{{ $root->icon }}"></i>
+                            ({!! link_to('/categories/'.$root->id.'/edit', 'Edit') !!})
+                        </div>
+                        
                         @if(count($root->child))
-                            @include('category.childs',['childs' => $root->child])
+                                @include('category.childs',['childs' => $root->child])
                         @endif
                     </li>    
                 @endforeach

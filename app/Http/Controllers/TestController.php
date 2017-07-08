@@ -82,16 +82,14 @@ class TestController extends Controller
 
         $depth0 = null;
 
-        foreach ($cats as $key=>$ct)
+        foreach ($cats as $key=>$cat)
         {
             $key1 = $key+1;
-            $rep = Feed::where('department',$ct)->first();
+            $rep = Feed::where('department',$cat)->first();
             if (count($rep) != 0)
             {
                 $cat = $rep->replacer;
             }
-
-
 
             $slug = new Slug;
             $cat_slug = $slug -> createSlug($cat);

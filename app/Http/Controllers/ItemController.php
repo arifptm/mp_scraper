@@ -10,6 +10,16 @@ use App\Category;
 
 class ItemController extends Controller
 {
+    
+
+
+
+
+
+
+
+
+
     public function sellers()
     {
         $sls = Seller::all();
@@ -19,9 +29,20 @@ class ItemController extends Controller
         return $ctss;
     }
 
-    public function index()
+    public function index( $id = null )
     {
-        return view('item.index', [ 'items' => Item::orderBy('title', 'desc')->paginate(20) ]);
+        $items = Item::orderBy('title', 'desc');
+        if ($id != null)
+        {
+            $c1 = Category::whereParent($id)->get();
+                
+            $c2 = $c1->child;
+            dd($c2);
+            $items = $items->where('category_id',$id);
+            dd($items->get());
+        }
+        $all = $items->where('title', '!=', '')->count();
+        return view('item.index', [ 'items' => $items->paginate(20), 'all' => $all]);
     }
 
     public function show($id)

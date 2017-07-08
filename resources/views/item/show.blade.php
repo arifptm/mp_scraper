@@ -39,6 +39,8 @@
 <br>
 Marketplace: {{ $item->feed->marketplace->name }}
 <br>
+URL: {{ $item->item_url }}
+<br>
 Category: {{ $item->category->name }}
 <br>
 Seller Name: {{ $item->seller->name }}

@@ -1,7 +1,7 @@
 @extends('template.master')
 
 @section('pagetitle')
-Items {!! link_to('/items/create', '+') !!}
+Items {!! link_to('/items/create', '+') !!} | {{ $all }}
 @stop
 
 @section('content')

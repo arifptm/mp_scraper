@@ -11,6 +11,32 @@ class CategoryController extends Controller
         
 
 
+    public function getC($id)
+    {
+        if (Category::whereParent($id)->count() != null )
+        {
+            foreach(Category::whereParent($id)->get() as $c)
+            {
+                $al[] = $c->id;
+            }
+            return $al;
+        }
+    }
+
+
+public function getChild()
+{
+    $l = $this->getC(1);
+    
+    
+    foreach($l as $t)
+    {
+        $m[] = $this->getC($t);
+    }
+    dd($m->collapse());
+}
+
+
     public function index()
     {
         $r = Category::whereParent(null)->get();
@@ -20,6 +46,11 @@ class CategoryController extends Controller
        
        //return view('category.index', [ 'categories' => Category::orderBy('id', 'desc')->paginate(25) ]); 
     }
+
+
+
+
+
 
 public function publicIndex($slug)
     {

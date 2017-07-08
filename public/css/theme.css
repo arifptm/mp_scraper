@@ -343,7 +343,7 @@ a.navbar-brand:hover {
   font-size: 29px;
 }
 .directory .directory-block {
-  min-height: 131px;
+  min-height: 70px;
 }
 .directory-counties {
   margin-top: 10px;

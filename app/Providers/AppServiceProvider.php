@@ -5,6 +5,8 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\RequestOptions;
+//use App\City;
+use Illuminate\Support\Facades\View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -20,6 +22,9 @@ class AppServiceProvider extends ServiceProvider
                 RequestOptions::VERIFY => false,
             ]));
         });
+
+        // $cities = City::orderBy('id', 'desc')->take(20)->get();
+        // View::share('cities', $cities );
     }
 
     /**

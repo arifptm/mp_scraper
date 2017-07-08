@@ -32,6 +32,7 @@ Route::resource('/sellers','SellerController', ['except' => ['show']]);
 Route::resource('/categories','CategoryController', ['except' => ['show','create','store']]);
 
 Route::resource('/items','ItemController', ['except' => []]);
+Route::get('/items/ct/{id}','ItemController@index');
 
 Route::get('/test', 'TestController@index');
 Route::get('/t1', 'TestController@t1');
@@ -42,3 +43,6 @@ Route::get('/t1', 'TestController@t1');
 
 Route::get('/c/{slug}', 'CategoryController@publicIndex');
 Route::get('/seed/bl', 'SeedController@bukalapak');
+
+Route::get('/aa/{id}', 'CategoryController@getChild');
+
