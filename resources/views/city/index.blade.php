@@ -16,6 +16,7 @@ Cities
                         <tr>
                             <th>ID</th>
                             <th>Name</th>
+                            <th>Items</th>                           
                             <th></th>
                         </tr>
                     </thead>        
@@ -23,7 +24,12 @@ Cities
                         @foreach($cities as $city)
                         <tr>    
 				            <td>{{ $city->id }}</td>
-                            <td>{{ $city->name }}</td>
+                            <td>{!! link_to ('/items/ct/'.$city->id, $city->name) !!}</td>
+                            <td>
+                            @foreach($city->seller as $d)
+                            {{ $d->name }} <br>
+                            @endforeach 
+                            </td>
                             <td>
                                 <div class="inline-block">
                                 {!! link_to('/cities/'.$city->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}

@@ -13,19 +13,14 @@
 @foreach($categories as $category)
         <div class="directory-block col-sm-4 col-xs-6">
             <div class="row">
-                @if (count($category->child))
-                    
-                    @include('public.category.childs', ['childs' => $category->child ])
-                    
-                @endif
- 
+                <a href="/items/ct/{{ $category->id}}">
                     <div class="col-sm-3">
                         <i class="fa fa-{{ $category->icon }}"></i>
                     </div>
                     <div class="col-sm-9">
                         <h4>{{ $category->name }}</h4>
                     </div>        
-                <!-- </a> -->
+                </a>
             </div>
         </div>
 @endforeach

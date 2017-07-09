@@ -4,21 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Item;
+use App\City;
 use App\Seller;
 use App\Feed;
 use App\Category;
+use \App\Services\ItemsCategory;
+use \App\Services\ItemsCity;
 
 class ItemController extends Controller
 {
-    
-
-
-
-
-
-
-
-
 
     public function sellers()
     {
@@ -29,21 +23,34 @@ class ItemController extends Controller
         return $ctss;
     }
 
-    public function index( $id = null )
+    public function cityList($id)
+    {
+        $sl = City::whereId($id)->first()->seller;
+        
+        foreach ($sl as $k => $v) {
+            $items = Item::whereSeller_id($v->id)->get();
+        }
+         $all = $items->where('title', '!=', '')->count();
+        return view('item.index', ['items'=> $items, 'all' => $all ]);
+    }
+
+
+
+    
+    public function itemsList( $id = null )
     {
         $items = Item::orderBy('title', 'desc');
         if ($id != null)
         {
-            $c1 = Category::whereParent($id)->get();
-                
-            $c2 = $c1->child;
-            dd($c2);
-            $items = $items->where('category_id',$id);
-            dd($items->get());
+            $i = new ItemsCategory;
+            $j = $i -> getItemFromCategory($id);
+            $items = Item::whereIn('category_id', $j);
         }
         $all = $items->where('title', '!=', '')->count();
         return view('item.index', [ 'items' => $items->paginate(20), 'all' => $all]);
     }
+
+
 
     public function show($id)
     {

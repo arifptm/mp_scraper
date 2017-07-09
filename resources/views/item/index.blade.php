@@ -18,8 +18,9 @@ Items {!! link_to('/items/create', '+') !!} | {{ $all }}
                             <th>Marketplace{{ config('node_image_hzise') }}</th>
                             
                             <th>Title</th>
+                            <th>Category</th>
+                            <th>City</th>
                             <th>Price</th>
-
                             <th>Category</th>
                             
                             <th></th>
@@ -34,7 +35,10 @@ Items {!! link_to('/items/create', '+') !!} | {{ $all }}
                             
                             <td>
                                     {{ $item->title ? link_to('/items/'. $item->id, $item->title) : "Unscraped" }}
+                            
                             </td>
+                            <td>{{ $item->category->name }}</td>
+                            <td>{{ $item->seller->name }}-{{ $item->seller->city->name }}</td>
                             <td>{{ $item->sell_price }}</td>
                             <td>
                                 <div class="inline-block">
@@ -51,7 +55,7 @@ Items {!! link_to('/items/create', '+') !!} | {{ $all }}
             </div>
             
             <div class="box-footer">
-                {{ $items->links() }}
+                
             </div>
 
         </div>

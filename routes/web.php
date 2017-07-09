@@ -31,8 +31,11 @@ Route::resource('/cities','CityController', ['except' => ['show', 'create', 'sto
 Route::resource('/sellers','SellerController', ['except' => ['show']]);
 Route::resource('/categories','CategoryController', ['except' => ['show','create','store']]);
 
-Route::resource('/items','ItemController', ['except' => []]);
-Route::get('/items/ct/{id}','ItemController@index');
+Route::resource('/items','ItemController', ['except' => ['index']]);
+
+Route::get('/items', 'ItemController@ItemsList');
+Route::get('/items/ca/{id}','ItemController@index');
+Route::get('/items/ct/{id}','ItemController@cityList'); 
 
 Route::get('/test', 'TestController@index');
 Route::get('/t1', 'TestController@t1');

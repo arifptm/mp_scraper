@@ -11,9 +11,6 @@ class PublicController extends Controller
 	public function index()
 	{
 		$sc = Category::whereParent(null)->get();
-
-		
-        
 		return view('public.index', [ 'categories' => $sc ]);
 		
 	}

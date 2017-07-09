@@ -8,33 +8,6 @@ use App\Item;
 
 class CategoryController extends Controller
 {
-        
-
-
-    public function getC($id)
-    {
-        if (Category::whereParent($id)->count() != null )
-        {
-            foreach(Category::whereParent($id)->get() as $c)
-            {
-                $al[] = $c->id;
-            }
-            return $al;
-        }
-    }
-
-
-public function getChild()
-{
-    $l = $this->getC(1);
-    
-    
-    foreach($l as $t)
-    {
-        $m[] = $this->getC($t);
-    }
-    dd($m->collapse());
-}
 
 
     public function index()
@@ -49,9 +22,6 @@ public function getChild()
 
 
 
-
-
-
 public function publicIndex($slug)
     {
         
@@ -63,10 +33,6 @@ public function publicIndex($slug)
                     $cid[] = Category::whereId($ci->id)->get();    
                 }
             }    
-
-                
-
-
         //$i = Item::whereCategory_id($cid->id);
         
        dd(($cid));
