@@ -59,9 +59,21 @@ class ItemController extends Controller
         $fi = str_replace("/rawimage/", "/m-".config('node_image_hsize')."-".config('node_image_vsize')."/", $images[0]);
 
         $thumbs = str_replace("/rawimage/", "/s-".config('thumbsize')."-".config('thumbsize')."/", $images);
-    	
+    	$item->update(['views' => $item->views+1]);
         return view('item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi ]);
     }
+
+    public function publicShow($id)
+    {
+        $item = Item::whereSlug($id)->first();
+        $images = explode("|", $item->images);
+        $fi = str_replace("/rawimage/", "/m-".config('node_image_hsize')."-".config('node_image_vsize')."/", $images[0]);
+
+        $thumbs = str_replace("/rawimage/", "/s-".config('thumbsize')."-".config('thumbsize')."/", $images);
+        $item->update('views', $item->views+1);
+        return view('item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi ]);
+    }
+
 
 
     public function create()

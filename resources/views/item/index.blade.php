@@ -19,9 +19,10 @@ Items {!! link_to('/items/create', '+') !!} | {{ $all }}
                             
                             <th>Title</th>
                             <th>Category</th>
+                            <th>Views</th>
                             <th>City</th>
                             <th>Price</th>
-                            <th>Category</th>
+                            <th>Views</th>
                             
                             <th></th>
                         </tr>
@@ -38,6 +39,7 @@ Items {!! link_to('/items/create', '+') !!} | {{ $all }}
                             
                             </td>
                             <td>{{ $item->category->name }}</td>
+                            <td>{{ $item->views }}</td>
                             <td>{{ $item->seller->name }}-{{ $item->seller->city->name }}</td>
                             <td>{{ $item->sell_price }}</td>
                             <td>

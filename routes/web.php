@@ -45,6 +45,8 @@ Route::get('/t1', 'TestController@t1');
 
 
 Route::get('/c/{slug}', 'CategoryController@publicIndex');
+Route::get('/{slug}', 'ItemController@publicShow');
+
 Route::get('/seed/bl', 'SeedController@bukalapak');
 
 Route::get('/aa/{id}', 'CategoryController@getChild');

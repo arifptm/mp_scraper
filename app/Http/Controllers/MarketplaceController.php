@@ -9,7 +9,16 @@ class MarketplaceController extends Controller
 {
     public function index()
     {
-        return view('marketplace.index', [ 'marketplaces' => Marketplace::orderBy('id', 'desc')->paginate(25) ]);
+        $ms = Marketplace::orderBy('id', 'desc');
+        // foreach ($ms->get() as $m)
+        // {
+        //     foreach ($m->feed as $i)
+        //     {
+        //         $s[] = count($i->item->where('title','!=', ''));
+        //     }    
+        // }
+        // $ci = array_sum($s);
+        return view('marketplace.index', [ 'marketplaces' => $ms->paginate(25) ]);
     }
 
     public function create()

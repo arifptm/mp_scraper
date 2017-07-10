@@ -29,6 +29,8 @@ class CreateItemsTable extends Migration
             $table->text('images')->nullable();
             $table->integer('seller_id')->unsigned()->nullable();
             $table->boolean('processed')->default(0);
+            $table->boolean('published')->default(1);
+            $table->integer('views')->unsighed()->default(0);
 
             $table->timestamps();
 

@@ -1,7 +1,5 @@
 @extends('public.theme.home_layout')
 
-
-
 @section('main')
 <div class="row directory">
     <div class="col-sm-12 ">
@@ -34,6 +32,16 @@
 
 
 @section('right')
+<br class="hidden-sm hidden-xs">
+<br class="hidden-sm hidden-xs">
+<br class="hidden-sm hidden-xs">
+
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-12  col-lg-11 pull-right" >
+<p class="main_slogan" style="margin: 0 0 28px 0">
+ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan ini iklan </p>
+</div></div>
+
 <div class="row">
     <div class="col-xs-12 col-sm-4 col-md-12  col-lg-11 pull-right" >
         <div class="panel panel-default">
@@ -41,11 +49,17 @@
             <div class="panel-body">
                 <div class="featured-gallery">
                     <div class="row">
-                        <div class="col-sm-6 col-xs-4 featured-thumbnail"  data-toggle="tooltip" data-placement="top" title="Programmer jobavailiable at Uber in London">
-                            <a href="details.html" class="">
-                                <img alt="" src="css/images/logos/uberlogo_large_verge_medium_landscape.png" >
+                        @foreach ($items as $item)
+                        
+
+
+                        <div class="col-sm-6 col-xs-4 featured-thumbnail"  data-toggle="tooltip" data-placement="top" title="Jual {{ $item->title }} seharga {{ $item->sell_price }}">
+                            <a href="/{{ $item->slug }}" class="">
+                                <img alt="" src="{{ str_replace('/rawimage/','/s-400-200/', explode('|', $item->images)[0]) }}" >
                             </a>
                         </div>
+                        @endforeach
+
                     </div>
                 </div>
             </div>

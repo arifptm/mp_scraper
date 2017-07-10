@@ -122,12 +122,18 @@
                 <br />
                 <div class="row">
                     <div class="col-sm-12" style="text-align: center">
-
                         <div id="quotes">
-                            <div class="text-item" style="display: none;">Boom! <strong>Vince</strong> just sold a <strong>Washing Machine</strong> in <strong>Sheffield</strong></div>
-                            <div class="text-item" style="display: none;"><strong>Julia</strong> is availiable for <strong>home cleaning</strong> in <strong>Manchester</strong></div>
-                            <div class="text-item" style="display: none;">Success! <strong>Paul</strong> has just sold a <strong>Mercedes-Benz E-class</strong> in <strong>Liverpool</strong></div>
-                            <div class="text-item" style="display: none;">Hey, <strong>Uber</strong> has a <strong>job opening</strong> in <strong>London</strong></div>
+                            @foreach ($rotators as $k=>$rotator)
+                                <div>
+                                {{ $random[$k][0] }}
+                                <strong>{{ $rotator->seller->name }}</strong> 
+                                {{ $random[$k][1] }} 
+                                {{ str_limit($rotator->title,35) }}
+                                {{ $random[$k][2] }}
+                                <strong>{{ $rotator->seller->city->name }}</strong>
+                                </div>
+                            @endforeach
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -179,6 +185,8 @@
 <script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
+
+<script src="../../js/global.js"></script>
 
 
 </body>

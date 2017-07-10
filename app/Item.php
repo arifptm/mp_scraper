@@ -25,4 +25,9 @@ class Item extends Model
     {
     	return $this->belongsTo('App\Seller');
     }
+
+    public function getSellPriceAttribute($v)
+    {
+        return "Rp.".number_format($v,0,",",".");
+    }
 }
