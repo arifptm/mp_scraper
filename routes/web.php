@@ -17,6 +17,21 @@
 
 Route::get('/', 'PublicController@index');
 
+Route::get('/itm/ct/{slug}', 'ItemController@itemByCity')->name('itembycity');
+Route::get('/itm/sl/{slug}', 'ItemController@itemBySeller')->name('itembyseller');
+Route::get('/itm/ca/{slug}', 'ItemController@itemByCategory')->name('itembycategory');
+
+
+
+
+
+
+
+
+
+
+
+
 
 Auth::routes();
 
@@ -41,9 +56,6 @@ Route::get('/test', 'TestController@index');
 Route::get('/t1', 'TestController@t1');
 
 
-
-
-
 Route::get('/c/{slug}', 'CategoryController@publicIndex');
 
 Route::get('/{slug}', 'ItemController@publicShow');
@@ -51,4 +63,6 @@ Route::get('/{slug}', 'ItemController@publicShow');
 Route::get('/seed/bl', 'SeedController@bukalapak');
 
 Route::get('/aa/{id}', 'CategoryController@getChild');
+
+
 

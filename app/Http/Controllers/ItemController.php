@@ -13,6 +13,34 @@ use \App\Services\ItemsCity;
 
 class ItemController extends Controller
 {
+    public function itemByCity( $id = null )
+    {
+        return view('public.item.item_by', ['items' => 'aaa']);
+    }
+
+    public function itemBySeller( $slug = null )
+    {
+        $sid = Seller::where('slug', $slug)->first();
+        $it = Item::whereSeller_id($sid->id)->get();
+        
+        return view('public.item.item_by', ['items' => $it ]);   
+    }
+
+    public function itemByCategory( $id = null )
+    {
+        return view('public.item.item_by', ['items' => 'aaa']);
+    }
+   
+
+
+
+
+
+
+
+
+
+
 
     public function sellers()
     {

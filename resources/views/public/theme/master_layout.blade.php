@@ -33,8 +33,10 @@
 
     @if(\Request::is('/'))  
         @include('public.theme.home_layout')
-    @elseif(\Request::is('/ct'))    
-        @include('public.theme.home_layout')
+    @elseif(\Request::routeIs('itembycategory') 
+        OR \Request::routeIs('itembycity') 
+        OR \Request::routeIs('itembyseller'))
+            @include('public.theme.card_layout')
     @else
         @include('public.theme.node_layout')        
     @endif

@@ -13,7 +13,7 @@
 				    <div class="row directory-block">      
 				        <div class="col-sm-12">				            
 				            @foreach ($chunk as $city)       
-				                <a href="#">{{ str_limit($city->name,15)}}</a><br/>
+				                <a href="/itm/ct/{{ $city->slug }}">{{ str_limit($city->name,14)}}</a><br/>
 				            @endforeach 
 				        </div>
 				    </div>
@@ -28,7 +28,7 @@
 				    <div class="row directory-block">      
 				        <div class="col-sm-12">				            
 				            @foreach ($chunk as $seller)       
-				                <a href="#">{{ str_limit($seller->name,15) }}</a><br/>
+				                <a href="/itm/sl/{{ $seller->slug }}">{{ str_limit($seller->name,14) }}</a><br/>
 				            @endforeach 
 				        </div>
 				    </div>
@@ -42,7 +42,7 @@
 				    <div class="row directory-block">      
 				        <div class="col-sm-12">				            
 				            @foreach ($chunk as $category)       
-				                <a href="#">{{ str_limit($category->name,15) }}</a><br/>
+				                <a href="/itm/ca/{{ $category->slug }}">{{ str_limit($category->name,14) }}</a><br/>
 				            @endforeach 
 				        </div>
 				    </div>
