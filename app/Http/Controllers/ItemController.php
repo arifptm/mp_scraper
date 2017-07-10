@@ -58,7 +58,7 @@ class ItemController extends Controller
         $images = explode("|", $item->images);
         $fi = str_replace("/rawimage/", "/m-".config('node_image_hsize')."-".config('node_image_vsize')."/", $images[0]);
 
-        $thumbs = str_replace("/rawimage/", "/s-".config('thumbsize')."-".config('thumbsize')."/", $images);
+        $thumbs = str_replace("/rawimage/", "/m-".config('thumb_hsize')."-".config('thumb_vsize')."/", $images);
     	$item->update(['views' => $item->views+1]);
         return view('item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi ]);
     }
@@ -69,9 +69,9 @@ class ItemController extends Controller
         $images = explode("|", $item->images);
         $fi = str_replace("/rawimage/", "/m-".config('node_image_hsize')."-".config('node_image_vsize')."/", $images[0]);
 
-        $thumbs = str_replace("/rawimage/", "/s-".config('thumbsize')."-".config('thumbsize')."/", $images);
-        $item->update('views', $item->views+1);
-        return view('item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi ]);
+        $thumbs = str_replace("/rawimage/", "/s-".config('thumb_hsize')."-".config('thumb_vsize')."/", $images);
+        // $item->update('views', [$item->views+1]);
+        return view('public.item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi ]);
     }
 
 

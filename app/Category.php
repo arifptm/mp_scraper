@@ -18,7 +18,7 @@ class Category extends Model
 
 	public function parent()
 	{
-		return $this->belongsTo('App\Category');
+		return $this->belongsTo('App\Category', 'parent');
 	}
 
 	public function item()

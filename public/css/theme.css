@@ -106,7 +106,7 @@ html {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .navbar-default {
-  border-bottom: 1px solid #e5e5e5;
+  border: none;
 }
 .navbar-static-top,
 .navbar-fixed-top,
@@ -646,4 +646,23 @@ p.muted {
   top: 10px;
   left: 10px;
   position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+h1.nodetitle{
+  line-height: 28px;
+}
+
+.nodeimg_bg{
+  background-color: #aaa;
 }
