@@ -31,6 +31,7 @@ class CreateItemsTable extends Migration
             $table->boolean('processed')->default(0);
             $table->boolean('published')->default(1);
             $table->integer('views')->unsighed()->default(0);
+            $table->boolean('sold_out')->default(0);
 
             $table->timestamps();
 

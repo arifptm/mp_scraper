@@ -1,19 +1,6 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-// Route::get('/', function () {
-//     return view('public.index');
-// });
+Auth::routes();
 
 Route::get('/', 'PublicController@index');
 
@@ -21,6 +8,9 @@ Route::get('/itm/ct/{slug}', 'ItemController@itemByCity')->name('itembycity');
 Route::get('/itm/sl/{slug}', 'ItemController@itemBySeller')->name('itembyseller');
 Route::get('/itm/ca/{slug}', 'ItemController@itemByCategory')->name('itembycategory');
 
+Route::get('/{slug}', 'ItemController@publicShow')->name('nodes');
+
+//Route::get('/home', 'HomeController@index')->name('home');
 
 
 
@@ -33,9 +23,6 @@ Route::get('/itm/ca/{slug}', 'ItemController@itemByCategory')->name('itembycateg
 
 
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/sc/toped', 'TokopediaController@index');
 
@@ -58,7 +45,7 @@ Route::get('/t1', 'TestController@t1');
 
 Route::get('/c/{slug}', 'CategoryController@publicIndex');
 
-Route::get('/{slug}', 'ItemController@publicShow');
+
 
 Route::get('/seed/bl', 'SeedController@bukalapak');
 

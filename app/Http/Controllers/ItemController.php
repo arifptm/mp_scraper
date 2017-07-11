@@ -91,6 +91,8 @@ class ItemController extends Controller
         return view('item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi ]);
     }
 
+    
+
     public function publicShow($id)
     {
         $item = Item::whereSlug($id)->first();

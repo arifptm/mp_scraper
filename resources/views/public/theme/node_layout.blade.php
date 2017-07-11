@@ -68,11 +68,11 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-7">	
-                    <h1 class="nodetitle">{{ $item->title }}</h1>
+                <div class="col-sm-9">	
+                    <h1 class="nodetitle">{{ str_limit($item->title,110) }}</h1>
                     <p>Lokasi: {{ $item->seller->city->name }}</p>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-sm-3">
                     <p class="price"><span class="h6"">Rp.30.000</span> <span class="h6"><strong>diskon 50%</strong></span><br>{{ $item->sell_price }}</p>
                 </div>
             </div>		
@@ -89,6 +89,7 @@
             <div class="row">
 
                 <div class="col-sm-7">
+                {{ $item->item_url }}
                    {!! $item->body !!}
                     <p>
                         <span class="classified_links ">
@@ -102,9 +103,9 @@
                 <div class="col-sm-5 center zoom-gallery">
                     <div class="row center">
                         <div class="col-sm-12">	
-							<div id="panel" style="text-align:center;width:100%;max-height:350px;">
+							<div style="text-align:center;max-height:280px;width: 100%;">
 								<div class="nodeimg_bg">
-									<img  id="largeImage" class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $full_image }}" alt="" />
+									<img  id="largeImage" class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $full_image }}" alt="" style="margin:auto;"/>
 								</div>
 							</div>
                             <br>
@@ -125,9 +126,9 @@
                     <br>	
                     <br>	
                     <div class="col-sm-12" style="text-align: center; margin: 0 auto">	
-                        <button data-toggle="modal" data-target="#myModal" class="btn btn-warning" style="text-align: center;width: 180px; " type="button">Reply to ad</button>
+                        <a  href="{{ $item->item_url}}" rel="no-follow" class="btn @if($item->sold_out == '1') disabled btn-danger @else btn-warning @endif" style="text-align: center;width: 180px;" role="button">Kunjungi toko</a>
                         <br>
-                        <p>or call Alan on 9824614705</p>
+                        <p>@if($item->sold_out == '0')di {{ $item->feed->marketplace->name }} @else SOLD OUT ! @endif</p>
                     </div>
                     <br>
                 </div>				
