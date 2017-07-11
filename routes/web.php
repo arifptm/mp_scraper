@@ -2,13 +2,32 @@
 
 Auth::routes();
 
-Route::get('/', 'PublicController@index');
+Route::get('/', 'PublicController@index')->name('frontpage');
 
-Route::get('/itm/ct/{slug}', 'ItemController@itemByCity')->name('itembycity');
-Route::get('/itm/sl/{slug}', 'ItemController@itemBySeller')->name('itembyseller');
-Route::get('/itm/ca/{slug}', 'ItemController@itemByCategory')->name('itembycategory');
+Route::prefix('itm')->group(function(){
+	Route::get('ct/{slug}', 'ItemController@itemByCity')->name('itembycity');
+	Route::get('sl/{slug}', 'ItemController@itemBySeller')->name('itembyseller');
+	Route::get('ca/{slug}', 'ItemController@itemByCategory')->name('itembycategory');
+});
+
+Route::prefix('ls')->group(function(){
+	Route::get('marketplace', 'MarketplaceController@list')->name('marketplace_list');
+	Route::get('city', 'CityController@list')->name('city_list');
+	Route::get('seller', 'SellerController@list')->name('seller_list');
+});
+
+
+Route::get('/pg/{slug}', 'PageController@index')->name('pages');
 
 Route::get('/{slug}', 'ItemController@publicShow')->name('nodes');
+
+
+
+
+
+
+
+
 
 //Route::get('/home', 'HomeController@index')->name('home');
 
@@ -50,6 +69,3 @@ Route::get('/c/{slug}', 'CategoryController@publicIndex');
 Route::get('/seed/bl', 'SeedController@bukalapak');
 
 Route::get('/aa/{id}', 'CategoryController@getChild');
-
-
-

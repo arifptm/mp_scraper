@@ -29,14 +29,14 @@
 <body>
     @include('public.theme.navbar')
 
-    @if(\Request::is('/'))  
-        @include('public.theme.home_layout')
-    @elseif(\Request::routeIs('itembycategory') 
-        OR \Request::routeIs('itembycity') 
-        OR \Request::routeIs('itembyseller'))
-            @include('public.theme.card_layout')
+    <!-- var $rotators  -->
+    @include('public.theme.jumbotron')
+
+    @if(\Request::routeIs('frontpage')  
+        OR \Request::routeIs('pages')) 
+            @include('public.theme.twocol_layout')
     @else
-        @include('public.theme.node_layout')        
+        @include('public.theme.onecol_layout')
     @endif
     
     @include('public.theme.footer')

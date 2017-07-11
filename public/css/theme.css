@@ -666,3 +666,7 @@ h1.nodetitle{
 .nodeimg_bg{
   background-color: #aaa;
 }
+
+.coret{
+  text-decoration: line-through;
+}

@@ -30,4 +30,9 @@ class Item extends Model
     {
         return "Rp.".number_format($v,0,",",".");
     }
+
+    public function getRawPriceAttribute($v)
+    {
+        return "Rp.".number_format($v,0,",",".");
+    }
 }

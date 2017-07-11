@@ -13,7 +13,10 @@ class CityController extends Controller
     }
 
 
-
+    public function list()
+    {
+        return view('city.create');
+    }
 
 
 

@@ -13,10 +13,14 @@ use \App\Services\ItemsCity;
 
 class ItemController extends Controller
 {
-    public function itemByCity( $id = null )
+    public function itemByCity( $slug = null )
     {
-        return view('public.item.item_by', ['items' => 'aaa']);
+        $cid = City::whereSlug($slug)->first()->id;
+        $sid = Seller::whereCity_id($cid)->pluck('id');
+        $it = Item::whereIn('seller_id', $sid)->get();
+        return view('public.item.item_by', ['items' => $it]);
     }
+
 
     public function itemBySeller( $slug = null )
     {
@@ -26,14 +30,28 @@ class ItemController extends Controller
         return view('public.item.item_by', ['items' => $it ]);   
     }
 
-    public function itemByCategory( $id = null )
+
+    public function itemByCategory( $slug = null )
     {
-        return view('public.item.item_by', ['items' => 'aaa']);
+        $id1 = Category::whereSlug($slug)->first()->id;        
+        $id2 = Category::whereParent($id1)->pluck('id');
+        $id3 = Category::whereIn('parent', $id2)->pluck('id');
+        $it = Item::whereIn('category_id', $id3)->get();
+        return view('public.item.item_by', ['items' => $it]);
     }
    
 
 
+    public function publicShow($slug)
+    {
+        $item = Item::whereSlug($slug)->first();
+        $images = explode("|", $item->images);
+        $fi = str_replace("/rawimage/", "/m-".config('node_image_hsize')."-".config('node_image_vsize')."/", $images[0]);
 
+        $thumbs = str_replace("/rawimage/", "/s-".config('thumb_hsize')."-".config('thumb_vsize')."/", $images);
+        // $item->update('views', [$item->views+1]);
+        return view('public.item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi ]);
+    }
 
 
 
@@ -93,16 +111,7 @@ class ItemController extends Controller
 
     
 
-    public function publicShow($id)
-    {
-        $item = Item::whereSlug($id)->first();
-        $images = explode("|", $item->images);
-        $fi = str_replace("/rawimage/", "/m-".config('node_image_hsize')."-".config('node_image_vsize')."/", $images[0]);
 
-        $thumbs = str_replace("/rawimage/", "/s-".config('thumb_hsize')."-".config('thumb_vsize')."/", $images);
-        // $item->update('views', [$item->views+1]);
-        return view('public.item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi ]);
-    }
 
 
 

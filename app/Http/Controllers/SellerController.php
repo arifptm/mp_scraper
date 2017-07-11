@@ -18,6 +18,11 @@ class SellerController extends Controller
     //     return $ctss;
     // }
 
+    public function list()
+    {
+        return view('seller.index', [ 'sellers' => Seller::orderBy('id', 'desc')->paginate(25) ]);
+    }
+    
     public function index()
     {
         return view('seller.index', [ 'sellers' => Seller::orderBy('id', 'desc')->paginate(25) ]);

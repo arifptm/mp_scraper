@@ -21,6 +21,12 @@ class MarketplaceController extends Controller
         return view('marketplace.index', [ 'marketplaces' => $ms->paginate(25) ]);
     }
 
+
+    public function list()
+    {
+        return view('marketplace.create');
+    }
+
     public function create()
     {
         return view('marketplace.create');
