@@ -6599,7 +6599,7 @@ html {
   margin-bottom: 0;
 }
 .home-tron-search {
-  margin-bottom: 0;
+  margin-bottom: 20px;
   padding: 0px 0;
 }
 .home-tron-search .home-tron-search-inner {
@@ -7248,4 +7248,35 @@ h1.pagetitle{
 .seller-name{
   font-weight: bold;
   padding:6px 10px;
+}
+
+.se a{
+  font-weight:bold;
+}
+
+.detail dl {width:100%;display: table;margin-top:15px;}
+
+.detail dd {float:left;width:29%;}
+.detail dt {float:left;width:69%;}
+
+.detail dd, .detail dt{
+  margin:1px;display: table-cell;border: 1px solid #ccc;padding:4px 6px;
+}
+
+.setitle{
+  border-top:1px solid #cecece;
+  padding-top:10px;
+  margin-bottom:20px;
+  font-size:1.25em;
+}
+
+.marbot30
+{margin-bottom:30px;}
+
+.martop10{
+  margin-top:10px;
+}
+
+.nodel-sellprice{
+  line-height: 2em;
 }

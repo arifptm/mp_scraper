@@ -55,7 +55,14 @@
                     <p>Lokasi: {{ $item->seller->city->name }}</p>
                 </div>
                 <div class="col-sm-3">
-                    <p class="price"><span class="h4 coret">{{ $item->raw_price }}</span> <span class="h4"><i class="fa fa-ellipsis-v"></i></span> <span class="h6"><strong>Discount {{ $item->discount }}%</strong></span><br>{{ $item->sell_price }}</p>
+                    <div class="price">
+                        @if ($item->raw_price != null)
+                            <span class="h4 coret">{{ $item->raw_price }}</span>
+                            <span class="h4"><i class="fa fa-ellipsis-v"></i></span> 
+                            <span class="h6"><strong>Discount {{ $item->discount }}%</strong></span>
+                        @endif
+                        <div class="nodel-sellprice"><strong>{{ $item->sell_price }}</strong></div>
+                    </div>    
                 </div>
             </div>		
 
@@ -74,8 +81,13 @@
             <div class="row">
 
                 <div class="col-sm-7">
-                {{ $item->item_url }}
-                   {!! $item->body !!}
+                
+                <div class="detail">{!! $item->details !!}</div>
+                
+                <div class="body marbot30">{!! $item->body !!}</div>
+                <div class="setitle">Situs yang berhubungan dengan {{ $item -> title }}</div>
+                <div class="se">{!! $item->se !!}</div>
+
                     <p>
                         <span class="classified_links ">
                             <a class="link-info" href="#"><i class="fa fa-share"></i> Share</a>&nbsp;

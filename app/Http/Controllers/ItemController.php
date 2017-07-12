@@ -48,6 +48,12 @@ class ItemController extends Controller
         return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk dijual di '.$id1->name]);
     }
 
+    public function list()
+    {
+        $it = Item::where('title','!=', '')->orderBy('updated_at')->paginate(36);        
+        return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Daftar semua produk']);
+    }
+
 
     public function publicShow($slug)
     {

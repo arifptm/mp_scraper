@@ -15,6 +15,7 @@ Route::prefix('ls')->group(function(){
 	Route::get('marketplace', 'MarketplaceController@list')->name('marketplace_list');
 	Route::get('city', 'CityController@list')->name('city_list');
 	Route::get('seller', 'SellerController@list')->name('seller_list');
+	Route::get('product', 'ItemController@list')->name('item_list');
 });
 
 
