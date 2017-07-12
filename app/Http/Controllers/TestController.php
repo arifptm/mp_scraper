@@ -22,11 +22,11 @@ class TestController extends Controller
 
 
 
-    public function t1()
+    public function bl()
     {
     	//echo date('m/d/Y h:i:s a', time())." - ";
     	$input = "Bukalapak";
-    	
+
         $mp = Marketplace::whereName($input)->first(); 
     	
     	$feed = Feed::where('marketplace_id', $mp->id)
@@ -48,7 +48,7 @@ class TestController extends Controller
 
     		Feed::whereId($selected_feed->id)->update(['processed' => 1]);
     	}
-
+   
         // start scraping   	
     	$select = Item::whereIn('feed_id', $mp->feed->pluck('id') )
             ->whereProcessed(0)
@@ -102,7 +102,7 @@ class TestController extends Controller
             
             ${'depth'.$key1} -> save();
         }    
-                
+             
       	$scraped['category_id'] = ${'depth'.$key1}->id;
 
 		if (($crawler->filter('.c-product-detail-price__original .amount') === true ) AND ($crawler->filter('.c-product-detail-price__reduced .amount') === true )){

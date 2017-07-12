@@ -44,8 +44,7 @@ class ItemController extends Controller
     {
         $id1 = Marketplace::whereSlug($slug)->first();        
         $id2 = Feed::whereMarketplace_id($id1->id)->pluck('id');
-        $it = Item::whereIn('feed_id', $id2)->where('title','!=','')->get();
-        
+        $it = Item::whereIn('feed_id', $id2)->where('title','!=','')->get();        
         return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk dijual di '.$id1->name]);
     }
 

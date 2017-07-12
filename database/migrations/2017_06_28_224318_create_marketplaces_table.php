@@ -17,8 +17,8 @@ class CreateMarketplacesTable extends Migration
             $table->increments('id');
             $table->string('name',31);
             $table->string('slug',31);
-            $table->integer('pos-x',3)->nullable();
-            $table->integer('pos-y',3)->nullable();
+            $table->string('pos-x',3)->nullable();
+            $table->string('pos-y',3)->nullable();
             $table->string('logo_url')->nullable();
             
             $table->engine = 'InnoDB';

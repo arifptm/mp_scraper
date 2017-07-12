@@ -59,8 +59,8 @@ Route::get('/items', 'ItemController@ItemsList');
 Route::get('/items/ca/{id}','ItemController@index');
 Route::get('/items/ct/{id}','ItemController@cityList'); 
 
-Route::get('/test', 'TestController@index');
-Route::get('/t1', 'TestController@t1');
+
+
 
 
 Route::get('/c/{slug}', 'CategoryController@publicIndex');
@@ -70,3 +70,4 @@ Route::get('/c/{slug}', 'CategoryController@publicIndex');
 Route::get('/seed/bl', 'SeedController@bukalapak');
 
 Route::get('/aa/{id}', 'CategoryController@getChild');
+Route::get('/sc/bl', 'TestController@bl');
