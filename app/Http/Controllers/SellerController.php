@@ -20,7 +20,7 @@ class SellerController extends Controller
 
     public function list()
     {
-        return view('seller.index', [ 'sellers' => Seller::orderBy('id', 'desc')->paginate(25) ]);
+        return view('public.seller.list', [ 'sellers' => Seller::orderBy('id', 'desc')->paginate(20) ]);
     }
     
     public function index()

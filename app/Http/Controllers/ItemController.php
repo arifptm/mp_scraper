@@ -8,6 +8,7 @@ use App\City;
 use App\Seller;
 use App\Feed;
 use App\Category;
+use App\Marketplace;
 use \App\Services\ItemsCategory;
 use \App\Services\ItemsCity;
 
@@ -15,31 +16,38 @@ class ItemController extends Controller
 {
     public function itemByCity( $slug = null )
     {
-        $cid = City::whereSlug($slug)->first()->id;
-        $sid = Seller::whereCity_id($cid)->pluck('id');
+        $cid = City::whereSlug($slug)->first();
+        $sid = Seller::whereCity_id($cid->id)->pluck('id');
         $it = Item::whereIn('seller_id', $sid)->get();
-        return view('public.item.item_by', ['items' => $it]);
+        return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk dari '.$cid->name ]);
     }
 
 
     public function itemBySeller( $slug = null )
     {
         $sid = Seller::where('slug', $slug)->first();
-        $it = Item::whereSeller_id($sid->id)->get();
-        
-        return view('public.item.item_by', ['items' => $it ]);   
+        $it = Item::whereSeller_id($sid->id)->get();       
+        return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk dijual oleh '.$sid->name  ]);   
     }
 
 
     public function itemByCategory( $slug = null )
     {
-        $id1 = Category::whereSlug($slug)->first()->id;        
-        $id2 = Category::whereParent($id1)->pluck('id');
+        $id1 = Category::whereSlug($slug)->first();
+        $id2 = Category::whereParent($id1->id)->pluck('id');
         $id3 = Category::whereIn('parent', $id2)->pluck('id');
         $it = Item::whereIn('category_id', $id3)->get();
-        return view('public.item.item_by', ['items' => $it]);
+        return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk kategori '.$id1->name]);
     }
    
+    public function itemByMarketplace( $slug = null )
+    {
+        $id1 = Marketplace::whereSlug($slug)->first();        
+        $id2 = Feed::whereMarketplace_id($id1->id)->pluck('id');
+        $it = Item::whereIn('feed_id', $id2)->where('title','!=','')->get();
+        
+        return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk dijual di '.$id1->name]);
+    }
 
 
     public function publicShow($slug)
@@ -52,6 +60,16 @@ class ItemController extends Controller
         // $item->update('views', [$item->views+1]);
         return view('public.item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi ]);
     }
+
+
+
+
+
+
+
+
+
+
 
 
 

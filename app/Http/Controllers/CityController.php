@@ -7,18 +7,18 @@ use App\City;
 
 class CityController extends Controller
 {
+    public function list()
+    {
+        $c = City::paginate(60);        
+        return view('public.city.list', ['cities' => $c]);
+    }
+
+
+
     public function index()
     {
         return view('city.index', [ 'cities' => City::orderBy('id', 'desc')->paginate(25) ]);
     }
-
-
-    public function list()
-    {
-        return view('city.create');
-    }
-
-
 
     public function create()
     {

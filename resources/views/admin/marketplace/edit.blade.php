@@ -1,4 +1,4 @@
-@extends('template.master')
+@extends('admin.template.master')
 
 @section('pagetitle')
 	Edit Marketplace
@@ -7,7 +7,7 @@
 @section('content')
 <div class="box box-primary">
     {!! Form::model($marketplace, ['action'=> ['MarketplaceController@update', $marketplace->id], 'method'=>'patch', 'role' => 'form']) !!}
-        @include('marketplace/field')
+        @include('/admin/marketplace/field')
     {!! Form::close() !!}
 </div>
 @endsection	

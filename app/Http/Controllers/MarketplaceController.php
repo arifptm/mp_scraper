@@ -7,51 +7,47 @@ use App\Marketplace;
 
 class MarketplaceController extends Controller
 {
-    public function index()
+    
+    public function list()
     {
-        $ms = Marketplace::orderBy('id', 'desc');
-        // foreach ($ms->get() as $m)
-        // {
-        //     foreach ($m->feed as $i)
-        //     {
-        //         $s[] = count($i->item->where('title','!=', ''));
-        //     }    
-        // }
-        // $ci = array_sum($s);
-        return view('marketplace.index', [ 'marketplaces' => $ms->paginate(25) ]);
+        $m = Marketplace::all();
+        return view('public.marketplace.list', ['marketplaces' => $m]);
     }
 
 
-    public function list()
+
+    //Admin Section
+    public function index()
     {
-        return view('marketplace.create');
+        $ms = Marketplace::orderBy('id', 'desc')->get();
+        return view('admin.marketplace.index', [ 'marketplaces' => $ms ]);
     }
 
     public function create()
     {
-        return view('marketplace.create');
+        return view('admin.marketplace.create');
     }
 
     public function store(Request $request)
     {
         Marketplace::create($request->all());
-        return redirect('/marketplaces');
+        return redirect('/admin/marketplaces');
     }
 
     public function edit($id)
     {
-        return view('marketplace.edit', [ 'marketplace' => Marketplace::findOrFail($id) ]);
+        return view('admin.marketplace.edit', [ 'marketplace' => Marketplace::findOrFail($id) ]);
     }
 
     public function update(Request $request, $id)
     {
         Marketplace::findOrFail($id)-> update($request->all());
-        return redirect('/marketplaces');
+        return redirect('/admin/marketplaces');
     }
 
     public function destroy($id)
     {
         Marketplace::findOrFail($id)->delete();
-        return redirect('/marketplaces');
+        return redirect('/admin/marketplaces');
     }
 }

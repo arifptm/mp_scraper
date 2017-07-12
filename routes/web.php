@@ -8,6 +8,7 @@ Route::prefix('itm')->group(function(){
 	Route::get('ct/{slug}', 'ItemController@itemByCity')->name('itembycity');
 	Route::get('sl/{slug}', 'ItemController@itemBySeller')->name('itembyseller');
 	Route::get('ca/{slug}', 'ItemController@itemByCategory')->name('itembycategory');
+	Route::get('mk/{slug}', 'ItemController@itemByMarketplace')->name('itembymarketplace');
 });
 
 Route::prefix('ls')->group(function(){
@@ -45,7 +46,7 @@ Route::get('/{slug}', 'ItemController@publicShow')->name('nodes');
 
 Route::get('/sc/toped', 'TokopediaController@index');
 
-Route::resource('/marketplaces','MarketplaceController', ['except' => ['show']]);
+Route::resource('/admin/marketplaces','MarketplaceController', ['except' => ['show']]);
 Route::resource('/feeds','FeedController', ['except' => ['show']]);
 Route::resource('/cities','CityController', ['except' => ['show', 'create', 'store']]);
 

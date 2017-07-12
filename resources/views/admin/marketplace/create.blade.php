@@ -1,4 +1,4 @@
-@extends('template.master')
+@extends('admin.template.master')
 
 @section('pagetitle')
 	Create Marketplace
@@ -6,8 +6,8 @@
 
 @section('content')
 <div class="box box-primary">
-    {!! Form::open(['url'=> '/marketplaces', 'role' => 'form']) !!}
-        @include('marketplace/field')
+    {!! Form::open(['url'=> '/admin/marketplaces', 'role' => 'form']) !!}
+        @include('/admin/marketplace/field')
     {!! Form::close() !!}
 </div>
 @endsection	

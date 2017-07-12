@@ -1,7 +1,7 @@
-@extends('template.master')
+@extends('admin.template.master')
 
 @section('pagetitle')
-Marketplace {!! link_to('/marketplaces/create', '+') !!}
+Marketplace {!! link_to('/admin/marketplaces/create', '+') !!}
 @stop
 
 @section('content')
@@ -38,7 +38,7 @@ Marketplace {!! link_to('/marketplaces/create', '+') !!}
                             
                             <td>
                                 <div class="inline-block">
-                                {!! link_to('/marketplaces/'.$marketplace->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
+                                {!! link_to('/admin/marketplaces/'.$marketplace->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
                                 
                                 {!! Form::open(['route' => ['marketplaces.destroy', $marketplace->id], 'method' => 'delete']) !!}
                                 {!! Form::button('Hapus',['type' => 'submit', 'class' => 'btn btn-default']) !!}
@@ -52,7 +52,7 @@ Marketplace {!! link_to('/marketplaces/create', '+') !!}
             </div>
             
             <div class="box-footer">
-                {{ $marketplaces->links() }}
+                
             </div>
 
         </div>

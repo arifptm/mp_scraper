@@ -18,7 +18,7 @@
                 <li><a href="/ls/marketplace">Marketplace</a></li>
                 <li><a href="/ls/product">Produk</a></li>
                 <li><a href="/ls/seller">Seller</a></li>
-                <li><a href="/ls/wilayah">Area</a></li>
+                <li><a href="/ls/city">Area</a></li>
             </ul> 
 
             <div class="nav navbar-nav navbar-right hidden-xs">
@@ -27,7 +27,7 @@
                         <a href="/ls/marketplace">Marketplace</a> | 
                         <a href="/ls/product">Produk</a> | 
                         <a href="/ls/seller">Seller</a> | 
-                        <a href="/ls/area">Area</a>
+                        <a href="/ls/city">Area</a>
                     </div>	
                 </div>
             </div>
