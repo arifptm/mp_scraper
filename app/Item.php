@@ -28,14 +28,14 @@ class Item extends Model
 
     public function getSellPriceAttribute($v)
     {
-        return "Rp.".number_format($v,0,",",".");
+        return number_format($v,0,",",".");
     }
 
     public function getRawPriceAttribute($v)
     {
         if($v != 0)
         {
-            return "Rp.".number_format($v,0,",",".");
+            return number_format($v,0,",",".");
         }
     }
 }

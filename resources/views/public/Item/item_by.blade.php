@@ -11,7 +11,7 @@
 
 @section('main')
 	<div class="row">
-		<h1 class="pagetitle col-sm-12">{{ $pagetitle }}  ({{ $items->total() }})</h1>
+		<h1 class="pagetitle col-sm-12">{{ $pagetitle }} ({{ number_format( $items->total() ,0,",",".")}})</h1>
 	</div>
 	<div class="row">		
 		@foreach ($items as $item)
@@ -26,11 +26,10 @@
 					@if ($item->discount != 0)<div class="card-discount"><div>Diskon</div><div><span  class="percent">{{ $item->discount }}</span>%</div> </div>@endif
 
 					<div class="card-price">					
-						<div class="card-rawprice coret">{{ $item->raw_price }}</div>
-						<div class="card-sellprice">{{ $item->sell_price }}</div>
+						<div class="card-rawprice coret">@if ( $item->raw_price != null )<small>Rp.</small>{{ $item->raw_price }}@endif</div>
+						<div class="card-sellprice"><small>Rp.</small>{{ $item->sell_price }}</div>
 					</div>	
-					<div class="text-center">{{ $item->feed->marketplace->name }}</div>
-					<div class="text-center">{{ $item->seller->city->name }}</div>
+					<div class="card-city {{ $item->feed->marketplace->slug }}-bg"><a href="/itm/ct/{{ $item->seller->city->slug }}">{{ $item->seller->city->name }}</a></div>
 				</div>
 			</div>				
 		@endforeach

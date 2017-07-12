@@ -15,7 +15,7 @@
 					<div class="card-mk-image"><a href="/itm/mk/{{ $marketplace->slug }}"><img src="{{ $marketplace->logo_url }}" alt="{{ $marketplace->name }}"></a> 
 					</div>
 								
-					<div class="card-mk-name"><a href="/itm/mk/{{ $marketplace->slug }}">{{ $marketplace->name }}</a></div>
+					<div class="card-mk-name"><i class="fa fa-shopping-cart"></i> <a href="/itm/mk/{{ $marketplace->slug }}">{{ $marketplace->name }}</a></div>
 				</div>
 			</div>	
 		@endforeach

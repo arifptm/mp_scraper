@@ -7179,7 +7179,7 @@ h1.pagetitle{
 
 .card-title{
   padding:8px 5px;
-  text-align: center;
+  
   font-weight: bold;
   height:3.8em;
   line-height: 1.5em;
@@ -7191,10 +7191,18 @@ h1.pagetitle{
   top:0;
   right:0;
   padding:5px;
-  margin-right:15px;
   background-color: rgba(0,0,0,0.4);
   color: #d4d4ff;
   text-align: center;
+}
+
+.bukalapak-bg {
+  height: 26px;
+  background:#efefef url('../images/logo-sq.png') no-repeat 0 -26px;
+  background-size: 26px 520px;
+  padding-left: 30px;
+  line-height: 24px;
+
 }
 
 .percent{
@@ -7270,8 +7278,8 @@ h1.pagetitle{
   font-size:1.25em;
 }
 
-.marbot30
-{margin-bottom:30px;}
+.marbot30{margin-bottom:30px;}
+.marbot15{margin-bottom:15px;}
 
 .martop10{
   margin-top:10px;

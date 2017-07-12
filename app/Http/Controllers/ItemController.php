@@ -18,7 +18,7 @@ class ItemController extends Controller
     {
         $cid = City::whereSlug($slug)->first();
         $sid = Seller::whereCity_id($cid->id)->pluck('id');
-        $it = Item::whereIn('seller_id', $sid)->get();
+        $it = Item::whereIn('seller_id', $sid)->paginate(36);
         return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk dari '.$cid->name ]);
     }
 
@@ -26,7 +26,7 @@ class ItemController extends Controller
     public function itemBySeller( $slug = null )
     {
         $sid = Seller::where('slug', $slug)->first();
-        $it = Item::whereSeller_id($sid->id)->get();       
+        $it = Item::whereSeller_id($sid->id)->paginate(36);       
         return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk dijual oleh '.$sid->name  ]);   
     }
 
@@ -36,7 +36,7 @@ class ItemController extends Controller
         $id1 = Category::whereSlug($slug)->first();
         $id2 = Category::whereParent($id1->id)->pluck('id');
         $id3 = Category::whereIn('parent', $id2)->pluck('id');
-        $it = Item::whereIn('category_id', $id3)->get();
+        $it = Item::whereIn('category_id', $id3)->paginate(36);
         return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk kategori '.$id1->name]);
     }
    
@@ -44,13 +44,13 @@ class ItemController extends Controller
     {
         $id1 = Marketplace::whereSlug($slug)->first();        
         $id2 = Feed::whereMarketplace_id($id1->id)->pluck('id');
-        $it = Item::whereIn('feed_id', $id2)->where('title','!=','')->get();        
+        $it = Item::whereIn('feed_id', $id2)->where('title','!=','')->paginate(36);    
         return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk dijual di '.$id1->name]);
     }
 
     public function list()
     {
-        $it = Item::where('title','!=', '')->orderBy('updated_at')->paginate(36);        
+        $it = Item::where('title','!=', '')->orderBy('updated_at','desc')->paginate(36);        
         return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Daftar semua produk']);
     }
 
@@ -58,12 +58,15 @@ class ItemController extends Controller
     public function publicShow($slug)
     {
         $item = Item::whereSlug($slug)->first();
+        //$item->update('views', [$item->views+1]);
         $images = explode("|", $item->images);
         $fi = str_replace("/rawimage/", "/m-".config('node_image_hsize')."-".config('node_image_vsize')."/", $images[0]);
 
         $thumbs = str_replace("/rawimage/", "/s-".config('thumb_hsize')."-".config('thumb_vsize')."/", $images);
-        // $item->update('views', [$item->views+1]);
-        return view('public.item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi ]);
+        
+        $r = Item::where('category_id', $item->category_id)->where('id', '!=', $item->id)->get()->sortByDesc('id');
+
+        return view('public.item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi, 'relateds' => $r ]);
     }
 
 
