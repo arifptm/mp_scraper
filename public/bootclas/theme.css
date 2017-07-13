@@ -7288,3 +7288,10 @@ h1.pagetitle{
 .nodel-sellprice{
   line-height: 2em;
 }
+
+.input-group-addon select{
+    background-color: #e6e6e6;
+    border: 0;
+    padding: 8px 4px;
+}
+

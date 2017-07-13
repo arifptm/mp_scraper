@@ -14,40 +14,17 @@ Katalog produk dan seller marketplace indonesia
 
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2" style="text-align: center">
-                        <div class="row">
+                        <div class="row" id='sc'>
                             <div class="col-sm-10 col-sm-offset-1">
-                                <form>
-                                    <div class="input-group">
-                                        
-                                        <input type="text" class="form-control col-sm-3" placeholder="e.g. BMW, 2 bed flat, sofa ">
-                                        
+                                {!! Form::open() !!}
+                                    <div class="input-group">                                     
+                                        {!! Form::text('search', null, [ 'placeholder'=> 'misal: iphone, toyota', 'class'=>'form-control col-sm-3', 'id'=>'autocomplete']) !!}
+                                    
                                         <div class=" input-group-addon hidden-xs">
-                                        {!! Form::select('category', array_merge(['Semua Kategory','sd'], $categories->pluck('name','id')->toArray()), ['class' => 'form-control']) !!}
-
-                                        
-
-
-                                            <div class="btn-group" >
-                                                <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
-                                                All categories <span class="caret"></span>
-                                                </button>
-
-                                                <ul class="dropdown-menu" role="menu">
-
-
-
-                                                    <li><a href="#">Cars, Vans & Motorbikes</a></li>
-                                                    <li><a href="#">Community</a></li>
-                                                    <li><a href="#">Flats & Houses</a></li>
-                                                    <li><a href="#">For Sale</a></li>
-                                                    <li><a href="#">Jobs</a></li>
-                                                    <li><a href="#">Pets</a></li>
-                                                    <li><a href="#">Services</a></li>
-                                                </ul>
-                                            </div>
+                                            {!! Form::select('category', $categories->pluck('name', 'id'), null, ['placeholder' => 'Pilih kategori']) !!}
                                         </div>
                                     </div>
-                                </form>    
+                                {!! Form::close() !!}
                             </div>
                         </div>
                     </div>
@@ -114,6 +91,9 @@ Katalog produk dan seller marketplace indonesia
 @endsection
 
 
+
+
+
 @section('right')
 <br class="hidden-sm hidden-xs">
 <br class="hidden-sm hidden-xs">
@@ -173,3 +153,18 @@ Katalog produk dan seller marketplace indonesia
 
 </div>
 @endsection
+
+@section('footer_script')
+<script>
+
+
+
+$('#autocomplete').autocomplete({
+    serviceUrl: 'https://restcountries.eu/rest/v1/lang/fr',
+    onSelect: function (suggestion) {
+        alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+    }
+});
+
+                                    </script>
+@endsection                                    
