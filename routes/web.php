@@ -28,6 +28,7 @@ Route::get('/aa/a', function(){
 	return App\Item::search('kamera')->where('title','!=', '')->get();
 });
 
+Route::get('/aa/b', 'SearchController@sc');
 
 
 

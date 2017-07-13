@@ -9,7 +9,7 @@
 
     <title>@yield('title')</title>
 
-    <link rel="stylesheet" href="{{ asset('bootstrap/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}">
     <!-- <link rel="stylesheet" href="{{ asset('plugins/font-awesome/css/font-awesome.min.css') }}"> -->
 
     <link rel="stylesheet" href="{{ asset('bootclas/theme.css') }}">

@@ -156,15 +156,11 @@ Katalog produk dan seller marketplace indonesia
 
 @section('footer_script')
 <script>
-
-
-
-$('#autocomplete').autocomplete({
-    serviceUrl: 'https://restcountries.eu/rest/v1/lang/fr',
-    onSelect: function (suggestion) {
-        alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
-    }
+    $('#autocomplete').autocomplete({
+        serviceUrl: 'http://scraper.dev/aa/b',
+            onSelect: function (suggestion) {
+            alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+        }
 });
-
-                                    </script>
+</script>
 @endsection                                    
