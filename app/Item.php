@@ -6,9 +6,21 @@ use Illuminate\Database\Eloquent\Model;
 use App\Category;
 use App\Seller;
 use App\Feed;
+use Laravel\Scout\Searchable;
 
 class Item extends Model
 {
+
+    use Searchable;
+    public $asYouType = true;
+
+    public function toSearchableArray()
+    {
+        $array = $this->toArray();
+
+        return $array;
+    }
+
     protected $guarded = ['id'];
 
     public function category()

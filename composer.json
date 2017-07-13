@@ -6,11 +6,15 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
+        "algolia/algoliasearch-client-php": "^1.18",
+        "ckeditor/ckeditor": "4.*",
         "laravel/framework": "5.4.*",
+        "laravel/scout": "^3.0",
         "laravel/tinker": "~1.0",
         "laravelcollective/html": "^5.4.0",
-        "weidner/goutte": "^1.0",
-        "ckeditor/ckeditor": "4.*"
+        "teamtnt/laravel-scout-tntsearch-driver": "^3.0",
+        "teamtnt/tntsearch": "^1.0",
+        "weidner/goutte": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

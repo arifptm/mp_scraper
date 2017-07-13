@@ -24,9 +24,9 @@ Route::get('/pg/{slug}', 'PageController@publicShow')->name('pages');
 Route::get('/{slug}', 'ItemController@publicShow')->name('nodes');
 
 
-
-
-
+Route::get('/aa/a', function(){
+	return App\Item::search('kamera')->where('title','!=', '')->get();
+});
 
 
 
