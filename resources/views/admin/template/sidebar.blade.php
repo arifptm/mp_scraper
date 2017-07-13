@@ -25,41 +25,46 @@
       <ul class="sidebar-menu">
         <!-- <li class="header">MAIN NAVIGATION</li> -->
         <li>
-          <a href="/marketplaces">
+          <a href="/admin/marketplaces">
             <i class="fa fa-table"></i> <span>Marketplace</span>
           </a>
         </li> 
 
         <li>
-          <a href="/feeds">
+          <a href="/admin/feeds">
             <i class="fa fa-circle-o"></i> <span>Feed</span>
           </a>
         </li>         
 
         <li>
-          <a href="/cities">
+          <a href="/admin/cities">
             <i class="fa fa-th"></i> <span>City</span>
           </a>
         </li>     
 
         <li>
-          <a href="/sellers">
+          <a href="/admin/sellers">
             <i class="fa fa-dashboard"></i> <span>Seller</span>
           </a>
         </li> 
 
         <li>
-          <a href="/categories">
+          <a href="/admin/categories">
             <i class="fa fa-envelope"></i> <span>Category</span>
           </a>
         </li>         
 
         <li>
-          <a href="/items">
+          <a href="/admin/items">
             <i class="fa fa-th"></i> <span>Item</span>
           </a>
         </li> 
-
+        <hr>
+        <li>
+          <a href="/admin/pages">
+            <i class="fa fa-th"></i> <span>Pages</span>
+          </a>
+        </li> 
 
 
         <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>

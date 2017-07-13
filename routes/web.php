@@ -19,7 +19,7 @@ Route::prefix('ls')->group(function(){
 });
 
 
-Route::get('/pg/{slug}', 'PageController@index')->name('pages');
+Route::get('/pg/{slug}', 'PageController@publicShow')->name('pages');
 
 Route::get('/{slug}', 'ItemController@publicShow')->name('nodes');
 
@@ -47,7 +47,16 @@ Route::get('/{slug}', 'ItemController@publicShow')->name('nodes');
 
 Route::get('/sc/toped', 'TokopediaController@index');
 
-Route::resource('/admin/marketplaces','MarketplaceController', ['except' => ['show']]);
+Route::prefix('admin')->group(function(){
+	Route::middleware([])->group(function () {
+		Route::resource('marketplaces','MarketplaceController', ['except' => ['show']]);
+		Route::resource('pages','PagesController', ['except' => []]);
+	});
+
+});
+
+
+
 Route::resource('/feeds','FeedController', ['except' => ['show']]);
 Route::resource('/cities','CityController', ['except' => ['show', 'create', 'store']]);
 

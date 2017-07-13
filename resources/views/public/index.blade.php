@@ -10,33 +10,44 @@ Katalog produk dan seller marketplace indonesia
         <div class="row">
             <div class="col-sm-12">
                 
-                <p class="main_description">Temukan barang yang sama dengan harga termurah secepat kilat !</p>
-
+                <div class="main_description">Temukan barang yang sama dengan harga termurah secepat kilat !</div>
 
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2" style="text-align: center">
                         <div class="row">
                             <div class="col-sm-10 col-sm-offset-1">
-                                <div class="input-group">
-                                    <span class="input-group-addon input-group-addon-text">Find me a</span>
-                                    <input type="text" class="form-control col-sm-3" placeholder="e.g. BMW, 2 bed flat, sofa ">
-                                    <div class=" input-group-addon hidden-xs">
-                                        <div class="btn-group" >
-                                            <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
-                                            All categories <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Cars, Vans & Motorbikes</a></li>
-                                                <li><a href="#">Community</a></li>
-                                                <li><a href="#">Flats & Houses</a></li>
-                                                <li><a href="#">For Sale</a></li>
-                                                <li><a href="#">Jobs</a></li>
-                                                <li><a href="#">Pets</a></li>
-                                                <li><a href="#">Services</a></li>
-                                            </ul>
+                                <form>
+                                    <div class="input-group">
+                                        
+                                        <input type="text" class="form-control col-sm-3" placeholder="e.g. BMW, 2 bed flat, sofa ">
+                                        
+                                        <div class=" input-group-addon hidden-xs">
+                                        {!! Form::select('category', array_merge(['Semua Kategory','sd'], $categories->pluck('name','id')->toArray()), ['class' => 'form-control']) !!}
+
+                                        
+
+
+                                            <div class="btn-group" >
+                                                <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
+                                                All categories <span class="caret"></span>
+                                                </button>
+
+                                                <ul class="dropdown-menu" role="menu">
+
+
+
+                                                    <li><a href="#">Cars, Vans & Motorbikes</a></li>
+                                                    <li><a href="#">Community</a></li>
+                                                    <li><a href="#">Flats & Houses</a></li>
+                                                    <li><a href="#">For Sale</a></li>
+                                                    <li><a href="#">Jobs</a></li>
+                                                    <li><a href="#">Pets</a></li>
+                                                    <li><a href="#">Services</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </form>    
                             </div>
                         </div>
                     </div>

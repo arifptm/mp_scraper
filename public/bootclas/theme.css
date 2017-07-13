@@ -4374,7 +4374,7 @@ a.list-group-item.active > .badge,
 .jumbotron .h1 {
   color: inherit;
 }
-.jumbotron p {
+.jumbotron .main_description {
   margin-bottom: 15px;
   font-size: 20px;
   font-weight: 200;
