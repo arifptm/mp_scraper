@@ -68,6 +68,12 @@ class ItemController extends Controller
 
         return view('public.item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi, 'relateds' => $r ]);
     }
+    
+
+    public function searchResult(Request $request){
+        $r = Item::search('$request')->get();
+        return redirect('/sdsd/sss');
+    }
 
 
 

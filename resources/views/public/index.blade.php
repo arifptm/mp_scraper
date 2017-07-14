@@ -16,7 +16,7 @@ Katalog produk dan seller marketplace indonesia
                     <div class="col-sm-8 col-sm-offset-2" style="text-align: center">
                         <div class="row" id='sc'>
                             <div class="col-sm-10 col-sm-offset-1">
-                                {!! Form::open() !!}
+                                {!! Form::open([ 'url' => '/q/search']) !!}
                                     <div class="input-group">                                     
                                         {!! Form::text('search', null, [ 'placeholder'=> 'misal: iphone, toyota', 'class'=>'form-control col-sm-3', 'id'=>'autocomplete']) !!}
                                     
@@ -157,10 +157,7 @@ Katalog produk dan seller marketplace indonesia
 @section('footer_script')
 <script>
     $('#autocomplete').autocomplete({
-        serviceUrl: 'http://scraper.dev/aa/b',
-            onSelect: function (suggestion) {
-            alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
-        }
-});
+        serviceUrl: 'suggest.json'
+    });
 </script>
 @endsection                                    

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Response;
 use App\Category;
+use File;
 
 
 
@@ -12,20 +13,21 @@ class SearchController extends Controller
 {
     public function sc()
 	{
-		$term = "camera";
+		$term = "a";
 		
 		$results = array();
 		
 		$queries = Category::
 			where('name', 'LIKE', '%'.$term.'%')
-			->take(25)->get();
+			->take(7)->get();
 		
 		
 
 		foreach ($queries as $query)
 		{
-		    $results[] = [ 'value' => $query->id, 'data' => $query->name ];
+		    $results[] = [ 'value' => $query->slug, 'data' => $query->name ];
 		}
-		return $results;
+		$d = Response::json(['suggestions' => $results])->getContent();
+	  	File::put(public_path('suggest.json'),$d);
 	}
 }

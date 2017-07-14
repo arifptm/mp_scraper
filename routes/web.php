@@ -29,21 +29,10 @@ Route::get('/aa/a', function(){
 });
 
 Route::get('/aa/b', 'SearchController@sc');
-
+Route::post('/q/search', 'ItemController@searchResult');
 
 
 //Route::get('/home', 'HomeController@index')->name('home');
-
-
-
-
-
-
-
-
-
-
-
 
 
 Route::get('/sc/toped', 'TokopediaController@index');

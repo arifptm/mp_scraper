@@ -1,7 +1,104 @@
 {
-    "suggestions": [
-        { "value": "United Arab Emirates", "data": "AE" },
-        { "value": "United Kingdom",       "data": "UK" },
-        { "value": "United States",        "data": "US" }
-    ]
+"suggestions": [
+{
+"value": "kamera-video",
+"data": "Kamera & Video"
+},
+{
+"value": "aksesoris-kamera",
+"data": "Aksesoris Kamera"
+},
+{
+"value": "lain-lain",
+"data": "Lain-lain"
+},
+{
+"value": "otomotif-industrial",
+"data": "Otomotif & Industrial"
+},
+{
+"value": "aksesoris-mobil",
+"data": "Aksesoris Mobil"
+},
+{
+"value": "aksesoris-eksterior",
+"data": "Aksesoris Eksterior"
+},
+{
+"value": "handphone-tablet",
+"data": "Handphone & Tablet"
+},
+{
+"value": "aksesoris-handphone",
+"data": "Aksesoris Handphone"
+},
+{
+"value": "aksesoris-lain",
+"data": "Aksesoris Lain"
+},
+{
+"value": "makanan-minuman",
+"data": "Makanan & Minuman"
+},
+{
+"value": "cemilan-snack",
+"data": "Cemilan / Snack"
+},
+{
+"value": "kesehatan-kecantikan",
+"data": "Kesehatan & Kecantikan"
+},
+{
+"value": "obat-suplemen",
+"data": "Obat & Suplemen"
+},
+{
+"value": "obat-obatan",
+"data": "Obat-Obatan"
+},
+{
+"value": "fashion-wanita",
+"data": "Fashion Wanita"
+},
+{
+"value": "sepatu",
+"data": "Sepatu"
+},
+{
+"value": "flat-shoes",
+"data": "Flat Shoes"
+},
+{
+"value": "komputer-laptop",
+"data": "Komputer & Laptop"
+},
+{
+"value": "aksesoris",
+"data": "Aksesoris"
+},
+{
+"value": "lain-lain",
+"data": "Lain-lain"
+},
+{
+"value": "produk-kecantikan-lainnya",
+"data": "Produk Kecantikan Lainnya"
+},
+{
+"value": "elektronik-alat-rumah-tangga",
+"data": "Elektronik & Alat Rumah Tangga"
+},
+{
+"value": "wallpaper-stiker",
+"data": "Wallpaper & Stiker"
+},
+{
+"value": "dapur",
+"data": "Dapur"
+},
+{
+"value": "peralatan-masak-lainnya",
+"data": "Peralatan Masak Lainnya"
+}
+]
 }
