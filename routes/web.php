@@ -16,6 +16,7 @@ Route::prefix('ls')->group(function(){
 	Route::get('city', 'CityController@list')->name('city_list');
 	Route::get('seller', 'SellerController@list')->name('seller_list');
 	Route::get('product', 'ItemController@list')->name('item_list');
+	Route::get('search', 'ItemController@searchResult')->name('search_result');
 });
 
 
@@ -40,7 +41,7 @@ Route::get('/sc/toped', 'TokopediaController@index');
 Route::prefix('admin')->group(function(){
 	Route::middleware([])->group(function () {
 		Route::resource('marketplaces','MarketplaceController', ['except' => ['show']]);
-		Route::resource('pages','PagesController', ['except' => []]);
+		Route::resource('pages','PageController', ['except' => []]);
 	});
 
 });

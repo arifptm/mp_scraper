@@ -11,31 +11,32 @@ Katalog produk dan seller marketplace indonesia
             <div class="col-sm-12">
                 
                 <div class="main_description">Temukan barang yang sama dengan harga termurah secepat kilat !</div>
-
-                <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2" style="text-align: center">
-                        <div class="row" id='sc'>
-                            <div class="col-sm-10 col-sm-offset-1">
-                                {!! Form::open([ 'url' => '/q/search']) !!}
-                                    <div class="input-group">                                     
-                                        {!! Form::text('search', null, [ 'placeholder'=> 'misal: iphone, toyota', 'class'=>'form-control col-sm-3', 'id'=>'autocomplete']) !!}
-                                    
-                                        <div class=" input-group-addon hidden-xs">
-                                            {!! Form::select('category', $categories->pluck('name', 'id'), null, ['placeholder' => 'Pilih kategori']) !!}
+                {!! Form::open([ 'url' => '/q/search']) !!}
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2" style="text-align: center">
+                            <div class="row" id='sc'>
+                                <div class="col-sm-10 col-sm-offset-1">
+                                   
+                                        <div class="input-group">                                     
+                                            {!! Form::text('search', null, [ 'placeholder'=> 'misal: iphone, toyota', 'class'=>'form-control col-sm-3', 'id'=>'autocomplete']) !!}
+                                        
+                                            <div class=" input-group-addon hidden-xs">
+                                                {!! Form::select('category', $categories->pluck('name', 'id'), null, ['placeholder' => 'Pilih kategori']) !!}
+                                            </div>
                                         </div>
-                                    </div>
-                                {!! Form::close() !!}
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <br />
-                <br />
-                <div class="row">
-                    <div class="col-sm-12" style="text-align: center">
-                        <a href="listings.html" class="btn btn-primary search-btn">Search</a>
-                    </div>
-                </div>                
+                    <br />
+                    <br />
+                    <div class="row">
+                        <div class="col-sm-12" style="text-align: center">
+                            {!! Form::submit('Cari',  ['class' => 'btn btn-primary search-btn']) !!}
+                        </div>
+                    </div>     
+                {!! Form::close() !!}           
                 <br />
                 <br />
                 <div class="row">

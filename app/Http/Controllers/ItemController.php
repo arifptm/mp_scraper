@@ -55,6 +55,55 @@ class ItemController extends Controller
     }
 
 
+
+
+
+
+
+
+
+
+
+    public function itemsList( $id = null )
+    {
+        $items = Item::orderBy('title', 'desc');
+        if ($id != null)
+        {
+            $i = new ItemsCategory;
+            $j = $i -> getItemFromCategory($id);
+            $items = Item::whereIn('category_id', $j);
+        }
+        $all = $items->where('title', '!=', '')->count();
+        return view('item.index', [ 'items' => $items->paginate(20), 'all' => $all]);
+    }
+
+
+
+
+
+
+
+
+    public function searchResult(Request $r){
+        
+
+        $s = Item::search($r->search)->paginate(36);
+        dd($s);
+        return view('public.item.item_by', ['items' => $s, 'pagetitle' => 'Hasil pencarian']);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function publicShow($slug)
     {
         $item = Item::whereSlug($slug)->first();
@@ -70,10 +119,7 @@ class ItemController extends Controller
     }
     
 
-    public function searchResult(Request $request){
-        $r = Item::search('$request')->get();
-        return redirect('/sdsd/sss');
-    }
+
 
 
 
@@ -115,18 +161,7 @@ class ItemController extends Controller
 
 
     
-    public function itemsList( $id = null )
-    {
-        $items = Item::orderBy('title', 'desc');
-        if ($id != null)
-        {
-            $i = new ItemsCategory;
-            $j = $i -> getItemFromCategory($id);
-            $items = Item::whereIn('category_id', $j);
-        }
-        $all = $items->where('title', '!=', '')->count();
-        return view('item.index', [ 'items' => $items->paginate(20), 'all' => $all]);
-    }
+
 
 
 

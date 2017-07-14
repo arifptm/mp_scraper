@@ -3,9 +3,7 @@
 @section('footer_script')
 <script src="{{ asset('plugins/blazy/blazy.min.js') }}"></script>
 <script>
-    
-        var bLazy = new Blazy();
-
+    var bLazy = new Blazy();
 </script>
 @endsection
 
@@ -14,7 +12,7 @@
 		<h1 class="pagetitle col-sm-12">{{ $pagetitle }} ({{ number_format( $items->total() ,0,",",".")}})</h1>
 	</div>
 	<div class="row">		
-		@foreach ($items as $item)			
+		@foreach ($items as $item)
 			<div class="col-xs-6 col-sm-4 col-md-3">		
 				<div class="card">
 					<div class="card-image">				
