@@ -11,7 +11,7 @@
 	    </div>
 	    
 		@if(count($child->child))
-        	@include('category.childs',['childs' => $child->child])
+        	@include('admin.category.childs',['childs' => $child->child])
         @endif
 	</li>
 @endforeach

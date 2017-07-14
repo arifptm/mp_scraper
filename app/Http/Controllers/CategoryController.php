@@ -15,7 +15,7 @@ class CategoryController extends Controller
         $r = Category::whereParent(null)->get();
         $c = Category::pluck('name','id')->all();
         
-        return view('category.index', ['roots' => $r, 'categories' => $c ]);        
+        return view('admin.category.index', ['roots' => $r, 'categories' => $c ]);        
        
        //return view('category.index', [ 'categories' => Category::orderBy('id', 'desc')->paginate(25) ]); 
     }

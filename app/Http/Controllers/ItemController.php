@@ -18,7 +18,7 @@ class ItemController extends Controller
     {
         $cid = City::whereSlug($slug)->first();
         $sid = Seller::whereCity_id($cid->id)->pluck('id');
-        $it = Item::whereIn('seller_id', $sid)->paginate(36);
+        $it = Item::whereIn('seller_id', $sid)->orderBy('updated_at','desc')->paginate(36);
         return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk dari '.$cid->name ]);
     }
 
@@ -26,7 +26,7 @@ class ItemController extends Controller
     public function itemBySeller( $slug = null )
     {
         $sid = Seller::where('slug', $slug)->first();
-        $it = Item::whereSeller_id($sid->id)->paginate(36);       
+        $it = Item::whereSeller_id($sid->id)->orderBy('updated_at','desc')->paginate(36);       
         return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk dijual oleh '.$sid->name  ]);   
     }
 
@@ -36,15 +36,26 @@ class ItemController extends Controller
         $id1 = Category::whereSlug($slug)->first();
         $id2 = Category::whereParent($id1->id)->pluck('id');
         $id3 = Category::whereIn('parent', $id2)->pluck('id');
-        $it = Item::whereIn('category_id', $id3)->paginate(36);
+        $id = $id3 -> merge($id2);
+        $it = Item::whereIn('category_id', $id)->orderBy('updated_at','desc')->paginate(36);
         return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk kategori '.$id1->name]);
     }
-   
+
+    public function itemBySubCategory( $slug = null )
+    {
+        $id1 = Category::whereSlug($slug)->first();        
+        $id2 = Category::whereParent($id1->id)->pluck('id');  
+        $id = $id2 -> merge($id1->id);
+        $it = Item::whereIn('category_id', $id)->orderBy('updated_at','desc')->paginate(36);
+        return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk kategori '.$id1->name]);
+    }
+      
+
     public function itemByMarketplace( $slug = null )
     {
         $id1 = Marketplace::whereSlug($slug)->first();        
         $id2 = Feed::whereMarketplace_id($id1->id)->pluck('id');
-        $it = Item::whereIn('feed_id', $id2)->where('title','!=','')->paginate(36);    
+        $it = Item::whereIn('feed_id', $id2)->where('title','!=','')->orderBy('updated_at','desc')->paginate(36);    
         return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk dijual di '.$id1->name]);
     }
 
@@ -53,6 +64,17 @@ class ItemController extends Controller
         $it = Item::where('title','!=', '')->orderBy('updated_at','desc')->paginate(36);        
         return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Daftar semua produk']);
     }
+
+
+    public function searchResult(Request $r){        
+        $s = Item::search($r->search)->paginate(36);
+        return view('public.item.item_by', ['items' => $s, 'pagetitle' => 'Hasil pencarian "'. $r->search.'"']);
+    }
+
+
+
+
+
 
 
 
@@ -76,28 +98,6 @@ class ItemController extends Controller
         $all = $items->where('title', '!=', '')->count();
         return view('item.index', [ 'items' => $items->paginate(20), 'all' => $all]);
     }
-
-
-
-
-
-
-
-
-    public function searchResult(Request $r){
-        
-
-        $s = Item::search($r->search)->paginate(36);
-        dd($s);
-        return view('public.item.item_by', ['items' => $s, 'pagetitle' => 'Hasil pencarian']);
-    }
-
-
-
-
-
-
-
 
 
 

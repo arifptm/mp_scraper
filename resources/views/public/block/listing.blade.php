@@ -42,7 +42,7 @@
 				    <div class="row directory-block">      
 				        <div class="col-sm-12">				            
 				            @foreach ($chunk as $category)       
-				                <a href="/itm/ca/{{ $category->slug }}">{{ str_limit($category->name,14) }}</a><br/>
+				                <a href="/itm/subca/{{ $category->slug }}">{{ str_limit($category->name,14) }}</a><br/>
 				            @endforeach 
 				        </div>
 				    </div>

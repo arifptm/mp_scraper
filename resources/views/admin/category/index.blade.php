@@ -1,7 +1,7 @@
-@extends('template.master')
+@extends('admin.template.master')
 
 @section('pagetitle')
-Categories {!! link_to('/categories/create', '+') !!}
+    Categories {!! link_to('/categories/create', '+') !!}
 @stop
 
 @section('content')
@@ -20,7 +20,7 @@ Categories {!! link_to('/categories/create', '+') !!}
                         </div>
                         
                         @if(count($root->child))
-                                @include('category.childs',['childs' => $root->child])
+                                @include('admin.category.childs',['childs' => $root->child])
                         @endif
                     </li>    
                 @endforeach

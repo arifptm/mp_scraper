@@ -4,10 +4,18 @@ Auth::routes();
 
 Route::get('/', 'PublicController@index')->name('frontpage');
 
+Route::get('/pg/{slug}', 'PageController@publicShow')->name('pages');
+Route::get('/{slug}', 'ItemController@publicShow')->name('nodes');
+
+Route::post('/q/search', 'ItemController@searchResult');
+
+
+
 Route::prefix('itm')->group(function(){
 	Route::get('ct/{slug}', 'ItemController@itemByCity')->name('itembycity');
 	Route::get('sl/{slug}', 'ItemController@itemBySeller')->name('itembyseller');
 	Route::get('ca/{slug}', 'ItemController@itemByCategory')->name('itembycategory');
+	Route::get('subca/{slug}', 'ItemController@itemBySubCategory')->name('itembysubcategory');
 	Route::get('mk/{slug}', 'ItemController@itemByMarketplace')->name('itembymarketplace');
 });
 
@@ -20,53 +28,26 @@ Route::prefix('ls')->group(function(){
 });
 
 
-Route::get('/pg/{slug}', 'PageController@publicShow')->name('pages');
-
-Route::get('/{slug}', 'ItemController@publicShow')->name('nodes');
-
-
-Route::get('/aa/a', function(){
-	return App\Item::search('kamera')->where('title','!=', '')->get();
-});
-
-Route::get('/aa/b', 'SearchController@sc');
-Route::post('/q/search', 'ItemController@searchResult');
-
-
-//Route::get('/home', 'HomeController@index')->name('home');
-
-
-Route::get('/sc/toped', 'TokopediaController@index');
 
 Route::prefix('admin')->group(function(){
 	Route::middleware([])->group(function () {
 		Route::resource('marketplaces','MarketplaceController', ['except' => ['show']]);
 		Route::resource('pages','PageController', ['except' => []]);
+		Route::resource('items','ItemController', ['except' => ['index']]);
+		Route::resource('feeds','FeedController', ['except' => ['show']]);
+		Route::resource('cities','CityController', ['except' => ['show', 'create', 'store']]);
+		Route::resource('sellers','SellerController', ['except' => ['show']]);
+		Route::resource('categories','CategoryController', ['except' => ['show','create','store']]);
 	});
-
 });
 
 
-
-Route::resource('/feeds','FeedController', ['except' => ['show']]);
-Route::resource('/cities','CityController', ['except' => ['show', 'create', 'store']]);
-
-Route::resource('/sellers','SellerController', ['except' => ['show']]);
-Route::resource('/categories','CategoryController', ['except' => ['show','create','store']]);
-
-Route::resource('/items','ItemController', ['except' => ['index']]);
-
-Route::get('/items', 'ItemController@ItemsList');
 Route::get('/items/ca/{id}','ItemController@index');
 Route::get('/items/ct/{id}','ItemController@cityList'); 
 
-
-
-
+Route::get('/sc/toped', 'TokopediaController@index');
 
 Route::get('/c/{slug}', 'CategoryController@publicIndex');
-
-
 
 Route::get('/seed/bl', 'SeedController@bukalapak');
 

@@ -12,17 +12,18 @@ class Item extends Model
 {
 
     use Searchable;
-    public $asYouType = true;
+    protected $guarded = ['id'];    
 
+    public $asYouType = true;
+   
     public function toSearchableArray()
     {
-        
-        $array = $this->toArray();
-
-        return $array;
+        return [
+        'id'=> $this->id,
+        'title'=> $this->title,
+        'details'=> $this->details
+        ];
     }
-
-    protected $guarded = ['id'];
 
     public function category()
     {
