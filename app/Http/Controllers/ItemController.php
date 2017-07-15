@@ -18,7 +18,7 @@ class ItemController extends Controller
     {
         $cid = City::whereSlug($slug)->first();
         $sid = Seller::whereCity_id($cid->id)->pluck('id');
-        $it = Item::whereIn('seller_id', $sid)->orderBy('updated_at','desc')->paginate(36);
+        $it = Item::whereIn('seller_id', $sid)->orderBy('updated_at','desc')->paginate(36);    
         return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk dari '.$cid->name ]);
     }
 
@@ -37,7 +37,7 @@ class ItemController extends Controller
         $id2 = Category::whereParent($id1->id)->pluck('id');
         $id3 = Category::whereIn('parent', $id2)->pluck('id');
         $id = $id3 -> merge($id2);
-        $it = Item::whereIn('category_id', $id)->orderBy('updated_at','desc')->paginate(36);
+        $it = Item::whereIn('category_id', $id)->where('title','!=', '')->orderBy('updated_at','desc')->paginate(36);
         return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk kategori '.$id1->name]);
     }
 
@@ -86,6 +86,9 @@ class ItemController extends Controller
 
 
 
+
+
+
     public function itemsList( $id = null )
     {
         $items = Item::orderBy('title', 'desc');
@@ -107,15 +110,22 @@ class ItemController extends Controller
     public function publicShow($slug)
     {
         $item = Item::whereSlug($slug)->first();
-        //$item->update('views', [$item->views+1]);
         $images = explode("|", $item->images);
         $fi = str_replace("/rawimage/", "/m-".config('node_image_hsize')."-".config('node_image_vsize')."/", $images[0]);
-
-        $thumbs = str_replace("/rawimage/", "/s-".config('thumb_hsize')."-".config('thumb_vsize')."/", $images);
+        $thumbs = str_replace("/rawimage/", "/s-".config('thumb_hsize')."-".config('thumb_vsize')."/", $images);        
         
-        $r = Item::where('category_id', $item->category_id)->where('id', '!=', $item->id)->get()->sortByDesc('id');
-
-        return view('public.item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi, 'relateds' => $r ]);
+        $relateds = Item::where('category_id', $item->category_id)->where('id', '!=', $item->id)->get()->sortByDesc('id');
+        //others
+        $sl = Seller::whereCity_id($item->seller->city->id)->pluck('id');
+        $others = Item::whereIn('seller_id', $sl)->orderBy('id','desc')->take(6)->get();
+        
+        return view('public.item.show', [ 
+            'item' => $item, 
+            'thumbs' => $thumbs, 
+            'full_image' => $fi, 
+            'relateds' => $relateds,
+            'others' => $others
+             ]);
     }
     
 

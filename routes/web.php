@@ -5,7 +5,6 @@ Auth::routes();
 Route::get('/', 'PublicController@index')->name('frontpage');
 
 Route::get('/pg/{slug}', 'PageController@publicShow')->name('pages');
-Route::get('/{slug}', 'ItemController@publicShow')->name('nodes');
 
 Route::post('/q/search', 'ItemController@searchResult');
 
@@ -53,3 +52,11 @@ Route::get('/seed/bl', 'SeedController@bukalapak');
 
 Route::get('/aa/{id}', 'CategoryController@getChild');
 Route::get('/sc/bl', 'TestController@bl');
+
+
+
+
+
+
+
+Route::get('/{slug}', 'ItemController@publicShow')->name('nodes');

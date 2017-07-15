@@ -10,31 +10,28 @@
     <title>@yield('title')</title>
 
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}">
-    <!-- <link rel="stylesheet" href="{{ asset('plugins/font-awesome/css/font-awesome.min.css') }}"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">     -->
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('bootclas/theme.css') }}">
-
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    
-
     @yield('head_script')
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-        <script src="../../assets/js/html5shiv.js"></script>
-        <script src="../../assets/js/respond.min.js"></script>
-        <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
     @include('public.theme.navbar')
 
-    @hasSection('jumbotron')
-        @yield('jumbotron')
-    @else
-        @include('public.theme.searchbar')
-    @endif    
+    @if (Route::currentRouteName() == 'frontpage')
+        @include('public.block.search_home')
+    @else    
+        @include('public.block.search_bar')
+    @endif
+   
 
     <div class="container">    
         <div class="row">    

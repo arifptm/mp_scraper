@@ -135,18 +135,21 @@ class TestController extends Controller
 		
 		$scraped['seller_id'] = $seller->id;		
 
-		if ($crawler->filter('.c-product-image-gallery__thumbnails')->count() != 0 )
+		//images
+        if ($crawler->filter('.c-product-image-gallery__thumbnails')->count() != 0 )
 		{
-			$image = $crawler->filter('a.c-product-image-gallery__thumbnail')
+			$imgs = $crawler->filter('a.c-product-image-gallery__thumbnail')
 			->each (function ($node){
-				return str_replace("/m-1000-1000/","/rawimage/",trim($node->attr('href')));
+				return str_replace("/m-1000-1000/","/m-300-300/",trim($node->attr('href')));
 			});
-            $scraped['images'] = implode("|", $image);
+            
 		} else {
-			$image = $crawler->filter('.c-product-image-gallery a.qa-pd-image')->attr('href');
-			$scraped['images'] = str_replace("/m-1000-1000/","/rawimage/",$image);
+			$imgs[] = $crawler->filter('.c-product-image-gallery a.qa-pd-image')->attr('href');
 		}
-    
+
+        $scraped['images'] = serialize($imgs);
+
+        //body
 		$crawler -> filter('.qa-pd-description a, .qa-pd-description span, .qa-pd-description img')->each(function($nodes){
 			foreach ($nodes as $node) {
         		$node->parentNode->removeChild($node);
@@ -171,6 +174,7 @@ class TestController extends Controller
     	$scraped['se'] = $se->Geevv($scraped['title']);
 
     	$scraped['processed'] = 1 ;
+        $scraped['views'] = (rand(10,100));
 
        
     	$selected_item->update($scraped);

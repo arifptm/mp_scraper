@@ -19,7 +19,7 @@
 							<div class="seller-data">
 								<div class="seller-city"><i class="fa fa-map-marker"></i> {{ $seller->city->name }}</div>
 							</div>	
-							<div class="seller-name bg-info">{{ str_limit($seller->name,20) }}</div>
+							<div class="seller-name bg-info"><a href="/itm/sl/{{ $seller->slug}}">{{ str_limit($seller->name,20) }}</a></div>
 						</div>
 					</div>	
 				@endforeach

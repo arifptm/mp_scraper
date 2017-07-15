@@ -42,18 +42,18 @@
 </div>
 
 <div class="row">
-    <div class="col-sm-9">	
+    <div class="col-sm-8">	
         <h1 class="nodetitle">{{ str_limit($item->title,110) }}</h1>
-        <p>Lokasi: <a href="/itm/ct/{{ $item->seller->city->slug }}">{{ $item->seller->city->name }}</a></p>
+        <p><i class="fa fa-map-marker"></i> <a href="/itm/ct/{{ $item->seller->city->slug }}">{{ $item->seller->city->name }}</a> |  <i class="fa fa-calendar"></i> {{ \Carbon\Carbon::parse($item->created_at)->format('d-m-Y') }}</p>
     </div>
-    <div class="col-sm-3">
-        <div class="price">
+    <div class="col-sm-4">
+        <div class="node-price">
             @if ($item->raw_price != null)
                 <span class="h4 coret">{{ $item->raw_price }}</span>
                 <span class="h4"><i class="fa fa-ellipsis-v"></i></span> 
                 <span class="h6"><strong>Discount {{ $item->discount }}%</strong></span>
             @endif
-            <div class="nodel-sellprice"><small>Rp.</small><strong>{{ $item->sell_price }}</strong></div>
+            <div class="node-sellprice"><small>Rp.</small><strong>{{ $item->sell_price }}</strong></div>
         </div>    
     </div>
 </div>		
@@ -66,19 +66,12 @@
 
 {{--start body--}}
 <hr>
-<div class="row">
+<div class="row marbot30">
     <div class="col-sm-7">                
         <div class="detail">{!! $item->details !!}</div>                
         <div class="body marbot30">{!! $item->body !!}</div>
         <div class="setitle">Situs yang berhubungan dengan {{ $item -> title }}</div>
         <div class="se">{!! $item->se !!}</div>
-        <div class="">
-            <span class="classified_links ">
-                <a class="link-info" href="#"><i class="fa fa-share"></i> Share</a>&nbsp;
-                <a class="link-info " href="#"><i class="fa fa-star"></i> Add to favorites</a>
-                &nbsp;<a class="link-info " href="#"><i class="fa fa-envelope-o"></i> Contact</a>
-                &nbsp;<a class="link-info fancybox-media" href="http://maps.google.com/?ll=48.85796,2.295231&amp;spn=0.003833,0.010568&amp;t=h&amp;z=17"><i class="fa fa-map-marker"></i> Map</a></span>
-        </div>
     </div>
 
     <div class="col-sm-5 center zoom-gallery">
@@ -90,18 +83,19 @@
 								</div>
 							</div>
                             
-                            
-                            <div class="row" id="gallery">
-                                <div id="thumbs" style="text-align:center;width:100%">
-                                @foreach($thumbs as $thumb)
-                                <div class="col-xs-4" style="margin-bottom: 10px;">	
-                                    <div class="thumbnail">
-                                        <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $thumb }}" alt=""  />
+                            @if(count($thumbs) > '1')
+                                <div class="row" id="gallery">
+                                    <div id="thumbs" style="text-align:center;width:100%">
+                                    @foreach($thumbs as $thumb)
+                                    <div class="col-xs-4" style="margin-bottom: 10px;">	
+                                        <div class="thumbnail">
+                                            <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $thumb }}" alt=""  />
+                                        </div>
+                                    </div>
+                                    @endforeach
                                     </div>
                                 </div>
-                                @endforeach
-                                </div>
-                            </div>
+                            @endif    
                         </div>
                     </div>
 	
@@ -111,9 +105,29 @@
                         <p>@if($item->sold_out == '0')di {{ $item->feed->marketplace->name }} @else SOLD OUT ! @endif</p>
                     </div>
                     <div class="">
-                        <h2>Produk sejenis</h2>
                     </div>
-                    <div class="related">
+                    
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Premium listings</div>
+                                <div class="panel-body">
+                                    <div class="featured-gallery">
+                                        <div class="row">
+                                                                   
+                                            <div class="col-sm-6 col-xs-4 featured-thumbnail" data-toggle="tooltip" data-placement="top" title="" data-original-title="Jual Kerupuk Krupuk Ikan Tenggiri Keriting Kecil Asli Khas Bangka 200 Gram My Snack Kualitas Premium seharga 28.800">
+                                                <a href="/kerupuk-krupuk-ikan-tenggiri-keriting-kecil-asli-khas-bangka-200-gram-my-snack-kualitas-premium" class="">
+                                                    <img alt="" src="https://s1.bukalapak.com/img/1463250221/s-400-280/2017_05_10T22_00_45_07_00.jpg">
+                                                </a>
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                     
+
+
+
+
+
                         @foreach($relateds as $related)
                             <div class="col-xs-6">
                                 <div class="">
@@ -123,7 +137,7 @@
                                 <div class=""><a href="/{{ $related->slug }}">{{ $related->title }}</a></div>
                             </div> 
                         @endforeach
-                    </div>
+           
     </div> 
 </div>	
 
@@ -132,7 +146,18 @@
     <div class="col-sm-12 listings">            	
 	   <div class="row">
 		    <div class="panel panel-default recent-listings hidden-xs">
-		  	   <div class="panel-heading">Recent Cars, Vans &amp; Motorbikes ads in London</div>
+		  	   <div class="panel-heading">Produk terbaru dari {{ $item->seller->city->name }}</div>
+               <div class="panel-body">
+                                    @foreach($others as $other)
+                                    <div class="col-xs-4" style="margin-bottom: 10px;"> 
+                                        <div class="thumbnail">
+                                            <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $other-> }}" alt=""  />
+                                        </div>
+                                    </div>
+                                    @endforeach
+
+
+               </div>
 		    </div>
 	   </div>
      </div>	

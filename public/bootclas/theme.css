@@ -7285,8 +7285,13 @@ h1.pagetitle{
   margin-top:10px;
 }
 
-.nodel-sellprice{
-  line-height: 2em;
+.node-price{
+  padding-top:10px;
+}
+.node-sellprice{
+  line-height: 28px;
+  font-size:24px;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .input-group-addon select{
@@ -7295,3 +7300,9 @@ h1.pagetitle{
     padding: 8px 4px;
 }
 
+.autocomplete-suggestions { border: 1px solid #999; background: #e6e6e6; overflow: auto; font-size: 1.2em;}
+.autocomplete-suggestion { padding: 2px 8px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #FFF; }
+.autocomplete-suggestions strong { font-weight: bold; color: #006cc; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
