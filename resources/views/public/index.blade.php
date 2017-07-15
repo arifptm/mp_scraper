@@ -55,7 +55,7 @@ Katalog produk dan seller marketplace indonesia
                         @foreach ($items as $item)                       
                         <div class="col-sm-6 col-xs-4 featured-thumbnail"  data-toggle="tooltip" data-placement="top" title="Jual {{ $item->title }} seharga {{ $item->sell_price }}">
                             <a href="/{{ $item->slug }}" class="">
-                                <img alt="" src="{{ str_replace('/rawimage/','/s-400-280/', explode('|', $item->images)[0]) }}" >
+                                <img alt="" src="{{ $item->images['teaser'][0] }}" >
                             </a>
                         </div>
                         @endforeach

@@ -1,7 +1,7 @@
-@extends('template.master')
+@extends('admin.template.master')
 
 @section('pagetitle')
-Feeds {!! link_to('/feeds/create', '+') !!} | {!! link_to('/seed/bl', 'Seed BL') !!}
+Feeds {!! link_to('admin/feeds/create', '+') !!} | {!! link_to('/seed/bl', 'Seed BL') !!}
 @stop
 
 @section('content')
@@ -36,7 +36,7 @@ Feeds {!! link_to('/feeds/create', '+') !!} | {!! link_to('/seed/bl', 'Seed BL')
                             <td>{{ $feed->replacer }}</td>
                             <td>
                                 <div class="inline-block">
-                                {!! link_to('/feeds/'.$feed->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
+                                {!! link_to('/admin/feeds/'.$feed->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
                                 {!! Form::open(['route' => ['feeds.destroy', $feed->id], 'method' => 'delete']) !!}
                                 {!! Form::button('Hapus',['type' => 'submit', 'class' => 'btn btn-default']) !!}
                                 {!! Form::close() !!}

@@ -13,10 +13,8 @@ class feedsTabel extends Seeder
      */
     public function run()
     {
-    	$mp = Marketplace::insert(['name' => 'Bukapalak' ]);
-    	dd($mp);
-
-
+    	$mp = Marketplace::create(['name' => 'Bukalapak', 'slug' => 'bukalapak' ]);
+    	
         $input = array(
 			array( 'marketplace_id' => $mp->id, 'url' => 'https://www.bukalapak.com/feed/feed.rss?category_id=2266', 'department' => 'Perawatan & Kecantikan', 'replacer' => 'Kesehatan & Kecantikan'),
 			array( 'marketplace_id' => $mp->id, 'url' => 'https://www.bukalapak.com/feed/feed.rss?category_id=2359', 'department' => 'Kesehatan', 'replacer' => 'Kesehatan & Kecantikan'),

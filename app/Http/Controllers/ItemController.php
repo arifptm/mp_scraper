@@ -71,7 +71,21 @@ class ItemController extends Controller
         return view('public.item.item_by', ['items' => $s, 'pagetitle' => 'Hasil pencarian "'. $r->search.'"']);
     }
 
-
+    public function publicShow($slug)
+    {
+        $item = Item::whereSlug($slug)->first();
+        
+        $relateds = Item::where('category_id', $item->category_id)->where('id', '!=', $item->id)->get()->sortByDesc('id');
+        
+        $sl = Seller::whereCity_id($item->seller->city->id)->pluck('id');
+        $others = Item::whereIn('seller_id', $sl)->orderBy('id','desc')->take(6)->get();
+        
+        return view('public.item.show', [ 
+            'item' => $item,         
+            'relateds' => $relateds,
+            'others' => $others
+             ]);
+    }
 
 
 
@@ -107,26 +121,7 @@ class ItemController extends Controller
 
 
 
-    public function publicShow($slug)
-    {
-        $item = Item::whereSlug($slug)->first();
-        $images = explode("|", $item->images);
-        $fi = str_replace("/rawimage/", "/m-".config('node_image_hsize')."-".config('node_image_vsize')."/", $images[0]);
-        $thumbs = str_replace("/rawimage/", "/s-".config('thumb_hsize')."-".config('thumb_vsize')."/", $images);        
-        
-        $relateds = Item::where('category_id', $item->category_id)->where('id', '!=', $item->id)->get()->sortByDesc('id');
-        //others
-        $sl = Seller::whereCity_id($item->seller->city->id)->pluck('id');
-        $others = Item::whereIn('seller_id', $sl)->orderBy('id','desc')->take(6)->get();
-        
-        return view('public.item.show', [ 
-            'item' => $item, 
-            'thumbs' => $thumbs, 
-            'full_image' => $fi, 
-            'relateds' => $relateds,
-            'others' => $others
-             ]);
-    }
+
     
 
 
@@ -178,11 +173,11 @@ class ItemController extends Controller
     public function show($id)
     {
     	$item = Item::find($id);
-        $images = explode("|", $item->images);
-        $fi = str_replace("/rawimage/", "/m-".config('node_image_hsize')."-".config('node_image_vsize')."/", $images[0]);
+        //$images = unresialize($item->images);
+        //$fi = str_replace("/rawimage/", "/m-".config('node_image_hsize')."-".config('node_image_vsize')."/", $images[0]);
 
-        $thumbs = str_replace("/rawimage/", "/m-".config('thumb_hsize')."-".config('thumb_vsize')."/", $images);
-    	$item->update(['views' => $item->views+1]);
+        //$thumbs = str_replace("/rawimage/", "/m-".config('thumb_hsize')."-".config('thumb_vsize')."/", $images);
+    	//$item->update(['views' => $item->views+1]);
         return view('item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi ]);
     }
 

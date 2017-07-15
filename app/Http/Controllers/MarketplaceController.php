@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Marketplace;
+use \App\Services\Slug;
 
 class MarketplaceController extends Controller
 {
@@ -30,6 +31,8 @@ class MarketplaceController extends Controller
 
     public function store(Request $request)
     {
+        $slug = new Slug;
+        $request['slug'] = $slug -> createSlug($request->name);
         Marketplace::create($request->all());
         return redirect('/admin/marketplaces');
     }

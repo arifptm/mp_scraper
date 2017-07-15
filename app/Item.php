@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Category;
+use App\Marketplace;
 use App\Seller;
 use App\Feed;
 use Laravel\Scout\Searchable;
@@ -24,6 +25,21 @@ class Item extends Model
         'details'=> $this->details
         ];
     }
+
+    public function getImagesAttribute($val)
+    {
+        $imgs = unserialize($val);
+        //bukalapak
+        $images['node'] = str_replace('/m-1000-1000/', '/s-300-300/', $imgs);
+        $images['teaser'] = str_replace('/m-1000-1000/', '/s-240-240/', $imgs);
+        $images['thumb'] = str_replace('/m-1000-1000/', '/s-50-50/', $imgs);
+
+        return $images;
+
+        
+    }
+
+
 
     public function category()
     {

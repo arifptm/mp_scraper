@@ -10,7 +10,7 @@
 	<script>
         $('#thumbs').delegate('img','click', function(){
 			var bLazy = new Blazy();
-			$('#largeImage').attr('class', 'b-lazy img-responsive').attr('src', 'https://cdn4.iconfinder.com/data/icons/black-icon-social-media/128/099317-google-g-logo.png').attr('data-src', $(this).attr('src').replace('/s-98-65/','/m-{{ config("node_image_hsize") }}-{{ config("node_image_vsize") }}/'));		
+			$('#largeImage').attr('class', 'b-lazy img-responsive').attr('src', 'https://cdn4.iconfinder.com/data/icons/black-icon-social-media/128/099317-google-g-logo.png').attr('data-src', $(this).attr('src').replace('/s-98-65/','/s-98-65/'));		
 		});
 
         ;(function() {
@@ -75,71 +75,64 @@
     </div>
 
     <div class="col-sm-5 center zoom-gallery">
-                    <div class="row center marbot15">
-                        <div class="col-sm-12">	
-							<div class="marbot15" style="text-align:center;max-height:280px;width: 100%;">
-								<div class="nodeimg_bg">
-									<img  id="largeImage" class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $full_image }}" alt="" style="margin:auto;"/>
-								</div>
-							</div>
+        <div class="row center marbot15">
+            <div class="col-sm-12">	
+				<div class="marbot15" style="text-align:center;max-height:300px;width: 100%;">
+					<div class="nodeimg_bg">
+						<img  id="largeImage" class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $item->images['node'][0] }}" alt="" style="margin:auto;"/>
+					</div>
+				</div>
                             
-                            @if(count($thumbs) > '1')
-                                <div class="row" id="gallery">
-                                    <div id="thumbs" style="text-align:center;width:100%">
-                                    @foreach($thumbs as $thumb)
-                                    <div class="col-xs-4" style="margin-bottom: 10px;">	
-                                        <div class="thumbnail">
-                                            <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $thumb }}" alt=""  />
-                                        </div>
-                                    </div>
-                                    @endforeach
+                @if(count($item->images['thumb']) > '1')
+                    <div class="row" id="gallery">
+                        <div id="thumbs" style="text-align:center;width:100%">
+                            @foreach($item->images['thumb'] as $thumb)
+                                <div class="col-xs-4" style="margin-bottom: 10px;">	
+                                    <div class="thumbnail">
+                                        <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $thumb }}" alt=""  />
                                     </div>
                                 </div>
-                            @endif    
+                            @endforeach
                         </div>
                     </div>
-	
-                    <div class="col-sm-12" style="text-align: center; margin: 0 auto">	
-                        <a  href="{{ $item->item_url}}" rel="no-follow" class="btn @if($item->sold_out == '1') disabled btn-danger @else btn-warning @endif" style="text-align: center;width: 180px;" role="button">Kunjungi toko</a>
-                        <br>
-                        <p>@if($item->sold_out == '0')di {{ $item->feed->marketplace->name }} @else SOLD OUT ! @endif</p>
+                @endif    
+                        
+                <div class="col-sm-12" style="text-align: center; margin: 0 auto">	
+                    <a  href="{{ $item->item_url}}" rel="no-follow" class="btn @if($item->sold_out == '1') disabled btn-danger @else btn-warning @endif" style="text-align: center;width: 180px;" role="button">Kunjungi toko</a>
+                    <br>
+                    <p>@if($item->sold_out == '0')di {{ $item->feed->marketplace->name }} @else SOLD OUT ! @endif</p>
+                </div>
+                
+                <div class=""></div>
+                
+                @if (count($relateds) > 0)  
+                <div class="panel panel-default">
+                    <div class="panel-heading">Premium listings</div>
+                    <div class="panel-body">
+                        <div class="featured-gallery">
+                            <div class="row">
+                                 @foreach($relateds as $related)
+                                    <div class="col-xs-6">
+                                        <div class="">
+                                            <img class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $related->images['teaser'][0] }}" alt=""  />
+                                        </div>    
+                                        <div class=""><a href="/{{ $related->slug }}">{{ $related->title }}</a></div>
+                                    </div> 
+                                @endforeach                                       
+ 
+                             </div>
+                        </div>
                     </div>
-                    <div class="">
-                    </div>
-                    
-                            <div class="panel panel-default">
-                                <div class="panel-heading">Premium listings</div>
-                                <div class="panel-body">
-                                    <div class="featured-gallery">
-                                        <div class="row">
-                                                                   
-                                            <div class="col-sm-6 col-xs-4 featured-thumbnail" data-toggle="tooltip" data-placement="top" title="" data-original-title="Jual Kerupuk Krupuk Ikan Tenggiri Keriting Kecil Asli Khas Bangka 200 Gram My Snack Kualitas Premium seharga 28.800">
-                                                <a href="/kerupuk-krupuk-ikan-tenggiri-keriting-kecil-asli-khas-bangka-200-gram-my-snack-kualitas-premium" class="">
-                                                    <img alt="" src="https://s1.bukalapak.com/img/1463250221/s-400-280/2017_05_10T22_00_45_07_00.jpg">
-                                                </a>
-                                            </div>
-                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                     
+                </div>
+                @endif
+            </div>         
+        </div>    
+    </div>
+</div>
 
 
 
 
-
-                        @foreach($relateds as $related)
-                            <div class="col-xs-6">
-                                <div class="">
-                                    <img class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ str_replace('/rawimage/','/s-200-150/',explode('|', $related->images)[0]) }}" alt=""  />
-                                </div>    
-
-                                <div class=""><a href="/{{ $related->slug }}">{{ $related->title }}</a></div>
-                            </div> 
-                        @endforeach
-           
-    </div> 
-</div>	
 
 
 <div class="row">
@@ -151,7 +144,7 @@
                                     @foreach($others as $other)
                                     <div class="col-xs-4" style="margin-bottom: 10px;"> 
                                         <div class="thumbnail">
-                                            <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $other-> }}" alt=""  />
+                                            <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $other->images['teaser'][0] }}" alt=""  />
                                         </div>
                                     </div>
                                     @endforeach

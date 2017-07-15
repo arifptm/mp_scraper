@@ -140,7 +140,7 @@ class TestController extends Controller
 		{
 			$imgs = $crawler->filter('a.c-product-image-gallery__thumbnail')
 			->each (function ($node){
-				return str_replace("/m-1000-1000/","/m-300-300/",trim($node->attr('href')));
+				return trim($node->attr('href'));
 			});
             
 		} else {
