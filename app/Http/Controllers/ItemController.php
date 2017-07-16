@@ -11,6 +11,9 @@ use App\Category;
 use App\Marketplace;
 use \App\Services\ItemsCategory;
 use \App\Services\ItemsCity;
+use SEOMeta;
+use OpenGraph;
+use Twitter;
 
 class ItemController extends Controller
 {

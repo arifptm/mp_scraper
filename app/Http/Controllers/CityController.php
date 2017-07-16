@@ -9,42 +9,40 @@ class CityController extends Controller
 {
     public function list()
     {
-        $c = City::paginate(60);        
+        $c = City::simplePaginate(60);        
         return view('public.city.list', ['cities' => $c]);
     }
 
-
-
     public function index()
     {
-        return view('city.index', [ 'cities' => City::orderBy('id', 'desc')->paginate(25) ]);
+        return view('admin.city.index', [ 'cities' => City::orderBy('id', 'desc')->simplePaginate(25) ]);
     }
 
     public function create()
     {
-        return view('city.create');
+        return view('admin.city.create');
     }
 
     public function store(Request $request)
     {
         $city = City::firstOrCreate(['name' => $request->name])->save();
-        return redirect('/cities');
+        return redirect('/admin/cities');
     }
 
     public function edit($id)
     {
-        return view('city.edit', [ 'city' => City::findOrFail($id) ]);
+        return view('admin.city.edit', [ 'city' => City::findOrFail($id) ]);
     }
 
     public function update(Request $request, $id)
     {
         City::findOrFail($id)->update($request->all());
-        return redirect('/cities');
+        return redirect('/admin/cities');
     }
 
     public function destroy($id)
     {
         City::findOrFail($id)->delete();
-        return redirect('/cities');
+        return redirect('/admin/cities');
     }
 }

@@ -1,4 +1,4 @@
-@extends('template.master')
+@extends('admin.template.master')
 
 @section('pagetitle')
 	Edit City
@@ -7,7 +7,7 @@
 @section('content')
 <div class="box box-primary">
     {!! Form::model($city, ['action'=> ['CityController@update', $city->id], 'method'=>'patch', 'role' => 'form']) !!}
-        @include('city/field')
+        @include('/admin/city/field')
     {!! Form::close() !!}
 </div>
 @endsection	

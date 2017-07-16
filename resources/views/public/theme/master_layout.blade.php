@@ -4,11 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="id" />
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
-
-    <title>@yield('title')</title>
-
+    @yield('meta')
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">     -->
 

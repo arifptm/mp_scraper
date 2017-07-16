@@ -1,7 +1,7 @@
 @extends('public.theme.master_layout')
 
-@section('title')
-Katalog produk dan seller marketplace indonesia
+@section('meta')
+       
 @endsection
 
 
@@ -48,7 +48,7 @@ Katalog produk dan seller marketplace indonesia
 
     <div class="col-xs-12 col-sm-4 col-md-12  col-lg-11 pull-right" >
         <div class="panel panel-default">
-            <div class="panel-heading">Premium listings</div>
+            <div class="panel-heading">Produk pilihan</div>
             <div class="panel-body">
                 <div class="featured-gallery">
                     <div class="row">

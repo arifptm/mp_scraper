@@ -7287,6 +7287,7 @@ h1.pagetitle{
 
 .node-price{
   padding-top:10px;
+  text-align: right;
 }
 .node-sellprice{
   line-height: 28px;

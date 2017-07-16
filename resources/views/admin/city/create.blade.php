@@ -1,4 +1,4 @@
-@extends('template.master')
+@extends('admin.template.master')
 
 @section('pagetitle')
 	Create City
@@ -6,8 +6,8 @@
 
 @section('content')
 <div class="box box-primary">
-    {!! Form::open(['url'=> '/cities', 'role' => 'form']) !!}
-        @include('city/field')
+    {!! Form::open(['url'=> '/admin/cities', 'role' => 'form']) !!}
+        @include('/admin/city/field')
     {!! Form::close() !!}
 </div>
 @endsection	

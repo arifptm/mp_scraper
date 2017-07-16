@@ -1,8 +1,30 @@
 @extends('public.theme.master_layout')
 
 
-@section('title')
-	{{ $item->title }}
+@section('meta')
+<title>{{ $item->title }}</title>
+    <meta name="description" content="{!! str_limit($item->title,60) .'. '. strip_tags(str_limit($item->body,60)) !!}"/>
+    <meta name="keywords" content=""/>
+    <meta name="language" content="id" />
+    <link http-equiv="x-dns-prefetch-control" content="on"/>
+    <link rel="dns-prefetch" href="//99toko.com"/>
+        
+    <meta property="og:type" content="product"/>
+    <meta property="og:site_name" content="{{ config('site_name') }}"/>
+    <meta property="og:title" content="{{ $item->title }}"/>
+    <meta property="og:description" content="{!! str_limit($item->title,60) .'. '. strip_tags(str_limit($item->body,60)) !!}"/>
+    <meta property="og:url" content="{{ $item->item_url }}"/>
+    <meta property="og:image" content="{{ $item->images['node'][0] }}"/>
+        
+    <meta name="twitter:title" content="{{ $item->title }}"/>
+    <meta name="twitter:site" content="@arifptm"/>
+    <meta name="twitter:card" content="product"/>
+    <meta name="twitter:label1" content="Category"/>
+    <meta name="twitter:data1" content="{{ $item->category->name }}"/>
+    <meta name="twitter:label2" content="Harga"/>
+    <meta name="twitter:data2" content="{{ 'Rp.'.$item->sell_price }}"/>
+    <meta name="twitter:label3" content="Lokasi"/>
+    <meta name="twitter:data3" content="{{ $item->seller->city->name }}"/>       
 @endsection	
 
 @section('footer_script')
@@ -31,19 +53,20 @@
             <li><a href="/itm/mk/{{ $item->feed->marketplace->slug }}" class="link-info"><i class="fa fa-chevron-left"></i> {{ $item->feed->marketplace->name }}</a></li>
             <li><a href="/">Beranda</a></li>
             @if ($item->category->parent()->first()->parent()->first())	
-            	<li><a href="#">{{ $item->category->parent()->first()->parent()->first()->name }}</a></li>
+            	<li><a href="/itm/ca/{{ $item->category->parent()->first()->parent()->first()->slug }}">{{ $item->category->parent()->first()->parent()->first()->name }}</a></li>
             @endif
             @if ($item->category->parent()->first())	
-            	<li><a href="#">{{ $item->category->parent()->first()->name }}</a></li>
+            	<li><a href="/itm/subca/{{ $item->category->parent()->first()->slug }}">{{ $item->category->parent()->first()->name }}</a></li>
             @endif	
             <li class="active">{{ $item->category->name }}</li>                       
         </ol>
     </div>
 </div>
 
+{{--title/top--}}
 <div class="row">
     <div class="col-sm-8">	
-        <h1 class="nodetitle">{{ str_limit($item->title,110) }}</h1>
+        <h1 class="nodetitle">{{ str_limit($item->title,120) }}</h1>
         <p><i class="fa fa-map-marker"></i> <a href="/itm/ct/{{ $item->seller->city->slug }}">{{ $item->seller->city->name }}</a> |  <i class="fa fa-calendar"></i> {{ \Carbon\Carbon::parse($item->created_at)->format('d-m-Y') }}</p>
     </div>
     <div class="col-sm-4">
@@ -142,9 +165,11 @@
 		  	   <div class="panel-heading">Produk terbaru dari {{ $item->seller->city->name }}</div>
                <div class="panel-body">
                                     @foreach($others as $other)
-                                    <div class="col-xs-4" style="margin-bottom: 10px;"> 
+                                    <div class="col-xs-2" style="margin-bottom: 10px;"> 
                                         <div class="thumbnail">
+                                            <a href="/{{ $other->slug }}">
                                             <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $other->images['teaser'][0] }}" alt=""  />
+                                            </a>
                                         </div>
                                     </div>
                                     @endforeach

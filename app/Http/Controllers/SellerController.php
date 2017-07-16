@@ -8,29 +8,20 @@ use App\City;
 
 class SellerController extends Controller
 {
-    
-    // public function cities()
-    // {
-    //     $cts = City::all();
-    //     foreach ($cts as $key=>$ct) {
-    //         $ctss[$ct->id] = $ct->name;
-    //     }
-    //     return $ctss;
-    // }
 
     public function list()
     {
-        return view('public.seller.list', [ 'sellers' => Seller::orderBy('id', 'desc')->paginate(20) ]);
+        return view('public.seller.list', [ 'sellers' => Seller::orderBy('id', 'desc')->simplePaginate(20) ]);
     }
     
     public function index()
     {
-        return view('seller.index', [ 'sellers' => Seller::orderBy('id', 'desc')->paginate(25) ]);
+        return view('admin.seller.index', [ 'sellers' => Seller::orderBy('id', 'desc')->SimplePaginate(25) ]);
     }
 
     public function create()
     {
-        return view('seller.create');        
+        return view('admin.seller.create');        
     }
 
     public function store(Request $request)
@@ -38,24 +29,24 @@ class SellerController extends Controller
         $city = City::firstOrCreate(['name' => $request->name])->save();
         $seller = Seller::firstOrCreate('');
         Seller::create($request->all());
-        return redirect('/sellers');
+        return redirect('/admin/sellers');
     }
 
     public function edit($id)
     {
         $seller = Seller::findOrFail($id);
-        return view('seller.edit', [ 'seller' => $seller, 'cities' => $this->cities() ]);
+        return view('admin.seller.edit', [ 'seller' => $seller ]);
     }
 
     public function update(Request $request, $id)
     {
         Seller::findOrFail($id)-> update($request->all());
-        return redirect('/sellers');
+        return redirect('/admin/sellers');
     }
 
     public function destroy($id)
     {
         Seller::findOrFail($id)->delete();
-        return redirect('/sellers');
+        return redirect('/admin/sellers');
     }
 }

@@ -1,4 +1,4 @@
-@extends('template.master')
+@extends('admin.template.master')
 
 @section('pagetitle')
 	Edit Seller
@@ -7,7 +7,7 @@
 @section('content')
 <div class="box box-primary">
     {!! Form::model($seller, ['action'=> ['SellerController@update', $seller->id], 'method'=>'patch', 'role' => 'form']) !!}
-        @include('seller/field')
+        @include('/admin/seller/field')
     {!! Form::close() !!}
 </div>
 @endsection	

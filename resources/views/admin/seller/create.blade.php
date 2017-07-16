@@ -6,8 +6,8 @@
 
 @section('content')
 <div class="box box-primary">
-    {!! Form::open(['url'=> '/sellers', 'role' => 'form']) !!}
-        @include('seller/field')
+    {!! Form::open(['url'=> '/admin/sellers', 'role' => 'form']) !!}
+        @include('/admin/seller/field')
     {!! Form::close() !!}
 </div>
 @endsection	

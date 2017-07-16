@@ -1,4 +1,4 @@
-@extends('template.master')
+@extends('admin.template.master')
 
 @section('pagetitle')
 Cities
@@ -24,7 +24,7 @@ Cities
                         @foreach($cities as $city)
                         <tr>    
 				            <td>{{ $city->id }}</td>
-                            <td>{!! link_to ('/items/ct/'.$city->id, $city->name) !!}</td>
+                            <td>{!! link_to ('/admin/items/ct/'.$city->id, $city->name) !!}</td>
                             <td>
                             @foreach($city->seller as $d)
                             {{ $d->name }} <br>
@@ -32,7 +32,7 @@ Cities
                             </td>
                             <td>
                                 <div class="inline-block">
-                                {!! link_to('/cities/'.$city->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
+                                {!! link_to('/admin/cities/'.$city->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
                                 
                                 {!! Form::open(['route' => ['cities.destroy', $city->id], 'method' => 'delete']) !!}
                                 {!! Form::button('Hapus',['type' => 'submit', 'class' => 'btn btn-default']) !!}

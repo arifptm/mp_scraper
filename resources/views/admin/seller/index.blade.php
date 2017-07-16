@@ -1,4 +1,4 @@
-@extends('template.master')
+@extends('admin.template.master')
 
 @section('pagetitle')
 Sellers {!! link_to('/sellers/create', '+') !!}
@@ -28,7 +28,7 @@ Sellers {!! link_to('/sellers/create', '+') !!}
                             <td><img src="{{ $seller->image_url }}" height="30" alt="" /></td>
                             <td>
                                 <div class="inline-block">
-                                {!! link_to('/sellers/'.$seller->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
+                                {!! link_to('/admin/sellers/'.$seller->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
                                 
                                 {!! Form::open(['route' => ['sellers.destroy', $seller->id], 'method' => 'delete']) !!}
                                 {!! Form::button('Hapus',['type' => 'submit', 'class' => 'btn btn-default']) !!}

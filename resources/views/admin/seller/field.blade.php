@@ -11,7 +11,7 @@
 
 	<div class="form-group">
 		{!! Form::label('city', 'Seller City',['class'=>'control-label']) !!}
-		{!! Form::text('city', null, ['class' => 'form-control']) !!}
+		{!! Form::text('city', $seller->city->name , ['class' => 'form-control']) !!}
 		@if ($errors->has('city'))
 		    <div class="label label-danger">
 		        {{ $errors->first('city') }}
