@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Category;
 use App\Item;
 
+
+
+
 class CategoryController extends Controller
 {
 
@@ -59,32 +62,32 @@ public function publicIndex($slug)
             ${'depth'.$key1} = Category::firstOrCreate(['name' => $name, 'level' => $key, 'parent' => ${'depth'.$key}['id'] ]);
             ${'depth'.$key1}->save();
         }    
-        return redirect('/categories');
+        return redirect('/admin/categories');
     }
 
     public function edit($id)
     {
-        return view('category.edit', [ 'category' => Category::findOrFail($id) ]);
+        return view('admin.category.edit', [ 'category' => Category::findOrFail($id) ]);
     }
 
     public function update(Request $request, $id)
     {
         Category::findOrFail($id)-> update($request->all());
-        return redirect('/categories');
+        return redirect('/admin/categories');
     }
 
     public function destroy($id)
     {
         Category::findOrFail($id)->delete();
-        return redirect('/categories');
+        return redirect('/admin/categories');
     }
 
 
     public function suggestion()
     {
-        Debugbar::info($object);
-        $c = Category::whereParent(null)->pluck('name');
-        return response()->json($c);
+        
+        $c = Category::all()->pluck('name')->toJson();
+        return $c;
     }
 
 }

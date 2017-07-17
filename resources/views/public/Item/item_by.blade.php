@@ -11,7 +11,7 @@
 
 @section('main')
 	<div class="row">
-		<h1 class="pagetitle col-sm-12">{{ $pagetitle }} ({{ number_format( $items->total() ,0,",",".")}})</h1>
+		<h1 class="pagetitle col-sm-12">{{ $pagetitle }}</h1>
 	</div>
 	<div class="row">		
 		@foreach ($items as $item)			

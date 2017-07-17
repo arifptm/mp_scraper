@@ -32,7 +32,7 @@ Route::prefix('admin')->group(function(){
 	Route::middleware([])->group(function () {
 		Route::resource('marketplaces','MarketplaceController', ['except' => ['show']]);
 		Route::resource('pages','PageController', ['except' => []]);
-		Route::resource('items','ItemController', ['except' => ['index']]);
+		Route::resource('items','ItemController', ['except' => []]);
 		Route::resource('feeds','FeedController', ['except' => ['show']]);
 		Route::resource('cities','CityController', ['except' => ['show', 'create', 'store']]);
 		Route::resource('sellers','SellerController', ['except' => ['show']]);

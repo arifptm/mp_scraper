@@ -7,6 +7,7 @@ use App\Category;
 use App\Marketplace;
 use App\Seller;
 use App\Feed;
+use App\Tag;
 use Laravel\Scout\Searchable;
 
 class Item extends Model
@@ -35,10 +36,17 @@ class Item extends Model
         $images['thumb'] = str_replace('/m-1000-1000/', '/s-50-50/', $imgs);
 
         return $images;
-
-        
     }
 
+    public function getTagsAttribute($val)
+    {
+        if ($val != '')
+        {
+            $tags = unserialize($val);
+            $t = Tag::whereIn('id', $tags)->get();            
+            return $t;
+        }    
+    }
 
 
     public function category()

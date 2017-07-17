@@ -1,7 +1,7 @@
-@extends('template.master')
+@extends('admin.template.master')
 
 @section('pagetitle')
-Items {!! link_to('/items/create', '+') !!} | {{ $all }}
+Items {!! link_to('/admin/items/create', '+') !!}
 @stop
 
 @section('content')
@@ -15,7 +15,7 @@ Items {!! link_to('/items/create', '+') !!} | {{ $all }}
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Marketplace{{ config('node_image_hzise') }}</th>
+                            <th>Marketplace</th>
                             
                             <th>Title</th>
                             <th>Category</th>
@@ -35,7 +35,7 @@ Items {!! link_to('/items/create', '+') !!} | {{ $all }}
                             <td>{{ $item->feed->marketplace->name }}</td>
                             
                             <td>
-                                    {{ $item->title ? link_to('/items/'. $item->id, $item->title) : "Unscraped" }}
+                                    {{ $item->title ? link_to('/admin/items/'. $item->id, $item->title) : "Unscraped" }}
                             
                             </td>
                             <td>{{ $item->category->name }}</td>
@@ -44,7 +44,7 @@ Items {!! link_to('/items/create', '+') !!} | {{ $all }}
                             <td>{{ $item->sell_price }}</td>
                             <td>
                                 <div class="inline-block">
-                                {!! link_to('/items/'.$item->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
+                                {!! link_to('/admin/items/'.$item->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
                                 {!! Form::open(['route' => ['items.destroy', $item->id], 'method' => 'delete']) !!}
                                 {!! Form::button('Hapus',['type' => 'submit', 'class' => 'btn btn-default']) !!}
                                 {!! Form::close() !!}
@@ -57,7 +57,7 @@ Items {!! link_to('/items/create', '+') !!} | {{ $all }}
             </div>
             
             <div class="box-footer">
-                
+                {{ $items->links() }}
             </div>
 
         </div>

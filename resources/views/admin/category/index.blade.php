@@ -1,7 +1,7 @@
 @extends('admin.template.master')
 
 @section('pagetitle')
-    Categories {!! link_to('/categories/create', '+') !!}
+    Categories {!! link_to('/admin/categories/create', '+') !!}
 @stop
 
 @section('content')
@@ -16,7 +16,7 @@
                         {{ $root->name }} 
                         <div class="pull-right">
                             <i class="fa fa-{{ $root->icon }}"></i>
-                            ({!! link_to('/categories/'.$root->id.'/edit', 'Edit') !!})
+                            ({!! link_to('/admin/categories/'.$root->id.'/edit', 'Edit') !!})
                         </div>
                         
                         @if(count($root->child))

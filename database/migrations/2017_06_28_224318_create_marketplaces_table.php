@@ -18,6 +18,8 @@ class CreateMarketplacesTable extends Migration
             $table->string('name',31)->unique();
             $table->string('slug',31)->nullable();
             $table->string('logo_url')->nullable();
+
+            $table->index(['name']);
             
             $table->engine = 'InnoDB';
         });

@@ -17,6 +17,14 @@ use Twitter;
 
 class ItemController extends Controller
 {
+    
+    //topmenu => produk
+    public function list()
+    {
+        $it = Item::where('title','!=', '')->orderBy('updated_at','desc')->simplePaginate(36);        
+        return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Daftar semua produk']);
+    }
+
     public function itemByCity( $slug = null )
     {
         $cid = City::whereSlug($slug)->first();
@@ -62,11 +70,7 @@ class ItemController extends Controller
         return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk dijual di '.$id1->name]);
     }
 
-    public function list()
-    {
-        $it = Item::where('title','!=', '')->orderBy('updated_at','desc')->paginate(36);        
-        return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Daftar semua produk']);
-    }
+
 
 
     public function searchResult(Request $r){        
@@ -104,8 +108,6 @@ class ItemController extends Controller
 
 
 
-
-
     public function itemsList( $id = null )
     {
         $items = Item::orderBy('title', 'desc');
@@ -117,42 +119,6 @@ class ItemController extends Controller
         }
         $all = $items->where('title', '!=', '')->count();
         return view('item.index', [ 'items' => $items->paginate(20), 'all' => $all]);
-    }
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public function sellers()
-    {
-        $sls = Seller::all();
-        foreach ($sls as $key=>$sl) {
-            $slss[$sl->id] = $sl->name;
-        }
-        return $ctss;
     }
 
     public function cityList($id)
@@ -168,8 +134,51 @@ class ItemController extends Controller
 
 
 
+
+
     
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // public function sellers()
+    // {
+    //     $sls = Seller::all();
+    //     foreach ($sls as $key=>$sl) {
+    //         $slss[$sl->id] = $sl->name;
+    //     }
+    //     return $ctss;
+    // }
+
+
+
+
+
+    
+    public function index()
+    {
+
+        $it = Item::where('title','!=','')->orderBy('updated_at','desc')->simplePaginate(36);
+
+        return view('admin.item.index', ['items' => $it]);
+
+    }
 
 
 
@@ -183,11 +192,6 @@ class ItemController extends Controller
     	//$item->update(['views' => $item->views+1]);
         return view('item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi ]);
     }
-
-    
-
-
-
 
 
     public function create()

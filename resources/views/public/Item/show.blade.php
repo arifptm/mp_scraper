@@ -29,16 +29,19 @@
 
 @section('footer_script')
 	<script src="{{ asset('/plugins/blazy/blazy.min.js') }}"></script>
-	<script>
+	
+    @if ($item->feed->marketplace->slug) == 'bukalapak')
+    <script>
         $('#thumbs').delegate('img','click', function(){
 			var bLazy = new Blazy();
-			$('#largeImage').attr('class', 'b-lazy img-responsive').attr('src', 'https://cdn4.iconfinder.com/data/icons/black-icon-social-media/128/099317-google-g-logo.png').attr('data-src', $(this).attr('src').replace('/s-98-65/','/s-98-65/'));		
+			    $('#largeImage').attr('class', 'b-lazy img-responsive').attr('src', 'https://cdn4.iconfinder.com/data/icons/black-icon-social-media/128/099317-google-g-logo.png').attr('data-src', $(this).attr('src').replace('/s-50-50/','/s-300-300/'));		
 		});
 
         ;(function() {
             var bLazy = new Blazy();
         })();
     </script>
+    @endif
 @endsection	
 
 
@@ -93,8 +96,13 @@
     <div class="col-sm-7">                
         <div class="detail">{!! $item->details !!}</div>                
         <div class="body marbot30">{!! $item->body !!}</div>
+        <div>
+            @if (count($item->tags) != 0)
+            Tags: @foreach($item->tags as $key=>$tag) {{ $tag->name }}@if(count($item->tags) != $key+1),@endif @endforeach
+            @endif
+        </div>
         <div class="setitle">Situs yang berhubungan dengan {{ $item -> title }}</div>
-        <div class="se">{!! $item->se !!}</div>
+        <div class="se">{{ $item->se }}</div>
     </div>
 
     <div class="col-sm-5 center zoom-gallery">
@@ -173,8 +181,6 @@
                                         </div>
                                     </div>
                                     @endforeach
-
-
                </div>
 		    </div>
 	   </div>

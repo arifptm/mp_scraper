@@ -17,6 +17,9 @@ class CreateTagsTable extends Migration
             $table->increments('id');
             $table->string('name',127);
             $table->string('slug',127);
+
+            $table->engine = 'InnoDB';
+
         });
     }
 

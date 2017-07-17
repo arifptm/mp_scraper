@@ -10,27 +10,24 @@ use App\Item;
 use App\Category;
 use App\Seller;
 use App\City;
+use App\Tag;
 use \App\Services\Slug;
 use \App\Services\SearchResult;
 
-use \App\Services\Tag;
+use \App\Services\TagService;
+
 
 class TestController extends Controller
 {
 
+   
     public function test(){
-        $as = new Tag;
-        $ad = $as->createTag('kami jual jajangmyeon mie hitam korea black bean noodle mikuya jepang halal termurah');
-        // foreach($ad as $a)
-        // {
-        //     foreach ($a as $as)
-        //         {
-        //             echo $as. " ";
-        //          }   
-        //          echo "<br>";
-        // }
+        //$i = Item::where('title', '!=', '')->first();
+        $as = new TagService;
+        $ad = $as->createTag(' satu 3 dua');
 
-dd($ad);
+
+        dd($ad);
     }
 
 
@@ -189,8 +186,18 @@ dd($ad);
     	$scraped['processed'] = 1 ;
         $scraped['views'] = (rand(10,100));
 
+        $tag = new TagService;
+        $tags = $tag->createTag($scraped['title']);
+        foreach($tags as $t){
+            $sl = new Slug;
+            $slug = $sl->createSlug($t);
 
+            $save_tag = Tag::firstOrCreate(['name' => $t, 'slug' => $slug]);
+            $save_tag->save();
+            $tag_id[] = $save_tag->id;
+        }
 
+        $scraped['tags'] = serialize($tag_id);
        
     	$selected_item->update($scraped);
     	dd($scraped);

@@ -27,6 +27,8 @@ class CreateSellersTable extends Migration
             $table->foreign('marketplace_id')->references('id')->on('marketplaces')
             ->onDelete('cascade');
 
+            $table->index(['slug', 'name']);
+
             $table->engine = 'InnoDB';
         });
     }
