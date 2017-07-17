@@ -1,7 +1,13 @@
 @extends('public.theme.master_layout')
 
 @section('meta')
-       
+<title>{{ config('site_name') }}</title>
+    <meta name="description" content="Tempat mencari dan memilih barang murah berkualitas di berbagai marketplace Indonesa secara cepat dan tepat. Bandingakan harga di Tokopedia, Bukalapak, Elevenia, Shopee, Bhineka, Qoo10 Indonesia dan lainnya."/>
+    <meta name="keywords" content="katalog produk, produk terbaru, daftar harga, harga murah, cek harga, harga diskon, promo murah, produk murah, perbandingan harga, jual beli, info harga, info lengkap, barang baru, barang bekas, mesin pencari, marketplace indonesia"/>
+    <link http-equiv="x-dns-prefetch-control" content="on"/>
+    <link rel="dns-prefetch" href="//99toko.com"/>
+        
+ 
 @endsection
 
 

@@ -60,3 +60,5 @@ Route::get('/sc/bl', 'TestController@bl');
 
 
 Route::get('/{slug}', 'ItemController@publicShow')->name('nodes');
+
+Route::get('/p/tes', 'TestController@test');

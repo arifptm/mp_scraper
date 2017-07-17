@@ -33,6 +33,7 @@ class CreateItemsTable extends Migration
             $table->integer('views')->unsigned()->default(0);
             $table->boolean('sold_out')->default(0);
             $table->boolean('checked')->default(0);
+            $table->string('tags')->nullable();
 
             $table->timestamps();
 

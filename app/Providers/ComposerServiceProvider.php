@@ -26,7 +26,7 @@ class ComposerServiceProvider extends ServiceProvider
                 $ra[] = [$r1[$i], $r2[$i], $r3[$i]];
             }
 
-            $item = Item::where('title','!=', '');
+            $item = Item::where('title', '!=', '');
             $it = $item->orderBy('id', 'desc')->take(6)->get();
             $rt = $item->orderBy('id', 'asc')->take(5)->get();
 

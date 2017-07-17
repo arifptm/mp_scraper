@@ -13,11 +13,24 @@ use App\City;
 use \App\Services\Slug;
 use \App\Services\SearchResult;
 
+use \App\Services\Tag;
+
 class TestController extends Controller
 {
 
     public function test(){
+        $as = new Tag;
+        $ad = $as->createTag('kami jual jajangmyeon mie hitam korea black bean noodle mikuya jepang halal termurah');
+        // foreach($ad as $a)
+        // {
+        //     foreach ($a as $as)
+        //         {
+        //             echo $as. " ";
+        //          }   
+        //          echo "<br>";
+        // }
 
+dd($ad);
     }
 
 
@@ -175,6 +188,8 @@ class TestController extends Controller
 
     	$scraped['processed'] = 1 ;
         $scraped['views'] = (rand(10,100));
+
+
 
        
     	$selected_item->update($scraped);

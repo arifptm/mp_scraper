@@ -78,4 +78,13 @@ public function publicIndex($slug)
         Category::findOrFail($id)->delete();
         return redirect('/categories');
     }
+
+
+    public function suggestion()
+    {
+        Debugbar::info($object);
+        $c = Category::whereParent(null)->pluck('name');
+        return response()->json($c);
+    }
+
 }
