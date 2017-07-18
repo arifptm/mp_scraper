@@ -16,7 +16,7 @@ class CreateFeedsTable extends Migration
         Schema::create('feeds', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('marketplace_id')->unsigned();
-            $table->string('url')->unique();
+            $table->string('url');
             $table->string('department',63);
             $table->string('replacer',63);
             $table->boolean('processed')->default(0);
