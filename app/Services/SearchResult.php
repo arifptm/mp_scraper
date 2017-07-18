@@ -19,7 +19,7 @@ class SearchResult
 				$title = trim($node->filter('.title')->text());
 				$item['title'] = str_replace("...", "", $title);
 				$desc = trim($node->filter('p')->text());
-				$desc = strip_tags($desc);
+				$desc = strip_tags($desc,"<p><br><a>");
 				$item['desc'] =  str_replace("...", "", $desc);
 				return $item;
 			}

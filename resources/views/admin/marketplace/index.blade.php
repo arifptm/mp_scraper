@@ -26,7 +26,7 @@ Marketplace {!! link_to('/admin/marketplaces/create', '+') !!}
                         @foreach($marketplaces as $marketplace)
                         <tr>    
 				            <td>{{ $marketplace->id }}</td>
-                            <td>{{ $marketplace->name }}</td>
+                            <td>{{ $marketplace->name }}/{{ $marketplace->slug }}</td>
                             <td><img src="{{ $marketplace->logo_url }}" alt="" width="100" /></td>
                             <td>{{ $marketplace->feed->count() }} </td>
                             <td>
