@@ -19,7 +19,7 @@ class TagService {
 			' dijual '
 		];
 
-		$filter2 = ['.',',',';','(',')','[',']','|'];
+		$filter2 = ['.',',',';','(',')','[',']','|','!','-','"','/'];
 		
 		$string = trim($string);
 		$string = preg_replace('/[^a-zA-Z0-9]\s/',"", $string);

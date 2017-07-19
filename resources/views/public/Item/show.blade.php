@@ -36,7 +36,6 @@
 			var bLazy = new Blazy();
 			    $('#largeImage').attr('class', 'b-lazy img-responsive').attr('src', 'https://cdn4.iconfinder.com/data/icons/black-icon-social-media/128/099317-google-g-logo.png').attr('data-src', $(this).attr('src').replace('/s-50-50/','/s-300-300/'));		
 		});
-
         ;(function() {
             var bLazy = new Blazy();
         })();
@@ -46,8 +45,6 @@
 
 
 @section('main')
-
-            
 
 {{--breadcrumb--}}
 <div class="row">
@@ -110,7 +107,7 @@
             <div class="col-sm-12">	
 				<div class="marbot15" style="text-align:center;max-height:300px;width: 100%;">
 					<div class="nodeimg_bg">
-						<img  id="largeImage" class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $item->images['node'][0] }}" alt="" style="margin:auto;"/>
+						<img  id="largeImage" class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $item->images['node'][0] }}" alt="" style="margin:auto;" />
 					</div>
 				</div>
                             
@@ -172,15 +169,15 @@
 		    <div class="panel panel-default recent-listings hidden-xs">
 		  	   <div class="panel-heading">Produk terbaru dari {{ $item->seller->city->name }}</div>
                <div class="panel-body">
-                                    @foreach($others as $other)
-                                    <div class="col-xs-2" style="margin-bottom: 10px;"> 
-                                        <div class="thumbnail">
-                                            <a href="/{{ $other->slug }}">
-                                            <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $other->images['teaser'][0] }}" alt=""  />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    @endforeach
+                    @foreach($others as $other)
+                    <div class="col-xs-2" style="margin-bottom: 10px;"> 
+                        <div class="thumbnail">
+                            <a href="/{{ $other->slug }}">
+                            <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $other->images['teaser'][0] }}" alt=""  />
+                            </a>
+                        </div>
+                    </div>
+                    @endforeach
                </div>
 		    </div>
 	   </div>

@@ -1,10 +1,5 @@
 $(function(){
-
-
-    
     $('[data-toggle="tooltip"]').tooltip();
-    
-
 });
 
 /**************************
@@ -60,8 +55,7 @@ $(function(){
     $('textarea.expand').focusout(function () {
         $(this).animate({ height: textarea_height }, 500);
     });
-
-    
+ 
     $(document)
         .on('change', '.btn-file :file', function() {
             $('#file-select').attr('src', 'css/images/loading.png');
@@ -70,7 +64,4 @@ $(function(){
                 label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
             input.trigger('fileselect', [numFiles, label, input]);
     });
-
-
 });
-

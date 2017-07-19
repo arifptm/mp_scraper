@@ -10,7 +10,7 @@
 
     @yield('meta')
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('bootclas/theme.css') }}">
     
@@ -51,12 +51,11 @@
     </div>                        
     
     @include('public.theme.footer')
-
-    <script src="{{ asset('plugins/jQuery/jquery-2.2.3.min.js') }}"></script>
-    <script src="{{ asset('bootclas/bootstrap.js') }}"></script>
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"</script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js" ></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="{{ asset('plugins/jQuery-autocomplete/jQuery-autocomplete.min.js') }}"></script>
     <script src="{{ asset('js/global.js') }}"></script>
-
     @yield('footer_script')
 </body>
 </html>
