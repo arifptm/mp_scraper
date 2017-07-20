@@ -79,7 +79,7 @@ class TestController extends Controller
     	
     	$crawler = Goutte::request('GET', $item_url);
     	
-    	$scraped['title']= $crawler->filter('h1')->text();
+    	$scraped['title']= str_limit($crawler->filter('h1')->text(),190);
 
     	$slug = new Slug;
     	$scraped['slug'] = $slug->createSlug($scraped['title']);
