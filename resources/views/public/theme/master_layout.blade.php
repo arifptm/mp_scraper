@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="language" content="id" />
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+    <link http-equiv="x-dns-prefetch-control" content="on"/>
+    <link rel="dns-prefetch" href="//{{ config('site_domain') }}"/>
 
     @yield('meta')
-    
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('bootclas/theme.css') }}">

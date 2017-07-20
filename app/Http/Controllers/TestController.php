@@ -21,13 +21,12 @@ class TestController extends Controller
 {
 
    
-    public function test(){
-        //$i = Item::where('title', '!=', '')->first();
-        $as = new TagService;
-        $ad = $as->createTag(' satu 3 dua');
-
-
-        dd($ad);
+    public function cek(){
+        
+        $url = 'https://www.bukalapak.com/p/perlengkapan-kantor/alat-kantor/mesin-pemotong-kertas/1tgs2p-jual-origin-hd-858-mesin-pemotong-kertas-mesin-potong-kertas-paper-cutter-paper-cutting-mesin-penghancur-kertas-paper-shredder-alat-potong-kertas-mesin-jilid-mesin-laminating-rotary-trimmer-potong-kertas-guilotine';
+        $crawler = Goutte::request('GET', $url);
+        $c = str_limit($crawler->filter('h1')->text(),190,'');
+        return $c;   
     }
 
 
@@ -53,7 +52,10 @@ class TestController extends Controller
 					});   	
 
 	     	foreach ($urls as $url) {
-	     		$d = Item::firstOrCreate(['item_url' => trim($url), 'feed_id' => $selected_feed->id]);
+	     		$url = str_replace('m.bukalapak','www.bukalapak', $url);
+                $url = trim($url);
+
+                $d = Item::firstOrCreate(['item_url' => $url, 'feed_id' => $selected_feed->id]);
 	     	}	
 
     		Feed::whereId($selected_feed->id)->update(['processed' => 1]);
@@ -87,6 +89,8 @@ class TestController extends Controller
     	$cats = $crawler->filter('ul.c-breadcrumb a')->each (function ($node){
 			return trim($node->text());
 		});
+
+
 
 		$cats = array_slice($cats, 1);
 

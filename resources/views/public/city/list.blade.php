@@ -1,9 +1,11 @@
 @extends('public.theme.master_layout')
 
-@section('title')
-	Dafter lokasi seller olshop indonesia
+@section('meta')
+	<title>Daftar lokasi kota seller / penjual olshop di seluruh marketplace yang ada di Indonesia</title>
+    <meta name="language" content="id" />
+    <meta name="description" content="Daftar lokasi kota seller/penjual olshop di seluruh Marketplace yang ada di Indonesia, Tokopedia, Bukalapak, Lazada, Blibli, MatahariMall, Elevenia, Shopee, dan sebagainya."/>
+    <meta name="keywords" content="Daftar lokasi seller, daftar kota penjual, lokasi olshop, Marketplace Indonesia, Tokopedia, Bukalapak, Lazada, Blibli, MatahariMall, Elevenia, Shopee"/>
 @endsection
-
 
 @section('main')
 	<h1 class="pagetitle">Daftar lokasi seller</h1>

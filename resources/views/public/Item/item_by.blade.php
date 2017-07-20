@@ -1,17 +1,21 @@
 @extends('public.theme.master_layout')
 
+@section('meta')
+	<title>{{ $meta['title'] }}</title>
+    <meta name="description" content="{{ $meta['description'] }}"/>
+    <meta name="keywords" content="{{ $meta['keywords'] }} "/>
+@endsection
+
 @section('footer_script')
 <script src="{{ asset('plugins/blazy/blazy.min.js') }}"></script>
-<script>
-    
+<script>  
         var bLazy = new Blazy();
-
 </script>
 @endsection
 
 @section('main')
 	<div class="row">
-		<h1 class="pagetitle col-sm-12">{{ $pagetitle }}</h1>
+		<h1 class="pagetitle col-sm-12">{{ $meta['pagetitle'] }}</h1>
 	</div>
 	<div class="row">		
 		@foreach ($items as $item)			

@@ -2,14 +2,18 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">               
-                <div class="main_description">Temukan barang yang sama dengan harga termurah secepat kilat !</div>
+                <div class="main_description">
+                    Temukan barang yang sama dengan harga termurah secepat kilat !
+                </div>
                 {!! Form::open([ 'url' => '/q/search']) !!}
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2" style="text-align: center">
                             <div class="row">
                                 <div class="col-sm-10 col-sm-offset-1">
                                     <div class="input-group">
-                                        <span class="input-group-addon input-group-addon-text">Find me a</span>
+                                        <span class="input-group-addon input-group-addon-text">
+                                            Find me a
+                                        </span>
                                         {!! Form::text('search', null, [ 'placeholder'=> 'misal: iphone, toyota', 'class'=>'form-control col-sm-3', 'id'=>'autocomplete']) !!}
                                         <div class=" input-group-addon hidden-xs">
                                             {!! Form::select('category', $categories->pluck('name', 'id'), null, ['placeholder' => 'Pilih kategori']) !!}

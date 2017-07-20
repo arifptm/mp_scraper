@@ -1,13 +1,10 @@
 @extends('public.theme.master_layout')
 
 @section('meta')
-    <title>{{ config('site_name') }}</title>
+    <title>{{ config('site_title') }}</title>
     <meta name="language" content="id" />
     <meta name="description" content="{{ config('site_description') }}"/>
     <meta name="keywords" content="{{ config('site_keywords') }}"/>
-
-    <link http-equiv="x-dns-prefetch-control" content="on"/>
-    <link rel="dns-prefetch" href="//{{ config('site_domain') }}"/>
         
     <meta property="og:type" content="catalog"/>
     <meta property="og:site_name" content="{{ config('site_name') }}"/>
