@@ -82,7 +82,7 @@ class ItemController extends Controller
         ];
         
         return view('public.item.item_by', ['items' => $it, 'meta' => $meta ]);
-    }
+    } 
 
     public function itemBySubCategory( $slug = null )
     {
