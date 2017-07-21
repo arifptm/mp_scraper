@@ -33,7 +33,7 @@ class TestController extends Controller
 
         $mp = Marketplace::whereName($input)->first(); 
         
-        $item_url = 'https://www.bukalapak.com/dijual-cable-vga-premium-quality-20-m-promo-20170720-p-97dafi';
+        $item_url = 'https://www.bukalapak.com/p/sepeda/equipment-tools/carrier-hanger-bike-stand/2n1sa7-jual-gantungan-sepeda-dinding-bike-hanger-hooks-import';
         
         $crawler = Goutte::request('GET', $item_url);
         
@@ -139,8 +139,8 @@ class TestController extends Controller
 
         $scraped['details'] = "<dl>".implode($details)."</dl>";
         
-        $se = new SearchResult;
-        $scraped['se'] = $se->Geevv($scraped['title']);
+        //$se = new SearchResult;
+        //$scraped['se'] = $se->Geevv($scraped['title']);
 
         $scraped['processed'] = 1 ;
         $scraped['views'] = (rand(10,100));
@@ -214,7 +214,7 @@ class TestController extends Controller
     	
     	$crawler = Goutte::request('GET', $item_url);
     	
-    	$scraped['title']= str_limit($crawler->filter('h1')->text(),190);
+    	$scraped['title']= str_limit($crawler->filter('h1')->text(),190,'');
 
     	$slug = new Slug;
     	$scraped['slug'] = $slug->createSlug($scraped['title']);
