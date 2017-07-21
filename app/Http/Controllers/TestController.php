@@ -23,10 +23,13 @@ class TestController extends Controller
    
     public function cek(){
         
-        $url = 'https://www.bukalapak.com/p/perlengkapan-kantor/alat-kantor/mesin-pemotong-kertas/1tgs2p-jual-origin-hd-858-mesin-pemotong-kertas-mesin-potong-kertas-paper-cutter-paper-cutting-mesin-penghancur-kertas-paper-shredder-alat-potong-kertas-mesin-jilid-mesin-laminating-rotary-trimmer-potong-kertas-guilotine';
-        $crawler = Goutte::request('GET', $url);
+        $urlsq = 'https://www.bukalapak.com/dijual-cable-vga-premium-quality-20-m-promo-20170720-p-97dafi';
+        $crawler = Goutte::request('GET', $urlsq);
         $c = str_limit($crawler->filter('h1')->text(),190,'');
-        return $c;   
+        if (Goutte::getResponse($crawler)->getStatus() == 404)
+        {
+            return 'gak ada';
+        }  
     }
 
 
@@ -88,9 +91,7 @@ class TestController extends Controller
 
     	$cats = $crawler->filter('ul.c-breadcrumb a')->each (function ($node){
 			return trim($node->text());
-		});
-
-
+		});    
 
 		$cats = array_slice($cats, 1);
 
@@ -103,7 +104,10 @@ class TestController extends Controller
             if (count($rep) != 0)
             {
                 $cat = $rep->replacer;
+                
             }
+
+            echo $cat."<br>";
 
             $slug = new Slug;
             $cat_slug = $slug -> createSlug($cat);
@@ -116,7 +120,8 @@ class TestController extends Controller
             
             ${'depth'.$key1} -> save();
         }    
-             
+        return;
+
       	$scraped['category_id'] = ${'depth'.$key1}->id;
 
 		if (($crawler->filter('.c-product-detail-price__original .amount') === true ) AND ($crawler->filter('.c-product-detail-price__reduced .amount') === true )){
