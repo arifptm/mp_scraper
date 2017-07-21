@@ -144,7 +144,7 @@
                                         <div class="">
                                             <img class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $related->images['teaser'][0] }}" alt=""  />
                                         </div>    
-                                        <div class=""><a href="/{{ $related->slug }}">{{ $related->title }}</a></div>
+                                        <div class="card-title"><a href="/{{ $related->slug }}">{{ $related->title }}</a></div>
                                     </div> 
                                 @endforeach                                       
  
@@ -171,9 +171,11 @@
                <div class="panel-body">
                     @foreach($others as $other)
                     <div class="col-xs-2" style="margin-bottom: 10px;"> 
-                        <div class="thumbnail">
+                        <div class="thumbnail"><br>
                             <a href="/{{ $other->slug }}">
-                            <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $other->images['teaser'][0] }}" alt=""  />
+                                <div data-toggle="tooltip" data-placement="top" title="Jual {{ $other->title }} seharga {{ $other->sell_price }} di {{ $other->seller->city->name }}">
+                                <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $other->images['teaser'][0] }}" alt=""  />
+                                </div>
                             </a>
                         </div>
                     </div>

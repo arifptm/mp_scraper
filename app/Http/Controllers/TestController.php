@@ -127,7 +127,7 @@ class TestController extends Controller
         $scraped['body'] = trim($crawler->filter('.qa-pd-description')->html());
         //dd($scraped);    
         
-<<<<<<< HEAD
+
         $details = $crawler->filter('.c-product-spec dt, .c-product-spec dd')->each(function($node, $key){
             $odd = $key%2;
                 if($odd == 1){
@@ -160,15 +160,6 @@ class TestController extends Controller
        
         //$selected_item->update($scraped);
         dd($scraped);
-=======
-        $urlsq = 'https://www.bukalapak.com/dijual-cable-vga-premium-quality-20-m-promo-20170720-p-97dafi';
-        $crawler = Goutte::request('GET', $urlsq);
-        $c = str_limit($crawler->filter('h1')->text(),190,'');
-        if (Goutte::getResponse($crawler)->getStatus() == 404)
-        {
-            return 'gak ada';
-        }  
->>>>>>> d43160c86c88c972c21a47d4a6a9a77fba435fb3
     }
 
 

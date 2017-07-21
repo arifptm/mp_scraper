@@ -106,8 +106,17 @@ class ItemController extends Controller
     {
         $id1 = Marketplace::whereSlug($slug)->first();        
         $id2 = Feed::whereMarketplace_id($id1->id)->pluck('id');
-        $it = Item::whereIn('feed_id', $id2)->where('title','!=','')->orderBy('updated_at','desc')->paginate(36);    
-        return view('public.item.item_by', ['items' => $it, 'pagetitle' => 'Produk dijual di '.$id1->name]);
+        $it = Item::whereIn('feed_id', $id2)->where('title','!=','')->orderBy('updated_at','desc')->simplePaginate(36);  
+
+        $meta = [
+            'title' => "Daftar produk lengkap terbaru di ".$id1->name,
+            'pagetitle' => "Produk terbaru di ".$id1->name,
+            'description' => "Daftar produk terbaru dan murah yang dijual di ".$id1->name.", oleh seller se-Indonesia, pilihan produk Tokopedia, Bukalapak, Lazada, Blibli, MatahariMall, Elevenia, Shopee, dan sebagainya.",
+            'keywords' => "produk terbaru ".$id1->name.", produk lengkap, produk tokopedia, produk bukalapak, produk lazada, produk blibli, produk mataharimall, produk elevenia, produk shopee"
+        ];
+
+
+        return view('public.item.item_by', ['items' => $it, 'meta' => $meta]);
     }
 
 
