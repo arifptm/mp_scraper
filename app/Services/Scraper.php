@@ -35,13 +35,16 @@ class Scraper
                     $url = trim($url);
                     Item::firstOrCreate(['item_url' => $url, 'feed_id' => $selected_feed->id]);
     	     	}	
-            } elseif ($mp->slug == "tokopedia"){
-                
+            } 
+
+            if ($mp->slug == "tokopedia"){                
                 $crawler = json_decode(file_get_contents($selected_feed->url));
                 foreach ($crawler->data->products as $item){
                     Item::firstOrCreate(['item_url' => $item->url, 'feed_id' => $selected_feed->id]);
                 }                    
             }
+
+
     		Feed::whereId($selected_feed->id)->update(['processed' => 1]);
     	}
     	return $mp;
