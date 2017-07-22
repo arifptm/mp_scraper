@@ -45,4 +45,46 @@ class SeedController extends Controller
 		}
 
     }
+
+    public function tokopedia()
+    {
+    	$mp = Marketplace::firstOrCreate(['name' => 'Tokopedia', 'slug' => 'tokopedia' ]);
+
+    	if ($mp->wasRecentlyCreated === true)
+    	{
+	        echo "<p>Marketplace <strong>$mp->name</strong> berhasil dibuat !</p>";
+	        $input = [
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=1758' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=1759' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=1760' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=78' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=79' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=61' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=715' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=56' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=65' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=288' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=297' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=60' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=578' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=63' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=62' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=57' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=984' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=983' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=642' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=54' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=55' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=35' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=8' ],
+				[ 'marketplace_id' => $mp->id, 'url' => 'https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=20' ]
+			];
+
+			Feed::insert($input);
+			echo "Feed: <strong>$mp->name</strong> berhasil dibuat !";
+		} else {
+			echo "<p>Marketplace <strong>$mp->name</strong> sudah ada</p>";
+		}
+
+    }
 }

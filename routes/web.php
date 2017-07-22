@@ -44,15 +44,19 @@ Route::prefix('admin')->group(function(){
 Route::get('/items/ca/{id}','ItemController@index');
 Route::get('/items/ct/{id}','ItemController@cityList'); 
 
-Route::get('/sc/toped', 'TokopediaController@index');
 
 Route::get('/c/{slug}', 'CategoryController@publicIndex');
 
 Route::get('/seed/bl', 'SeedController@bukalapak');
+Route::get('/seed/tp', 'SeedController@tokopedia');
 
 Route::get('/aa/{id}', 'CategoryController@getChild');
-Route::get('/sc/bl', 'TestController@bl');
 
+
+Route::prefix('sc')->group(function(){
+	Route::get('bl', 'scraper\BukalapakController@scrape');
+	Route::get('tp', 'scraper\TokopediaController@scrape');
+});
 
 
 
@@ -64,3 +68,4 @@ Route::get('/{slug}', 'ItemController@publicShow')->name('nodes');
 Route::get('/p/tes', 'TestController@test');
 Route::get('/tes/cek', 'TestController@cek');
 Route::get('/tes/cekse', 'TestController@cekse');
+Route::get('/tes/cektp', 'TestController@cektp');
