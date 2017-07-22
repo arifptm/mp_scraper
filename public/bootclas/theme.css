@@ -7203,6 +7203,15 @@ h1.pagetitle{
 
 }
 
+.tokopedia-bg {
+  height: 26px;
+  background:#efefef url('../images/logo-sq.png') no-repeat 0 -52px;
+  background-size: 26px 520px;
+  padding-left: 30px;
+  line-height: 24px;
+
+}
+
 .percent{
   font-size: 1.3em;
   font-weight: bold;

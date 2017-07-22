@@ -35,6 +35,11 @@ class Item extends Model
         $images['teaser'] = str_replace('/m-1000-1000/', '/s-240-240/', $imgs);
         $images['thumb'] = str_replace('/m-1000-1000/', '/s-50-50/', $imgs);
 
+        //tokopedis
+        $images['teaser'] = str_replace('/img/product-1/', '/img/cache/240-square/product-1/', $images['teaser']);
+        $images['node'] = str_replace('/img/product-1/', '/img/cache/300-square/product-1/',  $images['node']);
+        $images['thumb'] = str_replace('/img/product-1/', '/img/cache/50-square/product-1/',  $images['thumb']);
+
         return $images;
     }
 

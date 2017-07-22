@@ -41,6 +41,19 @@
         })();
     </script>
     @endif
+
+    @if ($item->feed->marketplace->slug == 'tokopedia')
+    <script>
+        $('#thumbs').delegate('img','click', function(){
+            var bLazy = new Blazy();
+                $('#largeImage').attr('class', 'b-lazy img-responsive').attr('src', 'https://cdn4.iconfinder.com/data/icons/black-icon-social-media/128/099317-google-g-logo.png').attr('data-src', $(this).attr('src').replace('/s-50-50/','/s-300-300/'));        
+        });
+        ;(function() {
+            var bLazy = new Blazy();
+        })();
+    </script>
+    @endif
+
 @endsection	
 
 
