@@ -37,41 +37,81 @@ class LinkCheckerController extends Controller
 	}
 
 
+    public function yetAll($slug)
+    {
+        $all = array();
+        $al = Marketplace::with(['feed.item' => function($query){
+            $query->where('title','!=', '' )->where('sold_out','!=','1');
+        }])->whereSlug($slug)->first();
+
+        foreach ($al->feed as $feed)
+        {
+            foreach ($feed->item as $items)
+            {
+                $all[] = $items->id;
+            }
+        }        
+        
+        return $all;  
+    }
+    
+    public function yetChecked($slug)
+    {
+
+        $yet= array();
+
+        $ye = Marketplace::with(['feed.item' => function($query){
+            $query->where('checked', '=', 0)->where('title','!=', '' )->where('sold_out','!=','1');
+        }])->whereSlug($slug)->first();
+        
+        foreach($ye->feed as $feed)
+        {
+            foreach ($feed->item as $item) {
+                $yet[$item->id] = $item->item_url;
+            }
+        }
+
+        return $yet;   
+    }
+
+    public function yetStat($slug)
+    {
+        $all = $this->yetAll($slug) ;
+        $yet = $this->yetChecked($slug);
+        return view('admin.linkchecker.index', ['all' => $all, 'yet' => $yet]);
+    }
+ 
     public function run($slug)
     {
-        $mk = Marketplace::with(['feed.item' => function($query){
-            $query->where('checked', '=', 0)->where('title','!=', null )->where('sold_out','!=','1');
-        }])->whereSlug($slug)->first();
-        foreach($mk->feed as $feed){
-            foreach ($feed->item as $item) {
-                $i[$item->category_id] = $item->item_url;
-            }
-        }
-        
-        dd()
+        $all = $this->yetAll($slug) ;
 
-        $i = array_slice($i, 0, 20);
+        $yet = $this->yetChecked($slug);
+
+        if(count($yet) == 0)
+        {
+            $all = $this->yetAll($slug);
+            $to_reset = Item::whereIn('id', $all);
+            $to_reset->update(['checked' => 0]);
+            return view('admin.linkchecker.index', ['msg' => 'LinkCheck Completed ...!']);
+        }
+
         
+        $i = array_slice($yet, 0, 5);    
+             
+        $s404[] = array();
+        $s200[] = array();       
         foreach($this->checker($i) as $key=>$status){
             $so = Item::whereItem_url($key)->first();
-            
+
             if($status == 404){                
                 $so->update(['sold_out'=> 1, 'checked' => 1]);
-                echo $status." | ".$so->id." | ".$so->item_url."<br>";
+                $s404[] = $so;
             } else {
                 $so->update(['checked' => 1]);
-                echo $status." | ".$so->id." | ".$so->item_url."<br>";
-            }
-
+                $s200[] = $so;
+            }            
         }
 
+        return view('admin.linkchecker.index', ['all' => $all, 'yet' => $yet, 's404'=> $s404, 's200'=>$s200, 'msg' => 'LinkCheck Completed ...!']);  
     }
 }
-
-
-
-
-
-
-
-
