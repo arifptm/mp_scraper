@@ -37,6 +37,11 @@ Route::prefix('admin')->group(function(){
 		Route::resource('cities','CityController', ['except' => ['show', 'create', 'store']]);
 		Route::resource('sellers','SellerController', ['except' => ['show']]);
 		Route::resource('categories','CategoryController', ['except' => ['show','create','store']]);
+		Route::resource('replacers','ReplacerController', ['except' => []]);
+
+		Route::get('pending/{slug}', 'ItemController@pending');
+		Route::get('soldout/{slug}', 'ItemController@soldout');
+		Route::get('linkcheck/{slug}', 'LinkCheckerController@run');
 	});
 });
 

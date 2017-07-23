@@ -181,6 +181,25 @@ class ItemController extends Controller
         return view('item.index', ['items'=> $items, 'all' => $all ]);
     }
 
+    public function soldout($slug)
+    {
+        $s = Item::whereSlug($slug)->whereSold_out(1)->simplePaginate(30);
+        return view ('admin.item.index', ['items'=> $p]);
+
+    }
+
+    public function pending($slug)
+    {
+        $p = Item::whereSlug($slug)->whereProcessed(0)->simplePaginate(30);
+        return view ('admin.item.index', ['items'=> $p]);
+    }
+
+
+
+
+
+
+
 
 
 

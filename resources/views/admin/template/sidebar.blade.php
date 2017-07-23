@@ -59,17 +59,35 @@
             <i class="fa fa-th"></i> <span>Item</span>
           </a>
         </li> 
-        <hr>
+        
         <li>
           <a href="/admin/pages">
             <i class="fa fa-th"></i> <span>Pages</span>
           </a>
         </li> 
+        <li>
+          <a href="/admin/replacers">
+            <i class="fa fa-th"></i> <span>Replacer</span>
+          </a>
+        </li> 
 
+        <li>
+          <a href="/admin/pending/tokopedia">
+            <i class="fa fa-th"></i> <span>Pending Item</span>
+          </a>
+        </li> 
+        <li>
+          <a href="/admin/soldout/tokopedia">
+            <i class="fa fa-th"></i> <span>Sold Out</span>
+          </a>
+        </li>         
 
-        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+        <li>
+          <a href="/admin/linkcheck/tokopedia">
+            <i class="fa fa-th"></i> <span>Link Check</span>
+          </a>
+        </li> 
+
       </ul>
     </section>
     <!-- /.sidebar -->
