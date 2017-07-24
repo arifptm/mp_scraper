@@ -15,6 +15,7 @@ class CategoryController extends Controller
 
     public function index()
     {
+<<<<<<< HEAD
         
         //$c = Category::pluck('name','id')->all();
         
@@ -33,28 +34,16 @@ class CategoryController extends Controller
         return view('admin.category.subcategory_index', ['main'=> $root, 'subcategories' => $sc]);        
        
        //return view('category.index', [ 'categories' => Category::orderBy('id', 'desc')->paginate(25) ]); 
+=======
+        $r = Category::whereParent(null)->get();
+        $c = Category::pluck('name','id')->all();
+        return view('admin.category.index', ['roots' => $r, 'categories' => $c ]);        
+>>>>>>> b76e99b135db57b155d3a01c4d40916d5f07109a
     }
 
 
 
-public function publicIndex($slug)
-    {
-        
-        $root = Category::whereSlug($slug)->get();
-            {
-                foreach($root as $ci)
-                {
-                    
-                    $cid[] = Category::whereId($ci->id)->get();    
-                }
-            }    
-        //$i = Item::whereCategory_id($cid->id);
-        
-       dd(($cid));
-        
-        return view('public.category.index', ['items' => $i]);
-       
-    }
+ 
 
 
     public function create()

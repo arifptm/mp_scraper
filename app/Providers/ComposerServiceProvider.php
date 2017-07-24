@@ -26,11 +26,11 @@ class ComposerServiceProvider extends ServiceProvider
                 $ra[] = [$r1[$i], $r2[$i], $r3[$i]];
             }
 
-            $item = Item::where('title', '!=', '');
+            $item = Item::where('title', '<>', '');
             $it = $item->orderBy('id', 'desc')->take(6)->get();
             $rt = $item->orderBy('id', 'asc')->take(5)->get();
 
-            $ct = City::orderBy('id', 'desc')->take(32)->get();
+            $ct = City::select('name')->orderBy('id', 'desc')->take(32)->get();
             $sl = Seller::orderBy('id', 'desc')->take(32)->get();
             $ca = Category::whereLevel(1)->orderBy('id', 'desc')->take(32)->get();
 
