@@ -12,7 +12,7 @@ Link Checker
             @include('admin.linkchecker.header')
             <!-- /.box-header -->
             
-
+            @if (isset($s404))
             <div class="box-body table-responsive no-padding">
                 <table class="table table-hover">
                     <thead>
@@ -35,7 +35,7 @@ Link Checker
                     </tbody>
                 </table>
             </div>
-            
+            @endif
             
             <div class="box-footer">
                 

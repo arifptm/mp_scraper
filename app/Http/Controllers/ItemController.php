@@ -190,8 +190,23 @@ class ItemController extends Controller
 
     public function pending($slug)
     {
-        $p = Item::whereSlug($slug)->whereProcessed(0)->simplePaginate(30);
-        return view ('admin.item.index', ['items'=> $p]);
+
+        $all = array();
+        $al = Marketplace::with(['feed.item' => function($query){
+            $query->where('title','=', NULL);
+        }])->whereSlug($slug)->first();
+
+        foreach ($al->feed as $feed)
+        {
+            foreach ($feed->item as $items)
+            {
+                $all[] = collect($items);
+            }
+        }        
+        
+        dd($all);
+
+        return view ('admin.item.index', ['items'=> $all]);
     }
 
 
