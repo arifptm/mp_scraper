@@ -48,11 +48,21 @@
           </a>
         </li> 
 
-        <li>
-          <a href="/admin/categories">
-            <i class="fa fa-envelope"></i> <span>Category</span>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Categories</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
           </a>
-        </li>         
+          <ul class="treeview-menu">
+            @foreach ($roots as $root)
+              <li>
+                <a href="/admin/category/{{ $root->id }}"><i class="fa fa-circle-o"></i> {{ $root->name }}</a>
+              </li>
+            @endforeach              
+          </ul>
+        </li>              
 
         <li>
           <a href="/admin/items">

@@ -1,7 +1,7 @@
 @extends('admin.template.master')
 
 @section('pagetitle')
-    Categories {!! link_to('/admin/categories/create', '+') !!}
+    Sub Categories - {{ $main->id }}. {{ $main->name }}
 @stop
 
 @section('content')
@@ -11,13 +11,15 @@
         <div class="box">
             <div class="box-body">
                 <ul>
-                @foreach($roots as $root)
+                @foreach($subcategories as $sc)
                     <li>
-                        {{ $root->name }} 
+                        {{ $sc->id }}. {{ $sc->name }} 
                         <div class="pull-right">
-                            <i class="fa fa-{{ $root->icon }}"></i>
-                            ({!! link_to('/admin/categories/'.$root->id.'/edit', 'Edit') !!})
+                            ({!! link_to('/admin/categories/'.$sc->id.'/edit', 'Edit') !!})
                         </div>
+                        @if(count($sc->child) > 0 )
+                                @include('admin.category.childs',['childs' => $sc->child])
+                        @endif
                         
                     </li>    
                 @endforeach

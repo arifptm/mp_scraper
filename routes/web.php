@@ -39,10 +39,15 @@ Route::prefix('admin')->group(function(){
 		Route::resource('categories','CategoryController', ['except' => ['show','create','store']]);
 		Route::resource('replacers','ReplacerController', ['except' => []]);
 
+		Route::get('category/{is}', 'CategoryController@subCategoryIndex');
+
 		Route::get('pending/{slug}', 'ItemController@pending');
 		Route::get('soldout/{slug}', 'ItemController@soldout');
+		
 		Route::get('linkcheck/{slug}', 'LinkCheckerController@yetStat');
 		Route::get('linkcheck/{slug}/run', 'LinkCheckerController@run');
+
+
 	});
 });
 

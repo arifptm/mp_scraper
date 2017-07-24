@@ -9,7 +9,7 @@ class CityController extends Controller
 {
     public function list()
     {
-        $c = City::simplePaginate(60);        
+        $c = City::orderBy('id','desc')->simplePaginate(60);        
         return view('public.city.list', ['cities' => $c]);
     }
 

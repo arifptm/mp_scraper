@@ -48,6 +48,10 @@ class ComposerServiceProvider extends ServiceProvider
             $ca = Category::whereLevel(0)->orderBy('name', 'asc')->get();
             $view->with('categories', $ca);          
         });
+
+        View::composer(
+            'admin/*', 'App\Http\ViewComposers\SidebarMenu'
+        );
         
     }
 

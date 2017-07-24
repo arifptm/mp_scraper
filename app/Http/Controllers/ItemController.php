@@ -131,7 +131,7 @@ class ItemController extends Controller
     {
         $item = Item::whereSlug($slug)->first();
         
-        $relateds = Item::where('category_id', $item->category_id)->where('id', '!=', $item->id)->get()->sortByDesc('id');
+        $relateds = Item::where('category_id', $item->category_id)->where('id', '<>', $item->id)->orderBy('id','desc')->take(6)->get();
         
         $sl = Seller::whereCity_id($item->seller->city->id)->pluck('id');
         $others = Item::whereIn('seller_id', $sl)->orderBy('id','desc')->take(6)->get();

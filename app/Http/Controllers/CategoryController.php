@@ -15,10 +15,22 @@ class CategoryController extends Controller
 
     public function index()
     {
-        $r = Category::whereParent(null)->get();
-        $c = Category::pluck('name','id')->all();
         
-        return view('admin.category.index', ['roots' => $r, 'categories' => $c ]);        
+        //$c = Category::pluck('name','id')->all();
+        
+        return view('admin.category.index');        
+       
+       //return view('category.index', [ 'categories' => Category::orderBy('id', 'desc')->paginate(25) ]); 
+    }
+
+    public function subCategoryIndex($id)
+    {
+        
+        $root = Category::whereId($id)->first();
+        $sc = Category::whereParent($id)->get();
+        
+        
+        return view('admin.category.subcategory_index', ['main'=> $root, 'subcategories' => $sc]);        
        
        //return view('category.index', [ 'categories' => Category::orderBy('id', 'desc')->paginate(25) ]); 
     }
