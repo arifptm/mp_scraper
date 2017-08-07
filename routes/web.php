@@ -4,9 +4,18 @@ Auth::routes();
 
 Route::get('/', 'PublicController@index')->name('frontpage');
 
+Route::get('/admin', function(){ return redirect('dashboard');});
+Route::get('/dashboard', 'DashboardController@index');
+
+//PAGES
 Route::get('/pg/{slug}', 'PageController@publicShow')->name('pages');
 
+//SEARCH
 Route::post('/q/search', 'ItemController@searchResult');
+
+//DATATABLES
+Route::get('/replacer/data','ReplacerController@data')->name('replacer.data');
+Route::get('/item/data','ItemController@data')->name('item.data');
 
 
 
@@ -26,10 +35,26 @@ Route::prefix('ls')->group(function(){
 	Route::get('search', 'ItemController@searchResult')->name('search_result');
 });
 
+Route::get('/items/ca/{id}','ItemController@index');
+Route::get('/items/ct/{id}','ItemController@cityList'); 
+
+
+Route::get('/c/{slug}', 'CategoryController@publicIndex');
+
+Route::get('/seed/bl', 'SeedController@bukalapak');
+Route::get('/seed/tp', 'SeedController@tokopedia');
+
+Route::get('/aa/{id}', 'CategoryController@getChild');
+
+
+Route::prefix('sc')->group(function(){
+	Route::get('bl', 'scraper\BukalapakController@scrape');
+	Route::get('tp', 'scraper\TokopediaController@scrape');
+});
 
 
 Route::prefix('admin')->group(function(){
-	Route::middleware([])->group(function () {
+	Route::middleware(['auth'])->group(function () {
 		Route::resource('marketplaces','MarketplaceController', ['except' => ['show']]);
 		Route::resource('pages','PageController', ['except' => []]);
 		Route::resource('items','ItemController', ['except' => []]);
@@ -52,30 +77,11 @@ Route::prefix('admin')->group(function(){
 });
 
 
-Route::get('/items/ca/{id}','ItemController@index');
-Route::get('/items/ct/{id}','ItemController@cityList'); 
-
-
-Route::get('/c/{slug}', 'CategoryController@publicIndex');
-
-Route::get('/seed/bl', 'SeedController@bukalapak');
-Route::get('/seed/tp', 'SeedController@tokopedia');
-
-Route::get('/aa/{id}', 'CategoryController@getChild');
-
-
-Route::prefix('sc')->group(function(){
-	Route::get('bl', 'scraper\BukalapakController@scrape');
-	Route::get('tp', 'scraper\TokopediaController@scrape');
-});
-
-
-
-
-
-
+//ITEMS
 Route::get('/{slug}', 'ItemController@publicShow')->name('nodes');
 
+
+//DEVELOP
 Route::get('/p/tes', 'TestController@test');
 Route::get('/tes/cek', 'TestController@cek');
 Route::get('/tes/cekse', 'TestController@cekse');

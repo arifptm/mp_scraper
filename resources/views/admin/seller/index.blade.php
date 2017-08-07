@@ -1,7 +1,7 @@
 @extends('admin.template.master')
 
 @section('pagetitle')
-Sellers {!! link_to('/sellers/create', '+') !!}
+Sellers <small>(Auto created by Scraper)</small>
 @stop
 
 @section('content')
@@ -16,7 +16,9 @@ Sellers {!! link_to('/sellers/create', '+') !!}
                         <tr>
                             <th>ID</th>
                             <th>Name</th>
-                            <th></th>
+                            <th>City</th>
+                            <th>Image</th>
+                            <th>Action</th>
                         </tr>
                     </thead>        
                     <tbody>
@@ -27,13 +29,12 @@ Sellers {!! link_to('/sellers/create', '+') !!}
                             <td>{{ $seller->city->name }}</td>
                             <td><img src="{{ $seller->image_url }}" height="30" alt="" /></td>
                             <td>
-                                <div class="inline-block">
-                                {!! link_to('/admin/sellers/'.$seller->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
-                                
-                                {!! Form::open(['route' => ['sellers.destroy', $seller->id], 'method' => 'delete']) !!}
-                                {!! Form::button('Hapus',['type' => 'submit', 'class' => 'btn btn-default']) !!}
-                                {!! Form::close() !!}
+                                {!! Form::open(['url' => '/admin/sellers/'.$seller->id, 'method' => 'delete']) !!}
+                                <div class='btn-group'>
+                                    <a href="/admin/sellers/{{$seller->id}}/edit" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+                                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                                 </div>
+                                {!! Form::close() !!}
                             </td>
                         </tr>                
                         @endforeach

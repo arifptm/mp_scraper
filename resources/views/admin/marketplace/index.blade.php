@@ -1,7 +1,7 @@
 @extends('admin.template.master')
 
 @section('pagetitle')
-Marketplace {!! link_to('/admin/marketplaces/create', '+') !!}
+Marketplaces <span class="pull-right"><a href="/admin/marketplaces/create" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Tambah Marketplace</a></span>
 @stop
 
 @section('content')
@@ -18,33 +18,27 @@ Marketplace {!! link_to('/admin/marketplaces/create', '+') !!}
                             <th>Name</th>
                             <th>Logo</th>
                             <th>Feed</th>
-                            <th>Node</th>
-                            <th></th>
+                            
+                            <th>Action</th>
                         </tr>
                     </thead>        
                     <tbody>
                         @foreach($marketplaces as $marketplace)
                         <tr>    
 				            <td>{{ $marketplace->id }}</td>
-                            <td>{{ $marketplace->name }}/{{ $marketplace->slug }}</td>
+                            <td>{{ $marketplace->name }} - {{ $marketplace->slug }}</td>
                             <td><img src="{{ $marketplace->logo_url }}" alt="" width="100" /></td>
                             <td>{{ $marketplace->feed->count() }} </td>
-                            <td>
-                                @foreach($marketplace->feed as $k=>$i)
-                                    {{ $i->item->count() }}
-                                    
-                                @endforeach
-                            </td>
+
                             
-                            <td>
-                                <div class="inline-block">
-                                {!! link_to('/admin/marketplaces/'.$marketplace->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
-                                
-                                {!! Form::open(['route' => ['marketplaces.destroy', $marketplace->id], 'method' => 'delete']) !!}
-                                {!! Form::button('Hapus',['type' => 'submit', 'class' => 'btn btn-default']) !!}
-                                {!! Form::close() !!}
-                                </div>
-                            </td>
+                        <td>
+                            {!! Form::open(['url' => '/admin/marketplaces/'.$marketplace->id, 'method' => 'delete']) !!}
+                            <div class='btn-group'>
+                                <a href="/admin/marketplaces/{{$marketplace->id}}/edit" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+                                {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
+                            </div>
+                            {!! Form::close() !!}
+                        </td>
                         </tr>                
                         @endforeach
                     </tbody>

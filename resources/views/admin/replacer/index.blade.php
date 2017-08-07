@@ -9,43 +9,51 @@ Replacers <a href="/admin/replacers/create"><i class="fa fa-plus"></i></a>
 <div class="row">
     <div class="col-xs-12">
         <div class="box">
-            <!-- /.box-header -->
-            <div class="box-body table-responsive no-padding">
-                <table class="table table-hover">
+            <div class="box-body">
+                 <table class="table table-bordered" id="replacer-table">
                     <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Department</th>
-                            <th>Replacer</th>                           
-                            <th></th>
-                        </tr>
-                    </thead>        
-                    <tbody>
-                        @foreach($replacers as $replacer)
-                        <tr>    
-				            <td>{{ $replacer->id }}</td>
-                            <td>{!! link_to ('/admin/replacers/'.$replacer->id, $replacer->department) !!}</td>
-                            <td>{{ $replacer->replacer }}</td>
-                            <td>
-                                <div class="inline-block">
-                                {!! link_to('/admin/replacers/'.$replacer->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
-                                
-                                {!! Form::open(['route' => ['replacers.destroy', $replacer->id], 'method' => 'delete']) !!}
-                                {!! Form::button('Hapus',['type' => 'submit', 'class' => 'btn btn-default']) !!}
-                                {!! Form::close() !!}
-                                </div>
-                            </td>
-                        </tr>                
-                        @endforeach
-                    </tbody>
-                </table>                       
-            </div>
-
-            <div class="box-footer">
-                {{ $replacers->links() }}
-            </div>
+                       <tr>
+                          <th>Id</th>
+                          <th>Department</th>
+                          <th>Replacer</th> 
+                          <th></th>
+                       </tr>
+                    </thead>
+                 </table>
+            </div>     
         </div>
     </div>
 </div>
 
 @stop
+
+
+@section('header_scripts')
+<link rel="stylesheet" href="{{ asset('/bower_components/AdminLTE/plugins/datatables/jquery.dataTables.min.css') }}">
+<link rel="stylesheet" href="{{ asset('/bower_components/AdminLTE/plugins/datatables/dataTables.bootstrap.css') }}">
+
+@endsection
+
+@section('footer_scripts')
+<script src="{{ asset('/bower_components/AdminLTE/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('/bower_components/AdminLTE/plugins/datatables/dataTables.bootstrap.min.js') }}"></script>
+<script>
+$(function() {
+    $('#replacer-table').DataTable({
+       processing: true,
+       serverSide: true,
+       responsive: true,
+       autoWidth   : false,
+       order: [ 0, "desc" ],
+       ajax: '{!! route('replacer.data') !!}',
+       columns: [
+           { data: 'id', name: 'id' },
+           { data: 'department', name: 'department' },
+           { data: 'replacer', name: 'replacer' }, 
+           { data: 'action', name: 'action', orderable: false, searchable: false }
+       ]
+    });
+});
+
+</script>
+@endsection

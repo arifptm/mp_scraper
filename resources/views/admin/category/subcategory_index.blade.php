@@ -1,7 +1,7 @@
 @extends('admin.template.master')
 
 @section('pagetitle')
-    Sub Categories - {{ $main->id }}. {{ $main->name }}
+    Sub Categories - {{ $main->id }}. {{ $main->name }} <small><a href="/admin/categories">Index</a></small>
 @stop
 
 @section('content')
@@ -12,10 +12,15 @@
             <div class="box-body">
                 <ul>
                 @foreach($subcategories as $sc)
-                    <li>
+                    <li style='padding:4px 0;'>
                         {{ $sc->id }}. {{ $sc->name }} 
                         <div class="pull-right">
-                            ({!! link_to('/admin/categories/'.$sc->id.'/edit', 'Edit') !!})
+                            {!! Form::open(['url' => '/admin/categories/'.$sc->id, 'method' => 'delete']) !!}
+                                <div class='btn-group'>
+                                    <a href="/admin/categories/{{$sc->id}}/edit" class=''>Edit</a> |
+                                    <button type='submit' style='padding:0;margin:0' class='btn-link'  onclick="return confirm('Are you sure?')">Delete</button>
+                                </div>
+                            {!! Form::close() !!}
                         </div>
                         @if(count($sc->child) > 0 )
                                 @include('admin.category.childs',['childs' => $sc->child])

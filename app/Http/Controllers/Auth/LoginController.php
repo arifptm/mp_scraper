@@ -2,38 +2,37 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Validation\Rule;
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Login Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles authenticating users for the application and
-    | redirecting them to your home screen. The controller uses a trait
-    | to conveniently provide its functionality to your applications.
-    |
-    */
 
     use AuthenticatesUsers;
 
-    /**
-     * Where to redirect users after login.
-     *
-     * @var string
-     */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/dashboard';
 
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
+    public function __construct(){
         $this->middleware('guest')->except('logout');
     }
+
+    protected function validateLogin(Request $request){
+        
+        $message = [
+            $this->username() . '.exists' => 'The selected email is invalid or the account has been disabled.'
+        ];
+
+        $this->validate($request, [
+            $this->username() => [
+                'required',
+                Rule::exists('users')->where(function ($query) {
+                    $query->where('status', 1);
+                }),
+            ],
+            'password' => 'required'
+        ], $message);
+    }
+
 }

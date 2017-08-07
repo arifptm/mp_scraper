@@ -1,7 +1,7 @@
 @extends('admin.template.master')
 
 @section('pagetitle')
-    Categories {!! link_to('/admin/categories/create', '+') !!}
+    Categories
 @stop
 
 @section('content')
@@ -12,12 +12,18 @@
             <div class="box-body">
                 <ul>
                 @foreach($roots as $root)
-                    <li>
-                        {{ $root->name }} 
+                    <li style='padding:5px 0;'>
+                        <i class="fa fa-{{ $root->icon }}"></i> --- {{ $root->name }} 
+
                         <div class="pull-right">
-                            <i class="fa fa-{{ $root->icon }}"></i>
-                            ({!! link_to('/admin/categories/'.$root->id.'/edit', 'Edit') !!})
-                        </div>
+                            
+                            {!! Form::open(['url' => '/admin/categories/'.$root->id, 'method' => 'delete']) !!}
+                                <div class='btn-group'>
+                                    <a href="/admin/categories/{{$root->id}}/edit" class=''>Edit</a> | 
+                                    <button type='submit' style='padding:0;margin:0' class='btn-link'  onclick="return confirm('Are you sure?')">Delete</button>
+                                </div>
+                            {!! Form::close() !!}
+                        </div>  
                         
                     </li>    
                 @endforeach
@@ -30,5 +36,5 @@
         </div>
     </div>
 </div>
-
+ 
 @stop

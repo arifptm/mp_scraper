@@ -10,8 +10,11 @@ class Seller extends Model
     protected $guarded = ['id'];
     public $timestamps = false;
 
-    public function city()
-    {
+    public function city(){
     	return $this->belongsTo('App\City');
+    }
+
+    public function item(){
+    	return $this->hasMany('App\Item');
     }
 }

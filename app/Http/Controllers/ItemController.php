@@ -14,6 +14,7 @@ use \App\Services\ItemsCity;
 use SEOMeta;
 use OpenGraph;
 use Twitter;
+use Yajra\Datatables\Facades\Datatables;
 
 class ItemController extends Controller
 {
@@ -145,18 +146,6 @@ class ItemController extends Controller
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     public function itemsList( $id = null )
     {
         $items = Item::orderBy('title', 'desc');
@@ -216,93 +205,58 @@ class ItemController extends Controller
 
 
 
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // public function sellers()
-    // {
-    //     $sls = Seller::all();
-    //     foreach ($sls as $key=>$sl) {
-    //         $slss[$sl->id] = $sl->name;
-    //     }
-    //     return $ctss;
-    // }
-
-
-
+/////////////////ADMIN
 
 
     
-    public function index()
-    {
-
-        $it = Item::where('title','!=','')->orderBy('updated_at','desc')->simplePaginate(36);
-
+    public function index(){
+        $it = Item::where('title','!=','')->orderBy('updated_at','desc')->simplePaginate(50);
         return view('admin.item.index', ['items' => $it]);
+    }
 
+    public function show($id){
+        $i = Item::findOrFail($id);
+        return $i->id;
+    }
+
+    public function edit($id){
+        return view('admin.item.edit', [ 'item' => Item::findOrFail($id) ]);
+    }
+
+    public function update(Request $request, $id){
+        Item::findOrFail($id)-> update($request->all());
+        return redirect('/admin/items');
+    }
+
+    public function destroy($id){
+        Item::findOrFail($id)->delete();
+        return redirect('/admin/items');
+    }
+
+    public function data(){
+        $item = Item::select(['id', 'item_url', 'title', 'sell_price', 'seller_id','updated_at']);
+
+        $dt = Datatables::of($item)
+            ->addColumn('action', function ($item) {                
+                return '<form action="/admin/items/'.$item->id.'" method="post">
+                <input type="hidden" value="delete" name="_method">
+                '.csrf_field().'
+                <div class="btn-group">
+                    <a href="/admin/items/'.$item->id.'/edit" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit"></i></a>
+                    <button type="submit" class="btn btn-danger btn-xs"  onclick = "return confirm(\'Are you sure?\')" ><i class="glyphicon glyphicon-trash"></i></button>
+                </div>
+                </form>';
+            })
+            ->addColumn('seller', function($item){
+                return $item->seller->name.' - '.$item->seller->city->name;
+            })
+            ->addColumn('updated', function($item){
+                return $item->updated_at->format('d-m-Y');
+            })
+
+            ->rawColumns(['action','seller','updated']);            
+            return $dt->make(true);
     }
 
 
-
-    public function show($id)
-    {
-    	$item = Item::find($id);
-        //$images = unresialize($item->images);
-        //$fi = str_replace("/rawimage/", "/m-".config('node_image_hsize')."-".config('node_image_vsize')."/", $images[0]);
-
-        //$thumbs = str_replace("/rawimage/", "/m-".config('thumb_hsize')."-".config('thumb_vsize')."/", $images);
-    	//$item->update(['views' => $item->views+1]);
-        return view('item.show', [ 'item' => $item, 'thumbs' => $thumbs, 'full_image' => $fi ]);
-    }
-
-
-    public function create()
-    {
-        return view('item.create');
-    }
-
-
-    public function store(Request $request)
-    {
-        Seller::create($request->all());
-        return redirect('/sellers');
-    }
-
-    public function edit($id)
-    {
-        return view('seller.edit', [ 'seller' => Seller::findOrFail($id), 'cities' => $this->cities() ]);
-    }
-
-    public function update(Request $request, $id)
-    {
-        Seller::findOrFail($id)-> update($request->all());
-        return redirect('/sellers');
-    }
-
-    public function destroy($id)
-    {
-        Seller::findOrFail($id)->delete();
-        return redirect('/sellers');
-    }
 }

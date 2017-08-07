@@ -9,46 +9,41 @@ use App\Marketplace;
 class FeedController extends Controller
 {
 
-    public function marketplaces()
-    {
-        $mps = Marketplace::all();
-        foreach ($mps as $key=>$mp) {
-            $mpss[$mp->id] = $mp->name;
-        }
-        return $mpss;
-    }
 
 
-    public function index()
-    {
-        $feeds = Feed::orderBy('id', 'desc')->paginate(25);      
+
+
+///////////// ADMIN
+
+    public function index(){
+        $feeds = Feed::orderBy('id', 'desc')->simplePaginate(25);      
         return view('admin.feed.index', [ 'feeds' => $feeds ]);
     }
 
-    public function create()
-    {
-        return view('admin.feed.create', ['marketplaces' => $this->marketplaces() ]);
+    public function create(){
+        $ms = Marketplace::pluck('name','id');
+        return view('admin.feed.create', ['marketplaces' => $ms ]);
     }
 
-    public function store(Request $request)
-    {
+    public function store(Request $request){
+        //dd($request->all());
         Feed::create($request->all());
         return redirect('/admin/feeds');
     }
 
-    public function edit($id)
-    {
-        return view('admin.feed.edit', [ 'feed' => Feed::findOrFail($id), 'marketplaces' => $this->marketplaces() ]);
+    public function edit($id){
+        $fs = Feed::findOrFail($id);
+        $ms = Marketplace::pluck('name','id');
+        return view('admin.feed.edit', [ 'feed' => $fs , 'marketplaces' => $ms ]);
     }
 
-    public function update(Request $request, $id)
-    {
-        Feed::findOrFail($id)-> update($request->all());
+    public function update(Request $request, $id){
+        $req = $request->all();
+        Feed::findOrFail($id)->update($req);
         return redirect('/admin/feeds');
     }
 
-    public function destroy($id)
-    {
+    public function destroy($id){
         Feed::findOrFail($id)->delete();
         return redirect('/admin/feeds');
     }}

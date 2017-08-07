@@ -36,7 +36,7 @@ class Item extends Model
         $images['thumb'] = str_replace('/m-1000-1000/', '/s-50-50/', $imgs);
 
         //tokopedis
-        $images['teaser'] = str_replace('/img/product-1/', '/img/cache/240-square/product-1/', $images['teaser']);
+        $images['teaser'] = str_replace('/img/product-1/', '/img/cache/300-square/product-1/', $images['teaser']);
         $images['node'] = str_replace('/img/product-1/', '/img/cache/300-square/product-1/',  $images['node']);
         $images['thumb'] = str_replace('/img/product-1/', '/img/cache/50-square/product-1/',  $images['thumb']);
 
@@ -64,8 +64,7 @@ class Item extends Model
     	return $this->belongsTo('App\Feed');
     }
 
-    public function seller()
-    {
+    public function seller(){
     	return $this->belongsTo('App\Seller');
     }
 

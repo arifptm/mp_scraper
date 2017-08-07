@@ -20,7 +20,7 @@
 	</div>
 
 	<div class="form-group">
-		{!! Form::label('parent', 'Parant',['class'=>'control-label']) !!}
+		{!! Form::label('parent', 'Parent',['class'=>'control-label']) !!}
 		{!! Form::text('parent', null, ['class' => 'form-control']) !!}
 		@if ($errors->has('parent'))
 		    <div class="label label-danger">

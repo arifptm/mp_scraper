@@ -15,8 +15,8 @@ Cities
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Name</th>
-                            <th>Items</th>                           
+                            <th>City</th>
+                            <th>Seller Name</th>                           
                             <th></th>
                         </tr>
                     </thead>        
@@ -24,20 +24,21 @@ Cities
                         @foreach($cities as $city)
                         <tr>    
 				            <td>{{ $city->id }}</td>
-                            <td>{!! link_to ('/admin/items/ct/'.$city->id, $city->name) !!}</td>
+                            <td>{{ $city->name }}</td>
                             <td>
+                            <ul>
                             @foreach($city->seller as $d)
-                            {{ $d->name }} <br>
+                                <li>{{ $d->name }}</li>
                             @endforeach 
+                            </ul>
                             </td>
                             <td>
-                                <div class="inline-block">
-                                {!! link_to('/admin/cities/'.$city->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
-                                
-                                {!! Form::open(['route' => ['cities.destroy', $city->id], 'method' => 'delete']) !!}
-                                {!! Form::button('Hapus',['type' => 'submit', 'class' => 'btn btn-default']) !!}
-                                {!! Form::close() !!}
+                                {!! Form::open(['url' => '/admin/cities/'.$city->id, 'method' => 'delete']) !!}
+                                <div class='btn-group'>
+                                    <a href="/admin/cities/{{$city->id}}/edit" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+                                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                                 </div>
+                                {!! Form::close() !!}
                             </td>
                         </tr>                
                         @endforeach

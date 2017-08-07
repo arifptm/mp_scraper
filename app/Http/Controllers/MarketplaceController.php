@@ -17,7 +17,14 @@ class MarketplaceController extends Controller
 
 
 
-    //Admin Section
+
+
+
+
+
+
+
+    //===============================================================Admin Section
     public function index()
     {
         $ms = Marketplace::orderBy('id', 'desc')->get();

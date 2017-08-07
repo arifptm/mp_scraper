@@ -1,7 +1,7 @@
 @extends('admin.template.master')
 
 @section('pagetitle')
-Feeds {!! link_to('admin/feeds/create', '+') !!} | {!! link_to('/seed/bl', 'Seed BL') !!}
+Feeds <span class="pull-right"><a href="/admin/feeds/create" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Tambah feeds</a></span>
 @stop
 
 @section('content')
@@ -17,10 +17,8 @@ Feeds {!! link_to('admin/feeds/create', '+') !!} | {!! link_to('/seed/bl', 'Seed
                             <th>ID</th>
                             <th>Marketplace</th>
                             <th>URL</th>
-                            <th>Department</th>
-                            <th>Processed</th>
-                            <th>Enabled</th>
-                            <th>Dept. Repaced with</th>
+                            <th>Processed</th>                            
+                            <th>Enabled</th>                            
                             <th></th>
                         </tr>
                     </thead>        
@@ -29,18 +27,16 @@ Feeds {!! link_to('admin/feeds/create', '+') !!} | {!! link_to('/seed/bl', 'Seed
                         <tr>    
 				            <td>{{ $feed->id }}</td>
                             <td>{{ $feed->marketplace->name }}</td>
-                            <td>{{ $feed->url }}</td>
-                            <td>{{ $feed->department }}</td>
-                            <td>{{ $feed->processed }}</td>
-                            <td>{{ $feed->enabled }}</td>
-                            <td>{{ $feed->replacer }}</td>
+                            <td>{{ $feed->url }}</td>                           
+                            <td>{!! $feed->processed == 1 ? '<div class="label label-primary">YES</div>' : '<div class="label label-warning">NO</div>' !!}</td>
+                            <td>{!! $feed->enabled == 1 ? '<div class="label label-primary">YES</div>' : '<div class="label label-warning">NO</div>' !!}</td>
                             <td>
-                                <div class="inline-block">
-                                {!! link_to('/admin/feeds/'.$feed->id.'/edit', 'Edit', ['class' => 'btn btn-default']) !!}
-                                {!! Form::open(['route' => ['feeds.destroy', $feed->id], 'method' => 'delete']) !!}
-                                {!! Form::button('Hapus',['type' => 'submit', 'class' => 'btn btn-default']) !!}
-                                {!! Form::close() !!}
+                                {!! Form::open(['url' => '/admin/feeds/'.$feed->id, 'method' => 'delete']) !!}
+                                <div class='btn-group'>
+                                    <a href="/admin/feeds/{{$feed->id}}/edit" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+                                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                                 </div>
+                                {!! Form::close() !!}
                             </td>
                         </tr>                
                         @endforeach
