@@ -15,12 +15,15 @@ Items
                 
                 <div class="panel-body">
                     <form method="POST" id="search-form" class="form-inline" role="form">
-                    
-                        <div class="form-group">
-                            <label for="url">Title</label>
-                            <input type="text" class="form-control" name="url" id="url">
-                        </div>
 
+
+    
+                              <label for='title'>Title</label>  
+                              <input type='text' name='title' id='title' class='form-control'><span style="margin-right:20px;"> Title</span></label>            
+                              <input type='text' name='processed' id='processed' class='form-control'><span style="margin-right:20px;"> Processed</span></label>            
+                          
+  
+                       
                         <button type="submit" class="btn btn-primary">Search</button>
                     </form>
                 </div>
@@ -36,6 +39,7 @@ Items
                           <th>Title</th>
                           <th>Price</th> 
                           <th>Seller</th> 
+                          <th>P</th> 
                           <th>Updated</th> 
                           <th>Action</th>
                        </tr>
@@ -50,20 +54,19 @@ Items
 @section('header_scripts')
 <link rel="stylesheet" href="{{ asset('/bower_components/AdminLTE/plugins/datatables/jquery.dataTables.min.css') }}">
 <link rel="stylesheet" href="{{ asset('/bower_components/AdminLTE/plugins/datatables/dataTables.bootstrap.css') }}">
-<meta name="csrf-token" content="{{ csrf_token() }}">
+<link rel="stylesheet" href="{{ asset('/bower_components/iCheck/skins/square/red.css') }}">
 @endsection
 
 @section('footer_scripts')
 <script src="{{ asset('/bower_components/AdminLTE/plugins/datatables/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('/bower_components/AdminLTE/plugins/datatables/dataTables.bootstrap.min.js') }}"></script>
+<script src="{{ asset('/bower_components/iCheck/icheck.min.js') }}"></script>
 <script>
 
-
-
-
-
-
-
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-red',
+      increaseArea: '0%' // optional
+    });
 
     var oTable = $('#item-table').DataTable({
         processing: true,
@@ -74,7 +77,11 @@ Items
         ajax: {
           url : '{!! route('item.data') !!}',
           data: function (d) {
-                d.url = $('input[name=url]').val();
+                d.checked = $('input[name=checked]').val();
+                d.processed = $('input[name=processed]').val();
+                d.sold_out = $('input[name=sold_out]').val();
+                d.published = $('input[name=published]').val();
+                d.title = $('input[name=title]').val();
             }
         },
 
@@ -84,18 +91,20 @@ Items
            { data: 'title', name: 'title' },
            { data: 'sell_price', name: 'sell_price', orderable: false, searchable: false },
            { data: 'seller', name: 'seller',orderable: false, searchable: false },
+           { data: 'processed', name: 'processed' },
            { data: 'updated', name: 'updated_at' },
            { data: 'action', name: 'action', orderable: false, searchable: false }
        ]
     });
 
-    $('#search-form').on('submit', function(e) {
+    $('#search-form').on('submit', function(e) {        
         oTable.draw();
         e.preventDefault();
     });
 
 
+  
+</script>   
 
-</script>
  
 @endsection

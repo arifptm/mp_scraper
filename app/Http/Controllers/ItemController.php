@@ -234,7 +234,7 @@ class ItemController extends Controller
     }
 
     public function data(){
-        $item = Item::select(['id', 'item_url', 'title', 'sell_price', 'seller_id','updated_at']);
+        $item = Item::select(['id', 'item_url', 'title', 'sell_price', 'seller_id','updated_at','processed']);
 
         $dt = Datatables::of($item)
             ->addColumn('action', function ($item) {                
@@ -257,10 +257,14 @@ class ItemController extends Controller
 
             ->rawColumns(['action','seller','updated']); 
 
-            if ($url = $dt->request->get('url')) {
-                $dt->where('item_url','like', "%$url%");
+            
+            if ($pro = $dt->request->get('processed')){
+                $dt->where('processed','=', $pro);            
             }
 
+            if ($tit = $dt->request->get('title')){
+                $dt->where('title','like', "$tit%");            
+            }        
                        
             return $dt->make(true);
     }
