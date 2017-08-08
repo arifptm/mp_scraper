@@ -30,7 +30,7 @@ class ComposerServiceProvider extends ServiceProvider
             $it = $item->orderBy('id', 'desc')->take(6)->get();
             $rt = $item->orderBy('id', 'asc')->take(5)->get();
 
-            $ct = City::select('name')->orderBy('id', 'desc')->take(32)->get();
+            $ct = City::select('slug','name')->orderBy('id', 'desc')->take(32)->get();
             $sl = Seller::orderBy('id', 'desc')->take(32)->get();
             $ca = Category::whereLevel(1)->orderBy('id', 'desc')->take(32)->get();
 

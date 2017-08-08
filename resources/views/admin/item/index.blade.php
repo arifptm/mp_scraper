@@ -9,7 +9,24 @@ Items
 <div class="row">
     <div class="col-xs-12">
         <div class="box">
-            <!-- /.box-header -->
+
+          <div class="box-header">        
+            <div class="panel panel-default">
+                
+                <div class="panel-body">
+                    <form method="POST" id="search-form" class="form-inline" role="form">
+                    
+                        <div class="form-group">
+                            <label for="url">Title</label>
+                            <input type="text" class="form-control" name="url" id="url">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
+            </div>
+          </div>
+
             <div class="box-body">
                  <table class="table table-bordered" id="item-table">
                     <thead>
@@ -40,14 +57,27 @@ Items
 <script src="{{ asset('/bower_components/AdminLTE/plugins/datatables/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('/bower_components/AdminLTE/plugins/datatables/dataTables.bootstrap.min.js') }}"></script>
 <script>
-$(function() {
-    $('#item-table').DataTable({
-       processing: true,
-       serverSide: true,
-       responsive: true,
-       autoWidth   : false,
-       order: [ 0, "desc" ],
-       ajax: '{!! route('item.data') !!}',
+
+
+
+
+
+
+
+
+    var oTable = $('#item-table').DataTable({
+        processing: true,
+        serverSide: true,
+        responsive: true,
+        autoWidth   : false,
+        order: [ 0, "desc" ],
+        ajax: {
+          url : '{!! route('item.data') !!}',
+          data: function (d) {
+                d.url = $('input[name=url]').val();
+            }
+        },
+
        columns: [
            { data: 'id', name: 'id' },
            { data: 'item_url', name: 'item_url' },
@@ -58,12 +88,14 @@ $(function() {
            { data: 'action', name: 'action', orderable: false, searchable: false }
        ]
     });
-    $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
+
+    $('#search-form').on('submit', function(e) {
+        oTable.draw();
+        e.preventDefault();
     });
-});
+
+
 
 </script>
+ 
 @endsection

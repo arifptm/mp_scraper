@@ -248,13 +248,20 @@ class ItemController extends Controller
                 </form>';
             })
             ->addColumn('seller', function($item){
+                if ($item->seller_id <> null)
                 return $item->seller->name.' - '.$item->seller->city->name;
             })
             ->addColumn('updated', function($item){
                 return $item->updated_at->format('d-m-Y');
             })
 
-            ->rawColumns(['action','seller','updated']);            
+            ->rawColumns(['action','seller','updated']); 
+
+            if ($url = $dt->request->get('url')) {
+                $dt->where('item_url','like', "%$url%");
+            }
+
+                       
             return $dt->make(true);
     }
 

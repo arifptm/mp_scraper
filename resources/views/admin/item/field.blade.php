@@ -10,24 +10,53 @@
 		@endif
 	</div>
 
-	<div class="form-group">
-		<div class='col-md-6'>
-		{!! Form::label('body', 'Body',['class'=>'control-label']) !!}
-		{!! Form::textarea('body', null, ['class' => 'form-control', 'rows'=>'8', 'id'=>'body']) !!}
-		@if ($errors->has('body'))
-		    <div class="label label-danger">
-		        {{ $errors->first('se') }}
-		    </div>
-		@endif
+	<div class="well">
+		<div class="form-group">
+			<div class="col-md-3">   
+			    <div class="icheck"><label>        
+			        {!! Form::checkbox('published') !!}<span style="margin-right:50px;"> Published ?</span></label>            
+			    </div>
+			</div>
+
+			<div class="col-md-3">   
+			    <div class="icheck"><label>        
+			        {!! Form::checkbox('processed') !!}<span style="margin-right:50px;"> Processed ?</span></label>            
+			    </div>
+			</div>
+			<div class="col-md-3">   
+			    <div class="icheck"><label>        
+			        {!! Form::checkbox('sold_out') !!}<span style="margin-right:50px;"> Sold Out ?</span></label>            
+			    </div>
+			</div>
+
+			<div class="col-md-3">   
+			    <div class="icheck"><label>        
+			        {!! Form::checkbox('checked') !!}<span style="margin-right:50px;"> Checked ?</span></label>            
+			    </div>
+			</div>			
 		</div>
-		<div class='col-md-6'>
-		{!! Form::label('se', 'Search Result',['class'=>'control-label']) !!}
-		{!! Form::textarea('se', null, ['class' => 'form-control', 'rows'=>'8', 'id'=>'se']) !!}
-		@if ($errors->has('se'))
-		    <div class="label label-danger">
-		        {{ $errors->first('se') }}
-		    </div>
-		@endif
+	</div>
+
+	<div class="row">
+		<div class="form-group">
+			<div class='col-md-6'>
+			{!! Form::label('body', 'Body',['class'=>'control-label']) !!}
+			{!! Form::textarea('body', null, ['class' => 'form-control', 'rows'=>'8', 'id'=>'body']) !!}
+			@if ($errors->has('body'))
+			    <div class="label label-danger">
+			        {{ $errors->first('se') }}
+			    </div>
+			@endif
+			</div>
+			<div class='col-md-6'>
+			{!! Form::label('se', 'Search Result',['class'=>'control-label']) !!}
+			{!! Form::textarea('se', null, ['class' => 'form-control', 'rows'=>'8', 'id'=>'se']) !!}
+			@if ($errors->has('se'))
+			    <div class="label label-danger">
+			        {{ $errors->first('se') }}
+			    </div>
+			@endif
+			</div>
 		</div>
 	</div>
 

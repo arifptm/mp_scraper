@@ -20,19 +20,19 @@
 	</div>
 
 	<div class="row">
-	<div class="form-group">
-		<div class="col-md-3">   
-		    <div class="icheck"><label>        
-		        {!! Form::checkbox('enabled') !!}<span style="margin-right:50px;"> Enabled ?</span></label>            
-		    </div>
-		</div>
+		<div class="form-group">
+			<div class="col-md-3">   
+			    <div class="icheck"><label>        
+			        {!! Form::checkbox('enabled') !!}<span style="margin-right:50px;"> Enabled ?</span></label>            
+			    </div>
+			</div>
 
-		<div class="col-md-3">   
-		    <div class="icheck"><label>        
-		        {!! Form::checkbox('processed') !!}<span style="margin-right:50px;"> Processed ?</span></label>            
-		    </div>
+			<div class="col-md-3">   
+			    <div class="icheck"><label>        
+			        {!! Form::checkbox('processed') !!}<span style="margin-right:50px;"> Processed ?</span></label>            
+			    </div>
+			</div>
 		</div>
-	</div>
 	</div>
 
 
