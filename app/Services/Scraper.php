@@ -42,7 +42,7 @@ class Scraper
                 $crawler = json_decode(file_get_contents($selected_feed->url));
                 foreach ($crawler->data->products as $item){
                     $title = explode('?trkid=',$item->url);
-                    Item::firstOrCreate(['item_url' => $title[0]), 'feed_id' => $selected_feed->id]);
+                    Item::firstOrCreate(['item_url' => $title[0], 'feed_id' => $selected_feed->id]);
                 }                    
             }
 
