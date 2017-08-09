@@ -39,7 +39,7 @@ Items
                           <th>Title</th>
                           <th>Price</th> 
                           <th>Seller</th> 
-                          <th>P</th> 
+                          <th>Pr/Pu/Ch/SO</th> 
                           <th>Updated</th> 
                           <th>Action</th>
                        </tr>
@@ -91,7 +91,7 @@ Items
            { data: 'title', name: 'title' },
            { data: 'sell_price', name: 'sell_price', orderable: false, searchable: false },
            { data: 'seller', name: 'seller',orderable: false, searchable: false },
-           { data: 'processed', name: 'processed' },
+           { data: 'state', name: 'state' },
            { data: 'updated', name: 'updated_at' },
            { data: 'action', name: 'action', orderable: false, searchable: false }
        ]

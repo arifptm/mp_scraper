@@ -1,6 +1,16 @@
 <div class="box-body">
 
 	<div class="form-group">
+		{!! Form::label('item_url', 'URL',['class'=>'control-label']) !!}
+		{!! Form::text('item_url', null, ['class' => 'form-control']) !!}
+		@if ($errors->has('item_url'))
+		    <div class="label label-danger">
+		        {{ $errors->first('item_url') }}
+		    </div>
+		@endif
+	</div>
+
+	<div class="form-group">
 		{!! Form::label('title', 'Title',['class'=>'control-label']) !!}
 		{!! Form::text('title', null, ['class' => 'form-control']) !!}
 		@if ($errors->has('title'))

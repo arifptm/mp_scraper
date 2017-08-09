@@ -234,7 +234,7 @@ class ItemController extends Controller
     }
 
     public function data(){
-        $item = Item::select(['id', 'item_url', 'title', 'sell_price', 'seller_id','updated_at','processed']);
+        $item = Item::select(['id', 'item_url', 'title', 'sell_price', 'seller_id','updated_at','processed','published','checked','sold_out']);
 
         $dt = Datatables::of($item)
             ->addColumn('action', function ($item) {                
@@ -253,6 +253,10 @@ class ItemController extends Controller
             })
             ->addColumn('updated', function($item){
                 return $item->updated_at->format('d-m-Y');
+            })
+
+            ->addColumn('state', function($item){
+                return $item->processed.' | '.$item->published.' | '.$item->checked.' | '.$item->sold_out;
             })
 
             ->rawColumns(['action','seller','updated']); 

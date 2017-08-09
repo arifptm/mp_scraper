@@ -37,10 +37,12 @@ class Scraper
     	     	}	
             } 
 
+
             if ($mp->slug == "tokopedia"){                
                 $crawler = json_decode(file_get_contents($selected_feed->url));
                 foreach ($crawler->data->products as $item){
-                    Item::firstOrCreate(['item_url' => $item->url, 'feed_id' => $selected_feed->id]);
+                    $title = explode('?trkid=',$item->url);
+                    Item::firstOrCreate(['item_url' => $title[0]), 'feed_id' => $selected_feed->id]);
                 }                    
             }
 
