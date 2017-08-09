@@ -7,6 +7,7 @@ use App\Marketplace;
 use App\Replacer;
 use Goutte;
 
+
 class Scraper
 {
 	public function feedProcessor($mk_slug)
@@ -45,6 +46,17 @@ class Scraper
                     Item::firstOrCreate(['item_url' => $title[0], 'feed_id' => $selected_feed->id]);
                 }                    
             }
+            
+            if ($mp->slug == "blibli"){
+
+                $urls = $crawler->filter('.product-list a.single-product')->each (function ($node){
+                            return trim($node->attr('href'));
+                        });     
+
+                foreach ($urls as $url) {
+                    Item::firstOrCreate(['item_url' => $url, 'feed_id' => $selected_feed->id]);
+                }   
+            }             
 
 
     		Feed::whereId($selected_feed->id)->update(['processed' => 1]);
@@ -89,7 +101,6 @@ class Scraper
         foreach ($cats as $key=>$cat)
         {
             $key1 = $key+1;
-            //$rep = Feed::where('department',$cat)->first();
             $rep = Replacer::whereDepartment($cat)->whereLevel($key)->first();
             if (count($rep) != 0)
             {
