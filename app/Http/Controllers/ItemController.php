@@ -263,13 +263,18 @@ class ItemController extends Controller
 
             
             if ($pro = $dt->request->get('processed')){
-                $dt->where('processed','=', $pro);            
+                $dt->where('processed','<>', '$pro');            
+            } else {
+                $dt->where('processed','==', '$pro');            
             }
 
             if ($tit = $dt->request->get('title')){
-                $dt->where('title','like', "$tit%");            
+                $dt->where('title','like', "%$tit%");            
             }        
-                       
+             
+            if ($url = $dt->request->get('item_url')){
+                $dt->where('item_url','like', "%$url%");            
+            }          
             return $dt->make(true);
     }
 

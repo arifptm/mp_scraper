@@ -15,12 +15,9 @@ Items
                 
                 <div class="panel-body">
                     <form method="POST" id="search-form" class="form-inline" role="form">
-
-
-    
-                              <label for='title'>Title</label>  
-                              <input type='text' name='title' id='title' class='form-control'><span style="margin-right:20px;"> Title</span></label>            
-                              <input type='text' name='processed' id='processed' class='form-control'><span style="margin-right:20px;"> Processed</span></label>            
+                              <label for='title'>Title</label> <input type='text' name='title' id='title' class='form-control'>           
+                                <label for='item_url'>URL</label> <input type='text' name='item_url' id='item_url' class='form-control'>           
+                              <label for='processed'>Processed</label><input type='text' name='processed' id='processed' class='form-control'>          
                           
   
                        
@@ -77,10 +74,8 @@ Items
         ajax: {
           url : '{!! route('item.data') !!}',
           data: function (d) {
-                d.checked = $('input[name=checked]').val();
                 d.processed = $('input[name=processed]').val();
-                d.sold_out = $('input[name=sold_out]').val();
-                d.published = $('input[name=published]').val();
+                d.item_url = $('input[name=item_url]').val();
                 d.title = $('input[name=title]').val();
             }
         },
