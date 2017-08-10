@@ -89,3 +89,6 @@ Route::get('/tes/cekse', 'TestController@cekse');
 Route::get('/tes/cektp', 'TestController@cektp');
 Route::get('/tes/phantom', 'TestController@phantom');
 Route::get('/tes/casper', 'TestController@casper');
+Route::get('/tes/env',  function(){
+	echo env('MAIL_PORT');
+});
