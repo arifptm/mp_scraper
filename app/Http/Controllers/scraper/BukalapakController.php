@@ -49,12 +49,12 @@ class BukalapakController extends Controller
 		if (($crawler->filter('.c-product-detail-price__original .amount') === true ) AND ($crawler->filter('.c-product-detail-price__reduced .amount') === true )){
 			$scraped['raw_price'] = preg_replace("/[^0-9]/","",$crawler->filter('div.c-product-detail-price__original .amount')->text());
 			$scraped['sell_price'] = preg_replace("/[^0-9]/","",$crawler->filter('div.c-product-detail-price__reduced .amount')->text());
-			$scraped['discount'] = (($scraped['raw_price'] - $scraped['sell_price']) / $scraped['raw_price'] )*100;
-			$item_discount = round($discount,0,PHP_ROUND_HALF_UP);	
+			$discount = (($scraped['raw_price'] - $scraped['sell_price']) / $scraped['raw_price'] )*100;
+			$scraped['discount'] = round($discount,0,PHP_ROUND_HALF_UP);	
 		} else {
 			$scraped['sell_price'] = preg_replace("/[^0-9]/","",$crawler->filter('div.c-product-detail-price .amount')->text());
-			$scraped['raw_price'] = null;
-			$scraped['discount'] = null;	
+			//$scraped['raw_price'] = null;
+			//$scraped['discount'] = null;	
 		} 
 
         $city['name']   = trim($crawler->filter('.c-user-identification .qa-seller-location')->text());

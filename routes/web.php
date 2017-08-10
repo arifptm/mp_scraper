@@ -50,7 +50,7 @@ Route::get('/aa/{id}', 'CategoryController@getChild');
 Route::prefix('sc')->group(function(){
 	Route::get('bl', 'scraper\BukalapakController@scrape');
 	Route::get('tp', 'scraper\TokopediaController@scrape');
-	Route::get('bi', 'scraper\BlibliController@scrape');
+	Route::get('bb', 'scraper\BlibliController@scrape');
 });
 
 
@@ -88,3 +88,4 @@ Route::get('/tes/cek', 'TestController@cek');
 Route::get('/tes/cekse', 'TestController@cekse');
 Route::get('/tes/cektp', 'TestController@cektp');
 Route::get('/tes/phantom', 'TestController@phantom');
+Route::get('/tes/casper', 'TestController@casper');

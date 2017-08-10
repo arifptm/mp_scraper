@@ -54,6 +54,18 @@
     </script>
     @endif
 
+    @if ($item->feed->marketplace->slug == 'blibli')
+    <script>
+        $('#thumbs').delegate('img','click', function(){
+            var bLazy = new Blazy();
+                $('#largeImage').attr('class', 'b-lazy img-responsive').attr('src', 'https://cdn4.iconfinder.com/data/icons/black-icon-social-media/128/099317-google-g-logo.png').attr('data-src', $(this).attr('src').replace('/thumbnail/','/full/'));        
+        });
+        ;(function() {
+            var bLazy = new Blazy();
+        })();
+    </script>
+    @endif
+
 @endsection	
 
 
@@ -118,7 +130,7 @@
     <div class="col-sm-5 center zoom-gallery">
         <div class="row center marbot15">
             <div class="col-sm-12">	
-				<div class="marbot15" style="text-align:center;max-height:300px;width: 100%;">
+				<div class="marbot15" style="text-align:center;max-height:300px;width: 100%;overflow:hidden;">
 					<div class="nodeimg_bg">
 						<img  id="largeImage" class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $item->images['node'][0] }}" alt="" style="margin:auto;" />
 					</div>

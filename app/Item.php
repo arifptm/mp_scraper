@@ -40,6 +40,10 @@ class Item extends Model
         $images['node'] = str_replace('/img/product-1/', '/img/cache/300-square/product-1/',  $images['node']);
         $images['thumb'] = str_replace('/img/product-1/', '/img/cache/100-square/product-1/',  $images['thumb']);
 
+        //Blibli
+        $images['teaser'] = str_replace('/thumbnail/', '/full/', $images['teaser']);
+        $images['node'] = str_replace('/thumbnail/', '/full/',  $images['node']);
+
         return $images;
     }
 

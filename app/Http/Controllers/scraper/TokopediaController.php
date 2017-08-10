@@ -112,7 +112,7 @@ class TokopediaController extends Controller
 
         $scraped['tags'] = serialize($tag_id);
         
-        $scraped['se'] = $se->Geevv($scraped['title']);
+        //$scraped['se'] = $se->Geevv($scraped['title']);
    
         $city -> save();
         $seller ->save();

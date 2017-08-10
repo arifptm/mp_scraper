@@ -17,6 +17,8 @@ use \App\Services\Scraper;
 use \App\Services\TagService;
 
 use JonnyW\PhantomJs\Client;
+use Symfony\Component\DomCrawler\Crawler;
+use Browser\Casper;
 
 
 class TestController extends Controller
@@ -178,29 +180,55 @@ class TestController extends Controller
     }
 
 
+  
+
     public function phantom(){
+        //$url = 'https://www.blibli.com/apple-ipad-pro-10-5-2017-256-gb-tablet-space-gray-wi-fi-cellular-4g-lte-APS.18826.00594.html';
+        $url = "https://www.tokopedia.com/appleshock/monitor-lg-led-ips-23mp68vq/?src=featured_product&featuredpos=4_2";
         
         $client = Client::getInstance();
-
-        /** 
-         * @see JonnyW\PhantomJs\Http\Request
-         **/
-        $request = $client->getMessageFactory()->createRequest('http://jonnyw.me', 'GET');
-
-        /** 
-         * @see JonnyW\PhantomJs\Http\Response 
-         **/
+        $client -> getEngine()->setPath('d:\cdownload\phantomjs.exe');
+        $request = $client->getMessageFactory()->createRequest($url);
         $response = $client->getMessageFactory()->createResponse();
+        //dd($request);
+        
+        $client->send($request,$response);
 
-        // Send the request
-        $client->send($request, $response);
+//      dd($response);
+        $crawler = new Crawler($response->getContent());
 
-        if($response->getStatus() === 200) {
+//dd($crawler);
+        echo $crawler->filter('h1')->text();
+        
+        //$scraped['title']= str_limit($crawler->filter('h1')->text(),190);
+     }
 
-            // Dump the requested page content
-            echo $response->getContent();
-        }
-    }
+     public function casper(){
+
+        //$url = 'https://www.blibli.com/apple-ipad-pro-10-5-2017-256-gb-tablet-space-gray-wi-fi-cellular-4g-lte-APS.18826.00594.html';
+        $url = "https://www.tokopedia.com/appleshock/monitor-lg-led-ips-23mp68vq/?src=featured_product&featuredpos=4_2";
+
+        $casper = new Casper();
+
+        $casper->setOptions([
+            'ignore-ssl-errors' => 'yes'
+        ]);
+
+        $casper->start('http://www.google.com');
+
+        $casper->fillForm(
+        'form[action="/search"]',
+        array(
+                'q' => 'search'
+        ),
+        true);
+
+        $casper->run();
+
+        //dd($casper);
+
+     }
+    
     
     
 }
