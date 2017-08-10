@@ -67,10 +67,10 @@ class BlibliController extends Controller
         
         $city['name'] = trim(explode(',',$crawler->filter('span[ng-bind=pickupPointMessage]')->text())[0]);
         if ($city['name'] != ''){
-                $city['name'] = 'Indonesia';
-            $city['slug']   = $slug->createSlug($city['name']);
-            $city = City::firstOrCreate($city);
+                $city['name'] = 'Indonesia';            
         }
+        $city['slug']   = $slug->createSlug($city['name']);
+        $city = City::firstOrCreate($city);
         
         if ($crawler->filter('.shipping-agent a span')){
             $seller['name'] = trim($crawler->filter('.shipping-agent a span')->text());
