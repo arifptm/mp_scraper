@@ -20,6 +20,16 @@
 		@endif
 	</div>
 
+	<div class="form-group">
+		{!! Form::label('sell_price', 'Sell Price',['class'=>'control-label']) !!}
+		{!! Form::text('sell_price', null, ['class' => 'form-control']) !!}
+		@if ($errors->has('sell_price'))
+		    <div class="label label-danger">
+		        {{ $errors->first('sell_price') }}
+		    </div>
+		@endif
+	</div>
+
 	<div class="well">
 		<div class="form-group">
 			<div class="col-md-3">   

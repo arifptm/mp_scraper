@@ -58,7 +58,19 @@
     <script>
         $('#thumbs').delegate('img','click', function(){
             var bLazy = new Blazy();
-                $('#largeImage').attr('class', 'b-lazy img-responsive').attr('src', 'https://cdn4.iconfinder.com/data/icons/black-icon-social-media/128/099317-google-g-logo.png').attr('data-src', $(this).attr('src').replace('/thumbnail/','/full/'));        
+                $('#largeImage').attr('class', 'b-lazy img-responsive').attr('src', 'https://cdn4.iconfinder.com/data/icons/black-icon-social-media/128/099317-google-g-logo.png').attr('data-src', $(this).attr('src').replace('/thumbnail/','/medium/'));        
+        });
+        ;(function() {
+            var bLazy = new Blazy();
+        })();
+    </script>
+    @endif
+
+    @if ($item->feed->marketplace->slug == 'lazada')
+    <script>
+        $('#thumbs').delegate('img','click', function(){
+            var bLazy = new Blazy();
+                $('#largeImage').attr('class', 'b-lazy img-responsive').attr('src', 'https://cdn4.iconfinder.com/data/icons/black-icon-social-media/128/099317-google-g-logo.png').attr('data-src', $(this).attr('src').replace('-gallery.','-webp-catalog_233.'));        
         });
         ;(function() {
             var bLazy = new Blazy();
@@ -77,10 +89,14 @@
         <ol class="breadcrumb">
             <li><a href="/itm/mk/{{ $item->feed->marketplace->slug }}" class="link-info"><i class="fa fa-chevron-left"></i> {{ $item->feed->marketplace->name }}</a></li>
             <li><a href="/">Beranda</a></li>
-            @if ($item->category->parent()->first()->parent()->first())	
-            	<li><a href="/itm/ca/{{ $item->category->parent()->first()->parent()->first()->slug }}">{{ $item->category->parent()->first()->parent()->first()->name }}</a></li>
+            
+            @if ($item->category->parent()->count())    
+                @if ($item->category->parent()->first()->parent()->count())	
+            	   <li><a href="/itm/ca/{{ $item->category->parent()->first()->parent()->first()->slug }}">{{ $item->category->parent()->first()->parent()->first()->name }}</a></li>
+                @endif   
             @endif
-            @if ($item->category->parent()->first())	
+            
+            @if ($item->category->parent()->count())	
             	<li><a href="/itm/subca/{{ $item->category->parent()->first()->slug }}">{{ $item->category->parent()->first()->name }}</a></li>
             @endif	
             <li class="active">{{ $item->category->name }}</li>                       
@@ -91,6 +107,10 @@
 {{--title/top--}}
 <div class="row">
     <div class="col-sm-8">	
+        {!! Form::open(['url' => '/admin/items/'.$item->id, 'method' => 'delete']) !!}
+            <a href="/admin/items/{{$item->id}}/edit" >Edit</a> | 
+            {!! Form::button('Delete', ['type' => 'submit', 'class' => 'btn-link', 'onclick' => "return confirm('Yakin?')"]) !!}
+        {!! Form::close() !!}
         <h1 class="nodetitle">{{ str_limit($item->title,120) }}</h1>
         <p><i class="fa fa-map-marker"></i> <a href="/itm/ct/{{ $item->seller->city->slug }}">{{ $item->seller->city->name }}</a> |  <i class="fa fa-calendar"></i> {{ \Carbon\Carbon::parse($item->created_at)->format('d-m-Y') }}</p>
     </div>
@@ -193,13 +213,13 @@
 	   <div class="row">
 		    <div class="panel panel-default recent-listings hidden-xs">
 		  	   <div class="panel-heading">Produk terbaru dari {{ $item->seller->city->name }}</div>
-               <div class="panel-body">
+               <div class="panel-body"><br>
                     @foreach($others as $other)
-                    <div class="col-xs-2" style="margin-bottom: 10px;"> 
+                    <div class="col-xs-6 col-md-2" style="margin-bottom: 10px;"> 
                         <div class="thumbnail"><br>
                             <a href="/{{ $other->slug }}">
                                 <div data-toggle="tooltip" data-placement="top" title="Jual {{ $other->title }} seharga {{ $other->sell_price }} di {{ $other->seller->city->name }}">
-                                <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $other->images['teaser'][0] }}" alt=""  />
+                                <img class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $other->images['teaser'][0] }}" alt=""  />
                                 </div>
                             </a>
                         </div>

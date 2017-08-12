@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Seller;
 use App\City;
+use \App\Services\Slug;
 
 class SellerController extends Controller
 {
@@ -40,7 +41,10 @@ class SellerController extends Controller
 
     public function update(Request $request, $id)
     {
-        Seller::findOrFail($id)-> update($request->all());
+        $req = $request->all();
+        $slug = new Slug;
+        $req['slug'] = $slug->createSlug($request->name);
+        Seller::findOrFail($id)-> update($req);
         return redirect('/admin/sellers');
     }
 

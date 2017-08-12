@@ -7325,3 +7325,5 @@ h1.pagetitle{
 .spacer50{
   height:50px;
 }
+
+.body img{max-width:100%;}

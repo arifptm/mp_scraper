@@ -30,7 +30,7 @@ class TokopediaController extends Controller
         $mp = $p->feedProcessor('tokopedia'); //smallcase
 
         $scraped['item_url'] = $p->selectItem($mp)->item_url;
-
+	echo $scraped['item_url'];
         $crawler = Goutte::request('GET', $scraped['item_url'] );
 
         $scraped['title']= str_limit($crawler->filter('h1')->text(),190,'');
@@ -42,7 +42,7 @@ class TokopediaController extends Controller
         });    
 
         $cats = array_slice($cats, 1);
-
+	print_r($cats);
         $scraped['category_id'] = $p->getCatId($cats);
         $scraped['sell_price'] = preg_replace("/[^0-9]/","",$crawler->filter('div.product-box span[itemprop=price]')->text());
         $scraped['raw_price'] = null;
@@ -112,7 +112,7 @@ class TokopediaController extends Controller
 
         $scraped['tags'] = serialize($tag_id);
         
-        //$scraped['se'] = $se->Geevv($scraped['title']);
+        $scraped['se'] = $se->Geevv($scraped['title']);
    
         $city -> save();
         $seller ->save();

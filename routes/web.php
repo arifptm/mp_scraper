@@ -51,6 +51,7 @@ Route::prefix('sc')->group(function(){
 	Route::get('bl', 'scraper\BukalapakController@scrape');
 	Route::get('tp', 'scraper\TokopediaController@scrape');
 	Route::get('bb', 'scraper\BlibliController@scrape');
+	Route::get('lz', 'scraper\LazadaController@scrape');
 });
 
 

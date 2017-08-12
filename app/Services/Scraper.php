@@ -34,7 +34,9 @@ class Scraper
     	     	foreach ($urls as $url) {
     	     		$url = str_replace('/m.bukalapak','/www.bukalapak', $url); // special bukalapak
                     $url = trim($url);
-                    Item::firstOrCreate(['item_url' => $url, 'feed_id' => $selected_feed->id]);
+                    $item =Item::firstOrNew(['item_url' => $url]);
+                    $item->feed_id = $selected_feed->id;
+                    $item->save();
     	     	}	
             } 
 
@@ -43,7 +45,9 @@ class Scraper
                 $crawler = json_decode(file_get_contents($selected_feed->url));
                 foreach ($crawler->data->products as $item){
                     $title = explode('?trkid=',$item->url);
-                    Item::firstOrCreate(['item_url' => $title[0], 'feed_id' => $selected_feed->id]);
+                    $item = Item::firstOrNew(['item_url' => $title[0]]);
+                    $item->feed_id = $selected_feed->id;
+                    $item->save();
                 }                    
             }
             
@@ -54,11 +58,24 @@ class Scraper
                         });     
 
                 foreach ($urls as $url) {
-                    Item::firstOrCreate(['item_url' => $url, 'feed_id' => $selected_feed->id]);
+                    $item =Item::firstOrNew(['item_url' => $url]);
+                    $item->feed_id = $selected_feed->id;
+                    $item->save();
                 }   
-            }             
+            }    
 
+            if ($mp->slug == "lazada"){      
+                $urls = $crawler->filter('.product_list .product-card')->each (function ($node){
+                            return $node->attr('data-original');
+                        });     
 
+                foreach ($urls as $url) {
+                    $item =Item::firstOrNew(['item_url' => $url]);
+                    $item->feed_id = $selected_feed->id;
+                    $item->save();
+                }   
+            }                 
+ 
     		Feed::whereId($selected_feed->id)->update(['processed' => 1]);
     	}
     	return $mp;

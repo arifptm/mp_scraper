@@ -31,6 +31,7 @@ class BukalapakController extends Controller
         $mp = $p->feedProcessor('bukalapak'); //smallcase
 
         $scraped['item_url'] = $p->selectItem($mp)->item_url;
+        //$scraped['item_url'] = 'https://www.bukalapak.com/p/fashion-pria/celana-299/celana-pendek-2599/yzp3r-jual-best-seller-celana-pendek-tactical-blackhawk?from=old-popular-section-5';
 
         $crawler = Goutte::request('GET', $scraped['item_url'] );
         
@@ -46,9 +47,9 @@ class BukalapakController extends Controller
 
         $scraped['category_id'] = $p->getCatId($cats);
 
-		if (($crawler->filter('.c-product-detail-price__original .amount') === true ) AND ($crawler->filter('.c-product-detail-price__reduced .amount') === true )){
-			$scraped['raw_price'] = preg_replace("/[^0-9]/","",$crawler->filter('div.c-product-detail-price__original .amount')->text());
-			$scraped['sell_price'] = preg_replace("/[^0-9]/","",$crawler->filter('div.c-product-detail-price__reduced .amount')->text());
+		if (($crawler->filter('.c-product-detail-price__original .amount')->count() ) AND ($crawler->filter('.c-product-detail-price__reduced .amount')->count() )){
+			$scraped['raw_price'] = preg_replace("/[^0-9]/","",$crawler->filter('.c-product-detail-price__original .amount')->text());
+			$scraped['sell_price'] = preg_replace("/[^0-9]/","",$crawler->filter('.c-product-detail-price__reduced .amount')->text());
 			$discount = (($scraped['raw_price'] - $scraped['sell_price']) / $scraped['raw_price'] )*100;
 			$scraped['discount'] = round($discount,0,PHP_ROUND_HALF_UP);	
 		} else {

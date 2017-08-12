@@ -32,6 +32,7 @@ Items
                     <thead>
                        <tr>
                           <th>Id</th>
+                          <th>FId</th>
                           <th>URL</th>
                           <th>Title</th>
                           <th>Price</th> 
@@ -82,6 +83,7 @@ Items
 
        columns: [
            { data: 'id', name: 'id' },
+           { data: 'feed_id', name: 'feed_id' },
            { data: 'item_url', name: 'item_url' },
            { data: 'title', name: 'title' },
            { data: 'sell_price', name: 'sell_price', orderable: false, searchable: false },

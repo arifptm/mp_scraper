@@ -17,7 +17,7 @@
 					<div class="card">	
 						<div class="card-seller">
 							<div class="text-right">
-								<a href="/itm/sl/{{ $seller->slug}}"><img src="{{ $seller->image_url }}"></a>
+								<a href="/itm/sl/{{ $seller->slug}}"><img class="responsive-image" width="100px" height="100px" src="{{ $seller->image_url }}"></a>
 							</div>
 							<div class="seller-data">
 								<div class="seller-city"><i class="fa fa-map-marker"></i> {{ $seller->city->name }}</div>

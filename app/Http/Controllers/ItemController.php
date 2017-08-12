@@ -131,11 +131,13 @@ class ItemController extends Controller
     public function publicShow($slug)
     {
         $item = Item::whereSlug($slug)->first();
-        
-        $relateds = Item::where('category_id', $item->category_id)->where('id', '<>', $item->id)->orderBy('id','desc')->take(6)->get();
+                
+        $relateds = Item::where('category_id', $item->category_id)->where('id', '!=', $item->id)->orderBy('id','desc');
+        $relateds = $relateds->count() ? $relateds->take(6)->get() : null;            
         
         $sl = Seller::whereCity_id($item->seller->city->id)->pluck('id');
-        $others = Item::whereIn('seller_id', $sl)->orderBy('id','desc')->take(6)->get();
+        $others = Item::whereIn('seller_id', $sl)->orderBy('id','desc');
+        $others = $others->count() ? $others->take(6)->get() : null;
         
         return view('public.item.show', [ 
             'item' => $item,         
@@ -234,7 +236,7 @@ class ItemController extends Controller
     }
 
     public function data(){
-        $item = Item::select(['id', 'item_url', 'title', 'sell_price', 'seller_id','updated_at','processed','published','checked','sold_out']);
+        $item = Item::select(['id', 'feed_id','item_url', 'title', 'sell_price', 'seller_id','updated_at','processed','published','checked','sold_out']);
 
         $dt = Datatables::of($item)
             ->addColumn('action', function ($item) {                

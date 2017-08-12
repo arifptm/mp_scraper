@@ -34,17 +34,14 @@ class BlibliController extends Controller
         $mp = $p->feedProcessor('blibli'); //smallcase
 
         $scraped['item_url'] = $p->selectItem($mp)->item_url;
-        //$scraped['item_url'] = 'https://www.blibli.com/djoemat-gembira-d16-11-03-dg-kirana-dress-batik-grey-MTA.0791006.htm?ds=DJG-29054-00066-00003';
-        //$scraped['item_url'] = 'https://www.blibli.com/apple-ipad-pro-12-9-2017-256-gb-tablet-gold-wi-fi-cellular-4g-lte-APS.18826.00607.html?ds=APS-18826-00607-00001';
-        //$scraped['item_url'] = 'https://www.blibli.com/indomaret-paket-belanja-physic-voucher-rp-1-000-000-rp-50-000-GUV.29200.00083.html?ds=GUV-29200-00083-00001';
-        //$crawler = Goutte::request('GET', $scraped['item_url'] );
+        //$scraped['item_url'] = 'https://www.blibli.com/bandai-system-weapon-007-hg-gundam-model-kit-1-144-UK.0025733.htm?ds=TOX-25266-03872-00001';
 
         $client = Client::getInstance();
         $client -> getEngine()->setPath(env('PHANTOMJS_PATH'));
         $request = $client->getMessageFactory()->createRequest($scraped['item_url']);
         $response = $client->getMessageFactory()->createResponse();        
         $client->send($request,$response);
-
+        
         $crawler = new Crawler($response->getContent());
         
         $scraped['title']= str_limit($crawler->filter('h1.product-name')->text(),190,'');
@@ -52,27 +49,29 @@ class BlibliController extends Controller
         $scraped['slug'] = $slug->createSlug($scraped['title']);
 
         $cats = $crawler->filter('#bread-scrum a')->each (function ($node){
-             return trim($node->text());
+             return trim($node->attr('data-value'));
         });    
-
+        
         $cats = array_slice($cats, 1);
         $scraped['category_id'] = $p->getCatId($cats);
 		
-        $scraped['sell_price'] = $crawler->filter('#priceDisplay') ? preg_replace('/[^0-9]/','',$crawler->filter('#priceDisplay')->text()) : null;
-        if ($crawler->filter('#strikeThroughPrice')) {
+        $scraped['sell_price'] = $crawler->filter('#priceDisplay') ? preg_replace('/[^0-9]/','',explode('-',$crawler->filter('#priceDisplay')->text())[0]) : null;
+        
+
+        if ($crawler->filter('#strikeThroughPrice')->count()) {
             $scraped['raw_price'] = preg_replace('/[^0-9]/','',$crawler->filter('#strikeThroughPrice')->text());
             $discount = (($scraped['raw_price'] - $scraped['sell_price']) / $scraped['raw_price'] )*100;
             $scraped['discount'] = round($discount,0,PHP_ROUND_HALF_UP);
         }
-        
+
         $city['name'] = trim(explode(',',$crawler->filter('span[ng-bind=pickupPointMessage]')->text())[0]);
-        if ($city['name'] != ''){
+        if ($city['name'] == ''){
                 $city['name'] = 'Indonesia';            
         }
         $city['slug']   = $slug->createSlug($city['name']);
         $city = City::firstOrCreate($city);
         
-        if ($crawler->filter('.shipping-agent a span')){
+        if ($crawler->filter('.shipping-agent a span')->count()) {
             $seller['name'] = trim($crawler->filter('.shipping-agent a span')->text());
         } else {
             $seller['name'] = 'Blibli.com';
@@ -88,6 +87,11 @@ class BlibliController extends Controller
         $scraped['seller_id'] = $seller->id;
 
         $img = $crawler->filter('#productImageGallery img');
+
+        if ($img->count() == 0){
+            $p->selectItem($mp)->update(['processed'=>1, 'published'=>0]);
+            dd('gad ada gambar');
+        }
 
             $imgs = $img->each (function ($node){
                 return trim($node->attr('src'));
@@ -106,7 +110,7 @@ class BlibliController extends Controller
         $body = preg_replace($clr, '', $body);
         $scraped['body'] = str_replace('\n','', $body);
 
-        $details = $crawler->filter('.product-usp') ? $crawler->filter('.product-usp')->html() : null;
+        $details = $crawler->filter('.product-usp')->count() ? $crawler->filter('.product-usp')->html() : null;
 
         $scraped['details'] = str_replace('\n','', $details);
     
@@ -125,7 +129,7 @@ class BlibliController extends Controller
 
         $scraped['tags'] = serialize($tag_id);
         
-  //       $scraped['se'] = $se->Geevv($scraped['title']);
+         $scraped['se'] = $se->Geevv($scraped['title']);
    
         $city -> save();
         $seller ->save();

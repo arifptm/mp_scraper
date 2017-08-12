@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\City;
+use \App\Services\Slug;
 
 class CityController extends Controller
 {
@@ -36,7 +37,10 @@ class CityController extends Controller
 
     public function update(Request $request, $id)
     {
-        City::findOrFail($id)->update($request->all());
+        $req = $request->all();
+        $slug = new Slug;
+        $req['slug'] = $slug->createSlug($request->name);
+        City::findOrFail($id)->update($req);
         return redirect('/admin/cities');
     }
 

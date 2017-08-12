@@ -41,8 +41,14 @@ class Item extends Model
         $images['thumb'] = str_replace('/img/product-1/', '/img/cache/100-square/product-1/',  $images['thumb']);
 
         //Blibli
-        $images['teaser'] = str_replace('/thumbnail/', '/full/', $images['teaser']);
+        $images['teaser'] = str_replace('/thumbnail/', '/medium/', $images['teaser']);
         $images['node'] = str_replace('/thumbnail/', '/full/',  $images['node']);
+        $images['thumb'] = str_replace('/thumbnail/', '/thumbnail/',  $images['thumb']);
+
+        //Lazada
+        $images['teaser'] = str_replace('-gallery.', '-webp-catalog_233.', $images['teaser']);
+        $images['node'] = str_replace('-gallery.', '-webp-product.',  $images['node']);
+        $images['thumb'] = str_replace('-gallery.', '-webp-gallery.',  $images['thumb']);
 
         return $images;
     }
@@ -72,16 +78,20 @@ class Item extends Model
     	return $this->belongsTo('App\Seller');
     }
 
-    public function getSellPriceAttribute($v)
-    {
-        return number_format($v,0,",",".");
+    public function getSellPriceAttribute($v){
+        if($v != 0){   
+            return number_format($v,0,",",".");
+        } else{
+            return $v;
+        }
+
     }
 
-    public function getRawPriceAttribute($v)
-    {
-        if($v != 0)
-        {
+    public function getRawPriceAttribute($v){
+        if($v != 0){
             return number_format($v,0,",",".");
+        } else {
+            return $v;
         }
     }
 }
