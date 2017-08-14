@@ -65,9 +65,17 @@ class Scraper
             }    
 
             if ($mp->slug == "lazada"){      
-                $urls = $crawler->filter('.product_list .product-card')->each (function ($node){
-                            return $node->attr('data-original');
-                        });     
+                if ( $crawler->filter('.product_list .product-card')->count()) {
+                    $urls = $crawler->filter('.product_list .product-card')->each (function ($node){
+                        return $node->attr('data-original');
+                    });
+                } elseif ($crawler->filter('.c-product-card__description a.c-product-card__name')->count()){ 
+                     $urls = $crawler->filter('.c-product-card__description a.c-product-card__name')->each (function ($node){
+                        $itm = $node->attr('href');
+                        $itm = explode('?ff=', $itm)[0];
+                        return 'http://www.lazada.co.id'.$itm;
+                    });
+                }     
 
                 foreach ($urls as $url) {
                     $item =Item::firstOrNew(['item_url' => $url]);
