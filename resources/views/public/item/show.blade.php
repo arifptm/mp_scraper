@@ -28,7 +28,19 @@
 @endsection	
 
 @section('footer_script')
-	<script src="{{ asset('/plugins/blazy/blazy.min.js') }}"></script>
+    <script>
+	$(".body > img").each(function(){
+		$(this).removeClass("productlazyimage")
+		.addClass("img-responsive")
+		.removeAttr("style")
+		.attr('src', ($(this).attr('data-original')))
+		.removeAttr("data-original");
+	});
+	$("ul.prd-attributesList li").removeAttr('style');
+	$("span.more-desc-button").remove();
+    </script>
+
+    <script src="{{ asset('/plugins/blazy/blazy.min.js') }}"></script>
 	
     @if ($item->feed->marketplace->slug == 'bukalapak')
     <script>

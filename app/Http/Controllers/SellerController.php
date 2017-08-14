@@ -36,7 +36,8 @@ class SellerController extends Controller
     public function edit($id)
     {
         $seller = Seller::findOrFail($id);
-        return view('admin.seller.edit', [ 'seller' => $seller ]);
+        $city = City::pluck('name', 'id');
+        return view('admin.seller.edit', [ 'seller' => $seller, 'city' => $city ]);
     }
 
     public function update(Request $request, $id)

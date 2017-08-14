@@ -54,7 +54,7 @@ class TokopediaController extends Controller
         
         $seller['name']= trim($crawler->filter('.product-box-content a#shop-name-info')->text());
         
-        $seller['image_url'] = $crawler->filter('.product-box-content picture img')->attr('src') ?: "https://ecs12.tokopedia.net/newimg/cache/100-square/default_v3-shopnophoto.png";
+        $seller['image_url'] = $crawler->filter('.product-box-content picture img')->attr('src') ?: "https://s3-ap-southeast-1.amazonaws.com/new99toko/default_shop.png";
         $seller['slug'] = $slug->createSlug($seller['name']);
         $seller['marketplace_id'] = $mp->id;
         $seller['city_id'] = $city->id;

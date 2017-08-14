@@ -63,7 +63,7 @@ class BukalapakController extends Controller
         $city = City::firstOrCreate($city);
         
         $seller['name']= trim($crawler->filter('.c-user-identification .qa-seller-name')->text());
-        $seller['image_url'] = $crawler->filter('.c-user-identification img.c-avatar__image')->attr('src') ?: "https://ecs12.tokopedia.net/newimg/cache/100-square/default_v3-shopnophoto.png";
+        $seller['image_url'] = $crawler->filter('.c-user-identification img.c-avatar__image')->attr('src') ?: "https://s3-ap-southeast-1.amazonaws.com/new99toko/default_shop.png";
         $seller['slug'] = $slug->createSlug($seller['name']);
         $seller['marketplace_id'] = $mp->id;
         $seller['city_id'] = $city->id;

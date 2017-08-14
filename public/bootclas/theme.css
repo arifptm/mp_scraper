@@ -7194,29 +7194,52 @@ h1.pagetitle{
   text-align: center;
 }
 
-.bukalapak-bg {
+.bukalapak-bg, .tokopedia-bg, .blibli-bg, .lazada-bg, .mataharimall-bg, .elevenia-bg, .bhinneka-bg, .alfacart-bg, .blanja-bg, .zalora-bg  {
   height: 26px;
-  background:#efefef url('../images/logo-sq.png') no-repeat 0 -26px;
   background-size: 26px 520px;
   padding-left: 30px;
   line-height: 24px;
-
 }
 
+
 .tokopedia-bg {
-  height: 26px;
-  background:#efefef url('../images/logo-sq.png') no-repeat 0 0px;
-  background-size: 26px 520px;
-  padding-left: 30px;
-  line-height: 24px;
+  background:#efefef url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 0px;
+}
+
+.bukalapak-bg {
+  background:#efefef url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -26px;
 }
 
 .blibli-bg {
-  height: 26px;
-  background:#efefef url('../images/logo-sq.png') no-repeat 0 -52px;
-  background-size: 26px 520px;
-  padding-left: 30px;
-  line-height: 24px;
+  background:#efefef url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -52px;
+}
+
+.lazada-bg {
+  background:#efefef url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -78px;
+}
+
+.mataharimall-bg {
+  background:#efefef url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -104px;
+}
+
+.elevenia-bg {
+  background:#efefef url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -130px;
+}
+
+.bhinneka-bg {
+  background:#efefef url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -156px;
+}
+
+.alfacart-bg {
+  background:#efefef url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -182px;
+}
+
+.blanja-bg {
+  background:#efefef url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -208px;
+}
+
+.zalora-bg {
+  background:#efefef url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -234px;
 }
 
 .percent{

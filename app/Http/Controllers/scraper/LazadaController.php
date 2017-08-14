@@ -45,6 +45,7 @@ class LazadaController extends Controller
         $client->send($request,$response);        
         $crawler = new Crawler($response->getContent());
         
+        echo $scraped['item_url']."<br>";
         $scraped['title']= trim(str_limit($crawler->filter('h1#prod_title')->text(),190,''));
         
         $scraped['slug'] = $slug->createSlug($scraped['title']);
@@ -68,8 +69,10 @@ class LazadaController extends Controller
         $id_seller_json = json_decode(file_get_contents('https://www.lazada.co.id/ajax/ask/questionsSegmented?sku='.$sku));
         $seller['name'] = $id_seller_json->data->pdpSeller->name;
         $seller['slug'] = $slug->createSlug($seller['name']);
-       $seller['marketplace_id'] = $mp->id;
-        $seller['image_url'] = $id_seller_json->data->pdpSeller->image;
+        $seller['marketplace_id'] = $mp->id;
+        $seller_img = $id_seller_json->data->pdpSeller->image;
+        $seller['image_url'] = ($seller_img != null) ? $seller_img : 'https://s3-ap-southeast-1.amazonaws.com/new99toko/default_shop.png';
+
 
         $seller_id = $id_seller_json->data->pdpSeller->id;
         
@@ -88,22 +91,24 @@ class LazadaController extends Controller
         $seller = Seller::firstOrCreate($seller);
         $scraped['seller_id'] = $seller->id;
 
-        $img = $crawler->filter('.prd-moreImages li div div.productImage img');
+        $img = $crawler->filter('.prd-moreImages .productImage');
             $imgs = $img->each (function ($node){
-                return trim($node->attr('src'));
+                return trim($node->attr('data-image'));
             });
             
         $scraped['images'] = serialize($imgs);
 
-        $crawler -> filter('#flix-inpage, .product-description__title, .product-description__webyclip-thumbnails, .product-description__inbox')->each(function($nodes){
+        $crawler -> filter('#flix-inpage, .product-description__title, .product-description__webyclip-thumbnails, .product-description__inbox, noscript')->each(function($nodes){
             foreach ($nodes as $node) {
                 $node->parentNode->removeChild($node);
             }
         });
         
         $body1 = $crawler->filter('.product-description__block[data-component=product-description]')->html();
+        $body1 = str_replace('productlazyimage','img-responsive', $body1);
+        $body1 = str_replace('data-original','src', $body1);
         $body2 = $crawler->filter('table.specification-table')->count() ? '<table class="table table-responsive table-bordered">'.$crawler->filter('table.specification-table')->html().'</table>' : '';
-        $body = $body1.'<br>'.$body2;
+        $body = $body1.'<br><br>'.$body2;
 
         $clr = '/<([^>\s]+)[^>]*>(?:\s*(?:<br \/>|&nbsp;|&thinsp;|&ensp;|&emsp;|&#8201;|&#8194;|&#8195;)\s*)*<\/\1>/m';
         

@@ -47,8 +47,11 @@ class Item extends Model
 
         //Lazada
         $images['teaser'] = str_replace('-gallery.', '-webp-catalog_233.', $images['teaser']);
+        $images['teaser'] = str_replace('-gallery_44x44.', '-webp-catalog_233.', $images['teaser']);
         $images['node'] = str_replace('-gallery.', '-webp-product.',  $images['node']);
+        $images['node'] = str_replace('-gallery_44x44.', '-webp-product_340x340.',  $images['node']);
         $images['thumb'] = str_replace('-gallery.', '-webp-gallery.',  $images['thumb']);
+        $images['thumb'] = str_replace('-gallery_44x44.', '-webp-gallery_44x44.',  $images['thumb']);
 
         return $images;
     }

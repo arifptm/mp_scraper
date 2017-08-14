@@ -53,9 +53,9 @@ class ReplacerController extends Controller
         $dt = Datatables::of($replacer)
             ->addColumn('action', function ($replacer) {                
                 return '
-                                <form action="/admin/replacer/$replacer->id" method="delete">
+                                <form action="/admin/replacer/'.$replacer->id.'" method="delete">
                                 <div class="btn-group">
-                                    <a href="/admin/replacers/$replacer->id/edit" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit"></i> Edit</a>
+                                    <a href="/admin/replacers/'.$replacer->id.'/edit" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit"></i> Edit</a>
                                     <button type="submit" class="btn btn-danger btn-xs"  onclick = "return confirm(\'Are you sure?\')" ><i class="glyphicon glyphicon-trash"></i> Delete</button>
                                 </div>
                                 </form>                
