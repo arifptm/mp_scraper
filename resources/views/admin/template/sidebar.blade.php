@@ -55,14 +55,8 @@
             <i class="fa fa-th"></i> <span>Replacer</span>
           </a>
         </li>  
-         <li class="header"></li>   
-         <li>
-          <a href="/admin/pages">
-            <i class="fa fa-th"></i> <span>Pages</span>
-          </a>
-        </li> 
 
-
+         <li class="header"></li> 
         <li>
           <a href="/admin/pending/tokopedia">
             <i class="fa fa-th"></i> <span>Pending Item</span>
@@ -79,6 +73,31 @@
             <i class="fa fa-th"></i> <span>Link Check</span>
           </a>
         </li> 
+
+        <li class="header"></li>   
+        <li>
+          <a href="/admin/vocabularies">
+            <i class="fa fa-th"></i> <span>Vocabulary</span>
+          </a>
+        </li> 
+        <li>
+          <a href="/admin/terms">
+            <i class="fa fa-th"></i> <span>Term</span>
+          </a>
+        </li> 
+        <li>
+          <a href="/admin/pages">
+            <i class="fa fa-th"></i> <span>Pages</span>
+          </a>
+        </li> 
+        <li>
+          <a href="/admin/articles">
+            <i class="fa fa-th"></i> <span>Article</span>
+          </a>
+        </li> 
+
+
+
 
       </ul>
     </section>

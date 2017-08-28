@@ -109,8 +109,9 @@ class BukalapakController extends Controller
             $tag['name'] = $t;
             $tag['slug'] = $slug->createSlug($t);
 
-            $save_tag = Tag::firstOrCreate($tag);
-            $save_tag->save();
+            $save_tag = Tag::firstOrNew($tag);
+            $tag['count'] = $save_tag->count + 1;
+            $save_tag->save();            
             $tag_id[] = $save_tag->id;
         }
 
@@ -122,7 +123,7 @@ class BukalapakController extends Controller
         $seller ->save();
         $p->selectItem($mp)->update($scraped);
 
-        dd($scraped);  
+        $scraped = null;  
 
     } 
 }

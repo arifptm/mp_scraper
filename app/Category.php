@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use App\Item;
 use App\Feed;
+use App\ItemCounter;
 
 class Category extends Model
 {
@@ -24,6 +25,11 @@ class Category extends Model
 	public function item()
     {
     	return $this->belongsTo('App\Item');
+    }   
+
+    public function counter()
+    {
+        return $this->hasOne('App\ItemCounter', 'category_id');
     }   
 
     // function setNameAttribute($val)   

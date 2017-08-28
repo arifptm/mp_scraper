@@ -62,6 +62,6 @@
 <script src="{{ asset('/bower_components/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js') }}"></script>
 <script src="{{ asset('/bower_components/AdminLTE/bootstrap/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('/bower_components/AdminLTE/dist/js/app.min.js') }}"></script>
-  @yield('footer_scripts')
+@yield('footer_scripts')
 </body>
 </html>

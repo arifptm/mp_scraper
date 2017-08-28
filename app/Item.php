@@ -27,7 +27,7 @@ class Item extends Model
         ];
     }
 
-    public function getImagesAttribute($val)
+    public function dgetImagesAttribute($val)
     {
         $imgs = unserialize($val);
         //bukalapak
@@ -53,7 +53,14 @@ class Item extends Model
         $images['thumb'] = str_replace('-gallery.', '-webp-gallery.',  $images['thumb']);
         $images['thumb'] = str_replace('-gallery_44x44.', '-webp-gallery_44x44.',  $images['thumb']);
 
-        return $images;
+
+        //MatahariMall
+        // $images['teaser'] = str_replace('/p/', '/tx200/', $images['teaser']);
+        // $images['node'] = str_replace('/p/', '/tx450/',  $images['node']);
+        // $images['thumb'] = str_replace('/p/', '/tx80/',  $images['thumb']);
+
+
+        // return $images;
     }
 
     public function getTagsAttribute($val)
@@ -97,4 +104,5 @@ class Item extends Model
             return $v;
         }
     }
+
 }

@@ -7349,4 +7349,45 @@ h1.pagetitle{
   height:50px;
 }
 
-.body img{max-width:100%;}
+
+.centro.teaser.related{
+  margin:0;
+}
+
+
+
+.centro.teaser{
+  height: 150px; 
+  overflow: hidden;
+  text-align:center;
+  padding:2px;
+  border:1px solid #ccc;
+  margin:15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centro.node{
+  width: 400px; 
+  height: 400px; 
+  overflow: hidden;
+  
+}
+
+.centro img{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.centro img.landscape{
+  max-width: none;
+  max-height: 100%;  
+}
+
+
+@media screen and (min-width: 768px) {
+}
+
+@media (min-width: 768px) {

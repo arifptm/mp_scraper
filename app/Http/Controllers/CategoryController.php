@@ -42,8 +42,7 @@ class CategoryController extends Controller
 
 
     public function suggestion()
-    {
-        
+    {     
         $c = Category::all()->pluck('name')->toJson();
         return $c;
     }

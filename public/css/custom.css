@@ -1,0 +1,338 @@
+.centro.teaser{
+  height: 200px; 
+  overflow: hidden;
+  text-align:center;
+  padding:2px;
+  border:1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centro.related{
+  height: 120px; 
+  overflow: hidden;
+  text-align:center;
+  padding:2px;
+  border:1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centro{
+  overflow: hidden;
+  text-align:center;
+  padding:2px;
+  border:1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.leftro{
+  height: 100px;  
+  overflow: hidden;
+  text-align:center;
+  padding:2px;
+  border:1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.centro img.node{
+  height: 400px;  
+  width: auto;
+}
+
+.centro img.tiny{
+  height: 80px;  
+  width: auto;
+}
+
+
+.leftro img.thumb{
+  height:100px;
+  width: auto;
+}
+
+.centro img.teaser{
+  height: 180px;  
+  width: auto;
+}
+
+
+.centro img.landscape{
+  max-width: none;
+  max-height: 100%;  
+}
+
+.listing-grid-item .content-bottom {
+padding:10px 10px 8px;
+line-height: 26px;
+}
+
+a.white-link{
+  color:#ffffff;
+}
+
+h6.twolines{
+  height:3em;
+  overflow:hidden;
+}
+
+.other-sell_price{
+  font-size:1.7em;
+  font-weight: 600;
+}
+
+a.black-bold-link{
+  color:#000000;
+  font-weight: 600;
+}
+
+h6.card-seller-name, h6.card-marketplace-name{
+  margin:0px;
+}
+
+.card-seller-name a{
+  padding:0px 5px;
+  line-height:1.1em;
+}
+
+.card-marketplace-name a{
+  padding:0px 0px 20px;
+}
+
+
+.card-seller-city a{
+  padding:5px 5px 15px;
+}
+
+.simple-pagination .pagination{margin:0px;}
+.simple-pagination .pagination > li > a, .simple-pagination .pagination > li > span {
+    width: auto; 
+    font-size: 15px;
+    font-weight: bold;    
+}
+
+h1.detail-heading-name{
+  font-size: 2.8em;
+}
+
+.marketplace-card-img{padding:0 25px;}
+
+.width75{ max-width:75%; }
+
+.category-item-03.card-city-list .icon{
+  width:40px;
+  height:40px;
+  line-height: 37px;
+}
+
+.category-item-03.card-city-list .content{
+  width:160px;
+}
+
+.category-item-03.card-city-list a{
+  padding:10px 30px 10px 15px;
+}
+
+h1.subtitle{font-size:32px;}
+
+.color-blue{
+  color:#0C71ED;
+}
+
+.out-of{
+  text-decoration: line-through;
+}
+
+
+.tokopedia-bg {
+  background:#fff url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 0px;
+
+}
+
+.bukalapak-bg {
+  background:#fff url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -26px;
+}
+
+.blibli-bg {
+  background:#fff url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -52px;
+}
+
+.lazada-bg {
+  background:#fff url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -78px;
+}
+
+.mataharimall-bg {
+  background:#fff url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -104px;
+}
+
+.elevenia-bg {
+  background:#fff url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -130px;
+}
+
+.bhinneka-bg {
+  background:#fff url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -156px;
+}
+
+.alfacart-bg {
+  background:#fff url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -182px;
+}
+
+.blanja-bg {
+  background:#fff url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -208px;
+}
+
+.zalora-bg {
+  background:#fff url('https://s3-ap-southeast-1.amazonaws.com/new99toko/logos-small.png') no-repeat 0 -234px;
+}
+
+.marleft26{
+  margin-left:26px;
+}
+
+.detail-heading-action .sold-out{
+  color:#FA0D15;
+}
+
+.detail-heading-action .on-sale{
+  color:#2D66F6;
+}
+
+.detail-heading-action .sold-out, .detail-heading-action .on-sale {
+    display: block;
+    font-size: 12px;
+    text-align: center;    
+    padding: 3px 10px 2px;
+    border-radius: 3px;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border: 2px solid #FFF;
+    background: #FFF;
+    position: relative;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.detail-heading-action .sold-out:hover {
+    background: #FA0D15;
+    color: #FFF;
+    border:2px solid #FA0D15;
+}
+
+.detail-heading-action .on-sale:hover {
+    background: #2D66F6;
+    color: #FFF;
+    border:2px solid #2D66F6;
+}
+
+.detail-heading-action .sold-out:after, .detail-heading-action .on-sale:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;    
+    border-radius: 3px;
+}
+
+.detail-heading-action .sold-out:after{
+    border: 2px solid #FA0D15;
+}
+
+.detail-heading-action .on-sale:after {
+    border: 2px solid #2D66F6;
+}
+
+.detail-heading-action .sold-out:hover:after, .detail-heading-action .on-sale:hover:after {
+    border: 2px solid #FFF;
+}
+
+.counter{
+  font-size:4em;
+  font-family: "Open Sans", sans-serif;
+  font-weight:600;
+  line-height: 2em;
+  color:#2D66F6;
+}
+
+.image-bg-breadcrumb {    
+    padding: 122px 0 50px;
+}
+
+.second-search-form-wrapper-01 .form-group {
+    margin-bottom: 0;
+    background: #FFF;
+    padding: 12px 18px 10px;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    height: 48px;
+}
+
+.second-search-form-wrapper-01 .second-search-form-inner {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    border: 4px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.24);
+}
+
+
+.second-search-form-wrapper-01 .main-search-form-inner.alt-width {
+    width: 65%;
+}
+
+.second-search-form-wrapper-01 .form-holder {
+    margin-right: 120px;
+}
+
+
+.second-search-form-wrapper-01 .form-group.focus,
+.second-search-form-wrapper-01 .form-group:hover {
+    background-color: #DAE2F5;
+}
+
+.second-search-form-wrapper-01 .form-holder .form-control {
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    height: auto;
+    font-weight: 400;
+    font-size: 16px;
+    background: transparent;
+}
+
+.second-search-form-wrapper-01 .btn-holder {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 119px;
+}
+
+.second-search-form-wrapper-01 .btn-holder .btn {
+    border-radius: 0;
+    margin: 0;
+    height: 48px;
+    line-height: 48px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 0;
+}
+
+.easy-autocomplete{
+  text-align: left;
+}

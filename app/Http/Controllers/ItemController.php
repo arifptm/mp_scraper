@@ -15,6 +15,7 @@ use SEOMeta;
 use OpenGraph;
 use Twitter;
 use Yajra\Datatables\Facades\Datatables;
+use App\Searched;
 
 class ItemController extends Controller
 {
@@ -27,10 +28,11 @@ class ItemController extends Controller
             'title' => 'Daftar semua produk dari marketplace yang ada di Indonesia',
             'pagetitle' => 'Daftar produk Marketplace Indonesia',
             'description' => 'Daftar semua produk dari Marketplace yang ada di Indonesia, produk Tokopedia, Bukalapak, Lazada, Blibli, MatahariMall, Elevenia, Shopee, dan sebagainya.',
-            'keywords' => 'daftar produk lengkap, produk marketplace Indonesia, produk tokopedia, produk bukalapak, produk lazada, produk blibli, produk mataharimall, produk elevenia, produk shopee'
+            'keywords' => 'daftar produk lengkap, produk marketplace Indonesia, produk tokopedia, produk bukalapak, produk lazada, produk blibli, produk mataharimall, produk elevenia, produk shopee',
+            'breadcrumb' => "Produk Lengkap"
         ];
 
-        return view('public.item.item_by', ['items' => $it, 'meta' => $meta ]);
+        return view('toko.item.item_by', ['items' => $it, 'meta' => $meta ]);
     }
 
     public function itemByCity( $slug = null )
@@ -43,10 +45,11 @@ class ItemController extends Controller
             'title' => "Daftar produk lengkap onlineshop seller dari kota $cid->name",
             'pagetitle' => "Daftar produk dari kota $cid->name",
             'description' => "Daftar produk lengkap onlineshop, seller dari kota $cid->name yang dijual di marketplace yang ada di Indonesia.",
-            'keywords' => "Produk $cid->name, produk lengkap, produk marketplace Indonesia, produk tokopedia, produk bukalapak, produk lazada, produk blibli, produk mataharimall, produk elevenia, produk shopee"
+            'keywords' => "Produk $cid->name, produk lengkap, produk marketplace Indonesia, produk tokopedia, produk bukalapak, produk lazada, produk blibli, produk mataharimall, produk elevenia, produk shopee",
+            'breadcrumb' => $cid->name
         ];
 
-        return view('public.item.item_by', ['items' => $it, 'meta' => $meta ]);
+        return view('toko.item.item_by', ['items' => $it, 'meta' => $meta ]);
     }
 
 
@@ -59,10 +62,12 @@ class ItemController extends Controller
             'title' => "Daftar produk lengkap dijual oleh $sid->name dari kota ".$sid->city->name,
             'pagetitle' => "Produk dijual oleh $sid->name -".$sid->city->name ,
             'description' => "Daftar produk yang dijual oleh onlineshop $sid->name, seller dari kota ".$sid->city->name.", di marketplace yang ada di Indonesia.",
-            'keywords' => "Produk $sid->name, produk ".$sid->city->name.", $sid->name ".$sid->city->name.", produk lengkap, produk tokopedia, produk bukalapak, produk lazada, produk blibli, produk mataharimall, produk elevenia, produk shopee"
+            'keywords' => "Produk $sid->name, produk ".$sid->city->name.", $sid->name ".$sid->city->name.", produk lengkap, produk tokopedia, produk bukalapak, produk lazada, produk blibli, produk mataharimall, produk elevenia, produk shopee",
+            'breadcrumb' => $sid->name
+
         ];
 
-        return view('public.item.item_by', ['items' => $it, 'meta' =>$meta ]);   
+        return view('toko.item.item_by', ['items' => $it, 'meta' =>$meta ]);   
     }
 
 
@@ -79,10 +84,12 @@ class ItemController extends Controller
             'title' => "Daftar produk kategori ".$id1->name,
             'pagetitle' => "Produk murah kategori ".$id1->name,
             'description' => "Daftar produk murah pada kategori ".$id1->name.", yang jual di marketplace Indonesia, produk Tokopedia, Bukalapak, Lazada, Blibli, MatahariMall, Elevenia, Shopee, dan sebagainya.",
-            'keywords' => "kategori ".$id1->name.", produk ".$id1->name.", produk lengkap, produk tokopedia, produk bukalapak, produk lazada, produk blibli, produk mataharimall, produk elevenia, produk shopee"
+            'keywords' => "kategori ".$id1->name.", produk ".$id1->name.", produk lengkap, produk tokopedia, produk bukalapak, produk lazada, produk blibli, produk mataharimall, produk elevenia, produk shopee",
+            'breadcrumb' => "Kategory $id1->name"
+
         ];
         
-        return view('public.item.item_by', ['items' => $it, 'meta' => $meta ]);
+        return view('toko.item.item_by', ['items' => $it, 'meta' => $meta ]);
     } 
 
     public function itemBySubCategory( $slug = null )
@@ -96,10 +103,11 @@ class ItemController extends Controller
             'title' => "Daftar produk subkategori ".$id1->name,
             'pagetitle' => "Produk murah subkategori ".$id1->name,
             'description' => "Daftar produk murah pada subkategori ".$id1->name.", yang jual di marketplace Indonesia, produk Tokopedia, Bukalapak, Lazada, Blibli, MatahariMall, Elevenia, Shopee, dan sebagainya.",
-            'keywords' => "subkategori ".$id1->name.", produk ".$id1->name.", produk lengkap, produk tokopedia, produk bukalapak, produk lazada, produk blibli, produk mataharimall, produk elevenia, produk shopee"
+            'keywords' => "subkategori ".$id1->name.", produk ".$id1->name.", produk lengkap, produk tokopedia, produk bukalapak, produk lazada, produk blibli, produk mataharimall, produk elevenia, produk shopee",
+            'breadcrumb' => "$id1->name"
         ];
 
-        return view('public.item.item_by', ['items' => $it, 'meta' => $meta]);
+        return view('toko.item.item_by', ['items' => $it, 'meta' => $meta]);
     }
       
 
@@ -113,24 +121,44 @@ class ItemController extends Controller
             'title' => "Daftar produk lengkap terbaru di ".$id1->name,
             'pagetitle' => "Produk terbaru di ".$id1->name,
             'description' => "Daftar produk terbaru dan murah yang dijual di ".$id1->name.", oleh seller se-Indonesia, pilihan produk Tokopedia, Bukalapak, Lazada, Blibli, MatahariMall, Elevenia, Shopee, dan sebagainya.",
-            'keywords' => "produk terbaru ".$id1->name.", produk lengkap, produk tokopedia, produk bukalapak, produk lazada, produk blibli, produk mataharimall, produk elevenia, produk shopee"
+            'keywords' => "produk terbaru ".$id1->name.", produk lengkap, produk tokopedia, produk bukalapak, produk lazada, produk blibli, produk mataharimall, produk elevenia, produk shopee",
+            'breadcrumb' => "Marketplace $id1->name"
         ];
 
 
-        return view('public.item.item_by', ['items' => $it, 'meta' => $meta]);
+        return view('toko.item.item_by', ['items' => $it, 'meta' => $meta]);
     }
 
 
 
 
-    public function searchResult(Request $r){        
-        $s = Item::search($r->search)->paginate(36);
-        return view('public.item.item_by', ['items' => $s, 'pagetitle' => 'Hasil pencarian "'. $r->search.'"']);
+    public function searchResult(Request $r){      
+         $meta = [
+            'title' => "Jual produk dengan kata kunci '$r->search'",
+            'pagetitle' => "Produk dengan kata kunci '$r->search'",
+            'description' => "Hasil pencarian produk mengandung kata kunci '$r->search' di seluruh marketplace Indonesia",
+            'breadcrumb' => "Hasil Pencarian"
+        ];  
+        
+        
+
+        $store = Searched::firstOrNew(['keyword' => $r->search]);
+        $store->ip = $r->ip();
+        $store->count = $store->count +1 ;
+        $store->save();
+
+        $s = Item::search($r->search)->Paginate(36);
+        return view('toko.item.item_by', ['meta'=>$meta, 'items' => $s, 'pagetitle' => 'Hasil pencarian "'. $r->search.'"']);
     }
+
 
     public function publicShow($slug)
     {
         $item = Item::whereSlug($slug)->first();
+
+        if (count($item) == 0){
+            return abort(404);
+        }
                 
         $relateds = Item::where('category_id', $item->category_id)->where('id', '!=', $item->id)->orderBy('id','desc');
         $relateds = $relateds->count() ? $relateds->take(6)->get() : null;            
@@ -139,7 +167,7 @@ class ItemController extends Controller
         $others = Item::whereIn('seller_id', $sl)->orderBy('id','desc');
         $others = $others->count() ? $others->take(6)->get() : null;
         
-        return view('public.item.show', [ 
+        return view('toko.item.show', [ 
             'item' => $item,         
             'relateds' => $relateds,
             'others' => $others

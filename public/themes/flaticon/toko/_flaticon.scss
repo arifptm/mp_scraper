@@ -1,0 +1,75 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 21/08/2017 10:47
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-cinema:before { content: "\f100"; }
+.flaticon-mother-walking-with-baby-on-her-back-and-other-on-stroller:before { content: "\f101"; }
+.flaticon-sedan-car-front:before { content: "\f102"; }
+.flaticon-food:before { content: "\f103"; }
+.flaticon-playstation:before { content: "\f104"; }
+.flaticon-medical-kit:before { content: "\f105"; }
+.flaticon-telephone:before { content: "\f106"; }
+.flaticon-television:before { content: "\f107"; }
+.flaticon-coupon:before { content: "\f108"; }
+.flaticon-luxury:before { content: "\f109"; }
+.flaticon-bicycle:before { content: "\f10a"; }
+.flaticon-technology:before { content: "\f10b"; }
+.flaticon-computer:before { content: "\f10c"; }
+.flaticon-office-utensils-inside-a-cup:before { content: "\f10d"; }
+.flaticon-book:before { content: "\f10e"; }
+.flaticon-clock:before { content: "\f10f"; }
+.flaticon-high-heel:before { content: "\f110"; }
+.flaticon-clothes:before { content: "\f111"; }
+    
+    $font-Flaticon-cinema: "\f100";
+    $font-Flaticon-mother-walking-with-baby-on-her-back-and-other-on-stroller: "\f101";
+    $font-Flaticon-sedan-car-front: "\f102";
+    $font-Flaticon-food: "\f103";
+    $font-Flaticon-playstation: "\f104";
+    $font-Flaticon-medical-kit: "\f105";
+    $font-Flaticon-telephone: "\f106";
+    $font-Flaticon-television: "\f107";
+    $font-Flaticon-coupon: "\f108";
+    $font-Flaticon-luxury: "\f109";
+    $font-Flaticon-bicycle: "\f10a";
+    $font-Flaticon-technology: "\f10b";
+    $font-Flaticon-computer: "\f10c";
+    $font-Flaticon-office-utensils-inside-a-cup: "\f10d";
+    $font-Flaticon-book: "\f10e";
+    $font-Flaticon-clock: "\f10f";
+    $font-Flaticon-high-heel: "\f110";
+    $font-Flaticon-clothes: "\f111";

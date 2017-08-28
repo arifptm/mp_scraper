@@ -19,8 +19,8 @@ class CreatePagesTable extends Migration
             $table->string('slug');
             $table->text('body');
             $table->string('image')->nullable();
-
             $table->index(['slug', 'title']);
+            
             $table->engine = 'InnoDB';
             
             $table->timestamps();

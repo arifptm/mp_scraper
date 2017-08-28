@@ -12,7 +12,7 @@ class MarketplaceController extends Controller
     public function list()
     {
         $m = Marketplace::all();
-        return view('public.marketplace.list', ['marketplaces' => $m]);
+        return view('toko.marketplace.list', ['marketplaces' => $m]);
     }
 
 

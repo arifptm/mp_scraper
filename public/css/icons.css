@@ -1,0 +1,48 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 21/08/2017 10:07
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("/themes/flaticon/toko/Flaticon.eot");
+  src: url("/themes/flaticon/toko/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("/themes/flaticon/toko/Flaticon.woff") format("woff"),
+       url("/themes/flaticon/toko/Flaticon.ttf") format("truetype"),
+       url("/themes/flaticon/toko/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("/themes/flaticon/toko/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  	font-family: Flaticon;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.flaticon-cinema:before { content: "\f100"; }
+.flaticon-mother-walking-with-baby-on-her-back-and-other-on-stroller:before { content: "\f101"; }
+.flaticon-sedan-car-front:before { content: "\f102"; }
+.flaticon-food:before { content: "\f103"; }
+.flaticon-playstation:before { content: "\f104"; }
+.flaticon-medical-kit:before { content: "\f105"; }
+.flaticon-telephone:before { content: "\f106"; }
+.flaticon-television:before { content: "\f107"; }
+.flaticon-coupon:before { content: "\f108"; }
+.flaticon-luxury:before { content: "\f109"; }
+.flaticon-bicycle:before { content: "\f10a"; }
+.flaticon-technology:before { content: "\f10b"; }
+.flaticon-computer:before { content: "\f10c"; }
+.flaticon-office-utensils-inside-a-cup:before { content: "\f10d"; }
+.flaticon-book:before { content: "\f10e"; }
+.flaticon-clock:before { content: "\f10f"; }
+.flaticon-high-heel:before { content: "\f110"; }
+.flaticon-clothes:before { content: "\f111"; }

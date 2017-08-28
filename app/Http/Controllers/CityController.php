@@ -11,7 +11,7 @@ class CityController extends Controller
     public function list()
     {
         $c = City::orderBy('id','desc')->simplePaginate(60);        
-        return view('public.city.list', ['cities' => $c]);
+        return view('toko.city.list', ['cities' => $c]);
     }
 
     public function index()

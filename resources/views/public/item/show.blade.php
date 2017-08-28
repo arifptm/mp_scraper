@@ -14,7 +14,7 @@
     <meta property="og:title" content="{{ $item->title }}"/>
     <meta property="og:description" content="{!! str_limit($item->title,60) .'. '. strip_tags(str_limit($item->body,60)) !!}"/>
     <meta property="og:url" content="{{ $item->item_url }}"/>
-    <meta property="og:image" content="{{ $item->images['node'][0] }}"/>
+    <meta property="og:image" content="{{ App\Services\Scraper::getImage($item->images, $item->feed->marketplace->slug)['node'][0] }}"/>
         
     <meta name="twitter:title" content="{{ $item->title }}"/>
     <meta name="twitter:site" content="@arifptm"/>
@@ -28,6 +28,7 @@
 @endsection	
 
 @section('footer_script')
+    <script src="{{ asset('/plugins/blazy/blazy.min.js') }}"></script>
     <script>
 	$(".body > img").each(function(){
 		$(this).removeClass("productlazyimage")
@@ -40,56 +41,40 @@
 	$("span.more-desc-button").remove();
     </script>
 
-    <script src="{{ asset('/plugins/blazy/blazy.min.js') }}"></script>
-	
-    @if ($item->feed->marketplace->slug == 'bukalapak')
-    <script>
-        $('#thumbs').delegate('img','click', function(){
-			var bLazy = new Blazy();
-			    $('#largeImage').attr('class', 'b-lazy img-responsive').attr('src', 'https://cdn4.iconfinder.com/data/icons/black-icon-social-media/128/099317-google-g-logo.png').attr('data-src', $(this).attr('src').replace('/s-50-50/','/s-300-300/'));		
-		});
-        ;(function() {
-            var bLazy = new Blazy();
-        })();
-    </script>
-    @endif
 
-    @if ($item->feed->marketplace->slug == 'tokopedia')
-    <script>
-        $('#thumbs').delegate('img','click', function(){
-            var bLazy = new Blazy();
-                $('#largeImage').attr('class', 'b-lazy img-responsive').attr('src', 'https://cdn4.iconfinder.com/data/icons/black-icon-social-media/128/099317-google-g-logo.png').attr('data-src', $(this).attr('src').replace('/s-50-50/','/s-300-300/'));        
+    <script>        
+        $('#thumbs').delegate('img','click', function() {
+            var bLazy = new Blazy();            
+            var marketplace = '{{ $item->feed->marketplace->slug }}';
+                $('#largeImage').attr('class', 'b-lazy img-responsive')
+                .attr('src', 'https://cdn4.iconfinder.com/data/icons/black-icon-social-media/128/099317-google-g-logo.png');
+
+            if (marketplace == 'tokopedia'){
+                $('#largeImage').attr('data-src', $(this).attr('src').replace("/100-square/", "/300-square/"));
+            } else if (marketplace == 'bukalapak'){
+                $('#largeImage').attr('data-src', $(this).attr('src').replace("/s-50-50/", "/s-300-300/"));
+            } else if (marketplace == 'blibli'){
+                $('#largeImage').attr('data-src', $(this).attr('src').replace("/s-50-50/", "/s-300-300/"));
+            } else if (marketplace == 'lazada'){
+                $('#largeImage').attr('data-src', $(this).attr('src').replace("-gallery.", "-product."));
+            } else if (marketplace == 'mataharimall'){
+                $('#largeImage').attr('data-src', $(this).attr('src').replace("/tx200/", "/tx400/"));
+            }
         });
+
         ;(function() {
             var bLazy = new Blazy();
         })();
-    </script>
-    @endif
 
-    @if ($item->feed->marketplace->slug == 'blibli')
+    </script>
+
     <script>
-        $('#thumbs').delegate('img','click', function(){
-            var bLazy = new Blazy();
-                $('#largeImage').attr('class', 'b-lazy img-responsive').attr('src', 'https://cdn4.iconfinder.com/data/icons/black-icon-social-media/128/099317-google-g-logo.png').attr('data-src', $(this).attr('src').replace('/thumbnail/','/medium/'));        
+        $('.centro img').each(function() {
+            if( $(this).prop("src", $(this).attr('data-src')).height() > $(this).prop("src", $(this).attr('data-src')).width()){                
+                $(this).addClass('landscape')
+            }
         });
-        ;(function() {
-            var bLazy = new Blazy();
-        })();
     </script>
-    @endif
-
-    @if ($item->feed->marketplace->slug == 'lazada')
-    <script>
-        $('#thumbs').delegate('img','click', function(){
-            var bLazy = new Blazy();
-                $('#largeImage').attr('class', 'b-lazy img-responsive').attr('src', 'https://cdn4.iconfinder.com/data/icons/black-icon-social-media/128/099317-google-g-logo.png').attr('data-src', $(this).attr('src').replace('-gallery.','-webp-catalog_233.'));        
-        });
-        ;(function() {
-            var bLazy = new Blazy();
-        })();
-    </script>
-    @endif
-
 @endsection	
 
 
@@ -164,15 +149,15 @@
             <div class="col-sm-12">	
 				<div class="marbot15" style="text-align:center;max-height:300px;width: 100%;overflow:hidden;">
 					<div class="nodeimg_bg">
-						<img  id="largeImage" class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $item->images['node'][0] }}" alt="" style="margin:auto;" />
-					</div>
+						<img  id="largeImage" class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ App\Services\Scraper::getImage($item->images, $item->feed->marketplace->slug)['node'][0] }}" alt="" style="margin:auto;" />
+					</div> 
 				</div>
-                            
-                @if(count($item->images['thumb']) > '1')
+
+                @if(count(Scraper::getImage($item->images, $item->feed->marketplace->slug)['thumb']) > 1)
                     <div class="row" id="gallery">
                         <div id="thumbs" style="text-align:center;width:100%">
-                            @foreach($item->images['thumb'] as $thumb)
-                                <div class="col-xs-4" style="margin-bottom: 10px;">	
+                            @foreach(Scraper::getImage($item->images, $item->feed->marketplace->slug)['thumb'] as $thumb)
+                                <div class="col-xs-4" style="margin-bottom: 10px; cursor:pointer;">	
                                     <div class="thumbnail">
                                         <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $thumb }}" alt=""  />
                                     </div>
@@ -193,21 +178,22 @@
                 @if (count($relateds) > 0)  
                 <div class="panel panel-default">
                     <div class="panel-heading">Premium listings</div>
-                    <div class="panel-body">
-                        <div class="featured-gallery">
-                            <div class="row">
-                                 @foreach($relateds as $related)
-                                    <div class="col-xs-6">
-                                        <div class="">
-                                            <img class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $related->images['teaser'][0] }}" alt=""  />
-                                        </div>    
-                                        <div class="card-title"><a href="/{{ $related->slug }}">{{ $related->title }}</a></div>
-                                    </div> 
-                                @endforeach                                       
- 
-                             </div>
-                        </div>
-                    </div>
+                    <div class="panel-body">                        
+                        <div class="row">
+                             @foreach($relateds as $related)
+                                <div class="col-xs-4 col-sm-6">
+                                    <a href="/{{ $related->slug }}">
+                                        <div class="centro teaser related">
+                                            <img class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ Scraper::getImage($related->images, $item->feed->marketplace->slug)['teaser'][0] }}" alt=""  />
+                                        </div>
+                                    </a>
+                                    <div class="card-title">
+                                        <a href="/{{ $related->slug }}">{{ $related->title }}</a>
+                                    </div>
+                                </div> 
+                            @endforeach                                       
+                         </div>
+                    </div>                    
                 </div>
                 @endif
             </div>         
@@ -225,16 +211,16 @@
 	   <div class="row">
 		    <div class="panel panel-default recent-listings hidden-xs">
 		  	   <div class="panel-heading">Produk terbaru dari {{ $item->seller->city->name }}</div>
-               <div class="panel-body"><br>
-                    @foreach($others as $other)
-                    <div class="col-xs-6 col-md-2" style="margin-bottom: 10px;"> 
-                        <div class="thumbnail"><br>
-                            <a href="/{{ $other->slug }}">
-                                <div data-toggle="tooltip" data-placement="top" title="Jual {{ $other->title }} seharga {{ $other->sell_price }} di {{ $other->seller->city->name }}">
-                                <img class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ $other->images['teaser'][0] }}" alt=""  />
+               <div class="panel-body">
+                    @foreach($others as $other)                    
+                    <div class="col-xs-4 col-md-2">                         
+                        <a href="/{{ $other->slug }}">
+                            <div data-toggle="tooltip" data-placement="top" title="Jual {{ $other->title }} seharga {{ $other->sell_price }} di {{ $other->seller->city->name }}">
+                                <div class="centro teaser">
+                                    <img class="b-lazy img-responsive" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ Scraper::getImage($other->images, $item->feed->marketplace->slug)['teaser'][0] }}" alt="" />
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                     @endforeach
                </div>

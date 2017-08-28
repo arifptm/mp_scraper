@@ -8,12 +8,14 @@ use App\Category;
 use App\City;
 use App\Seller;
 use App\Item;
+use App\Marketplace;
+use App\Tag;
 
 class ComposerServiceProvider extends ServiceProvider
 {
     public function boot()
     {        
-        View::composer('public.index', function ($view) {
+        View::composer('toko.index', function ($view) {
             $r1 = ['Barusan', 'Mantap!', 'Ini dia!','Ayo beli!', 'Akhirnya'];
             shuffle($r1);
             $r2 = ['melego', 'menjual' ,'obral', 'promo', 'cuci gudang'];
@@ -27,7 +29,7 @@ class ComposerServiceProvider extends ServiceProvider
             }
 
             $item = Item::where('title', '<>', '');
-            $it = $item->orderBy('id', 'desc')->take(6)->get();
+            $it = $item->orderBy('id', 'desc')->take(8)->get();
             $rt = $item->orderBy('id', 'asc')->take(5)->get();
 
             $ct = City::select('slug','name')->orderBy('id', 'desc')->take(32)->get();
@@ -52,6 +54,14 @@ class ComposerServiceProvider extends ServiceProvider
         View::composer(
             'admin/*', 'App\Http\ViewComposers\SidebarMenu'
         );
+
+        View::composer('*', function ($view) {
+            $ca = Marketplace::all();
+            $view->with('marketplaces', $ca);          
+        });    
+ 
+
+
         
     }
 

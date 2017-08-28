@@ -33,8 +33,11 @@ class BlibliController extends Controller
 
         $mp = $p->feedProcessor('blibli'); //smallcase
 
+
         $scraped['item_url'] = $p->selectItem($mp)->item_url;
         //$scraped['item_url'] = 'https://www.blibli.com/bandai-system-weapon-007-hg-gundam-model-kit-1-144-UK.0025733.htm?ds=TOX-25266-03872-00001';
+
+        echo "<p>".$scraped['item_url']."</p>";
 
         $client = Client::getInstance();
         $client -> getEngine()->setPath(env('PHANTOMJS_PATH'));
@@ -53,6 +56,11 @@ class BlibliController extends Controller
         });    
         
         $cats = array_slice($cats, 1);
+        if ($p->checkRootCat($cats[0]) === false){ 
+            $p->selectItem($mp)->update(['processed'=> 1, 'published'=>0]);
+            return 'gak ada root category';
+        }
+
         $scraped['category_id'] = $p->getCatId($cats);
 		
         $scraped['sell_price'] = $crawler->filter('#priceDisplay') ? preg_replace('/[^0-9]/','',explode('-',$crawler->filter('#priceDisplay')->text())[0]) : null;
@@ -122,8 +130,9 @@ class BlibliController extends Controller
             $tag['name'] = $t;
             $tag['slug'] = $slug->createSlug($t);
 
-            $save_tag = Tag::firstOrCreate($tag);
-            $save_tag->save();
+            $save_tag = Tag::firstOrNew($tag);
+            $tag['count'] = $save_tag->count + 1;
+            $save_tag->save();            
             $tag_id[] = $save_tag->id;
         }
 
@@ -135,7 +144,7 @@ class BlibliController extends Controller
         $seller ->save();
         $p->selectItem($mp)->update($scraped);
 
-        dd($scraped);  
+        $scraped = null;  
 
     } 
 }

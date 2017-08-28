@@ -185,8 +185,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-
-
     ],
 
     /*
@@ -240,7 +238,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Goutte' => Weidner\Goutte\GoutteFacade::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
-        
+        'Scraper' => App\Services\Scraper::class,
 
     ],
 

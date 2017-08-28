@@ -21,9 +21,9 @@
 		@foreach ($items as $item)			
 			<div class="col-xs-6 col-sm-4 col-md-3">		
 				<div class="card">
-					<div class="card-image">				
+					<div class="card-image">
 						<a href="/{{ $item->slug }}">
-							<img class="b-lazy img-responsive marginauto" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ ($item->images['teaser'][0]) }}" alt="gambar {{ $item->title }}"  />
+							<img class="b-lazy img-responsive marginauto" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ Scraper::getImage($item->getOriginal('images'), $item->feed->marketplace->slug)['teaser'][0] }}" alt="gambar {{ $item->title }}"  />
 						</a>
 					</div>
 

@@ -63,7 +63,7 @@
                         @foreach ($items as $item)                       
                         <div class="col-sm-6 col-xs-4 featured-thumbnail"  data-toggle="tooltip" data-placement="top" title="Jual {{ $item->title }} seharga {{ $item->sell_price }} di {{ $item->seller->city->name }}">
                             <a href="/{{ $item->slug }}" class="">
-                                <img alt="{{ $item->title }}" src="{{ $item->images['teaser'][0] }}" >
+                                <img alt="{{ $item->title }}" src="{{ Scraper::getImage($item->images, $item->feed->marketplace->slug)['teaser'][0] }}" >
                             </a>
                         </div>
                         @endforeach
