@@ -28,6 +28,16 @@
 		    </div>
 		@endif
 	</div>	
+
+	<div class="form-group">
+		{!! Form::label('level', 'Level',['class'=>'control-label']) !!}
+		{!! Form::text('level', null, ['class' => 'form-control']) !!}
+		@if ($errors->has('level'))
+		    <div class="label label-danger">
+		        {{ $errors->first('level') }}
+		    </div>
+		@endif
+	</div>	
 	
 </div>
 
