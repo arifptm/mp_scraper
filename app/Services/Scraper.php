@@ -178,7 +178,7 @@ class Scraper
     public function getBody($url){
         $client = Client::getInstance();
         $client->isLazy();
-        $client -> getEngine()->setPath(env('PHANTOMJS_PATH'));
+//        $client -> getEngine()->setPath(config('app.phantomjs_path'));
         $request = $client->getMessageFactory()->createRequest($url);
         $request->setTimeout(10000);
         $response = $client->getMessageFactory()->createResponse();        

@@ -123,7 +123,6 @@ class BukalapakController extends Controller
         $seller ->save();
         $p->selectItem($mp)->update($scraped);
 
-        $scraped = null;  
-
+	return 'ok';
     } 
 }

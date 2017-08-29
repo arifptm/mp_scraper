@@ -8,7 +8,7 @@
 @endsection
 
 @section('content-top')
-	<div class="image-bg-breadcrumb" style="background-image:url('/themes/images/city-head.jpg');">			
+	<div class="image-bg-breadcrumb" style="background-image:url('http://static.99toko.com/city-head.jpg');">			
 		<div class="breadcrumb-inner">				
 			<div class="container">
 				<h2>Daftar kota lokasi seller</h2>

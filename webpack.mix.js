@@ -34,9 +34,11 @@ mix.combine([
 	'public/js/custom.js',
 	], 'public/js/appp.js')
 .combine([
+	'https://fonts.googleapis.com/css?family=Hind+Vadodara:300,400,500,600,700',
+	'https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i|Open+Sans:300,300i,400,400i,600,700,800',
 	'public/css/main.css',
-	'public/css/icons.css',
 	'public/css/font-awesome.min.css',
+	'public/css/flaticon.css',
 	'public/css/component.css',
 	'public/css/style.css',
 	'public/css/custom.css',

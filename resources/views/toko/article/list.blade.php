@@ -7,7 +7,7 @@
 @endsection
 
 @section('content-top')
-	<div class="image-bg-breadcrumb" style="background-image:url('/themes/images/seller-head.jpg');">			
+	<div class="image-bg-breadcrumb" style="background-image:url('http://static.99toko.com/seller-head.jpg');">			
 		<div class="breadcrumb-inner">				
 			<div class="container">
 				<h1 class="subtitle">Kumpulan artikel seputar marketplace Indonesia</h1>

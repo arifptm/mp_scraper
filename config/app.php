@@ -134,6 +134,9 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
+    
+    'phantomjs_path' => env('PHANTOMJS_PATH', 'bin/phantomjs'),
+    'timezone' => 'Asia/Jakarta',
 
     'providers' => [
 

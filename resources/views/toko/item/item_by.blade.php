@@ -9,14 +9,10 @@
 @endsection
 
 @section('footer-scripts')
-<script src="{{ asset('plugins/blazy/blazy.min.js') }}"></script>
-<script>  
-        var bLazy = new Blazy();
-</script>
 @endsection
 
 @section('content-top')	
-	<div class="image-bg-breadcrumb" style="background-image:url('/themes/images/produk-head.jpg');">	
+	<div class="image-bg-breadcrumb" style="background-image:url('http://static.99toko.com/produk-head.jpg');">	
                 <div class="second-search-form-wrapper-01">        
                     <div class="container">                    
                         <div class="second-search-form-inner bg-change-focus-addclass-wrapper">                        

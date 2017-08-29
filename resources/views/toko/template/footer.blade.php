@@ -4,7 +4,7 @@
             <div class="row">                    
                 <div class="col-xs-12 col-sm-5 col-md-4">                            
                     <div class="footer-logo">
-                        <img src="/themes/images/99-logo.png" alt="Katalog produk dan seller toko online Indonesia" />
+                        <img src="http://static.99toko.com/99-logo.png" alt="Katalog produk dan seller toko online Indonesia" />
                     </div>                                
                     <div class="footer-social">                                
                         <a href="https://www.facebook.com/99tokoindo" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>

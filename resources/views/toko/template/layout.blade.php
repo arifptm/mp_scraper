@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="/themes/toko/images/favicon.ico">
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ asset('css/appp.css') }}" rel="stylesheet">
+    <link href="http://static.99toko.com/appp.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -49,7 +49,7 @@
     </div>
     
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script type="text/javascript" src="{{ asset('/js/appp.js') }}"></script>
+    <script type="text/javascript" src="http://static.99toko.com/appp.js"></script>
     @yield('footer-scripts')
 </body>
 

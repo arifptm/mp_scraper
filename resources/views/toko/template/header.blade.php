@@ -1,4 +1,4 @@
-            <!-- start Navbar (Header) -->
+                <!-- start Navbar (Header) -->
             <nav class="navbar navbar-primary navbar-fixed-top navbar-sticky-function">
 
                 <div class="container">
@@ -8,7 +8,7 @@
                         <div class="flex-shrink flex-columns">
                         
                             <a class="navbar-logo" href="/">
-                                <img src="/themes/images/99-logo.png" alt="99toko - Katalog Produk Online Shop" />
+                                <img src="http://static.99toko.com/99-logo.png" alt="99toko - Katalog Produk Online Shop" />
                             </a>
                             
                         </div>

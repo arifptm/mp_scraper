@@ -2,6 +2,13 @@
 
 Auth::routes();
 
+
+//PROBE
+
+Route::get('/wp-admin.php', function(){
+    return Redirect::to('/ls/product', 301); 
+});
+
 Route::get('/', 'PublicController@index')->name('frontpage');
 
 Route::get('/admin', function(){ return redirect('dashboard');});

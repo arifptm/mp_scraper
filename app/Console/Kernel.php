@@ -15,6 +15,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \App\Console\Commands\ScrapeTokopedia::class,
+        \App\Console\Commands\ScrapeBukalapak::class,
+        \App\Console\Commands\ScrapeBlibli::class,
     ];
 
     /**
@@ -27,6 +29,11 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
+        $filePath='/home/nine9toko/';
+
+        $schedule->command('sc:tp')->everyMinute()->withoutOverlapping()->sendOutputTo($filePath.'tp.txt'.time());
+        $schedule->command('sc:bl')->everyMinute()->withoutOverlapping()->sendOutputTo($filePath.'bl.txt'.time());
+        $schedule->command('sc:bb')->everyMinute()->withoutOverlapping()->sendOutputTo($filePath.'bb.txt'.time());
     }
 
     /**

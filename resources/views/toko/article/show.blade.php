@@ -1,7 +1,7 @@
 @extends('toko.template.blog_layout')
 
 @section('content-top')
-	<div class="image-bg-breadcrumb" style="background-image:url('/themes/images/seller-head.jpg');">			
+	<div class="image-bg-breadcrumb" style="background-image:url('http://static.99toko.com/seller-head.jpg');">			
 		<div class="breadcrumb-inner">				
 			<div class="container">
 				<h1 class="subtitle">{{ $article->title }}</h1>

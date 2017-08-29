@@ -15,7 +15,7 @@
 @endsection
 
 @section('content-top')
-            <div class="hero-header" style="background-image:url('themes/images/01bg.jpg');">                
+            <div class="hero-header" style="background-image:url('http://static.99toko.com/main-head.jpg');">                
                 <div class="hero-header-texting">                
                     <div class="container">
                         <h1>Katalog Produk Terlengkap</h1>
@@ -154,7 +154,6 @@
                                 </div>
                                 <div class="content">
                                     <h6>{{ $category->name }}</h6>
-                                    <span> {{ number_format($category->counter->count,0,',','.') }} item</span>
                                 </div>
                             </a>
                         </div>                                

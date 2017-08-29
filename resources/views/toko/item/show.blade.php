@@ -27,7 +27,7 @@
 @endsection 
 
 @section('content-top')
-    <div class="image-bg-breadcrumb" style="background-image:url('/themes/images/01bg.jpg');">        
+    <div class="image-bg-breadcrumb" style="background-image:url('http://static.99toko.com/main-head.jpg');">        
         <div class="breadcrumb-inner text-left">        
             <div class="container">            
                 <div class="GridLex-gap-30">            
@@ -47,7 +47,7 @@
                                     <span class="label label-primary"><a class="white-link" href='{{ $item->category->slug }}'>{{ $item->category->name }}</a></span> 
                                     <span><a href="/admin/items/{{$item->id}}/edit" >Edit</a></span>                                        
                                 </div>
-                                <p class="detail-heading-location"><i class="fa fa-map-marker text-primary"></i> {{ $item->seller->city->name }} &nbsp; <small><i class="fa fa-calendar text-primary"></i> {{ \Carbon\Carbon::parse($item->created_at)->format('d-m-Y h:i') }}</small></p>
+                                <p class="detail-heading-location"><i class="fa fa-map-marker text-primary"></i> {{ $item->seller->city->name }} &nbsp; <small><i class="fa fa-calendar text-primary"></i> {{ \Carbon\Carbon::parse($item->updated_at)->format('d-m-Y h:i') }}</small></p>
                                 <h1 class="detail-heading-name">{{ $item->title }}</h1>
                             </div>
                         </div>

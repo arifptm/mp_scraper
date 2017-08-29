@@ -40,7 +40,7 @@ class BlibliController extends Controller
         echo "<p>".$scraped['item_url']."</p>";
 
         $client = Client::getInstance();
-        $client -> getEngine()->setPath(env('PHANTOMJS_PATH'));
+        $client -> getEngine()->setPath(config('app.phantomjs_path'));
         $request = $client->getMessageFactory()->createRequest($scraped['item_url']);
         $response = $client->getMessageFactory()->createResponse();        
         $client->send($request,$response);
@@ -56,10 +56,10 @@ class BlibliController extends Controller
         });    
         
         $cats = array_slice($cats, 1);
-        if ($p->checkRootCat($cats[0]) === false){ 
-            $p->selectItem($mp)->update(['processed'=> 1, 'published'=>0]);
-            return 'gak ada root category';
-        }
+//        if ($p->checkRootCat($cats[0]) === false){ 
+//            $p->selectItem($mp)->update(['processed'=> 1, 'published'=>0]);
+//            return 'gak ada root category';
+//        }
 
         $scraped['category_id'] = $p->getCatId($cats);
 		
