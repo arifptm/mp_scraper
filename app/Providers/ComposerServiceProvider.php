@@ -51,17 +51,10 @@ class ComposerServiceProvider extends ServiceProvider
             $view->with('categories', $ca);          
         });
 
-        View::composer(
-            'admin/*', 'App\Http\ViewComposers\SidebarMenu'
-        );
-
-        View::composer('*', function ($view) {
+        View::composer('toko.template.header', function ($view) {
             $ca = Marketplace::all();
             $view->with('marketplaces', $ca);          
         });    
- 
-
-
         
     }
 

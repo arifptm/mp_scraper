@@ -967,14 +967,14 @@ input[type='checkbox']:checked + label:before {
 /* background color for responsive button */
 
 .slicknav_btn.slicknav_open:before {
-    font-family: 'Ionicons';
-    content: "\f2d7";
+    font-family: 'FontAwesome';
+    content: "\f00d";
     font-size: 16px;
 }
 
 .slicknav_btn.slicknav_collapsed:before {
-    font-family: 'Ionicons';
-    content: "\f394"
+    font-family: 'FontAwesome';
+    content: "\f0c9"
 }
 
 .slicknav_btn.slicknav_open,

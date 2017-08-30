@@ -33,8 +33,8 @@ class FeedController extends Controller
 
     public function edit($id){
         $fs = Feed::findOrFail($id);
-        $ms = Marketplace::pluck('name','id');
-        return view('admin.feed.edit', [ 'feed' => $fs , 'marketplaces' => $ms ]);
+        $marketplaces = Marketplace::pluck('name','id');
+        return view('admin.feed.edit', [ 'feed' => $fs, 'marketplaces'=>$marketplaces ]);
     }
 
     public function update(Request $request, $id){

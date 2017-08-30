@@ -24,6 +24,35 @@ use Browser\Casper;
 class TestController extends Controller
 {
 
+     public function curl(){
+        $marketplace_slug = 'mataharimall';
+        $marketplace = Marketplace::whereSlug($marketplace_slug)->first();
+        $feed = Feed::whereMarketplace_id($marketplace->id)->whereEnabled(1)->whereProcessed(0);
+        
+        if ($feed->count() != 0){
+            $selected_feed = $feed->get()->random();
+            
+            $scraper = new Scraper;
+            $scraped = $scraper->letsCurl($selected_feed->url);
+            dd($scraped);
+            $crawler = new Crawler($scraped);
+            if ($crawler->filter('.c-card-product a')->count()){
+                $nodes = $crawler->filter('.c-card-product a')->each(function($node){
+                    return $node->attr('href');
+                });
+            }
+
+            if (count($nodes) != 0){
+                foreach ($nodes as $url) {
+                    $item =Item::firstOrNew(['item_url' => $url]);
+                    $item->feed_id = $selected_feed->id;
+                    $item->save();
+                } 
+            }
+        }       
+        return $marketplace;
+     }
+    
     public function cektp(){
         $feed = "https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=1759";
         $src = json_decode(file_get_contents($feed));

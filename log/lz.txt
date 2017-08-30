@@ -1,0 +1,219 @@
+http://www.lazada.co.id/oontz-angle-3-cambridge-soundworks-bluetooth-speaker-red-11877175.html
+Scrape = 18.96
+Search = 10.28http://www.lazada.co.id/wetan-shoes-sepatu-pantofel-oxford-kulit-asli-untuk-kerja-danpesta-hitam-9889067.html
+http://www.lazada.co.id/aer-bundling-kran-tanam-shower-panas-dingin-ssv-01-wall-showerws-11-2905609.html
+Scrape = 9.96
+Search = 4.55http://www.lazada.co.id/egg-white-peel-off-mask-masker-putih-telur-34748058.html
+Scrape = 7.44
+Search = 6.47http://www.lazada.co.id/mama-soya-coklat-200gr-11970806.html
+Scrape = 13.81
+Search = 4.83http://www.lazada.co.id/kyre-cajon-natural-gratis-case-2546737.html
+
+                                                                               
+  [Illuminate\Database\QueryException]                                         
+  SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\xE  
+  2\x80Natu...' for column 'name' at row 1 (SQL: insert into `tags` (`name`,   
+  `slug`, `count`) values (Cajon â€Natural, , 2))                              
+                                                                               
+
+                                                                               
+  [PDOException]                                                               
+  SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\xE  
+  2\x80Natu...' for column 'name' at row 1                                     
+                                                                               
+
+http://www.lazada.co.id/van-star-raket-nyamuk-tenaga-listrik-dan-sinar-matahari-solarv-787-a-15324447.html
+Scrape = 10.74
+Search = 7.13http://www.lazada.co.id/warnawarni-peralatan-cetak-square-scarf-untuk-wanita-international-10858350.html
+Scrape = 9.4
+Search = 5.6http://www.lazada.co.id/jam-tangan-led-jam-tangan-pria-dan-wanita-strap-karet-hitam-apple_black-11977578.html
+Scrape = 16.33
+Search = 5.73http://www.lazada.co.id/gesper-ikat-pinggang-kulit-pria-wanita-import-casual-ck207-black-20953771.html
+Scrape = 9.57
+Search = 5.57http://www.lazada.co.id/bestway-tenda-camping-montana-pavillo-x4-tent-tenda-kemah-untuk-4orang-8842509.html
+
+                                                                               
+  [GuzzleHttp\Exception\ConnectException]                                      
+  cURL error 35: Encountered end of file (see http://curl.haxx.se/libcurl/c/l  
+  ibcurl-errors.html)                                                          
+                                                                               
+
+http://www.lazada.co.id/fancyqube-fashion-star-with-personality-circle-earrings-both-menand-women-can-wear-earrings-jewelry-wholesale-gold-silver-earringssilver-16mm-intl-15843258.html
+Scrape = 10.78
+Search = 4.09http://www.lazada.co.id/aichun-hip-up-cream-mengencangkan-bokong-200-ml-8135040.html
+Scrape = 20.7
+Search = 3.46http://www.lazada.co.id/pedigree-beef-pouch-makanan-anjing-130-gr6-pcs-31391161.html
+Scrape = 9.19
+Search = 6.67http://www.lazada.co.id/tas-wanita-clutch-korean-style-hitam-17682299.html
+Scrape = 9.07
+Search = 5.5http://www.lazada.co.id/yamaha-drum-elektrik-dtx-400k-4998761.html
+Scrape = 12.14
+Search = 6.46http://www.lazada.co.id/polo-classic-18076-21-backpack-rain-cover-hitam-12273380.html
+http://www.lazada.co.id/cotton-candy-maker-mesin-pembuat-kembang-gula-kapas-26429672.html
+Scrape = 9.28
+Search = 3.61http://www.lazada.co.id/sharp-air-purifier-fu-a80y-w-putih-486451.html
+Scrape = 13.29
+Search = 3.89http://www.lazada.co.id/kazel-tshirt-girl-panda-edition-isi-6-pcs-m-16451731.html
+Scrape = 19.47
+Search = 4.66http://www.lazada.co.id/sepatu-gunung-the-north-face-outdoor-24944163.html
+http://www.lazada.co.id/dsc-zenco-alat-pengusir-tikus-ultrasonic-hitam-7294932.html
+http://www.lazada.co.id/yamaha-psr-s970-14133719.html
+http://www.lazada.co.id/kacang-almond-in-shell-500gr-usa-california-8382287.html
+Scrape = 8.71
+Search = 5.34http://www.lazada.co.id/tabitha-skin-care-gold-eksklusive-3in1-whitening-cream-bpom-16912089.html
+Scrape = 12.27
+Search = 12.18http://www.lazada.co.id/mac-palette-78-colors-eyeshadow-35486104.html
+Scrape = 11.15
+Search = 7.19http://www.lazada.co.id/night-view-vision-aimons-glasses-kaca-mata-anti-silau-34322654.html
+Scrape = 19.55
+Search = 5.86http://www.lazada.co.id/komik-kkpknext-g-alam-para-peri-33244270.html
+http://www.lazada.co.id/navy-club-tas-ransel-laptop-tahan-air-5850backpack-up-to-15-inch-biru-4486209.html
+Scrape = 11.24
+Search = 4.68http://www.lazada.co.id/jaket-outdoor-16501136.html
+Scrape = 8.95
+Search = 7.61http://www.lazada.co.id/bonbon-meja-lipat-anak-karakter-doraemon-bahan-multiplex-9mm-862450.html
+Scrape = 11.84
+Search = 4.4http://www.lazada.co.id/o-30-amp-12-v24-v-pwm-panel-surya-baterai-pengatur-biaya-layarpengendali-memimpin-21270706.html
+Scrape = 9.16
+Search = 10.06http://www.lazada.co.id/oculus-rift-virtual-reality-headset-intl-23148039.html
+Scrape = 8.27
+Search = 11http://www.lazada.co.id/zuncle-penguasa-sekitar-laki-laki-retro-tung-tungsten-cincin-batuhitam-ukuran-us-9612100.html
+Scrape = 15.72
+Search = 7.08http://www.lazada.co.id/jfashion-korean-style-plain-shirt-long-sleeve-ummi-marun-12993346.html
+Scrape = 9.48
+Search = 5.57http://www.lazada.co.id/jo-amp-nic-dakota-relax-office-pants-celana-wanita-navy-8939066.html
+Scrape = 15.84
+Search = 5.32http://www.lazada.co.id/philips-shaver-pq206-alat-cukur-elektrik-hitam-34134201.html
+Scrape = 8.84
+Search = 6.4http://www.lazada.co.id/new-blueair-205-smokestop-filter-air-purifier-pembersih-udara-33077565.html
+http://www.lazada.co.id/collarkalung-uk-s-leash-hijau-tni-untuk-kucing-kelinci-musangpuppy-small-breed-13890287.html
+Scrape = 15.44
+Search = 8.14http://www.lazada.co.id/casio-edifice-efr-520-sp-silver-black-13863693.html
+Scrape = 10.4
+Search = 6.79http://www.lazada.co.id/magnetic-back-posture-corrector-back-shoulder-support-brace-beltback-posture-correction-belt-xl-intl-17714020.html
+Scrape = 15.81
+Search = 7.25http://www.lazada.co.id/trendishoes-sepatu-slip-on-anak-bayi-perempuan-pita-love-031ilu-white-35880141.html
+Scrape = 11.19
+Search = 4.41http://www.lazada.co.id/levis-503-regular-bootcut-fit-rinse-9091929.html
+Scrape = 7.68
+Search = 9.69http://www.lazada.co.id/aqua-mesin-cuci-2-tabung-qw-771xt-7-kg-23966449.html
+http://www.lazada.co.id/shopping-yukz-kemeja-stripe-monalisa-biru-23368138.html
+Scrape = 15.32
+Search = 5.9http://www.lazada.co.id/tobi-turbo-hoover-super-cyclone-vacuum-cleaner-merah-34909377.html
+Scrape = 17.67
+Search = 5.36http://www.lazada.co.id/labelledesign-eye-cartoon-white-11775998.html
+Scrape = 16.1
+Search = 5.89http://www.lazada.co.id/hand-blender-bulat-capsule-serbaguna-blender-daging-12704042.html
+Scrape = 10.26
+Search = 10.02http://www.lazada.co.id/gshop-capo-guitar-picks-capo-for-tone-adjusting-quick-changesingle-handed-tune-release-trigger-white-19056678.html
+Scrape = 12.23
+Search = 4.21http://www.lazada.co.id/panasonic-mesin-cuci-top-loading-semi-auto-7-kg-ag-clean-low-wattage-dual-pulsator-biru-13928063.html
+Scrape = 16.29
+Search = 6.18http://www.lazada.co.id/dual-grip-pilates-ring-magic-circle-sport-exercise-fitness-weightcircle-yoga-purple-intl-22511737.html
+Scrape = 20.98
+Search = 7.06http://www.lazada.co.id/frame-kaca-mata-rb911f-15897468.html
+http://www.lazada.co.id/marlee-sendal-weges-ck-13-camel-9124043.html
+http://www.lazada.co.id/calandiva-dragon-shockproof-hybrid-case-untuk-oppo-f1s-a59-hitam-9865543.html
+
+                                                                               
+  [GuzzleHttp\Exception\ConnectException]                                      
+  cURL error 35: Encountered end of file (see http://curl.haxx.se/libcurl/c/l  
+  ibcurl-errors.html)                                                          
+                                                                               
+
+http://www.lazada.co.id/ai-home-20-pcs-cosmetic-makeup-brushe-set-eyeshadow-brushprofessional-kit-blackgreen-intl-25151548.html
+Scrape = 10.25
+Search = 5.57http://www.lazada.co.id/sepatu-wanita-casual-boot-warna-hitam-bt02-15784170.html
+Scrape = 10.61
+Search = 4.6http://www.lazada.co.id/rei-ransel-laptop-strong-25-l-17926657.html
+Scrape = 8.4
+Search = 9.36http://www.lazada.co.id/vicenza-stainless-steel-tipe-b-set-12-34797.html
+
+                                                                               
+  [ErrorException]                                                             
+  file_get_contents(https://seller-transparency-api.lazada.co.id/v1/seller/0/  
+  transparency): failed to open stream: HTTP request failed! HTTP/1.1 404 Not  
+   Found                                                                       
+                                                                               
+
+http://www.lazada.co.id/naked-make-up-pallette-professional-tata-rias-wajah-proffesional-33804996.html
+Scrape = 10.47
+Search = 6.48http://www.lazada.co.id/raket-yonex-duora-10-explosive-series-10585673.html
+http://www.lazada.co.id/starstore-keju-mozarella-pizza-200g-mozzarella-cheese-pasta-16405523.html
+Scrape = 8.88
+Search = 5.29http://www.lazada.co.id/paint-gun-paint-spray-paint-zoom-mesin-alat-cat-mengecat-bangkumobil-dinding-rumah-tangga-alar-pertukangan-23136696.html
+Scrape = 16.6
+Search = 6.92http://www.lazada.co.id/ss-skuter-anak-roda-3-skuter-otoped-otoped-anak-skuter-25402802.html
+Scrape = 18.85
+Search = 6.43http://www.lazada.co.id/mutant-mass-2lbs-eceran-7358014.html
+Scrape = 10.41
+Search = 6.63http://www.lazada.co.id/charger-sony-psp-100020003000-ac-adaptor-hitam-12216742.html
+Scrape = 14.67
+Search = 4.45http://www.lazada.co.id/loggo-panam-sepatu-sekolah-tinggi-cewek-37-40-sepatu-sekolahhigh-hitam-24518985.html
+Scrape = 15.12
+Search = 7.96http://www.lazada.co.id/gema-nada-pertiwi-paket-dvd-lagu-anak-indonesia-2154261.html
+Scrape = 9.7
+Search = 8.43http://www.lazada.co.id/dparis-anting-lapis-tusuk-angkasa-rock-star-72872.html
+Scrape = 14.42
+Search = 20.72http://www.lazada.co.id/baju-batik-couple-dress-wanita-shj-718-34511301.html
+Scrape = 14.17
+Search = 7.68http://www.lazada.co.id/kompresor-cat-mini-kompresor-portable-cat-semprot-paint-zoomspray-gun-32414621.html
+Scrape = 15.91
+Search = 5.52http://www.lazada.co.id/eelic-sjk-301-abu-sandal-jepit-karet-14140505.html
+Scrape = 8.18
+Search = 5.8http://www.lazada.co.id/led-digital-fashion-boy-mens-cobra-iron-triangle-dial-sport-wristwatch-new-intl-14971258.html
+Scrape = 14.65
+Search = 4.13http://www.lazada.co.id/handheld-video-camera-stabilizer-for-dslr-gopro-xiaomi-yi-black-14030213.html
+Scrape = 9.66
+Search = 4http://www.lazada.co.id/epson-tinta-botol-set-original-t6641-t6644-8255207.html
+Scrape = 16.64
+Search = 4.78http://www.lazada.co.id/philips-hd9220-20-viva-collection-airfryer-hitam-35622055.html
+Scrape = 14.54
+Search = 9.13http://www.lazada.co.id/gendongan-hipseat-moms-baby-lillaby-series-biru-33734809.html
+http://www.lazada.co.id/25pcs-n52-12mm-x-2mm-super-strong-round-disc-fridge-magnets-rareearth-neodymium-5635300.html
+http://www.lazada.co.id/epson-proyektor-eb-s300-putih-4631160.html
+
+                                                                               
+  [GuzzleHttp\Exception\ConnectException]                                      
+  cURL error 35: Encountered end of file (see http://curl.haxx.se/libcurl/c/l  
+  ibcurl-errors.html)                                                          
+                                                                               
+
+http://www.lazada.co.id/buytra-new-cendana-buddha-meditasi-doa-titis-hitam-kalung-gelang-7759300.html
+
+                                                                               
+  [GuzzleHttp\Exception\ConnectException]                                      
+  cURL error 35: Encountered end of file (see http://curl.haxx.se/libcurl/c/l  
+  ibcurl-errors.html)                                                          
+                                                                               
+
+http://www.lazada.co.id/paket-hemat-pisau-dapur-amp-peralatan-memasak-lengkap-23420227.html
+Scrape = 9.25
+Search = 5.31http://www.lazada.co.id/gendongan-hipseat-moms-baby-lillaby-series-pink-33734863.html
+http://www.lazada.co.id/cheer-outdoor-barbecue-cleaning-brush-copper-wire-three-in-onetriangular-brush-black-intl-34971474.html
+Scrape = 17.65
+Search = 10.97http://www.lazada.co.id/unisex-vintage-round-metal-frame-sunglasses-210-gold-kacamatawanita-14141607.html
+Scrape = 10.68
+Search = 7.3http://www.lazada.co.id/marlee-sendal-santai-salem-jjt-05-33595482.html
+Scrape = 15.58
+Search = 10.27http://www.lazada.co.id/bajukitaindonesia-jaket-bomber-polos-hijauarmy-m-xl-pria-danwanita-23825230.html
+Scrape = 11.79
+Search = 10.39http://www.lazada.co.id/palazzo-tas-ransel-17-inchi-33800-polyester-nylon-original-grey-8858462.html
+Scrape = 19.41
+Search = 9.63http://www.lazada.co.id/ahs-mainan-anak-rc-mobil-audi-r8-kon7-skala-124-hitam-13054422.html
+http://www.lazada.co.id/oontz-angle-3-cambridge-soundworks-bluetooth-speaker-black-12706773.html
+Scrape = 12.98
+Search = 9.1http://www.lazada.co.id/dupont-tas-koper-hardcase-set-anti-tusuk-expander-tsa-lock-size2024-inch-6043-merah-18942656.html
+http://www.lazada.co.id/digitec-jam-tangan-wanita-black-resin-strap-dg2073-b-34511675.html
+Scrape = 16.78
+Search = 9.21http://www.lazada.co.id/yamaha-recorder-yrs-20g-pink-241744.html
+Scrape = 9.19
+Search = 7.76http://www.lazada.co.id/cocotina-vintage-klasik-alat-tulis-medium-pena-pulpen-hitam-danemas-5194198.html
+Scrape = 19.25
+Search = 10.91http://www.lazada.co.id/pops-celana-chino-pria-slim-fit-mocca-12855505.html
+Scrape = 18.88
+Search = 5.37http://www.lazada.co.id/kaca-mata-wanita-import-kp-75422-25389346.html
+Scrape = 8.61
+Search = 4.4http://www.lazada.co.id/hp-stream-8-smart-pc-32gb-keyboard-bt-purple-21289059.html
+Scrape = 19.59
+Search = 6.29http://www.lazada.co.id/lakoni-electric-spray-paint-gun-fantasy-150ps-20501200.html

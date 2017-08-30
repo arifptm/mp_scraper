@@ -1,0 +1,719 @@
+https://www.bukalapak.com/p/fashion-wanita/tas-wanita/sling-bags/8l6gqp-jual-tas-paketan-41ni-murah-selempang-dompet-wanita-murah
+Scrape = 1.78
+Search = 4.18https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/herbal/a6bvr2-jual-madu-langsing-pelangsing-badan-yang-aman
+Scrape = 1.56
+Search = 4.94https://www.bukalapak.com/p/perawatan-kecantikan/makeup/wajah/9pwn58-jual-paket-cream-kalimantan-new-pack
+Scrape = 1.78
+Search = 3.63https://www.bukalapak.com/p/food/makanan/a6amsq-jual-samyang-ramen
+Scrape = 1.92
+Search = 4.8https://www.bukalapak.com/p/olahraga/sepakbola-futsal/jersey-1557/a6bcb2-jual-jersey-bola-futsal-original-nike-barcelona-not-mu-madrid-liverpool-manchaster-city-athletico-madrid
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.bukalapak.com/p/olahraga/olahraga-lainnya/a6c8va-jual-alat-olahraga-gym-fitnes-dll-lp-support-industrial-back-support-912-back-support
+Scrape = 3.5
+Search = 10.75https://www.bukalapak.com/p/sepeda/outwear/goggle-kacamata/2mg93q-jual-kaca-mata-sepeda-mercury-sunglasses-for-man-and-woman-bening
+
+                                                                               
+  [GuzzleHttp\Exception\ConnectException]                                      
+  cURL error 35: Encountered end of file (see http://curl.haxx.se/libcurl/c/l  
+  ibcurl-errors.html)                                                          
+                                                                               
+
+https://www.bukalapak.com/p/food/makanan/133nmi-jual-sarang-madu-asli
+Scrape = 2.13
+Search = 4.21https://www.bukalapak.com/p/perawatan-kecantikan/perawatan-wajah/pembersih-wajah-wanita/8qlsp9-jual-theraskin-paket-glowing
+Scrape = 2.2
+Search = 4.28https://www.bukalapak.com/p/elektronik/komponen-elektronik/a6blh2-jual-jepitan-acu-ukuran-sedang
+Scrape = 1.62
+Search = 6.32https://www.bukalapak.com/p/olahraga/outdoor/tas-ransel-carrier/59gqcb-jual-tas-carrier-gunung-shioux-60-ltr
+Scrape = 1.58
+Search = 7.12https://www.bukalapak.com/transition-double-p-9t6wm4
+Scrape = 1.46
+Search = 5.94https://www.bukalapak.com/p/food/makanan/rzbpp-jual-madu-sarang-lebah-asli-bukan-buatan
+Scrape = 2.55
+Search = 4.24https://www.bukalapak.com/p/perlengkapan-kantor/alat-kantor/perlengkapan-kantor-lainnya/9gqj1q-jual-kardus-box-karton-packing-25-x-25-x-6
+Scrape = 1.6
+Search = 38.58https://www.bukalapak.com/p/perlengkapan-kantor/alat-kantor/mesin-absensi/879j6r-jual-mesin-absensi-sidik-jari-fingerprint-solution-p207
+Scrape = 1.65
+Search = 2.54https://www.bukalapak.com/p/hobi-koleksi/koleksi/pernak-pernik/a6afjm-jual-diamond-painting-diy-embroideries-tiger-uk-20x20
+Scrape = 1.84
+Search = 5.11https://www.bukalapak.com/p/perawatan-kecantikan/perawatan-tubuh-2311/perawatan-rambut-pria/35xqij-jual-original-kirkland-minoxidil-5-tanpa-pipet
+Scrape = 1.56
+Search = 4.87https://www.bukalapak.com/p/komputer/aksesoris-226/aksesoris-lainnya-241/a6ampy-jual-dijual-converter-mini-dp-to-hdmi-mini-display-port-to-hdmi-murah-20170827
+Scrape = 2.05
+Search = 5.56https://www.bukalapak.com/p/handphone/hp-smartphone/a4awpq-jual-samsung-galaxy-s8-plus-hk-ram-4-128gb-new-segel-ori-100
+Scrape = 1.62
+Search = 3.7https://www.bukalapak.com/p/perlengkapan-kantor/alat-kantor/perlengkapan-kantor-lainnya/5itcy-jual-mesin-absen-sidik-jari-ds
+Scrape = 1.52
+Search = 4.81https://www.bukalapak.com/p/fashion-wanita/kemeja-blouse/a6bvh7-jual-baju-bagus-carol-jumbo-blouse-baju-atasan-wanita-bigsize-limited-edition
+Scrape = 2.04
+Search = 9.17https://www.bukalapak.com/p/elektronik/elektronik-lainnya/a6bqa9-jual-ps4-ea-sports-rory-mcilroy-pga-tour-r1
+Scrape = 1.69
+Search = 6.4https://www.bukalapak.com/p/komputer/laptop/a5qcuy-jual-toshiba-l745
+Scrape = 1.32
+Search = 11.07https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/vitamin-suplemen-2368/a6c3z6-jual-kopi-laki-kuat-lelaki-sudah-ijin-depkses
+Scrape = 1.82
+Search = 3.09https://www.bukalapak.com/p/motor-471/aksesoris-motor/aksesoris-motor-lainnya/a6b56t-jual-selang-rem-tdr-ukuran-130cm
+Scrape = 1.52
+Search = 6.2https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/vitamin-suplemen-2368/a6c3z6-jual-kopi-laki-kuat-lelaki-sudah-ijin-depkses
+Scrape = 1.63
+Search = 3.08https://www.bukalapak.com/p/hobi-koleksi/koleksi/pernak-pernik/a6afjm-jual-diamond-painting-diy-embroideries-tiger-uk-20x20
+Scrape = 1.65
+Search = 4.46https://www.bukalapak.com/p/perawatan-kecantikan/perawatan-tubuh-2311/perawatan-rambut-pria/1w30ip-jual-pomade-mr-light-1-2-oz
+Scrape = 6.64
+Search = 10.13https://www.bukalapak.com/p/perawatan-kecantikan/makeup/bibir/81npdv-jual-nyx-black-label-lipcream-matte-24-h-lipcream-nyx
+Scrape = 2.25
+Search = 3.97https://www.bukalapak.com/p/industrial/mesin/mesin-potong/a6bmdk-jual-bosch-cut-of-manchine-gco-200
+Scrape = 1.69
+Search = 6.75https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/herbal/7okye2-jual-kianpi-ginseng-wisdom-new
+Scrape = 2.29
+Search = 4.5https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/aksesoris-eksterior/baybv-jual-emblem-original-tulisan-lsx-panjang-7-cm-1pc
+Scrape = 1.61
+Search = 4.1https://www.bukalapak.com/p/food/makanan/133nmi-jual-sarang-madu-asli
+Scrape = 1.51
+Search = 7.31https://www.bukalapak.com/p/industrial/mesin/mesin-potong/853max-jual-mesin-gergaji-circle-potong-kayu-bitec-cm-508
+Scrape = 1.81
+Search = 2.57https://www.bukalapak.com/p/perlengkapan-bayi/perlengkapan-makan/9u0q9s-jual-steril-botol-avent-3in1
+Scrape = 1.37
+Search = 3.51https://www.bukalapak.com/p/sepeda/fullbike/mtb/2gum3b-jual-thrill-agent-xc-2-mulus-upgrade
+Scrape = 1.43
+Search = 3.49https://www.bukalapak.com/transition-double-p-9t6wm4
+Scrape = 1.51
+Search = 4.25https://www.bukalapak.com/p/perlengkapan-kantor/alat-kantor/mesin-absensi/4j8o0z-jual-mesin-absensi-sidik-jari-fingerprint-solution-p205-garansi-resmi-2-tahun
+Scrape = 1.85
+Search = 4.08https://www.bukalapak.com/p/elektronik/aksesoris-tv-video/910t08-jual-antena-tv-digital-nagoya-dengan-remote-ng-850
+Scrape = 1.66
+Search = 5.92https://www.bukalapak.com/p/mobil-part-dan-aksesoris/eksterior-mobil/headlamp-stoplamp/a6bdcf-jual-best-deal-busi-iridium-mitsubishi-grandis-hella-iridium-plus
+Scrape = 1.69
+Search = 6.53https://www.bukalapak.com/p/motor-471/sparepart-motor/sparepart-lainnya/a6b3am-jual-kampas-kopling-karisma-ori
+PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 8388616 bytes) in /home/nine9toko/mp_scraper/vendor/symfony/browser-kit/History.php on line 40
+
+                                                                               
+  [Symfony\Component\Debug\Exception\FatalErrorException]                      
+  Allowed memory size of 536870912 bytes exhausted (tried to allocate 8388616  
+   bytes)                                                                      
+                                                                               
+
+https://www.bukalapak.com/p/food/minuman/29xpm3-jual-madu-asli-0-5-kg-100-murni-tanpa-campuran
+Scrape = 2.9
+Search = 3.16https://www.bukalapak.com/p/elektronik/aksesoris-tv-video/910t08-jual-antena-tv-digital-nagoya-dengan-remote-ng-850
+Scrape = 3.13
+Search = 6.79https://www.bukalapak.com/p/sepeda/fullbike/mtb/2gum3b-jual-thrill-agent-xc-2-mulus-upgrade
+Scrape = 2.8
+Search = 3.47https://www.bukalapak.com/p/mobil-part-dan-aksesoris/eksterior-mobil/headlamp-stoplamp/a6bdcf-jual-best-deal-busi-iridium-mitsubishi-grandis-hella-iridium-plus
+Scrape = 1.68
+Search = 7.26https://www.bukalapak.com/p/sepeda/fullbike/mtb/2gum3b-jual-thrill-agent-xc-2-mulus-upgrade
+Scrape = 1.41
+Search = 2.63https://www.bukalapak.com/p/perlengkapan-kantor/alat-kantor/mesin-absensi/879j6r-jual-mesin-absensi-sidik-jari-fingerprint-solution-p207
+Scrape = 2.46
+Search = 2.94https://www.bukalapak.com/p/sepeda/equipment-tools/lampu-senter/vyq1j-jual-tutup-pentil-ban-sepeda-mobil-led-gowes-murah
+Scrape = 3.8
+Search = 5.35https://www.bukalapak.com/transition-double-p-9t6wm4
+Scrape = 2.29
+Search = 4.06https://www.bukalapak.com/p/kamera/spy-cam/qagtm-jual-jam-pengintai-kamera-spy-cam-wrist-watch-camera
+Scrape = 2.15
+Search = 5.73https://www.bukalapak.com/p/handphone/aksesoris-handphone/aksesoris-lainnya-2645/a6a6e1-jual-anti-crack-case-anti-shock-case-vivo-x9-x9-plus-new
+Scrape = 1.75
+Search = 3.46https://www.bukalapak.com/p/elektronik/komponen-elektronik/a6bpzu-jual-jepitan-buaya-besar
+Scrape = 4.27
+Search = 7.14https://www.bukalapak.com/p/elektronik/komponen-elektronik/a6bpzu-jual-jepitan-buaya-besar
+Scrape = 1.3
+Search = 3.14https://www.bukalapak.com/p/fashion-pria/kaos-165/a6ani0-jual-baju-spandex-cowok-keren-murah-kekinian-eceran-grosir-2016-2018-2014-2018-2013-2012
+Scrape = 2.84
+Search = 5.96https://www.bukalapak.com/p/tiket-voucher/tiket-voucher-lainnya/a68m2t-jual-hatha-yoga-voucher-di-seminyak
+Scrape = 1.52
+Search = 5.86https://www.bukalapak.com/p/motor-471/sparepart-motor/sparepart-lainnya/a6b3am-jual-kampas-kopling-karisma-ori
+Scrape = 1.66
+Search = 3.5https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/aksesoris-eksterior/egc1m-jual-aksesoris-croum-outer-handle-suzuki-cary-colt-t120ss-set
+Scrape = 2.19
+Search = 5https://www.bukalapak.com/p/motor-471/sparepart-motor/sparepart-lainnya/a6b3am-jual-kampas-kopling-karisma-ori
+Scrape = 1.51
+Search = 2.77https://www.bukalapak.com/p/hobi-koleksi/koleksi/benda-tajam/85nnrf-jual-golok-sembelih-model-tarisi
+Scrape = 1.55
+Search = 3.97https://www.bukalapak.com/p/perawatan-kecantikan/perawatan-tubuh-2311/perawatan-rambut-pria/1w30ip-jual-pomade-mr-light-1-2-oz
+Scrape = 5.26
+Search = 10.68https://www.bukalapak.com/p/olahraga/olahraga-lainnya/a6c8va-jual-alat-olahraga-gym-fitnes-dll-lp-support-industrial-back-support-912-back-support
+Scrape = 3.61
+Search = 6.91https://www.bukalapak.com/p/elektronik/komponen-elektronik/a6blh2-jual-jepitan-acu-ukuran-sedang
+Scrape = 1.48
+Search = 6.73https://www.bukalapak.com/p/olahraga/outdoor/tas-ransel-carrier/59gqcb-jual-tas-carrier-gunung-shioux-60-ltr
+Scrape = 1.58
+Search = 5.37https://www.bukalapak.com/p/elektronik/elektronik-lainnya/a6bm35-jual-kipas-angin-emergency-portable-luby-l682
+Scrape = 1.58
+Search = 3.23https://www.bukalapak.com/p/perlengkapan-kantor/alat-tulis-kantor/alat-tulis-kantor-lainnya/a6ccen-jual-buku-folio-hardcover-bintang-obor-100-lembar-murah
+Scrape = 1.74
+Search = 5.71https://www.bukalapak.com/p/mobil-part-dan-aksesoris/eksterior-mobil/headlamp-stoplamp/a6bdcf-jual-best-deal-busi-iridium-mitsubishi-grandis-hella-iridium-plus
+Scrape = 1.68
+Search = 6.41https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/vitamin-suplemen-2368/8p7twl-jual-h2-cherised-skin-buy-3-get-1
+Scrape = 2.08
+Search = 6.45https://www.bukalapak.com/p/elektronik/proyektor/16jl3x-jual-new-proyektor-uc46-lcd-projektor-unic-800x480-mini-portable-projector-1200-lumens-built-in-anycast-murah-berkualitas-home-theater-cinema-untuk-pendidikan-hiburan-bisnis-support-miracast-protocol-and-other-popular-wireless-connection
+
+                                                                               
+  [Illuminate\Database\QueryException]                                         
+  SQLSTATE[22001]: String data, right truncated: 1406 Data too long for colum  
+  n 'slug' at row 1 (SQL: update `items` set `item_url` = https://www.bukalap  
+  ak.com/p/elektronik/proyektor/16jl3x-jual-new-proyektor-uc46-lcd-projektor-  
+  unic-800x480-mini-portable-projector-1200-lumens-built-in-anycast-murah-ber  
+  kualitas-home-theater-cinema-untuk-pendidikan-hiburan-bisnis-support-miraca  
+  st-protocol-and-other-popular-wireless-connection, `title` = New Proyektor   
+  UC46 LCD Projektor Unic 800x480 mini portable projector 1200 lumens Built-i  
+  n Anycast murah berkualitas home theater cinema untuk pendidikan hiburan bi  
+  snis support MIRACAST Prot, `slug` = new-proyektor-uc46-lcd-projektor-unic-  
+  800x480-mini-portable-projector-1200-lumens-built-in-anycast-murah-berkuali  
+  tas-home-theater-cinema-untuk-pendidikan-hiburan-bisnis-support-miracast-pr  
+  ot-1, `body` = <p>UNIC UC46 Mini Portable Projector Full HD 1080P Support R  
+  ed And Blue 3D Effect With WIFI Connection<br><br>Manufacturer Specificatio  
+  n<br>Display Type: TFT LCD Technology<br>Model: UC46(Built-in Anycast)<br>R  
+  esolution: 800x480<br>Compatible Resolution: 800x600; 1024x768,1280x800,192  
+  0x1080<br>Brightness: 1200 Lumens<br>Contrast: 800:1<br>Aspect Ratio: 4:3 ,  
+  16:9 <br>Projection Method: Front/Rear/Suspended Ceiling Projection<br>Keys  
+  tone Correction: +/- 15 Degrees<br>Focusing Manner: Manual Focus<br>Image S  
+  ize: 34 to 130 Inches<br>Projection Distance: 1.07-3.8M<br>Lamp: LED Lamp<b  
+  r>Power : 55W Max<br>Speakers: 82W<br>System : UNi-Link OS<br>Wireless : WI  
+  FI 2.4G Anycast<br>Lamp Life: Estimated life of over 20,000 Hours<br><br>Ot  
+  hers<br>Audio Format: MP3, WMA ,ASF, OGG,AAC,WAV<br>Video Format: 3GP(H263,  
+  MPEG4)/AVI(XVID,DIVX,H264)/MKV(XVID,DIVX,H264)/FLV(FLV1)/MOV(H264)/MP4(MPEG  
+  4,AVC)/MPG(MPEG1)/VOB(MPEG2)/RMVB(RV40)<br>Image Format: JPEG, BMP, PNG<br>  
+  Document : TXT<br>Power Requirement: 100 to 240V AC, 50/60HZ<br><br>Interfa  
+  ces<br>DC In<br>2 x USB Port<br>HDMI<br>AV IN<br>Earphone jack<br>VGA<br><b  
+  r>Main Product Dimensions: 201mm*153mm*67.5mm (L x W x D)<br><br>Operation:  
+  <br>Display:<br>Wireless function support MIRACAST Protocol and other popul  
+  ar wireless connection <br>Select Wireless Display source and press OK ente  
+  r Uni-Link page <br>If you see SSID: UNi-Link-1E000CE, then go to operate y  
+  our device <br>If you use Android device, please confirm your device can su  
+  pport WIFI DISPLAY <br>More details instruction please kindly to check user  
+   manual <br><br>to use DLNA:<br>Press OK button on remote or keypad to swit  
+  ch to DLNA mode <br>Connect your mobile to Uni-Link-XXXXXXX, then you can p  
+  ush multimedia content from your mobile to projector</p>, `details` = <dl><  
+  dd>Kategori</dd><dt>Proyektor</dt><dd>Berat</dd><dt>1.4 kilogram</dt><dd>Me  
+  rek</dd><dt>Lainnya</dt><dd>Display Type</dd><dt>LED</dt></dl>, `se` = <p><  
+  a rel='nofollow' href='https://www.bukalapak.com/p/elektronik/proyektor/16j  
+  mdr-jual-new-proyektor-uc46-lcd-projektor-unic-800x480-mini-portable-projec  
+  tor-1200-lumens-built-in-anycast-murah-berkualitas-home-theater-cinema-untu  
+  k-pendidikan-hiburan-bisnis-support-miracast-protocol-and-other-popular-wir  
+  eless-connection'>Jual Beli New Proyektor UC46 LCD Projektor Unic 800x480 <  
+  /a><br />New Proyektor UC46 LCD Projektor Unic 800x480 mini portable projec  
+  tor 1200 lumens Built-in Anycast murah berkualitas home theater cinema untu  
+  k pendidikan hiburan . New Proyektor UC46 LCD Projektor Unic 800x480 mini p  
+  ortable projector 1200 lumens Built-in Anycast murah berkualitas home theat  
+  er cinema untuk pendidikan hiburan . miracast new proyektor uc46 lcd projek  
+  tor unic 800x480 mini portable projector 1200 lumens built-in anycast murah  
+   berkualitas home theater cinema untuk pendidikan . </p><p><a rel='nofollow  
+  ' href='https://m.bukalapak.com/c/elektronik/proyektor/l-kab-tegal'>Jual Be  
+  li Mini Proyektor Harga Murah Semua Merk di </a><br />New Proyektor UC46 LC  
+  D Projektor Unic 800x480 mini portable projector 1200 lumens Built-in Anyca  
+  st murah berkualitas home theater cinema untuk pendidikan hiburan . New Pro  
+  yektor UC46 LCD Projektor Unic 800x480 mini portable projector 1200 lumens   
+  Built-in Anycast murah berkualitas home theater cinema untuk pendidikan hib  
+  uran . </p>, `category_id` = 414, `sell_price` = 1460000, `images` = a:5:{i  
+  :0;s:116:"https://s2.bukalapak.com/img/2960280721/m-1000-1000/New_Proyektor  
+  _UC46_LCD_Projektor_Unic_800x480_mini_portable_.JPG";i:1;s:116:"https://s2.  
+  bukalapak.com/img/2499180721/m-1000-1000/New_Proyektor_UC46_LCD_Projektor_U  
+  nic_800x480_mini_portable_.JPG";i:2;s:116:"https://s2.bukalapak.com/img/259  
+  9180721/m-1000-1000/New_Proyektor_UC46_LCD_Projektor_Unic_800x480_mini_port  
+  able_.JPG";i:3;s:116:"https://s2.bukalapak.com/img/7799180721/m-1000-1000/N  
+  ew_Proyektor_UC46_LCD_Projektor_Unic_800x480_mini_portable_.JPG";i:4;s:116:  
+  "https://s2.bukalapak.com/img/2999180721/m-1000-1000/New_Proyektor_UC46_LCD  
+  _Projektor_Unic_800x480_mini_portable_.JPG";}, `seller_id` = 20294, `proces  
+  sed` = 1, `views` = 10, `tags` = a:9:{i:0;i:152189;i:1;i:157754;i:2;i:15775  
+  5;i:3;i:157756;i:4;i:157757;i:5;i:157758;i:6;i:157759;i:7;i:157760;i:8;i:15  
+  7761;}, `updated_at` = 2017-08-29 22:51:08 where `id` = 86234)               
+                                                                               
+
+                                                                               
+  [PDOException]                                                               
+  SQLSTATE[22001]: String data, right truncated: 1406 Data too long for colum  
+  n 'slug' at row 1                                                            
+                                                                               
+
+https://www.bukalapak.com/p/rumah-tangga/elektronik-1111/lampu-alat-penerangan/9026ir-jual-lampu-led-holic-3-watt-fitting-e14-lampu-hias-whit-reflektor-cahaya-putih-dan-kuning
+Scrape = 1.92
+Search = 4.1https://www.bukalapak.com/p/tiket-voucher/tiket-voucher-lainnya/a68m2t-jual-hatha-yoga-voucher-di-seminyak
+Scrape = 3.92
+Search = 6.84https://www.bukalapak.com/p/handphone/aksesoris-handphone/aksesoris-lainnya-2645/a6a6e1-jual-anti-crack-case-anti-shock-case-vivo-x9-x9-plus-new
+Scrape = 1.78
+Search = 4.4https://www.bukalapak.com/p/hobi-koleksi/koleksi/benda-tajam/85nnrf-jual-golok-sembelih-model-tarisi
+Scrape = 1.58
+Search = 3.18https://www.bukalapak.com/p/sepeda/outwear/goggle-kacamata/2mg93q-jual-kaca-mata-sepeda-mercury-sunglasses-for-man-and-woman-bening
+
+                                                                               
+  [GuzzleHttp\Exception\ConnectException]                                      
+  cURL error 35: Encountered end of file (see http://curl.haxx.se/libcurl/c/l  
+  ibcurl-errors.html)                                                          
+                                                                               
+
+https://www.bukalapak.com/p/kesehatan-2359/kesehatan-mulut-gigi/obat-kumur/a5qsm1-jual-new-brand-sin-enjoy
+Scrape = 2.39
+Search = 13.28https://www.bukalapak.com/p/rumah-tangga/elektronik-1111/lampu-alat-penerangan/9026ir-jual-lampu-led-holic-3-watt-fitting-e14-lampu-hias-whit-reflektor-cahaya-putih-dan-kuning
+Scrape = 2.02
+Search = 3.58https://www.bukalapak.com/p/food/cemilan-snack/a6alyv-jual-makaroni-plintir-rasa-pedas-kemasan-tabung
+Scrape = 1.72
+Search = 28.49https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/aksesoris-eksterior/egc1m-jual-aksesoris-croum-outer-handle-suzuki-cary-colt-t120ss-set
+Scrape = 1.82
+Search = 4.06https://www.bukalapak.com/p/fashion-wanita/kebaya/a6bv3g-jual-tesaa-kebaya
+Scrape = 1.49
+Search = 3.4https://www.bukalapak.com/p/mobil-part-dan-aksesoris/eksterior-mobil/headlamp-stoplamp/a6bdcf-jual-best-deal-busi-iridium-mitsubishi-grandis-hella-iridium-plus
+Scrape = 1.71
+Search = 7.01https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/aksesoris-eksterior/baybv-jual-emblem-original-tulisan-lsx-panjang-7-cm-1pc
+Scrape = 1.94
+Search = 3.78https://www.bukalapak.com/p/olahraga/outdoor/tas-ransel-carrier/59gqcb-jual-tas-carrier-gunung-shioux-60-ltr
+Scrape = 2.14
+Search = 4.21https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/aksesoris-eksterior/baybv-jual-emblem-original-tulisan-lsx-panjang-7-cm-1pc
+Scrape = 1.68
+Search = 3.79https://www.bukalapak.com/p/perlengkapan-kantor/alat-tulis-kantor/alat-tulis-kantor-lainnya/a6ccen-jual-buku-folio-hardcover-bintang-obor-100-lembar-murah
+Scrape = 1.85
+Search = 4.45https://www.bukalapak.com/p/rumah-tangga/elektronik-1111/lampu-alat-penerangan/9026ir-jual-lampu-led-holic-3-watt-fitting-e14-lampu-hias-whit-reflektor-cahaya-putih-dan-kuning
+Scrape = 1.9
+Search = 3.3https://www.bukalapak.com/p/mobil-part-dan-aksesoris/eksterior-mobil/headlamp-stoplamp/a6bdcf-jual-best-deal-busi-iridium-mitsubishi-grandis-hella-iridium-plus
+Scrape = 1.81
+Search = 5.15https://www.bukalapak.com/p/mobil-part-dan-aksesoris/eksterior-mobil/headlamp-stoplamp/a6bdcf-jual-best-deal-busi-iridium-mitsubishi-grandis-hella-iridium-plus
+Scrape = 1.72
+Search = 5.3https://www.bukalapak.com/p/tiket-voucher/travel-hiburan/a69yg2-jual-tour-pulau-pari
+Scrape = 1.81
+Search = 7.23https://www.bukalapak.com/p/handphone/aksesoris-handphone/aksesoris-lainnya-2645/a6a6e1-jual-anti-crack-case-anti-shock-case-vivo-x9-x9-plus-new
+Scrape = 2.76
+Search = 2.55https://www.bukalapak.com/p/perlengkapan-kantor/alat-tulis-kantor/alat-tulis-kantor-lainnya/12r9dx-jual-bubble-warp-1-roll-via-wahana
+Scrape = 1.8
+Search = 4.27https://www.bukalapak.com/p/tiket-voucher/travel-hiburan/a69yg2-jual-tour-pulau-pari
+Scrape = 1.32
+Search = 3.85https://www.bukalapak.com/p/rumah-tangga/elektronik-1111/lampu-alat-penerangan/9026ir-jual-lampu-led-holic-3-watt-fitting-e14-lampu-hias-whit-reflektor-cahaya-putih-dan-kuning
+Scrape = 1.88
+Search = 3.48https://www.bukalapak.com/p/elektronik/elektronik-lainnya/a6bm35-jual-kipas-angin-emergency-portable-luby-l682
+Scrape = 1.56
+Search = 3.04https://www.bukalapak.com/p/elektronik/elektronik-lainnya/a6bm35-jual-kipas-angin-emergency-portable-luby-l682
+Scrape = 1.84
+Search = 4.95https://www.bukalapak.com/p/elektronik/komponen-elektronik/a6bpzu-jual-jepitan-buaya-besar
+Scrape = 2.54
+Search = 3.12https://www.bukalapak.com/p/fashion-wanita/kebaya/a6bv3g-jual-tesaa-kebaya
+Scrape = 1.4
+Search = 2.71https://www.bukalapak.com/p/motor-471/sparepart-motor/sparepart-lainnya/a6b3am-jual-kampas-kopling-karisma-ori
+Scrape = 2.47
+Search = 5.2https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/aksesoris-eksterior/egc1m-jual-aksesoris-croum-outer-handle-suzuki-cary-colt-t120ss-set
+Scrape = 3.01
+Search = 2.75https://www.bukalapak.com/p/handphone/aksesoris-handphone/aksesoris-lainnya-2645/a6a6e1-jual-anti-crack-case-anti-shock-case-vivo-x9-x9-plus-new
+Scrape = 1.77
+Search = 5.32https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/aksesoris-eksterior/baybv-jual-emblem-original-tulisan-lsx-panjang-7-cm-1pc
+Scrape = 1.67
+Search = 4.9https://www.bukalapak.com/p/handphone/aksesoris-handphone/aksesoris-lainnya-2645/a6a6e1-jual-anti-crack-case-anti-shock-case-vivo-x9-x9-plus-new
+Scrape = 2.72
+Search = 2.28https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/vitamin-suplemen-2368/8p7twl-jual-h2-cherised-skin-buy-3-get-1
+Scrape = 1.58
+Search = 5.46https://www.bukalapak.com/p/mobil-part-dan-aksesoris/eksterior-mobil/headlamp-stoplamp/a6bdcf-jual-best-deal-busi-iridium-mitsubishi-grandis-hella-iridium-plus
+Scrape = 1.73
+Search = 6.65https://www.bukalapak.com/p/elektronik/komponen-elektronik/a6bpzu-jual-jepitan-buaya-besar
+Scrape = 1.38
+Search = 4.44https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/aksesoris-eksterior/baybv-jual-emblem-original-tulisan-lsx-panjang-7-cm-1pc
+Scrape = 1.61
+Search = 3.61https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/aksesoris-eksterior/baybv-jual-emblem-original-tulisan-lsx-panjang-7-cm-1pc
+Scrape = 1.55
+Search = 3.54https://www.bukalapak.com/p/elektronik/komponen-elektronik/a6bpzu-jual-jepitan-buaya-besar
+Scrape = 1.35
+Search = 4.29https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/vitamin-suplemen-2368/8p7twl-jual-h2-cherised-skin-buy-3-get-1
+Scrape = 2.99
+Search = 5.98https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/vitamin-suplemen-2368/8p7twl-jual-h2-cherised-skin-buy-3-get-1
+Scrape = 1.59
+Search = 4.98https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/obat-obatan/a5p101-jual-ob4t-herbal-pembesar-pe-nis-terbukti-perm4nent
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.bukalapak.com/p/olahraga/outdoor/tas-ransel-carrier/59gqcb-jual-tas-carrier-gunung-shioux-60-ltr
+Scrape = 1.54
+Search = 4.59https://www.bukalapak.com/p/handphone/aksesoris-handphone/aksesoris-lainnya-2645/a6a6e1-jual-anti-crack-case-anti-shock-case-vivo-x9-x9-plus-new
+Scrape = 1.71
+Search = 3.03https://www.bukalapak.com/p/olahraga/outdoor/tas-ransel-carrier/59gqcb-jual-tas-carrier-gunung-shioux-60-ltr
+Scrape = 1.56
+Search = 5.95https://www.bukalapak.com/p/olahraga/outdoor/tas-ransel-carrier/59gqcb-jual-tas-carrier-gunung-shioux-60-ltr
+Scrape = 2.1
+Search = 3.57
+                                        
+  [ErrorException]                      
+  Trying to get property of non-object  
+                                        
+
+https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/aksesoris-interior/a8vrs3-jual-premium-karpet-dasar-karpet-lantai-tebal-peredam-daihatsu-ceria-t16-80280
+Scrape = 96.71
+Search = 1.56https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/aksesoris-interior/a8vr6p-jual-sarung-cover-stir-mobil-motif-benang-exclusive-promo-murah02
+Scrape = 99.68
+Search = 3.84https://www.bukalapak.com/p/kamera/aksesoris-kamera/blower/a8vuje-jual-dijual-vsgo-air-blower-diskon-r-561
+Scrape = 98.66
+Search = 5.3https://www.bukalapak.com/p/industrial/industrial-lainnya/9whwh5-jual-wing-boyscout
+Scrape = 98.04
+Search = 3.95https://www.bukalapak.com/p/kamera/action-camera/camera/a8vuax-jual-jual-xiaomi-yi-2-4k-docking-charger-dual-battery-set-usb-ada-berkualitas-harga-sale
+Scrape = 93.31
+Search = 7.67https://www.bukalapak.com/p/kamera/converter-adapter/a8vts6-jual-dijual-lf036-lensa-wide-45x-super-wide-angle-lens-52mm-for-nikon-d5100-d32-murah-fr-322n
+Scrape = 94.51
+Search = 1.64https://www.bukalapak.com/p/motor-471/aksesoris-motor/alarm-system/a8w8p4-jual-jual-sensor-sentuh-motor-anti-air-murah-20170829
+Scrape = 91.36
+Search = 2.48https://www.bukalapak.com/p/perlengkapan-kantor/alat-kantor/perlengkapan-kantor-lainnya/a8w6xn-jual-jual-meja-tulis-kayu-minimalis-kantor-grace-mb-124-murah-diskon-abis
+Scrape = 97.61
+Search = 3.26
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.bukalapak.com/p/industrial/industrial-lainnya/8svflo-jual-bendera-merah-putih-ukuran-80-x-120
+Scrape = 91.13
+Search = 2.85https://www.bukalapak.com/p/fashion-wanita/dress/a8wbcj-jual-promo-setelan-kebaya-floy-kutu-baru-nirmala-dusty-pink
+Scrape = 91.64
+Search = 4.7https://www.bukalapak.com/p/olahraga/pancing/senar-pancing/a8w2cn-jual-dijual-penn-mariner-monofilament-line-clear-blue-promo-u-676
+Scrape = 91.04
+Search = 9.36https://www.bukalapak.com/p/motor-471/sparepart-motor/knalpot/9ku48g-jual-knalpot-slip-on-ninja-250-leovince-cobra
+Scrape = 90.34
+Search = 6.57https://www.bukalapak.com/p/rumah-tangga/kamar-mandi/8l90nv-jual-jemuran-dinding-70cm
+Scrape = 88.41
+Search = 2.49https://www.bukalapak.com/p/rumah-tangga/dapur/kompor/a8w5ar-jual-jual-kompor-induksi-induction-cooker-philips-hd-4932-murah-good-quality
+Scrape = 86.14
+Search = 2.49https://www.bukalapak.com/p/komputer/aksesoris-226/aksesoris-lainnya-241/a8wxat-jual-dijual-logitech-gamepad-f710-promo-wd-y88
+Scrape = 58.95
+Search = 4.1https://www.bukalapak.com/p/industrial/industrial-lainnya/9whteq-jual-wing-gerakan-pramuka
+Scrape = 98.25
+Search = 4.45https://www.bukalapak.com/p/olahraga/outdoor/perlengkapan-outdoor/a8w1gf-jual-kompor-gas-portable-mini-windproof-camping-stove-kompor-anti-angin-promo-g-945h
+Scrape = 90.63
+Search = 3.11https://www.bukalapak.com/p/industrial/industrial-lainnya/8sjy5i-jual-buku-sku-siaga-galang-dan-penegak
+Scrape = 91.08
+Search = 4.12
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.bukalapak.com/p/perlengkapan-bayi/perlengkapan-bayi-lainnya/a8x3zn-jual-kualitas-terbaik-kacamata-bayi-balita-6-5-tahunan-glasses-anak-baby
+Scrape = 96.04
+Search = 2.66https://www.bukalapak.com/p/handphone/aksesoris-handphone/casing-cover/a8xi1m-jual-xiaomi-mi-max-2-soft-back-case-new-original-cocose-matte-polos
+Scrape = 94.1
+Search = 4.89https://www.bukalapak.com/p/fashion-anak/anak-laki-laki/sepatu-1447/a8wkyi-jual-diskon-sepatu-sendal-anak-sendal-anak-gos-premium
+Scrape = 2.34
+Search = 3.03https://www.bukalapak.com/p/komputer/aksesoris-226/aksesoris-lainnya-241/a8wvr9-jual-jual-original-battery-laptop-asus-a43-a43jc-a43e-a43j-a43u-a43s-a43sa-murah-good-product
+Scrape = 1.94
+Search = 2.77https://www.bukalapak.com/p/perlengkapan-bayi/perlengkapan-bayi-lainnya/a8x42u-jual-promo-tas-bayi-baby-scots-embroidery-simple-bag-murah-20170829
+Scrape = 2.43
+Search = 5.15https://www.bukalapak.com/p/fashion-wanita/jam-tangan/a8wb6p-jual-yulius
+Scrape = 1.27
+Search = 5.97https://www.bukalapak.com/p/motor-471/aksesoris-motor/led-hid-bohlam/a8w494-jual-jual-lampu-sorot-tembak-rtd-e03c-usb-port-untuk-charger-hp-promo-k-tu90
+Scrape = 2.28
+Search = 2.4https://www.bukalapak.com/p/hobi-koleksi/mainan/board-games/a8x9bb-jual-monopoly-hasbro
+Scrape = 1.27
+Search = 9.14https://www.bukalapak.com/p/industrial/industrial-lainnya/8sug1t-jual-tunas-saku-bordir
+Scrape = 1.76
+Search = 2.76https://www.bukalapak.com/p/olahraga/olahraga-lainnya/a8w1ce-jual-jual-stopwatch-alba-sw-01-axa29zx1-htam-diskon-m-909
+Scrape = 1.82
+Search = 1.96https://www.bukalapak.com/p/motor-471/sparepart-motor/knalpot/9flch8-jual-knalpot-matic-cha-stainless
+Scrape = 1.4
+Search = 3.26https://www.bukalapak.com/p/kamera/sparepart-kamera/a8vtig-jual-diskon-mini-wifi-p2p-hidden-spy-cam-ip-wireless-camera-1280x720
+Scrape = 3.4
+Search = 2.95https://www.bukalapak.com/p/motor-471/sparepart-motor/knalpot/9flch8-jual-knalpot-matic-cha-stainless
+Scrape = 2.06
+Search = 3.32https://www.bukalapak.com/p/elektronik/elektronik-lainnya/a8x03i-jual-sale-audio-technica-athws550is
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.bukalapak.com/p/food/dairy-products/a8w5os-jual-loyang-crepes-dim-30cm
+Scrape = 1.46
+Search = 3.63https://www.bukalapak.com/p/perlengkapan-bayi/diapering/a8x4n4-jual-jual-sweety-fit-pants-m60-diskon-barang-bagus
+Scrape = 1.8
+Search = 8.38https://www.bukalapak.com/p/hobi-koleksi/mainan/mainan-lainnya/a8xaow-jual-ds-bravely-second-end-layer-usa-asia-diskon-harga-obral
+Scrape = 1.89
+Search = 2.5https://www.bukalapak.com/p/handphone/aksesoris-handphone/casing-cover/a8xi6m-jual-promo-spigen-liquid-crystal-samsung-galaxy-s8-plus-original-crystal-clear-20170829
+Scrape = 2.06
+Search = 4.65https://www.bukalapak.com/p/motor-471/aksesoris-motor/alarm-system/a8w3d1-jual-unik-kunci-gembok-pengaman-anti-maling-disc-cakram-motor-bahan-baja-kuat-limited-20170829
+Scrape = 1.87
+Search = 4.34https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/vitamin-suplemen-2368/a8wsmc-jual-cni-vitasigif-vitamin-c-dan-chlorella-junior-orange-apple-strawberry
+Scrape = 1.77
+Search = 5.89https://www.bukalapak.com/p/perlengkapan-kantor/alat-kantor/perlengkapan-kantor-lainnya/a8vz53-jual-jual-dynamic-330-lcd-mesin-laminating-diskon-gf-h7
+Scrape = 2.04
+Search = 4.04https://www.bukalapak.com/p/fashion-pria/kaos-165/a8xddf-jual-kaos-lambang-burung-garuda-2-v-neck-vnk-gdr04
+Scrape = 1.61
+Search = 3.21https://www.bukalapak.com/p/fashion-anak/anak-laki-laki/setelan-1459/a8wm5k-jual-jual-kemeja-anak-motif-zn-17060-limited-barang-berkualitas
+Scrape = 1.7
+Search = 4https://www.bukalapak.com/p/perlengkapan-kantor/alat-tulis-kantor/kalkulator/a8w4br-jual-jual-casio-fx-4500pa-kalkulator-ilmiah-murah-nh-612
+Scrape = 1.94
+Search = 5.03https://www.bukalapak.com/p/food/makanan/a8wet4-jual-dijual-sunview-raisins-medley-seedless-jumbo-size-promo-harga-spesial
+Scrape = 2.89
+Search = 2.75https://www.bukalapak.com/p/fashion-pria/dompet-302/a8xciv-jual-dompet-koin
+Scrape = 1.13
+Search = 5.77https://www.bukalapak.com/p/hobi-koleksi/mainan/mainan-lainnya/a8wh82-jual-ps4-world-of-final-fantasy-r3-region-3-english-playstation-4-game-diskon-gl-761
+Scrape = 2.36
+Search = 3.56https://www.bukalapak.com/p/hobi-koleksi/pet-food-stuff/pet-aksesoris/a8xbd7-jual-dijual-walux-professional-pet-hair-clipper-701-alat-cukur-bulu-hewan-diskon-diskon-abis
+Scrape = 2.02
+Search = 4.12https://www.bukalapak.com/p/fashion-pria/tas-pria/selempang/a6mupj-jual-sale-tas-waistbag-terbaru-berkualitas
+Scrape = 2.44
+Search = 2.74https://www.bukalapak.com/p/komputer/aksesoris-226/keyboard/a8wx59-jual-jual-mechanical-keyboard-tkl-ikbc-c87-non-led-red-cherry-mx-diskon-f-9145
+Scrape = 1.84
+Search = 3.15https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/aksesoris-eksterior/a8vsdr-jual-dijual-garnish-ring-fog-lamp-kecil-honda-new-brio-diskon-h-m784
+Scrape = 2.07
+Search = 3.57https://www.bukalapak.com/p/perawatan-kecantikan/produk-kecantikan-lainnya/a8xhh7-jual-eksklusif-wak-doyok-hair-shampoo
+Scrape = 1.58
+Search = 6.11https://www.bukalapak.com/p/perawatan-kecantikan/makeup/mata/a8xkce-jual-jual-softlens-vampire-soflens-vampire-diskon-20170829
+Scrape = 1.78
+Search = 5.32https://www.bukalapak.com/p/hobi-koleksi/koleksi/vapor-rokok-elektrik/a8wgzg-jual-screaming-inc-alpenliebe
+Scrape = 1.45
+Search = 2.65https://www.bukalapak.com/p/food/minuman/53mom-jual-pure-noni-sirsak-2ltr-mengkudu-daun-sirsak
+
+                                                                               
+  [GuzzleHttp\Exception\ConnectException]                                      
+  cURL error 7: Failed connect to www.manjur.net:80; No route to host (see ht  
+  tp://curl.haxx.se/libcurl/c/libcurl-errors.html)                             
+                                                                               
+
+https://www.bukalapak.com/p/komputer/aksesoris-226/keyboard/a8wvxx-jual-keyboard-acer-aspire-4736-4738-4739-4741-4752-4349-4253-3810t-4810t
+Scrape = 2.18
+Search = 8.92https://www.bukalapak.com/p/food/bahan-mentah/4gd0ek-jual-papier-burung-hantu
+Scrape = 1.35
+Search = 2.94https://www.bukalapak.com/p/olahraga/olahraga-lainnya/a8w0ma-jual-jual-bola-basket-molten-gg7x-promo-kualitas-bagus
+Scrape = 3.72
+Search = 77.82https://www.bukalapak.com/p/rumah-tangga/home-stuff/7y4geg-jual-gantungan-pot-terrarium-dekorasi-terrarium-gantungan-hiasan-gantungan-lilin-model-gantung-hiasan-gantung-shabby-chic-dekorasi-rumah
+Scrape = 2.7
+Search = 6.19https://www.bukalapak.com/p/food/bahan-mentah/569vcq-jual-tembakau-aroma-lecce-mint
+Scrape = 2.71
+Search = 3.93https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/peralatan-perkakas-mobil/a8vtbx-jual-led-hir2-9012-cree-60w-xhp70-xhp-70-yaris-mobilio-rs-pajero-exceed-promo-kl-9055
+Scrape = 2.07
+Search = 1.76https://www.bukalapak.com/p/industrial/industrial-lainnya/8sv6qx-jual-bendera-merah-putih-60-x-90
+Scrape = 1.52
+Search = 3.09https://www.bukalapak.com/p/hobi-koleksi/mainan/mainan-lainnya/a8xbn7-jual-jual-rcmania-2500mah-2s-for-syma-x8c-x8w-x8g-battery-limited-harga-spesial
+Scrape = 2.19
+Search = 7.96https://www.bukalapak.com/p/perawatan-kecantikan/hair-care/a8xkv0-jual-jual-gatsby-hair-gel-moving-rubber-grunge-mat-15g-dzn-traveller-pack-murah-gf-h7
+Scrape = 1.92
+Search = 6.39https://www.bukalapak.com/p/mobil-part-dan-aksesoris/mesin-mobil/radiator/4ockq8-jual-radiator-ford-focus
+Scrape = 1.34
+Search = 8.87https://www.bukalapak.com/p/motor-471/sparepart-motor/knalpot/a8w5pc-jual-jual-knalpot-suzuki-satria-fu-dbs-oval-berkualitas-20170829
+Scrape = 2.11
+Search = 6.26https://www.bukalapak.com/p/perlengkapan-bayi/pakaian-bayi/topi-738/a8wz2k-jual-promo-topi-happy-crown-topi-bayi-topi-anak-trendi-limited-20170829
+Scrape = 2.46
+Search = 3.64https://www.bukalapak.com/p/industrial/industrial-lainnya/8sjy5i-jual-buku-sku-siaga-galang-dan-penegak
+Scrape = 1.5
+Search = 4.08https://www.bukalapak.com/p/hobi-koleksi/koleksi/vapor-rokok-elektrik/a8wgzg-jual-screaming-inc-alpenliebe
+Scrape = 1.45
+Search = 2.54https://www.bukalapak.com/p/elektronik/elektronik-lainnya/a8x05b-jual-diskon-headphone-sony-7502-professional
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.bukalapak.com/p/perawatan-kecantikan/makeup/bibir/a8xiyj-jual-beli-balm016-the-balm-matt-e-hughes-liquid-lipstick-1-2ml-loyal-terlaris-20170829
+Scrape = 2.56
+Search = 1.73https://www.bukalapak.com/p/perlengkapan-kantor/alat-tulis-kantor/alat-tulis-kantor-lainnya/a8vxqe-jual-jual-casio-fr-2650t-we-kalkulator-printing-murah-20170829
+Scrape = 2.04
+Search = 3.51https://www.bukalapak.com/p/komputer/aksesoris-226/tas-case-238/a8wwe6-jual-jual-15-inch-sleeve-cover-felt-case-100-2-x-double-slot-new-design-diskon-x-773k
+Scrape = 2.63
+Search = 3.31https://www.bukalapak.com/p/handphone/aksesoris-handphone/casing-cover/a8xia3-jual-promo-melkco-kios-type-ultraslim-genuine-leather-case-samsung-galaxy-tab-3-7-20170829
+Scrape = 2.31
+Search = 5.02https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/vitamin-suplemen-2368/a8wty9-jual-elken-spirulina-isi-500-tablet
+Scrape = 1.75
+Search = 5.87https://www.bukalapak.com/p/elektronik/elektronik-lainnya/a8x04r-jual-sale-beats-pro-by-dr-dre-headphones-black-silver
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.bukalapak.com/p/sepeda/wheel-hub-rims-dll/hub-freehub/84u06n-jual-hub-freehub-raze-black-bearing
+Scrape = 2.8
+Search = 2.43https://www.bukalapak.com/p/handphone/headset-earphone/a8xhpt-jual-jual-original-jbl-blackberry-bass-headset-made-for-blackberry-no-box-promo-barang-bagus
+Scrape = 2.01
+Search = 4.28https://www.bukalapak.com/p/motor-471/aksesoris-motor/aksesoris-motor-lainnya/a8w5ph-jual-unik-engine-guard-verza-byson-nmp-mega-pro-tiger-tiger-revo-thunder-limited-20170829
+Scrape = 2.1
+Search = 4.42https://www.bukalapak.com/p/handphone/aksesoris-handphone/casing-cover/a8xmvs-jual-ultra-grip-thin-hard-case-oppo-f1s-plus-selfie-hardcase-casing-cover-limited
+Scrape = 3.83
+Search = 3.39https://www.bukalapak.com/p/sepeda/equipment-tools/tools-others/a8wldd-jual-dijual-tas-punggung-sepeda-shimano-murah-kl-9055
+Scrape = 1.78
+Search = 5.67https://www.bukalapak.com/p/fashion-wanita/jeans-1093/a5nsoh-jual-celana-jeans-fashion-wanita-highwaist-sobek-kode-99211
+Scrape = 2.25
+Search = 3.06https://www.bukalapak.com/p/fashion-anak/anak-laki-laki/sepatu-1447/a8wd9f-jual-stok-terakhir-sepatu-wakai-kids-navy-tribal-seri-2
+Scrape = 2.21
+Search = 2.6https://www.bukalapak.com/p/handphone/aksesoris-handphone/casing-cover/a8xn5i-jual-spigen-tough-armor-asus-zenfone-3-max-5-5-iron-case-ta-tech-man-carbon
+Scrape = 2.22
+Search = 3.43https://www.bukalapak.com/p/fashion-anak/anak-laki-laki/sepatu-1447/a8wl4m-jual-jual-sepatu-sekolah-boot-spiderman-sepatu-anak-laki-laki-s-diskon-harga-murah
+Scrape = 2.3
+Search = 4.31https://www.bukalapak.com/p/perlengkapan-bayi/bouncer-chair/a8x2u9-jual-jual-gendongan-hipseat-imama-murah-jm-l900
+Scrape = 1.97
+Search = 2.31https://www.bukalapak.com/p/kesehatan-2359/produk-kesehatan-lainnya/9zmhpy-jual-pembesar-mr-p
+Scrape = 4.62
+Search = 3.98https://www.bukalapak.com/p/industrial/industrial-lainnya/9whwh5-jual-wing-boyscout
+Scrape = 2.67
+Search = 4.71https://www.bukalapak.com/p/food/bahan-mentah/4zm4kn-jual-tembakau-paruqpuq
+Scrape = 1.42
+Search = 2.41https://www.bukalapak.com/p/olahraga/renang/pelampung/a8vzb7-jual-termurah-ban-renang-ban-renang-ab-adjustable-sunshade-h
+Scrape = 2.48
+Search = 4.82https://www.bukalapak.com/p/hobi-koleksi/mainan/mainan-lainnya/a8x96b-jual-dijual-ps3-call-of-duty-ghosts-region-1-usa-english-promo-ready
+Scrape = 3.18
+Search = 5.53https://www.bukalapak.com/p/fashion-wanita/sepatu-16/flat-shoes/a8wc0k-jual-sendal-termurah-flat-wanita-flat-shoes-jkl318-murmer-a2ca377-harga-hemat
+Scrape = 2.17
+Search = 1.93https://www.bukalapak.com/p/olahraga/exercise-fitness/alat-olahraga/a8w0en-jual-murah-bola-yoga-warna-biru-pilates-fitness-gym-ball-diameter-65cm
+Scrape = 3.35
+Search = 2.89https://www.bukalapak.com/p/perlengkapan-bayi/perawatan-tubuh/a8x60u-jual-promo-wellness-cotton-balls-kapas-bulat-100pcs-berkualitas-20170829
+Scrape = 5.28
+Search = 3.97https://www.bukalapak.com/p/handphone/aksesoris-handphone/casing-cover/a8xnej-jual-jual-case-samsung-s8-s8-plus-xdoria-defense-clear-360-promo-murah
+Scrape = 3.09
+Search = 2.87https://www.bukalapak.com/p/komputer/aksesoris-226/baterai-240/a8wwg9-jual-dijual-adaptor-macbook-apple-85w-magsafe-for-15-and-17-inch-macbook-pro-murah-promo-terbatas
+Scrape = 1.98
+Search = 5.5https://www.bukalapak.com/p/perawatan-kecantikan/perawatan-tubuh-2311/perawatan-kulit-wanita/a8xk01-jual-unik-jogging-foot-plate-magnetic-trimmer-nikita-plangsing-tubuh-terlaris-20170829
+Scrape = 2
+Search = 3.93https://www.bukalapak.com/p/olahraga/sepakbola-futsal/jersey-1557/a8vzyy-jual-setelan-futsal-baju-bola-nike-hypervenom-grade-ori
+Scrape = 3.25
+Search = 3.53https://www.bukalapak.com/p/fashion-anak/anak-laki-laki/sepatu-1447/a8wl4m-jual-jual-sepatu-sekolah-boot-spiderman-sepatu-anak-laki-laki-s-diskon-harga-murah
+Scrape = 1.83
+Search = 4.26https://www.bukalapak.com/p/sepeda/equipment-tools/tools-others/a8wldd-jual-dijual-tas-punggung-sepeda-shimano-murah-kl-9055
+Scrape = 5.61
+Search = 5.47https://www.bukalapak.com/p/industrial/tools/a8vjpt-jual-promo-colokan-multi-travel-universal-adaptor-kenmaster-km-931
+Scrape = 2.67
+Search = 6.16https://www.bukalapak.com/p/perlengkapan-bayi/perlengkapan-tidur/a8x42p-jual-jual-summer-infant-baby-box-ranjang-bayi-playpen-playard-murah-tl-12h
+Scrape = 3.23
+Search = 5.45https://www.bukalapak.com/p/handphone/aksesoris-handphone/casing-cover/a8xnqw-jual-jual-kalaideng-ka-series-leather-case-for-htc-one-max-t6-murah-tl-12h
+Scrape = 5.66
+Search = 14.58https://www.bukalapak.com/p/handphone/aksesoris-handphone/casing-cover/a8xi6m-jual-promo-spigen-liquid-crystal-samsung-galaxy-s8-plus-original-crystal-clear-20170829
+Scrape = 3.06
+Search = 4.96https://www.bukalapak.com/p/rumah-tangga/home-stuff/a5oiv4-jual-setrika
+Scrape = 2.93
+Search = 5.49https://www.bukalapak.com/p/motor-471/outwear-motor/jaket-body-protector/a8w6ul-jual-jual-hydrobag-hydropack-compact-bladder-fox-ktm-monster-alpinestars-murah-v-871g
+Scrape = 1.83
+Search = 4.44https://www.bukalapak.com/p/handphone/power-bank/a8xi58-jual-dijual-hippo-powerbank-ilo-f2-6600mah-grey-garansi-resmi-diskon-harga-spesial
+Scrape = 3.98
+Search = 9.55https://www.bukalapak.com/p/olahraga/renang/pelampung/a8vzb7-jual-termurah-ban-renang-ban-renang-ab-adjustable-sunshade-h
+Scrape = 1.84
+Search = 4.7https://www.bukalapak.com/p/motor-471/aksesoris-motor/alarm-system/a8w3d1-jual-unik-kunci-gembok-pengaman-anti-maling-disc-cakram-motor-bahan-baja-kuat-limited-20170829
+Scrape = 2.05
+Search = 9.22https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/vitamin-suplemen-2368/a8wtfs-jual-hendel-exitox-greenco-original-isi-30-kapsul-green-coffee
+Scrape = 1.77
+Search = 3.81https://www.bukalapak.com/p/sepeda/equipment-tools/tools-others/a8wn90-jual-jual-fork-26-pacific-oversize-promo-harga-promosi
+Scrape = 3.64
+Search = 3.86https://www.bukalapak.com/p/hobi-koleksi/koleksi/filateli/874f8y-jual-materai-6000-2010-2015
+Scrape = 2.86
+Search = 7.67https://www.bukalapak.com/p/fashion-anak/anak-laki-laki/sepatu-1447/a8wek8-jual-stok-terbatas-sandal-gunung-anakanak-carvil-semeru-02t
+Scrape = 1.68
+Search = 4.31https://www.bukalapak.com/p/perlengkapan-bayi/bouncer-chair/a8x2u9-jual-jual-gendongan-hipseat-imama-murah-jm-l900
+Scrape = 1.72
+Search = 3.73https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/vitamin-suplemen-2368/a8wrhs-jual-phyto-fiber-serat-alami-sehat-pencernaan-ecer-5-sachet
+Scrape = 3.37
+Search = 2.68https://www.bukalapak.com/p/perlengkapan-bayi/perawatan-tubuh/a8wzr0-jual-jual-oxo-tot-on-the-go-wipes-dispenser-with-diaper-pouch-green-berkualitas-20170829
+Scrape = 1.94
+Search = 8.43https://www.bukalapak.com/p/perlengkapan-bayi/perlengkapan-makan/a8x8e9-jual-dijual-breastpad-chuchu-isi-90-murah-barang-terbatas
+Scrape = 1.73
+Search = 4.41https://www.bukalapak.com/p/elektronik/elektronik-lainnya/a8x1md-jual-dijual-megaphone-pengeras-suara-untuk-berdemo-merk-elsem-promo-h-3301
+Scrape = 3.18
+Search = 22.81https://www.bukalapak.com/p/fashion-pria/kaos-165/a8xcgs-jual-kaos-lambang-burung-garuda-2-gildan-gld-gdr04
+Scrape = 2.07
+Search = 2.14https://www.bukalapak.com/p/fashion-pria/sepatu-169/boots/a8xdkd-jual-siap-kirim-sepatu-boots-safety-kickers-brown-amu-leather
+Scrape = 2.3
+Search = 3.21https://www.bukalapak.com/p/handphone/spare-part-tools-handphone/a8xi4t-jual-jual-bc617-charger-dual-port-usb-car-cigarette-lighter-12-24v-led-voltmeter-promo-x-773k
+Scrape = 2.86
+Search = 3.33https://www.bukalapak.com/p/olahraga/outdoor/survival-kit/a8vzbm-jual-dijual-pisau-rambo-2-murah-fr-322n
+Scrape = 1.69
+Search = 3.09https://www.bukalapak.com/p/komputer/aksesoris-226/baterai-240/a8wwg9-jual-dijual-adaptor-macbook-apple-85w-magsafe-for-15-and-17-inch-macbook-pro-murah-promo-terbatas
+Scrape = 2.5
+Search = 20.66https://www.bukalapak.com/p/hobi-koleksi/koleksi/cd-dvd-original/a8wh2d-jual-promo-tuner-gitar-bass-ukulele-eno-murah
+Scrape = 2.47
+Search = 5.51https://www.bukalapak.com/p/olahraga/pancing/senar-pancing/a8w2cn-jual-dijual-penn-mariner-monofilament-line-clear-blue-promo-u-676
+Scrape = 2.53
+Search = 9.79https://www.bukalapak.com/p/motor-471/sparepart-motor/sparepart-lainnya/a8w6q0-jual-stik-gigi-vespa-ps-px-exclusive
+
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.bukalapak.com/p/perlengkapan-bayi/perlengkapan-bayi-lainnya/a8x2vs-jual-jual-sparepart-pompa-asi-avent-valve-natural-berkualitas-gh-89t
+Scrape = 4.83
+Search = 3.1https://www.bukalapak.com/p/tiket-voucher/tiket-voucher-lainnya/a8s5lp-jual-vocher-tri-2gb-24jam-plus-pulsa-10rb
+Scrape = 1.86
+Search = 4.21https://www.bukalapak.com/p/fashion-wanita/jilbab-2571/ciput/a8wc28-jual-inner-risty-polos
+Scrape = 1.6
+Search = 5.35https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/vitamin-suplemen-2368/a8wtfs-jual-hendel-exitox-greenco-original-isi-30-kapsul-green-coffee
+Scrape = 3.2
+Search = 5.57https://www.bukalapak.com/p/rumah-tangga/home-stuff/a8w4yj-jual-jual-philips-rice-cooker-premium-plus-silver-hd3128-33-2-liter-diskon-keren
+Scrape = 2.3
+Search = 7.19https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/aksesoris-interior/7hv5hz-jual-karet-peredam-kabin-mobil-ukuran-7mm-karet-o
+Scrape = 3.39
+Search = 9.93https://www.bukalapak.com/p/rumah-tangga/perlengkapan-kebersihan/a8w50h-jual-dijual-3m-scotch-brite-pel-katun-kotak-kecil-set-id-681-diskon-barang-murah
+Scrape = 4.37
+Search = 4.65https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/aksesoris-eksterior/a8vr2t-jual-pelindung-kaca-depan-mobil-motif-gambar
+Scrape = 3.24
+Search = 4.35https://www.bukalapak.com/p/komputer/aksesoris-226/aksesoris-lainnya-241/a8ww23-jual-dijual-casing-hardisk-external-3-5-hdd-external-case-3-5-usb2-0-ide-promo-barang-berkualitas
+Scrape = 2.64
+Search = 6.56https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/vitamin-suplemen-2368/a8wqu1-jual-synergymaximum-protein-isi-497-gram-rasa-krim-coklat
+Scrape = 3.48
+Search = 15.41https://www.bukalapak.com/p/perlengkapan-bayi/perlengkapan-bayi-lainnya/a8x2vs-jual-jual-sparepart-pompa-asi-avent-valve-natural-berkualitas-gh-89t
+Scrape = 2.02
+Search = 2.52https://www.bukalapak.com/p/fashion-anak/anak-laki-laki/sepatu-1447/a8wfio-jual-jual-sepatu-lampu-nyala-hello-kitty-anak-bayi-baby-light-sho-murah-by-334m
+Scrape = 1.91
+Search = 6.69https://www.bukalapak.com/p/perlengkapan-bayi/pakaian-bayi/setelan/a8x650-jual-dijual-ange-monkey-teether-gigitan-bayi-ange-bpa-free-murah-wajib-punya
+Scrape = 5.53
+Search = 7.4https://www.bukalapak.com/p/fashion-pria/tas-pria/punggung-backpack/a8xcqd-jual-tas-ransel-backpack-travel-bag-visval-canyon
+Scrape = 2.66
+Search = 4.83https://www.bukalapak.com/p/kamera/spy-cam/a8vtsv-jual-jual-spy-camera-mini-dv-u-disk-hidden-camera-model-card-reader-spy-cam-mini-diskon-jej-m89
+Scrape = 1.89
+Search = 3.07https://www.bukalapak.com/p/komputer/aksesoris-226/baterai-240/a8wvry-jual-jual-baterai-toshiba-ori-l730-l735-l740-l745-c600-c645-l600-l635-l640-l645-diskon-190juk
+Scrape = 3.34
+Search = 5.34https://www.bukalapak.com/p/elektronik/elektronik-lainnya/a8x051-jual-diskon-audio-technica-portable-headphone-aths100is-bk-ex-black
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.bukalapak.com/p/perlengkapan-kantor/alat-kantor/perlengkapan-kantor-lainnya/a8vzud-jual-jual-alfalink-ei-428-kamus-elektronik-limited-m-909
+Scrape = 1.68
+Search = 5.38https://www.bukalapak.com/p/kamera/kamera-digital/a8vttz-jual-big-promo-lebaran-kamera-nikon-d90-kit-18-105-mm
+Scrape = 2.09
+Search = 8.69https://www.bukalapak.com/p/sepeda/outwear/jersey-526/a8whe1-jual-jual-manset-sepeda-fox-arm-warmer-coolmax-murah-barang-sale
+Scrape = 1.98
+Search = 4.26https://www.bukalapak.com/p/sepeda/wheel-hub-rims-dll/rims/1ug0ad-jual-rim-united-26-mtb-36hole-double-wall-putih
+Scrape = 3.24
+Search = 3.92https://www.bukalapak.com/p/perlengkapan-bayi/perlengkapan-bayi-lainnya/a8wzq1-jual-jual-tas-asi-allegra-maxi-cooler-thermal-bag-bayi-premium-murah-20170829
+Scrape = 4.16
+Search = 5.19https://www.bukalapak.com/p/fashion-pria/sepatu-169/sneaker/a8xe43-jual-jual-converse-ct-high-berkualitas-20170829
+Scrape = 2.07
+Search = 3https://www.bukalapak.com/p/kamera/action-camera/camera/a8vuf8-jual-jual-battery-baterai-batre-canon-nb-6l-limited-barang-berkualitas
+Scrape = 2.12
+Search = 6.07https://www.bukalapak.com/p/hobi-koleksi/mainan/mainan-lainnya/a8wh82-jual-ps4-world-of-final-fantasy-r3-region-3-english-playstation-4-game-diskon-gl-761
+Scrape = 9.23
+Search = 7.48https://www.bukalapak.com/p/kamera/aksesoris-kamera/aksesoris-lainnya-896/a8vvck-jual-promo-weifeng-portable-tripod-stand-4-section-aluminum-legs-wt-3110a-diskon-20170829
+Scrape = 2.29
+Search = 6.25https://www.bukalapak.com/p/perlengkapan-bayi/perlengkapan-bayi-lainnya/a8x1jq-jual-jual-autumnz-posh-cooler-bag-henna-grey-limited-harga-murah
+Scrape = 2.34
+Search = 8.04https://www.bukalapak.com/p/hobi-koleksi/mainan/mainan-lainnya/a8wgx8-jual-jual-ps4-street-fighter-v-steelbook-ed-r2-english-playstation-4-game-promo-v-871g
+Scrape = 3.94
+Search = 6.32https://www.bukalapak.com/p/perlengkapan-bayi/perlengkapan-tidur/a8x42p-jual-jual-summer-infant-baby-box-ranjang-bayi-playpen-playard-murah-tl-12h
+Scrape = 2.07
+Search = 10.22https://www.bukalapak.com/p/motor-471/aksesoris-motor/alarm-system/a8w3d1-jual-unik-kunci-gembok-pengaman-anti-maling-disc-cakram-motor-bahan-baja-kuat-limited-20170829
+Scrape = 2.51
+Search = 7.07https://www.bukalapak.com/p/food/bahan-mentah/4gd86b-jual-papier-bufallo-1-ikat-10-biji
+Scrape = 2.58
+Search = 4.93https://www.bukalapak.com/p/industrial/industrial-lainnya/9whteq-jual-wing-gerakan-pramuka
+Scrape = 1.51
+Search = 6.67https://www.bukalapak.com/p/perlengkapan-bayi/bouncer-chair/a8x2u9-jual-jual-gendongan-hipseat-imama-murah-jm-l900
+Scrape = 1.81
+Search = 3.6https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/peralatan-perkakas-mobil/a8vr0b-jual-jual-antena-tv-mobil-boster-indoor-outdoor-best-produk-diskon-harga-sale
+Scrape = 2.47
+Search = 8.42https://www.bukalapak.com/p/hobi-koleksi/pet-food-stuff/pet-aksesoris/a8wh0f-jual-jual-pompa-air-yamano-psp-4-kolam-celup-murah-hidroponik-dan-aquaponik-diskon-jej-m89
+Scrape = 2.91
+Search = 2.56https://www.bukalapak.com/p/mobil-part-dan-aksesoris/aksesoris-mobil/aksesoris-interior/a8vrs3-jual-premium-karpet-dasar-karpet-lantai-tebal-peredam-daihatsu-ceria-t16-80280
+Scrape = 2.38
+Search = 2.31https://www.bukalapak.com/p/hobi-koleksi/musik/aksesoris-lainnya-132/a8xbcn-jual-jual-gitar-akustik-mannttaappp-berkualitas-promo
+Scrape = 1.62
+Search = 8.36https://www.bukalapak.com/p/perlengkapan-bayi/perlengkapan-bayi-lainnya/a8x2vs-jual-jual-sparepart-pompa-asi-avent-valve-natural-berkualitas-gh-89t
+Scrape = 1.81
+Search = 2.35https://www.bukalapak.com/p/perawatan-kecantikan/makeup/bibir/a8xhyk-jual-dijual-nyx-cosmetics-lip-lingerie-liquid-lipstick-terbaik-20170829
+Scrape = 2.08
+Search = 3.47https://www.bukalapak.com/p/rumah-tangga/kamar-mandi/8l90nv-jual-jemuran-dinding-70cm
+Scrape = 2.01
+Search = 3.08https://www.bukalapak.com/p/industrial/industrial-lainnya/8qdek1-jual-bed-sd-bordir-harga-kodian
+Scrape = 1.98
+Search = 4.93https://www.bukalapak.com/p/hobi-koleksi/pet-food-stuff/pet-aksesoris/a8wh0f-jual-jual-pompa-air-yamano-psp-4-kolam-celup-murah-hidroponik-dan-aquaponik-diskon-jej-m89
+Scrape = 1.98
+Search = 2.44https://www.bukalapak.com/p/hobi-koleksi/mainan/action-figure/a8wgid-jual-marvel-titan-hero-series-war-machine-2017-30cm-figure-hasbro
+Scrape = 3.53
+Search = 10.56https://www.bukalapak.com/p/kesehatan-2359/obat-suplemen/vitamin-suplemen-2368/a8wqlk-jual-synergy-chlorophyll-klorofil-plus-isi-730ml-alfalfa-mint
+Scrape = 5.55
+Search = 8.24

@@ -1,0 +1,988 @@
+https://www.tokopedia.com/etala-store/uni-nano-dia-pencil-lead-0-5mm-11
+Scrape = 2.17
+Search = 6.69https://www.tokopedia.com/shengamepssecond/tomica-mazda-cx-5
+Scrape = 2.95
+Search = 4.84https://www.tokopedia.com/fortunegadget88/new-senter-kepala-dony-kl-190-cafe-baru-cahaya-kuning
+Scrape = 2.26
+Search = 4.3https://www.tokopedia.com/techproject/terlaris-senter-setrum-lipstik-stungun-strum-model-lipstik
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/insanitokoshop/paket-hemat-so-nice
+Scrape = 2.23
+Search = 2.94https://www.tokopedia.com/iragrosir/dompet-paspor-anti-skimming-passport-wallet-paspor-organizer
+Scrape = 2.18
+Search = 4.04https://www.tokopedia.com/armanonlineshop/receiver-k-vision-k1100-cartenz-1
+Scrape = 1.96
+Search = 4https://www.tokopedia.com/arishop23/bedcover-set-sprei-medina-pink160-180x200
+Scrape = 2.8
+Search = 5.53https://www.tokopedia.com/etala-store/zebra-disposable-brush-pen-fine-tip-9
+Scrape = 2.6
+Search = 6.71https://www.tokopedia.com/alfawatch/jam-tangan-ck-set-3-gelang
+Scrape = 2.09
+Search = 4.3https://www.tokopedia.com/goodmerchant/hijab-jilbab-instant-rumi-terbaru
+Scrape = 3.19
+Search = 6.58https://www.tokopedia.com/accunikgrosir/termurah-lunch-bag-cooler-bag-motif-garis-tas-bekal-makanan
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/fortunegadget88/new-nutrition-alat-pembuat-juice-machine-manual
+Scrape = 1.86
+Search = 6.4https://www.tokopedia.com/mjseven/senter-led-darurat-pedang-setrum-stungun-tipe-baton-tw-09-tw09-2
+Scrape = 2.84
+Search = 3.27https://www.tokopedia.com/rebecashop168/jual-stick-drum-vic-firth-nova-5a-berkualitas-20170828
+Scrape = 2.86
+Search = 9.08https://www.tokopedia.com/bintangselular/iphone-5-5s-6-ipad-mini-charger-usb-adapter-data-cable-original-99
+Scrape = 2.18
+Search = 6.32https://www.tokopedia.com/feyrouz/gamis-jersey-polos-mint
+Scrape = 3.59
+Search = 3.06https://www.tokopedia.com/lau-shop999/salelondon-kids-batman-size-12-16
+Scrape = 2
+Search = 3.81https://www.tokopedia.com/polarimport/dompet-kulit-pria-tanggung-import-branded-braun-buffel-604-black-brown-12
+Scrape = 3.23
+Search = 3.73https://www.tokopedia.com/shengamepssecond/tomica-honda-brio
+Scrape = 1.73
+Search = 3.17https://www.tokopedia.com/salvitashop168/jual-light-stand-gs200-free-light-stand-bag-limited-20170827
+Scrape = 3.06
+Search = 4.41https://www.tokopedia.com/keziahshop168/jual-adaptor-charger-laptop-dell-universal-19-5v-3-34a-berkualit
+Scrape = 2.22
+Search = 4.81https://www.tokopedia.com/etala-store/zebra-disposable-brush-pen-fine-tip-9
+Scrape = 2.93
+Search = 7.2https://www.tokopedia.com/rizta-shop/kani-roll
+Scrape = 2.27
+Search = 7.04https://www.tokopedia.com/toyscastle/mangkuk-sup-miso-soup-aizunuri-osuimono
+Scrape = 2.01
+Search = 3.17https://www.tokopedia.com/assidawi/jamkho-jamu-penurun-kolesterol
+Scrape = 1.97
+Search = 4.65https://www.tokopedia.com/raung-2ndwear/maskaramascara-magnum
+Scrape = 1.67
+Search = 6.59https://www.tokopedia.com/nadiashop168/jual-sepatu-anak-nike-air-jordan-kids-sepatu-basket-anak-nik-diskon-20
+Scrape = 2.41
+Search = 18.95https://www.tokopedia.com/fortunegadget88/new-alat-dapur-7-in-1dan-wadah-kitchen-utensil-set-with-stand
+Scrape = 2.23
+Search = 3.13https://www.tokopedia.com/orchid17/promo-sis-rabbani-hijab-terbatas
+Scrape = 2.27
+Search = 7.6https://www.tokopedia.com/bicha-shop/kursi-goncengan-motor-matik-untuk-anak-bayi-karakter
+Scrape = 2.11
+Search = 6.49https://www.tokopedia.com/rebecashop168/jual-stick-drum-vic-firth-nova-5a-berkualitas-20170828
+Scrape = 2.1
+Search = 10.82https://www.tokopedia.com/demiki/lodia-sama-dgn-imodium
+Scrape = 2.14
+Search = 5.87https://www.tokopedia.com/gadgetidea/promo-stereo-pc-gaming-headphone-super-bass-ovleng-x10
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/nave/sleeve-case-laptop-14-inch-dark-gray
+Scrape = 2.18
+Search = 4.41https://www.tokopedia.com/lbenstore94/promo-mr-tosca-xl-kemeja-pria-katun-sretch-tosca
+Scrape = 2.69
+Search = 4.56https://www.tokopedia.com/hflshop/sepatu-anak-murah-medley-blue-jeans-kombinasi-by-decks-kids
+Scrape = 2.2
+Search = 8.01https://www.tokopedia.com/assidawi/jamkho-jamu-penurun-kolesterol
+Scrape = 1.83
+Search = 8.07https://www.tokopedia.com/didinqp/lego-loz-diamond-nano-blocks-block-mini-figure-simpsons-simpson-bart
+Scrape = 2.31
+Search = 7.13https://www.tokopedia.com/insanitokoshop/paket-hemat-so-nice
+Scrape = 1.6
+Search = 4.65https://www.tokopedia.com/uniquesmart/murah-flash-disk-toshiba-32gb
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/ilonashop168/jual-konektor-amp-original-rj45-cat5e-isi-50pcs-1pack-conn-limited-2
+Scrape = 3.79
+Search = 5.26https://www.tokopedia.com/han/claris-82972-quicklock-round-air-tight-food-container-5-diskon-2
+Scrape = 3.44
+Search = 3.47https://www.tokopedia.com/rebecashop168/jual-regulator-gas-star-cam-sc-23m-tekanan-rendah-meter-star-murah-201
+Scrape = 3.87
+Search = 3.73https://www.tokopedia.com/ranigems/mirah-kecubung-murahpurple-safir-natural
+Scrape = 2.85
+Search = 5.56https://www.tokopedia.com/prestastore/aki-yamaha-rx-z-mtx5al-motobatt-u-yuasa-gs-motor-motobat
+Scrape = 3.77
+Search = 3.84https://www.tokopedia.com/galela-store/jual-vgen-memory-sodim-ddr3-2gb-pc-10600-12800-limited-20170828
+Scrape = 3.56
+Search = 4.79https://www.tokopedia.com/jpojopjhphphoiho/canon-eos-40d-18-135mm
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/fortunegadget88/new-botol-minum-tritan-gen-2-fruit-infused-water-fruit-juice-1
+Scrape = 3.49
+Search = 3.59https://www.tokopedia.com/babylabs/singlet-kazel-6-in-1-size-medium
+Scrape = 3.72
+Search = 7.36https://www.tokopedia.com/mamaemma/ikea-mangkuk-bayi-6pcs
+Scrape = 3.96
+Search = 5.17https://www.tokopedia.com/diskonmonster/lampu-rem-led-18-titik-strobo-s25-1157-motormobil-colok-putar
+Scrape = 3.92
+Search = 5.98https://www.tokopedia.com/etala-store/lyra-orlow-techno-mechanical-pencil-leads-refill-0-3mm-11
+Scrape = 4.68
+Search = 4.87https://www.tokopedia.com/beby-store/jual-rak-susun-brosur-besi-4-susun-rak-display-limited-20170828
+Scrape = 3.45
+Search = 5.35https://www.tokopedia.com/accunikgrosir/termurah-lunch-bag-cooler-bag-motif-garis-tas-bekal-makanan
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/alonazismaesaroh/terlaris-gorden-shower-curtain-bunga-matahari-tirai-kamar-mandi
+Scrape = 3.58
+Search = 4.35https://www.tokopedia.com/nave/sleeve-case-laptop-14-inch-dark-gray
+Scrape = 3.08
+Search = 5.94https://www.tokopedia.com/rianashop168/jual-softcase-gitar-akustik-klasik-diskon-20170828
+Scrape = 4.47
+Search = 6.06https://www.tokopedia.com/alissyaolshop/jilbab-motif
+Scrape = 2.82
+Search = 9.05https://www.tokopedia.com/indoshopasemka/souvenir-centong-melamine
+
+                                                                               
+  [GuzzleHttp\Exception\ConnectException]                                      
+  cURL error 6: Could not resolve host: www.agensouvenir.com; Name or service  
+   not known (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)           
+                                                                               
+
+https://www.tokopedia.com/mira-iluva/jual-keyboard-toshiba-satellite-c40-c40-b-c40d-c40d-b-diskon-20170828
+Scrape = 2.58
+Search = 6.79https://www.tokopedia.com/t-tjerseygo/jersey-bola-sriwijaya-fc-home-official-17-18-liga-1
+Scrape = 4.64
+Search = 5.32https://www.tokopedia.com/hanifniati008/hp-pavilion-14-n267tx-intel-core-i5-4200u-ram-4gb
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/rajastorage/cube-gaming-aura-lite-version-rgb-ring-fans-3-pcs-ring-fan-plus-remote
+Scrape = 2.32
+Search = 4.7https://www.tokopedia.com/efiastore168/jual-by-gojek-rovega-dcb2568-rak-piring-pladys-dish-drai-berkualit
+Scrape = 6.16
+Search = 3.6https://www.tokopedia.com/goodmerchant/segiempat-shabby-seri-zara-4-terbaru
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/accunikgrosir/terlaris-botol-minum-tritan-gen-2-fruit-infused-water-fruit-juice
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/arishop23/bedcover-set-sprei-medina-pink160-180x200
+Scrape = 2.82
+Search = 7.12https://www.tokopedia.com/rajastorage/rexus-keyboard-plus-mouse-mousepad-gaming-rexus-warfaction-vr1
+Scrape = 3.46
+Search = 7.11https://www.tokopedia.com/didinqp/food-clip-seal-jepit-klip-makanan-rambut-hello-kitty-doraemon-doremon
+Scrape = 3.66
+Search = 15.39https://www.tokopedia.com/lau-shop999/salelondon-kids-batman-size-12-16
+Scrape = 2.97
+Search = 7.68https://www.tokopedia.com/t-tjerseygo/jersey-bola-chicago-fire-away-mls-2017-grade-ori
+Scrape = 3.6
+Search = 7.3https://www.tokopedia.com/riffatoko/terbaik-bermutu-anti-crack-case-samsung-galaxy-j5-j7-prime-anti-knock
+Scrape = 3.91
+Search = 9.42https://www.tokopedia.com/techproject/murah-pompa-galon-aqua-pompa-galon-air-pakai-baterai
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/jpojopjhphphoiho/nikon-d800e-18-105mm-vr
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/zenikgrosirgamis/staple-less-magic-staplers-stapless-stapler-steples-kertas-tanpa-isi
+Scrape = 5.34
+Search = 5.47https://www.tokopedia.com/zidane747/jual-paket-parfum-pria-super-cool-100ml
+Scrape = 3.18
+Search = 3.52https://www.tokopedia.com/uniquesmart/murah-serutan-jagung-corn-stripper
+Scrape = 3.26
+Search = 4.22https://www.tokopedia.com/mrhw-shop/chanel-anak-black-k
+Scrape = 2.76
+Search = 3.62https://www.tokopedia.com/melodysshoes/termurah-sandal-flat-wanita-pita-motif-gucci-mocca
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/deborahshop168/jual-strap-merk-ernie-ball-made-in-usa-murah-20170828
+Scrape = 4.02
+Search = 5.63https://www.tokopedia.com/han/claris-kotak-penyimpanan-asi-tahan-dingin-diskon
+Scrape = 2.49
+Search = 4.25https://www.tokopedia.com/mutzcraft/sandal-jepit-karakter-anak-olive
+Scrape = 1.87
+Search = 7.44https://www.tokopedia.com/gadjetmurah/casing-simbadda-sim-x-s2636
+Scrape = 2.16
+Search = 8.02https://www.tokopedia.com/tokodober/kaos-rohani-heart-without-words
+Scrape = 1.97
+Search = 7.08https://www.tokopedia.com/wwshoppx/handbag-cewek-wanita-tas-grosir-w9188-import-murah
+Scrape = 2.67
+Search = 3.21https://www.tokopedia.com/jpojopjhphphoiho/canon-eos-70d-kit-18-135mm-is-stm
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/n2craft/brownies-brunno-brownis-fudge-brownis-panggang-unik-enak-kekinian
+Scrape = 3.97
+Search = 4.96https://www.tokopedia.com/feyrouz/gamis-jersey-polos-merah-marun
+Scrape = 3.24
+Search = 3.84https://www.tokopedia.com/mitrautamasupply/continuous-form-custom
+Scrape = 2.3
+Search = 8.42https://www.tokopedia.com/deborahshop168/jual-kamera-mobil-ccd-untuk-depan-belakang-new-model-murah-2017082
+Scrape = 2.19
+Search = 5.41https://www.tokopedia.com/shengamepssecond/tomica-toyota-camry
+Scrape = 1.63
+Search = 2.66https://www.tokopedia.com/selvinadblanja/handuk-bayi-motif-lucu-jumbo-110x60cm-joy-murah-harga-grosir
+Scrape = 2.37
+Search = 7.36https://www.tokopedia.com/orena-store/jual-harmonika-suzuki-folkmaster-10-holes-key-c-murah-20170828
+Scrape = 2.25
+Search = 11.84https://www.tokopedia.com/orchid17/diskon-c-nazla-hijab-polka-4in1-exclusive
+Scrape = 2.27
+Search = 6.04https://www.tokopedia.com/feyrouz/gamis-jersey-polos-mint
+Scrape = 1.83
+Search = 3.54https://www.tokopedia.com/fortunegadget88/new-senter-kepala-dony-kl-190-cafe-baru-cahaya-kuning
+Scrape = 2.04
+Search = 3.36https://www.tokopedia.com/techproject/terlaris-senter-setrum-lipstik-stungun-strum-model-lipstik
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/gloriapetshop/mainan-anjing-plastic-squeak-bread-hot-dog-02056
+Scrape = 3.41
+Search = 2.7https://www.tokopedia.com/buku-hemat/aku-cerdas-mengelola-uang-e-11-b14-80522
+Scrape = 2.07
+Search = 7.61https://www.tokopedia.com/blanja-instan/sepatu-wanita-sandal-wanita-kode-c1194
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/stroller18/stroller-kereta-bayi-quinny-buzz
+Scrape = 3.04
+Search = 5.42https://www.tokopedia.com/aksesorisbrgunik/terlaris-mini-tripod-mount-adapter-for-xiaomi-yi-and-gopro-black-1
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/sumaterasoftware/windows-xp-professional-sp2-ghost-x86-plus-usb-4-gb-original
+Scrape = 2.33
+Search = 4https://www.tokopedia.com/shengamepssecond/tomica-toyota-camry
+Scrape = 1.66
+Search = 3.93https://www.tokopedia.com/accunikgrosir/termurah-lunch-bag-cooler-bag-motif-garis-tas-bekal-makanan
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/queencastle/termurah-lingerie-sexy-costumes-kostum-murid-putih-merah-slc-179
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/nave/sgp-slim-armor-dan-tpu-combination-case-with-kickstand-for-galaxy-note
+Scrape = 3.67
+Search = 4.08https://www.tokopedia.com/ranigems/mirah-mozambik-murah-meriah
+Scrape = 1.87
+Search = 7.39https://www.tokopedia.com/fashionablesh/koper-set-anak-sekolah-frozen-lunch-bag
+Scrape = 1.81
+Search = 3.03https://www.tokopedia.com/gloriapetshop/minyak-ikan-shiny-coats-100-softgels
+Scrape = 2.03
+Search = 4.21https://www.tokopedia.com/mira-iluva/jual-keyboard-toshiba-satellite-c40-c40-b-c40d-c40d-b-diskon-20170828
+Scrape = 2.02
+Search = 3.83https://www.tokopedia.com/orchid17/special-sis-berliana-hijab-salur-exclusive
+Scrape = 2.38
+Search = 3.42https://www.tokopedia.com/accunikgrosir/paling-murah-cukuran-jenggot-bao-ling-bl-757-shaver
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/maystar-shop/jual-baterai-asus-a46ca-a46cb-a46cm-a46c-a46-k46ca-k46cb-k46-berkualit
+Scrape = 2.13
+Search = 3.89https://www.tokopedia.com/gloriapetshop/topical-spray-cortavance-19-ml
+Scrape = 1.86
+Search = 5.99https://www.tokopedia.com/orena-store/jual-harmonika-suzuki-folkmaster-10-holes-key-c-murah-20170828
+Scrape = 2.21
+Search = 8.59https://www.tokopedia.com/mutzcraft/sandal-jepit-karakter-anak-motif-rabbit
+Scrape = 2.14
+Search = 4.28https://www.tokopedia.com/beby-store/jual-kolam-bayi-spa-baby-flow-duck-bebek-swimming-pool-berkualit
+Scrape = 2.08
+Search = 3.45https://www.tokopedia.com/nave/sgp-slim-armor-dan-tpu-combination-case-with-kickstand-for-galaxy-note
+Scrape = 2.09
+Search = 4.31https://www.tokopedia.com/fortunegadget88/new-senter-kepala-dony-kl-190-cafe-baru-cahaya-kuning
+Scrape = 2.15
+Search = 4.24https://www.tokopedia.com/wwshoppx/handbag-cewek-wanita-tas-grosir-w9188-import-murah
+Scrape = 3.41
+Search = 3.54https://www.tokopedia.com/gloriapetshop/topical-spray-cortavance-19-ml
+Scrape = 1.8
+Search = 5.33https://www.tokopedia.com/love-s/tripod-weifeng-wt3130-chocolate-portable-lightweight-4-diskon
+Scrape = 3.1
+Search = 7.38https://www.tokopedia.com/babylabs/bedong-instant-hybrid-swaddlepod-2in1-model-5
+Scrape = 1.79
+Search = 4.11https://www.tokopedia.com/babylabs/bedong-instant-hybrid-swaddlepod-2in1-model-4
+Scrape = 1.85
+Search = 7.13https://www.tokopedia.com/piaohpia/dress-princes-kids-5warna-geser-gambar-kekiri
+Scrape = 1.89
+Search = 9.88https://www.tokopedia.com/t-tjerseygo/jersey-bola-chicago-fire-away-mls-2017-grade-ori
+Scrape = 3.18
+Search = 5.21https://www.tokopedia.com/shakadarrel/paket-baby-boy-8-pcs
+Scrape = 2.08
+Search = 3.69https://www.tokopedia.com/orchid17/promo-sis-rabbani-hijab-terbatas
+Scrape = 1.98
+Search = 6.36https://www.tokopedia.com/toyscastle/mangkuk-sup-miso-soup-aizunuri-osuimono
+Scrape = 1.76
+Search = 4.25https://www.tokopedia.com/smart-celluler/jarum-tato-steril-15m1-white
+Scrape = 2.27
+Search = 2.94https://www.tokopedia.com/splashnotebook/notebook-cover-lucu
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/fortunegadget88/new-senter-kepala-dony-kl-190-cafe-baru-cahaya-kuning
+Scrape = 2.53
+Search = 3.07https://www.tokopedia.com/goodmerchant/hijab-jilbab-instant-rumi-terbaru
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/hro/gantungan-kunci
+Scrape = 1.36
+Search = 3.3https://www.tokopedia.com/taniyashop168/jual-nepia-genki-nb-newborn-tape-44-pampers-diapers-berkualitas-201708
+Scrape = 2.21
+Search = 5.93https://www.tokopedia.com/mjseven/senter-led-darurat-pedang-setrum-stungun-tipe-baton-tw-09-tw09-2
+Scrape = 2.59
+Search = 11.16https://www.tokopedia.com/efiastore168/jual-sandisk-flash-disk-usb-otg-m3-0-32gb-up-to-150-mb-s-berkualitas-2
+Scrape = 1.96
+Search = 3.02https://www.tokopedia.com/curative/lemari-es-kulkas-2-pintu-lg-sharp-samsung-hitachi-freezer-cooler-box-
+Scrape = 3.9
+Search = 4.31https://www.tokopedia.com/mutzcraft/sandal-jepit-karakter-anak-motif-rabbit
+Scrape = 1.92
+Search = 3.71https://www.tokopedia.com/orchid17/special-sis-berliana-hijab-salur-exclusive
+Scrape = 1.89
+Search = 3.03https://www.tokopedia.com/curative/lemari-es-kulkas-2-pintu-lg-sharp-samsung-hitachi-freezer-cooler-box-
+Scrape = 2.15
+Search = 3.95https://www.tokopedia.com/bintangselular/charger-iphone-4-4g-4s-ipad-2-3-4-usb-adapter-data-cable-original-99
+Scrape = 2.03
+Search = 6.07https://www.tokopedia.com/davidstore0194/spy-camera-jam-tangan-8-gb-stainless-grosir
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/aksesorisbrgunik/diskon-korek-gas-bara-windproof-powerful-gas-torch-flame
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/abdrahmanshop/bedak-ertos-erto-s-baked-powder-original
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/rosapreloved/babyliss-big-hair
+Scrape = 2.68
+Search = 11.71https://www.tokopedia.com/ranigems/mirah-mozambik-murah-meriah
+Scrape = 1.93
+Search = 4.33https://www.tokopedia.com/iragrosir/dompet-paspor-anti-skimming-passport-wallet-paspor-organizer
+Scrape = 2.2
+Search = 4.56https://www.tokopedia.com/t-tjerseygo/jersey-bola-new-york-city-home-official-mls-2017-grade-ori
+Scrape = 2.04
+Search = 5.93https://www.tokopedia.com/mutzcraft/sandal-jepit-karakter-anak-olive
+Scrape = 1.99
+Search = 7.99https://www.tokopedia.com/jualalmonddepok/pie-mocaf-cassava-flour
+Scrape = 2.38
+Search = 6.78https://www.tokopedia.com/salvitashop168/jual-light-stand-gs200-free-light-stand-bag-limited-20170827
+Scrape = 3.57
+Search = 5.51https://www.tokopedia.com/etala-store/copic-multiliner-sp-drawing-pen-11
+Scrape = 1.63
+Search = 13.06https://www.tokopedia.com/goodmerchant/segiempat-shabby-seri-zara-4-terbaru
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/varismodis/diskon-bergo-big-polka-jumbo-bergo-big-polkadot-jumbo-jersey-super-1
+Scrape = 2.51
+Search = 4.76https://www.tokopedia.com/techproject/promo-alat-cukur-rambut-elektrik-ms-5019-happyking-mitsuyama-5019
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/blanja-instan/sepatu-wanita-sandal-wanita-kode-c1193
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/rebecashop168/jual-deepcool-gammaxx-400-universal-socket-12-cm-fan-berkualitas-20170
+Scrape = 2.61
+Search = 5.74https://www.tokopedia.com/gadgetidea/best-seller-gembok-alarm-kinbar-gembok-anti-maling-alarm
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/tokobukuagung/hantu-gendong-susu
+Scrape = 1.92
+Search = 3.57https://www.tokopedia.com/sofieolshop/dvr-camera-mobil-2-4-1080p-g10-tachograph-g-sensor-diskon
+Scrape = 2.71
+Search = 4.72https://www.tokopedia.com/drpediastore/promo-kemoceng-cendol-bisa-dipanjangkan-pendek-pembersih-debu-microf
+Scrape = 2.35
+Search = 5.47https://www.tokopedia.com/melodysshoes/murah-sepatu-flat-shoes-flatshoes-murah-ala-wakai-ns81-abu
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/didinqp/kuas-make-up-makeup-travel-brush-set-kosmetik-karakter-hello-kitty-hk
+Scrape = 2.3
+Search = 3.86https://www.tokopedia.com/khahiyangshop/baby-walker-family-tipe-136l
+Scrape = 1.99
+Search = 3.41https://www.tokopedia.com/goodmerchant/segiempat-shabby-seri-zara-4-terbaru
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/babylabs/bedong-instant-hybrid-swaddlepod-2in1-model-4
+Scrape = 3.29
+Search = 6.27https://www.tokopedia.com/drpediastore/sale-powerbank-sony-cp-v5-5000-mah-new-version-acrylic-material-orig
+Scrape = 2.15
+Search = 7.88https://www.tokopedia.com/shengamepssecond/tomica-mitsubishi-lancer-evolution
+Scrape = 1.74
+Search = 4.12https://www.tokopedia.com/han/claris-kotak-penyimpanan-asi-tahan-dingin-diskon
+Scrape = 1.84
+Search = 4.38https://www.tokopedia.com/fortunegadget88/new-timbangan-dapur-q2-2kg-timbangan-kue
+Scrape = 1.69
+Search = 4.12https://www.tokopedia.com/davidstore0194/spy-camera-jam-tangan-8-gb-stainless-grosir
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/homemadekefir/grain-kefir-bibit-kefir-asli
+Scrape = 2.19
+Search = 2.96https://www.tokopedia.com/orchid17/special-k-55181-humaira-terbatas
+Scrape = 1.73
+Search = 6.42https://www.tokopedia.com/sanggarmainan/mainan-anak-blender-frozen-dilengkapi-buah2-an-plastik
+Scrape = 3.04
+Search = 4.55https://www.tokopedia.com/nyolowedi-krim/mabaki-pompa-asi-elektrik
+Scrape = 1.91
+Search = 5https://www.tokopedia.com/efiastore168/jual-sandisk-flash-disk-usb-otg-m3-0-32gb-up-to-150-mb-s-berkualitas-2
+Scrape = 2.29
+Search = 8.93https://www.tokopedia.com/etala-store/uni-pin-drawing-pen-black-10
+Scrape = 2.86
+Search = 8.62https://www.tokopedia.com/babylabs/singlet-kazel-6-in-1-size-new-born
+Scrape = 1.9
+Search = 5.98https://www.tokopedia.com/gadgetidea/promo-adaptor-laptop-universal-96w
+Scrape = 2.06
+Search = 4.62https://www.tokopedia.com/zenikgrosirgamis/new-a5-memobottle-flat-slim-tritan-memobottle-memo-botol-minum-tipis
+Scrape = 2.52
+Search = 3.29https://www.tokopedia.com/gadgetidea/murah-game-pad-stick-double-getar-turbo-8072a
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/fortunegadget88/new-timbangan-dapur-q2-2kg-timbangan-kue
+Scrape = 2.58
+Search = 3.96https://www.tokopedia.com/feyrouz/gamis-jersey-polos-merah-marun
+Scrape = 2.02
+Search = 4https://www.tokopedia.com/goodmerchant/segiempat-renda-rawis-terbaru
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/mutzcraft/sandal-jepit-karakter-anak-olive
+Scrape = 2.01
+Search = 7.01https://www.tokopedia.com/maggieshop168/jual-kitchen-tool-sodet-nylon-oxone-ox-953-limited-20170828
+Scrape = 2.16
+Search = 9.08https://www.tokopedia.com/ridetell15/syari-hamera-coksu
+Scrape = 1.71
+Search = 6.98https://www.tokopedia.com/kreswantibrooch/shoffyna-skincare-krim-siang-malam-sabun
+Scrape = 3.19
+Search = 7.76https://www.tokopedia.com/deborahshop168/jual-kamera-mobil-ccd-untuk-depan-belakang-new-model-murah-2017082
+Scrape = 3.02
+Search = 4.42https://www.tokopedia.com/blanja-instan/sepatu-wanita-sandal-wanita-kode-c1194
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/filick20/mangkok-masker-kecantikan-beauty-set-6in1-lengkap-model-baru
+Scrape = 3.33
+Search = 4.66https://www.tokopedia.com/fortunegadget88/new-timbangan-dapur-q2-2kg-timbangan-kue
+Scrape = 2.17
+Search = 3.79https://www.tokopedia.com/joobeauty/innisfree-green-tea-seed-serum-80ml
+Scrape = 1.92
+Search = 3.77https://www.tokopedia.com/tbmanda/ilmu-pengetahuan-sosial-untuk-smp-kelas-2
+Scrape = 2.23
+Search = 5.05https://www.tokopedia.com/nave/sleeve-case-laptop-14-inch-dark-gray
+Scrape = 2.62
+Search = 4.33https://www.tokopedia.com/mitrautamasupply/continuous-form-custom
+Scrape = 2.19
+Search = 6.69https://www.tokopedia.com/zidane747/jual-paket-parfum-pria-super-cool-100ml
+Scrape = 2.03
+Search = 3.24https://www.tokopedia.com/baju-hamil/dress-hamil-dan-menyusui-indi-dh017
+Scrape = 2
+Search = 4.2https://www.tokopedia.com/bicha-shop/kursi-goncengan-motor-matik-untuk-anak-bayi-karakter
+Scrape = 3.22
+Search = 4.56https://www.tokopedia.com/babylabs/singlet-kazel-6-in-1-size-medium
+Scrape = 1.99
+Search = 5.44https://www.tokopedia.com/gadjetmurah/casing-simbadda-sim-x-s-2652-1
+Scrape = 2.57
+Search = 3.51https://www.tokopedia.com/goodmerchant/hijab-jilbab-khimar-khana-terbaru
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/keziahshop168/jual-adaptor-charger-laptop-dell-universal-19-5v-3-34a-berkualit
+Scrape = 3.7
+Search = 3.21https://www.tokopedia.com/didinqp/lego-loz-diamond-nano-blocks-block-mini-figure-mario-bros-luigi-yoshi
+Scrape = 3.01
+Search = 6.81https://www.tokopedia.com/rosapreloved/babyliss-big-hair
+Scrape = 2.34
+Search = 8.08https://www.tokopedia.com/prestastore/aki-yamaha-jupiter-mx-250-lama-mtx5al-motobatt-u-yuasa-gs-motor
+Scrape = 2.31
+Search = 4.26https://www.tokopedia.com/mutzcraft/sandal-jepit-karakter-anak-olive
+Scrape = 1.92
+Search = 5.44https://www.tokopedia.com/aksesorisbrgunik/murah-pacul-sekop-lipat-military-portable-folding-multifunction-shov
+Scrape = 2.76
+Search = 4.18https://www.tokopedia.com/maggieshop168/jual-kitchen-tool-sodet-nylon-oxone-ox-953-limited-20170828
+Scrape = 3.47
+Search = 4.41https://www.tokopedia.com/aksesorisbrgunik/terlaris-mini-tripod-mount-adapter-for-xiaomi-yi-and-gopro-black-1
+Scrape = 2.44
+Search = 3.98https://www.tokopedia.com/melodysshoes/murah-sepatu-flat-shoes-flatshoes-murah-ala-wakai-ns81-abu
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/parisa-shop/jual-orphee-deb-9xx-senar-bass-5-string-040-original-berkualitas-20170
+Scrape = 2.5
+Search = 2.61https://www.tokopedia.com/demiki/neurosanbeneurobion-5000
+Scrape = 1.76
+Search = 3.87https://www.tokopedia.com/silviagadget/escam-qf002-wireless-ip-camera-cctv-1-4-inch-cmos-720p-promo
+Scrape = 2.58
+Search = 3.57https://www.tokopedia.com/bintangselular/charger-iphone-4-4g-4s-ipad-2-3-4-usb-adapter-data-cable-original-99
+Scrape = 2.61
+Search = 6.09https://www.tokopedia.com/uniquesmart/paling-murah-dua-side-bottle-botol-kecap-2-fungsi
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/efiastore168/jual-by-gojek-rovega-dcb2568-rak-piring-pladys-dish-drai-berkualit
+Scrape = 2.94
+Search = 2.31https://www.tokopedia.com/ranigems/mirah-kecubung-murahpurple-safir-natural
+Scrape = 2.67
+Search = 14.72https://www.tokopedia.com/melodysshoes/murah-sepatu-flat-shoes-flatshoes-murah-ala-wakai-ns81-abu
+Scrape = 2.62
+Search = 5.22https://www.tokopedia.com/fashionablesh/koper-set-anak-sekolah-hello-kitty-lunch-bag
+Scrape = 1.98
+Search = 3.24https://www.tokopedia.com/fortunegadget88/new-timbangan-dapur-q2-2kg-timbangan-kue
+Scrape = 2.17
+Search = 4.07https://www.tokopedia.com/fortunegadget88/new-botol-minum-tritan-gen-2-fruit-infused-water-fruit-juice-1
+Scrape = 2.55
+Search = 3.5https://www.tokopedia.com/mjseven/lampu-emergency-light-angel-lampu-led-light-motion-1
+
+                            
+  [ErrorException]          
+  Undefined variable: key1  
+                            
+
+https://www.tokopedia.com/sugarsfashion/murah-silang-pj-ro-blouse-wanita-rajut-stret-var-color
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/aksesorisbrgunik/terlaris-mini-tripod-mount-adapter-for-xiaomi-yi-and-gopro-black-1
+Scrape = 3.53
+Search = 4.43https://www.tokopedia.com/rosapreloved/babyliss-big-hair
+Scrape = 1.63
+Search = 6.13https://www.tokopedia.com/orchid17/diskon-c-nazla-hijab-polka-4in1-exclusive
+Scrape = 2.3
+Search = 6.41https://www.tokopedia.com/aksesorisbrgunik/terlaris-mini-tripod-mount-adapter-for-xiaomi-yi-and-gopro-black-1
+Scrape = 2.3
+Search = 4.51https://www.tokopedia.com/mjseven/lampu-emergency-light-angel-lampu-led-light-motion-1
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/hro/gantungan-kunci
+Scrape = 1.7
+Search = 3.53https://www.tokopedia.com/tokofashion-bdg/sepatu-kets-anak-kids-casual-shoes-lbu-499-bkl
+Scrape = 3.37
+Search = 14.31https://www.tokopedia.com/didinqp/lego-loz-diamond-nano-blocks-super-hero-heroes-hulk-marvel-avengers
+Scrape = 2.78
+Search = 4.35https://www.tokopedia.com/armanonlineshop/actuator-dan-positioner-matrix
+Scrape = 1.77
+Search = 3.42https://www.tokopedia.com/davidstore0194/spy-camera-jam-tangan-8-gb-stainless-grosir
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/hro/gantungan-kunci
+Scrape = 1.96
+Search = 3.54https://www.tokopedia.com/sugarsfashion/murah-silang-pj-ro-blouse-wanita-rajut-stret-var-color
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/maystar-shop/jual-baterai-asus-a46ca-a46cb-a46cm-a46c-a46-k46ca-k46cb-k46-berkualit
+Scrape = 3.74
+Search = 6.3https://www.tokopedia.com/khahiyangshop/baby-walker-family-tipe-136l
+Scrape = 3.59
+Search = 10.84https://www.tokopedia.com/goodmerchant/segiempat-shabby-seri-zara-4-terbaru
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/aksesorisbrgunik/murah-pacul-sekop-lipat-military-portable-folding-multifunction-shov
+
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.tokopedia.com/armanonlineshop/actuator-dan-positioner-matrix
+Scrape = 2.87
+Search = 5.47https://www.tokopedia.com/nyolowedi-krim/mabaki-pompa-asi-elektrik
+Scrape = 3.64
+Search = 6.16https://www.tokopedia.com/jualanhalalan/kacamata-anak-ryban-aviator-diamond-kc-36-gold
+Scrape = 3.55
+Search = 7.91https://www.tokopedia.com/love-s/tripod-weifeng-wt3130-chocolate-portable-lightweight-4-diskon
+Scrape = 3.5
+Search = 7.76https://www.tokopedia.com/grosir-couple-89/jumper-couple-jumper-printing-dora-hitam-baju-couple-cou
+Scrape = 3.63
+Search = 7.46https://www.tokopedia.com/salsakece/baterai-hippo-samsung-galaxy-j1-2350mah-battery-original-1
+Scrape = 3.36
+Search = 5.06https://www.tokopedia.com/han/claris-82972-quicklock-round-air-tight-food-container-5-limited
+Scrape = 4.16
+Search = 4.8https://www.tokopedia.com/nyolowedi-krim/mabaki-pompa-asi-elektrik
+Scrape = 1.99
+Search = 4.42https://www.tokopedia.com/piaohpia/dress-princes-kids-5warna-geser-gambar-kekiri
+Scrape = 3.7
+Search = 11.86https://www.tokopedia.com/aksesorisbrgunik/promo-paket-hemat-lengkap-xiaomi-yi-pro-1-super-bonus-by-budget-ga
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/nadiashop168/jual-sepatu-anak-nike-air-jordan-kids-sepatu-basket-anak-nik-diskon-20
+Scrape = 5.88
+Search = 24.28https://www.tokopedia.com/lau-shop999/salelondon-kids-batman-size-12-16
+Scrape = 2.99
+Search = 9.92https://www.tokopedia.com/deborahshop168/jual-strap-merk-ernie-ball-made-in-usa-murah-20170828
+Scrape = 3.54
+Search = 8.49https://www.tokopedia.com/drpediastore/promo-kemoceng-cendol-bisa-dipanjangkan-pendek-pembersih-debu-microf
+Scrape = 4.2
+Search = 8.57https://www.tokopedia.com/zidane747/jual-beli-1-gratis-2-parfum-original-pria-masculine-bravas-elite
+Scrape = 4.4
+Search = 5.52https://www.tokopedia.com/keziahshop168/jual-gendongan-pupsik-studio-limited-20170828
+Scrape = 4.67
+Search = 5.49https://www.tokopedia.com/nave/sgp-neo-hybrid-ex-plastic-case-for-iphone-6-plus-oem-yellow-gold
+Scrape = 4.12
+Search = 4.67https://www.tokopedia.com/toyspot/paling-laris-panci-panggang-grill-roasted-happy-call
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/butikanekaa/kebaya-setelan-tile-super-payet-motiv-kancing-menceng-putih
+Scrape = 4.29
+Search = 7.38https://www.tokopedia.com/idolashop168/jual-gendongan-ergo-baby-four-position-360-carrier-berkualitas-2017082
+Scrape = 3.61
+Search = 11.56https://www.tokopedia.com/parisa-shop/jual-orphee-deb-9xx-senar-bass-5-string-040-original-berkualitas-20170
+Scrape = 4.99
+Search = 7.11https://www.tokopedia.com/kopiraspi/baru-head-set-sades-wolfang-sa-901
+
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.tokopedia.com/gadgetidea/promo-adaptor-laptop-universal-96w
+Scrape = 3.95
+Search = 5.82https://www.tokopedia.com/fortunegadget88/new-timbangan-dapur-q2-2kg-timbangan-kue
+Scrape = 3.64
+Search = 6.17https://www.tokopedia.com/vipstores/mini-wireless-hd-wifi-ip-camera-q7-surveilliance-spy-ca-grosir-3
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/zenikgrosirgamis/staple-less-magic-staplers-stapless-stapler-steples-kertas-tanpa-isi
+Scrape = 5.52
+Search = 7.27https://www.tokopedia.com/saintpegasus/rad-studio-10-2-tokyo-release-1-v10-2-1-delphi-dan-c-builder
+Scrape = 3.82
+Search = 7.2https://www.tokopedia.com/jpojopjhphphoiho/canon-eos-70d-kit-18-135mm-is-stm
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/etala-store/copic-multiliner-sp-drawing-pen-11
+Scrape = 3.83
+Search = 10.84https://www.tokopedia.com/adikmilna/obat-kuat-bentuk-kopi-kopi-on-kopi-cleng-kopi-dynamic-radix
+
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.tokopedia.com/techproject/murah-pompa-galon-aqua-pompa-galon-air-pakai-baterai
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/accunikgrosir/termurah-lunch-bag-cooler-bag-motif-garis-tas-bekal-makanan
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/filick20/mangkok-masker-kecantikan-beauty-set-6in1-lengkap-model-baru
+Scrape = 3.73
+Search = 5.56https://www.tokopedia.com/mjseven/lampu-emergency-light-angel-lampu-led-light-motion-1
+Scrape = 3.64
+Search = 6.96https://www.tokopedia.com/salvitashop168/jual-light-stand-gs200-free-light-stand-bag-limited-20170827
+Scrape = 8.34
+Search = 9.33https://www.tokopedia.com/gadjetmurah/casing-simbadda-simbadda-sim-x-s-2653-1
+Scrape = 3.1
+Search = 7.65https://www.tokopedia.com/nadiashop168/jual-sepatu-anak-nike-air-jordan-kids-sepatu-basket-anak-nik-diskon-20
+Scrape = 4.9
+Search = 21.16https://www.tokopedia.com/jualanhalalan/kacamata-anak-ryban-aviator-diamond-kc-36-gold
+Scrape = 4.69
+Search = 7.89https://www.tokopedia.com/demiki/neurosanbeneurobion-5000
+Scrape = 3.03
+Search = 6.84https://www.tokopedia.com/abcbaby/preloved-sarung-bantal-sarung-guling-merek-elegance-1
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/nave/sleeve-case-laptop-14-inch-dark-gray
+Scrape = 2.36
+Search = 9.48https://www.tokopedia.com/bangmujib/on-sale-car-dvr-96620-full-hd-car-camera-vehicle-blackbox-dvr-c900
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/etala-store/uni-posca-paint-marker-pc-5m-medium-point-11
+
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.tokopedia.com/aksesorisbrgunik/diskon-korek-gas-bara-windproof-powerful-gas-torch-flame
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/jpojopjhphphoiho/canon-eos-70d-kit-18-135mm-is-stm
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/piaohpia/dress-princes-kids-5warna-geser-gambar-kekiri
+Scrape = 2.41
+Search = 7.19https://www.tokopedia.com/butikanekaa/kebaya-setelan-tile-super-payet-motiv-kancing-menceng-putih
+Scrape = 3.68
+Search = 5.48https://www.tokopedia.com/widariryfashion/baju-muslim-wanita-long-dress-marbella-marbella-dress-yellow
+Scrape = 3.64
+Search = 12.08https://www.tokopedia.com/shengamepssecond/tomica-honda-cr-z
+Scrape = 2.08
+Search = 7https://www.tokopedia.com/baju-hamil/dress-hamil-dan-menyusui-indi-dh017
+Scrape = 3.15
+Search = 8.96https://www.tokopedia.com/orchid17/special-sis-berliana-hijab-salur-exclusive
+Scrape = 3.89
+Search = 5.4https://www.tokopedia.com/feyrouz/gamis-jersey-polos-merah-marun
+Scrape = 3.47
+Search = 6.07https://www.tokopedia.com/smart-celluler/fat-magnet-penyedot-lemak-makanan
+Scrape = 2.07
+Search = 9.43https://www.tokopedia.com/demiki/neurosanbeneurobion-5000
+
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.tokopedia.com/bandtemenloe/elephant-kind-city-j
+Scrape = 2.69
+Search = 9.27https://www.tokopedia.com/goodmerchant/segiempat-shabby-seri-zara-4-terbaru
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/hflshop/sepatu-anak-murah-medley-abu-kombinasi-by-decks-kids
+Scrape = 3.6
+Search = 9.03https://www.tokopedia.com/gloriapetshop/topical-spray-cortavance-19-ml
+Scrape = 4.08
+Search = 7.06https://www.tokopedia.com/alfawatch/jam-tangan-ck-set-3-gelang
+Scrape = 3.26
+Search = 7.06https://www.tokopedia.com/adikmilna/obat-kuat-bentuk-kopi-kopi-on-kopi-cleng-kopi-dynamic-radix
+
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.tokopedia.com/maggieshop168/jual-cover-sarung-mobil-urban-medium-mpv-suv-up-to-4-7m-diskon-20170
+Scrape = 3.82
+Search = 5.19https://www.tokopedia.com/gadgetidea/promo-kabel-hdmi-male-to-hdmi-male-ver-1-4-panjang-kabel-1-5-meter-2
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/fortunegadget88/new-timbangan-dapur-q2-2kg-timbangan-kue
+Scrape = 2.7
+Search = 10.6https://www.tokopedia.com/accunikgrosir/diskon-korean-card-wallet-32-slot-dompet-kartu-muat-32-kartu
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/aksesorisbrgunik/diskon-korek-gas-bara-windproof-powerful-gas-torch-flame
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/abdbabyshop/mothercare-tshirt-for-baby-girl-1
+Scrape = 3.86
+Search = 18.14https://www.tokopedia.com/blanja-instan/sepatu-wanita-sandal-wanita-kode-c1193
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/assidawi/jamkho-jamu-penurun-kolesterol
+Scrape = 2.76
+Search = 6.88https://www.tokopedia.com/n2craft/brownies-brunno-brownis-fudge-brownis-panggang-unik-enak-kekinian
+Scrape = 3.81
+Search = 7.13https://www.tokopedia.com/orchid17/diskon-c-nazla-hijab-polka-4in1-exclusive
+Scrape = 2.97
+Search = 8.82https://www.tokopedia.com/t-tjerseygo/jersey-bola-new-york-city-home-official-mls-2017-grade-ori
+Scrape = 7.25
+Search = 7.98https://www.tokopedia.com/goodmerchant/hijab-jilbab-instant-rumi-terbaru
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/orchid17/diskon-c-nazla-hijab-polka-4in1-exclusive
+Scrape = 4.07
+Search = 6.21https://www.tokopedia.com/abcbaby/preloved-sarung-bantal-sarung-guling-merek-elegance-1
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/baju-hamil/dress-hamil-dan-menyusui-indi-dh017
+Scrape = 2.82
+Search = 5.93https://www.tokopedia.com/indoshopasemka/souvenir-centong-melamine
+Scrape = 2.62
+Search = 11.4https://www.tokopedia.com/sofieolshop/premec-chalk-pena-gel-pen-ballpoint-bolpen-swiss-limited
+Scrape = 3.57
+Search = 9.09https://www.tokopedia.com/aksesorisbrgunik/diskon-korek-gas-bara-windproof-powerful-gas-torch-flame
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.tokopedia.com/didinqp/lego-loz-diamond-nano-blocks-block-mini-figure-mario-bros-luigi-yoshi
+Scrape = 4.39
+Search = 8.64https://www.tokopedia.com/dagangbuku/my-first-why-262-pertanyaan-pertama-anak-muslim
+Scrape = 4.31
+Search = 8.84

@@ -117,6 +117,7 @@ Route::get('/{slug}', 'ItemController@publicShow')->name('nodes');
 Route::get('/tes/top', 'ItemCounterController@count');
 
 Route::get('/tes/cek', 'TestController@cek');
+Route::get('/tes/curl', 'TestController@curl');
 Route::get('/tes/cekse', 'TestController@cekse');
 Route::get('/tes/cektp', 'TestController@cektp');
 Route::get('/tes/phantom', 'TestController@phantom');

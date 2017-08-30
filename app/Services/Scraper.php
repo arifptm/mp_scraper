@@ -61,25 +61,7 @@ class Scraper
                 }   
             }    
 
-            if ($mp->slug == "lazada"){      
-                if ( $crawler->filter('.product_list .product-card')->count()) {
-                    $urls = $crawler->filter('.product_list .product-card')->each (function ($node){
-                        return $node->attr('data-original');
-                    });
-                } elseif ($crawler->filter('.c-product-card__description a.c-product-card__name')->count()){ 
-                     $urls = $crawler->filter('.c-product-card__description a.c-product-card__name')->each (function ($node){
-                        $itm = $node->attr('href');
-                        $itm = explode('?ff=', $itm)[0];
-                        return 'http://www.lazada.co.id'.$itm;
-                    });
-                }     
-
-                foreach ($urls as $url) {
-                    $item =Item::firstOrNew(['item_url' => $url]);
-                    $item->feed_id = $selected_feed->id;
-                    $item->save();
-                }   
-            }                 
+                
  
     		Feed::whereId($selected_feed->id)->update(['processed' => 1]);
     	}
@@ -90,51 +72,13 @@ class Scraper
 
 
 
-	public function selectItem($mp)
-	{
-	    $select = Item::whereIn('feed_id', $mp->feed->pluck('id'))->whereProcessed(0)->get();
-            
-        if ($select->count() != 0 ){
-        	$selected_item = $select->random();
-        	return $selected_item;
-        } else {
-        	Feed::whereMarketplace_id($mp->id)->update(['processed' => 0]);
-        	return "$mp->name Feed Reset";
-        }    	
-    }
 
-    public function getCatId($cats)
-    {
-    	$depth0 = null;
-        foreach ($cats as $key=>$cat)
-        {
-            $key1 = $key+1;
-            $rep = Replacer::whereDepartment($cat)->whereLevel($key)->first();
-            if (count($rep) != 0){
-                $cat = $rep->replacer;               
-            }            
 
-            $slug = new Slug;
-            $cat_slug = $slug -> createSlug($cat);
-
-            ${'depth'.$key1} = Category::firstOrCreate([
-                'name' => $cat, 
-                'level' => $key, 
-                'parent' => ${'depth'.$key}['id'],
-                'slug' => $cat_slug 
-            ]);            
-        }      
-        return ${'depth'.$key1}->id;
-    }
-
-    public function checkRootCat($cat){
-        $root = Category::whereLevel(0)->pluck('name')->toArray();
-        if (in_array( $cat , $root )){
-            return true;
-        } else {
-            return false;
-        }
-    }
+    /**
+     *
+     * Deleta all properties: style
+     *
+     */
 
     public function clearStyle($v){
         $dom = new \DOMDocument;
@@ -146,6 +90,36 @@ class Scraper
         }
         return $dom->saveHTML();
     }
+
+
+
+
+    /**
+     *
+     * Select random item to process
+     *
+     */
+
+    public function selectItem($mp)
+    {
+        $select = Item::whereIn('feed_id', $mp->feed->pluck('id'))->whereProcessed(0)->get();
+            
+        if ($select->count() != 0 ){
+            $selected_item = $select->random();
+            return $selected_item;
+        } else {
+            Feed::whereMarketplace_id($mp->id)->update(['processed' => 0]);
+            return "$mp->name Feed Reset";
+        }       
+    }
+   
+
+    
+    /**
+     *
+     * Curl with dinamic header
+     *
+     */
 
     public function letsCurl($url){   
         $agents = array(
@@ -167,6 +141,7 @@ class Scraper
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt($ch, CURLOPT_USERAGENT,$agents[array_rand($agents)]);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
@@ -175,10 +150,47 @@ class Scraper
         return $data;
     }
 
-    public function getBody($url){
+
+    /**
+     *
+     * Create category and replace with root category
+     *
+     */
+
+    public function getCatId($cats){
+        $root = Category::whereLevel(0)->pluck('name')->toArray();
+        foreach ($cats as $level=>$cat){
+            $replacer = Replacer::whereDepartment($cat)->whereLevel($level)->first();
+            if(count($replacer) > 0){
+                $cat = $replacer->replacer;
+            }
+
+            
+            if($level == 0 && in_array( $cat , $root ) ) {
+                $cat = 'Kategori Lain-lain';
+            }
+
+            $slug = new Slug;
+            $cat_slug = $slug -> createSlug($cat);     
+            
+            $new_cat = Category::firstOrNew([ 'name'=>$cat, 'level'=>$level, 'slug'=>$cat_slug ]);
+            if($level > 0){
+                $new_cat['parent'] = $new_cat->id;
+            }
+            $new_cat->save();
+        }
+        return $new_cat->id;
+    }
+
+    /**
+     *
+     * Phantom JS get DOM
+     *
+     */
+    public function getBodyPhantom($url){
         $client = Client::getInstance();
         $client->isLazy();
-//        $client -> getEngine()->setPath(config('app.phantomjs_path'));
+        $client -> getEngine()->setPath(config('app.phantomjs_path'));
         $request = $client->getMessageFactory()->createRequest($url);
         $request->setTimeout(10000);
         $response = $client->getMessageFactory()->createResponse();        
@@ -186,6 +198,12 @@ class Scraper
         return $response;
     }
 
+
+    /**
+     *
+     * Image resize
+     *
+     */
     public static function getImage($imgs, $mp_slug){
         $i = unserialize($imgs);
 
@@ -200,6 +218,7 @@ class Scraper
             $images['teaser'] = str_replace('/m-1000-1000/', '/s-240-240/', $i);
             $images['thumb'] = str_replace('/m-1000-1000/', '/s-50-50/', $i);
         }
+
         if ($mp_slug == 'lazada'){        
             $images['teaser'] = str_replace('-gallery.', '-webp-catalog_233.', $i);
             $images['teaser'] = str_replace('-gallery_44x44.', '-webp-catalog_233.', $images['teaser'] );
@@ -208,17 +227,18 @@ class Scraper
             $images['thumb'] = str_replace('-gallery.', '-webp-gallery.',  $i);
             $images['thumb'] = str_replace('-gallery_44x44.', '-webp-gallery_44x44.',  $images['thumb']);
         }
+
         if ($mp_slug == 'blibli'){        
             $images['teaser'] = str_replace('/thumbnail/', '/medium/', $i);
             $images['node'] = str_replace('/thumbnail/', '/full/',  $i);
             $images['thumb'] = str_replace('/thumbnail/', '/thumbnail/',  $i);
         }
+
         if ($mp_slug == 'mataharimall'){        
             $images['teaser'] = str_replace('/p/', '/tx200/', $i);
             $images['node'] = str_replace('/p/', '/tx400/',  $i);
             $images['thumb'] = str_replace('/p/', '/tx200/',  $i);
         }        
-
         return $images;
     }
     	

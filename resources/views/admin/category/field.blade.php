@@ -1,11 +1,11 @@
 <div class="box-body">
 	<div class="form-group">
 		{!! Form::label('name', 'Category Name',['class'=>'control-label']) !!}
-		{!! Form::text('name', null, ['class' => 'form-control']) !!}
+		{!! Form::select('name', $cats, null,  ['class' => 'form-control']) !!}
 		@if ($errors->has('name'))
 		    <div class="label label-danger">
 		        {{ $errors->first('name') }}
-		    </div>
+		    </div> 
 		@endif
 	</div>
 

@@ -1,0 +1,830 @@
+https://www.blibli.com/traveler-s-choice-new-london-hardcase-medium-koper-olive-green-25-inch-MTA.1355097.htm
+Scrape = 6.47
+Search = 5.22https://www.blibli.com/salt-n-pepper-mens-shirt-grey-ss-snp-127-1706-MTA.1260294.htm
+Scrape = 6.79
+Search = 6.46https://www.blibli.com/tori-tpd-909-dvd-player-portable-MTA.1356935.htm
+Scrape = 5.5
+Search = 4.34https://www.blibli.com/zippo-1935-replica-brushed-chrome-with-slashes-lighter-MTA.1361995.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/pierre-cardin-yangtze-sling-bag-size-xl-black-8112800902bla-MTA.1361845.htm
+Scrape = 5.99
+Search = 15.93https://www.blibli.com/be-nevicio-vco-aroma-pandan-100-ml-MTA.1359821.htm
+Scrape = 5.25
+Search = 4.84https://www.blibli.com/wealthy-hybrid-hydrophobic-eropa-standard-set-wiper-mobil-for-alphard-v-2-pcs-kanan-kiri-MTA.1357381.htm
+Scrape = 5.77
+Search = 5.46https://www.blibli.com/new-balance-men-s-running-comfort-ride-575-v2-m575rg2-MTA.0696519.htm
+Scrape = 14.22
+Search = 5.71https://www.blibli.com/oem-motif-kata-enaknya-naik-motor-sticker-MTA.1351924.htm
+Scrape = 6.15
+Search = 4.42https://www.blibli.com/squline-kursus-bahasa-mandarin-skill-building-e-voucher-paket-6-bulan-2x-sesi-hari-selama-6-bulan-MTA.1257965.htm
+Scrape = 6.05
+Search = 2.1https://www.blibli.com/basic-ie-700-hd-in-ear-earphone-MTA.1360831.htm
+Scrape = 5.43
+Search = 5.16https://www.blibli.com/zippo-lynyrd-skynyrd-brushed-chrome-lighter-MTA.1361994.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/3-second-110101612-men-t-shirt-cream-MTA.0812536.htm
+Scrape = 6.33
+Search = 4.57https://www.blibli.com/wealthy-hybrid-set-wiper-mobil-for-bmw-seri-3-e46-2-pcs-kanan-kiri-MTA.1357439.htm
+Scrape = 7.51
+Search = 3.54https://www.blibli.com/dove-volume-nourishment-paket-perawatan-rambut-shampoo-320-ml-conditioner-160-ml-2-pcs-vitamin-rambut-free-tote-bag-MTA.1309431.htm
+Scrape = 10.03
+Search = 6.82https://www.blibli.com/oem-kata-lucu-ganteng-on-board-spakbor-stiker-mobil-dan-motor-MTA.1351927.htm
+Scrape = 10.39
+Search = 6.89https://www.blibli.com/pedigree-puppy-makanan-anjing-400-g-8-pcs-free-pedigree-bag-MTA.1359539.htm
+Scrape = 6.59
+Search = 4.55https://www.blibli.com/dragon-7276-armor-pro-jagdpanzer-iv-l-48-model-kit-1-72-MTA.1271946.htm
+Scrape = 6.18
+Search = 6.14https://www.blibli.com/rocketeers-orange-flag-long-sleeve-t-shirt-black-MTA.1355116.htm
+Scrape = 8.39
+Search = 6.45https://www.blibli.com/tokuniku-luck-dog-bulldog-dentist-game-toys-running-man-games-mainan-gigi-bulldog-MTA.1356233.htm
+Scrape = 6.13
+Search = 4.15https://www.blibli.com/babyelle-768-baby-car-seat-red-MTA.1356167.htm
+Scrape = 5.77
+Search = 7.9https://www.blibli.com/hikvision-medusa-cam-thd-ds-2ce16d0t-irpf-2-mp-4in1-3-6mm-bullet-MTA.1350379.htm
+Scrape = 6.64
+Search = 3.81https://www.blibli.com/protect-a-bed-mattress-protector-baby-crib-springbed-ukuran-70x140x15-ROT.36833.00258.html
+Scrape = 5.29
+Search = 6.91https://www.blibli.com/genius-thinking-kids-total-solution-for-prekindergarten-buku-edukasi-anak-MTA.1357766.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/lg-tsp10nnw-mesin-cuci-top-loading-putih-10-kg-MTA.1294627.htm
+Scrape = 8.36
+Search = 7.07https://www.blibli.com/eiger-ls-hawk-eagle-vertical-dompet-MTA.1362034.htm
+Scrape = 5.25
+Search = 10.94https://www.blibli.com/brother-ads-2800w-document-scanner-hitam-MTA.1336475.htm
+Scrape = 6.34
+Search = 8.41https://www.blibli.com/wealthy-hybrid-hydrophobic-eropa-standard-set-wiper-mobil-for-m-class-w163-2-pcs-kanan-kiri-MTA.1357475.htm
+Scrape = 5.49
+Search = 2.48https://www.blibli.com/pro-u-media-berdoalah-untuk-urusan-apa-pun-by-muhammad-fauzil-adhim-buku-religi-MTA.1360778.htm
+Scrape = 5.68
+Search = 6.06https://www.blibli.com/agung-keramik-tulip-cangkir-kopi-soft-green-MTA.1362622.htm
+Scrape = 8.5
+Search = 5.01https://www.blibli.com/e-print-glossy-a4-photo-paper-100-sheet-MTA.1360704.htm
+Scrape = 9.26
+Search = 6.27https://www.blibli.com/oem-fidget-finger-cube-abu-hitam-MTA.1356662.htm
+Scrape = 6.4
+Search = 4.03https://www.blibli.com/fiber-etc-banana-granola-500-g-BIM.26750.00057.html
+Scrape = 5.27
+Search = 5.4https://www.blibli.com/alpine-pxa-h100-imprint-dsp-manager-MTA.1359767.htm
+Scrape = 5.53
+Search = 12.27https://www.blibli.com/whs-san-remo-la-pasta-chicken-curry-253-120-g-144696-MTA.1323233.htm
+Scrape = 5.6
+Search = 10.95https://www.blibli.com/pedigree-chicken-vegetables-makanan-anjing-3000-g-free-bag-MTA.1359545.htm
+Scrape = 5.33
+Search = 6.91https://www.blibli.com/oem-eling-rasane-kata-jawa-spakbor-batok-cutting-sticker-motor-dan-mobil-MTA.1351920.htm
+Scrape = 6.36
+Search = 1.91https://www.blibli.com/adidas-unisex-originals-trefoil-trucker-cap-topi-osfm-bk7308-MTA.1229794.htm
+Scrape = 5.84
+Search = 4.01https://www.blibli.com/sevenfriday-jam-tangan-pria-STZ.56233.00284.html
+Scrape = 5.03
+Search = 7.14https://www.blibli.com/dragon-7227-armor-pro-bergepanzer-tiger-p-model-kit-1-72-MTA.1271951.htm
+Scrape = 5.78
+Search = 8.32https://www.blibli.com/marvo-g1-mouse-pad-MTA.0245764.htm
+Scrape = 7.03
+Search = 4.3https://www.blibli.com/tama-cb90-head-pedal-drum-hitam-MTA.1358314.htm
+Scrape = 9.82
+Search = 8.71https://www.blibli.com/iq-baby-iq-84-medicine-feeder-yellow-MTA.1354052.htm
+Scrape = 7.2
+Search = 6.4https://www.blibli.com/mini-melissa-polibolha-ii-bb-sepatu-bayi-black-white-MTA.1213250.htm
+Scrape = 11.03
+Search = 5.06https://www.blibli.com/aca-otomate-solitaire-plus-asuransi-mobil-for-toyota-avanza-e-at-or-mt-tahun-2015-MTA.1351626.htm
+Scrape = 8
+Search = 7.93https://www.blibli.com/koinonia-products-the-lord-s-prayer-maroon-bible-cover-sampul-alkitab-size-s-MTA.1361621.htm
+Scrape = 8.21
+Search = 3.63https://www.blibli.com/idn-soundscape-2017-vip-normal-e-ticket-include-uniform-BLT.29599.00309.html
+Scrape = 6.94
+Search = 7.79https://www.blibli.com/royco-ayam-kuning-bumbu-masak-600-g-x-2-pcs-free-sariwangi-sari-murni-teh-MTA.1335876.htm
+Scrape = 7.91
+Search = 7.37https://www.blibli.com/daily-deals-calci-conquest-sepatu-futsal-gold-black-UNT.37932.00096.html
+Scrape = 8.91
+Search = 16.97https://www.blibli.com/cars-t-shirt-print-champion-baju-atasan-anak-laki-laki-white-red-MTA.1356685.htm
+Scrape = 11.21
+Search = 5.87https://www.blibli.com/murago-g-105-mini-usb-speaker-merah-MTA.1362654.htm
+Scrape = 9.12
+Search = 9.42https://www.blibli.com/miyako-rms-106m-regulator-meteran-and-selang-gas-1-8-m-KIL.34887.00088.html
+Scrape = 12.71
+Search = 5.71https://www.blibli.com/the-sweet-recipe-silver-flower-cake-kue-tart-MTA.1353812.htm
+Scrape = 8
+Search = 6.65https://www.blibli.com/samsung-galaxy-a7-2017-sm-a720-smartphone-gold-garansi-resmi-HAP.29746.00084.html
+Scrape = 16.09
+Search = 9.97https://www.blibli.com/thin-optics-key-chain-set-1-5-YUE.47074.00015.html
+Scrape = 7.14
+Search = 7.1https://www.blibli.com/dunlop-touring-r1-175-70r13-ban-mobil-SUR.54898.00119.html
+Scrape = 8.02
+Search = 9.22https://www.blibli.com/hush-puppies-694008-4w-zipper-tc-with-tsa-trolley-bag-red-20-inch-MTA.1358759.htm
+Scrape = 9.51
+Search = 10.38https://www.blibli.com/genius-tattoos-fantastic-facts-and-amazing-activities-marvel-super-heroes-assemble-buku-edukasi-anak-MTA.1357849.htm
+Scrape = 8.63
+Search = 6.02https://www.blibli.com/guess-w0958l2-rockstar-multi-dial-tali-rubber-jam-tangan-wanita-ungu-MTA.1362565.htm
+Scrape = 9.57
+Search = 7.27https://www.blibli.com/mamade-kemasan-mini-makaroni-rasa-extreme-hot-makanan-kering-MTA.1357298.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/dunlop-enasave-ec300-185-55-r15-ban-mobil-SUR.54898.00114.html
+Scrape = 7.24
+Search = 7.42https://www.blibli.com/changhong-32e6000i-hitam-tv-led-32-inch-CVN.28891.00467.html
+Scrape = 7.57
+Search = 8.56https://www.blibli.com/pipedream-products-king-cock-dildo-flesh-10-inch-MTA.1359127.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/jjrc-h36-6-axis-gyro-headless-mode-auto-return-mini-drone-black-MTA.1359782.htm
+Scrape = 8.41
+Search = 9https://www.blibli.com/alexandre-christie-jam-tangan-pria-rose-gold-6439-mclbrba-MTA.1156455.htm
+Scrape = 7.89
+Search = 7.95https://www.blibli.com/kuartet-nabati-nutritional-yeast-bumbu-masak-vit-b12-vegan-100-g-APV.28033.00359.html
+Scrape = 9.6
+Search = 6.27https://www.blibli.com/protect-a-bed-mattress-protector-baby-crib-springbed-ukuran-70x140x15-ROT.36833.00258.html
+Scrape = 7.58
+Search = 8.1https://www.blibli.com/coffindo-luwak-powder-kopi-1-kg-MTA.1335785.htm
+Scrape = 15.01
+Search = 9.53https://www.blibli.com/jbl-e55bt-headset-white-MTA.1358914.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/balonasia-motif-tsumtsum-happy-birthday-banner-flag-dekorasi-pesta-MTA.1360813.htm
+Scrape = 11.12
+Search = 5.5https://www.blibli.com/siv-clip-hk05-universal-seatbelt-alarm-stopper-set-colokan-safety-belt-MTA.1360811.htm
+Scrape = 8.29
+Search = 7.43https://www.blibli.com/northsider-sitio-ribeiro-arabica-specialty-coffee-pulp-natural-brazil-kopi-MTA.1357703.htm
+Scrape = 7.39
+Search = 5.67https://www.blibli.com/motion-putty-metallic-mainan-anak-green-MTA.1354847.htm
+Scrape = 9.13
+Search = 7.15https://www.blibli.com/thin-optics-key-chain-set-2-0-YUE.47074.00016.html
+Scrape = 7.66
+Search = 6.25https://www.blibli.com/trend-micro-maximum-security-11-software-1-devices-3-year-MTA.1360043.htm
+Scrape = 7.98
+Search = 7.49https://www.blibli.com/ellenov-sally-ddy-6-vddy-cr-black-out-set-gorden-500-x-260-cm-MTA.1360567.htm
+Scrape = 10.13
+Search = 6.31https://www.blibli.com/tupperware-hello-kitty-snack-time-MTA.0387442.htm
+Scrape = 8.75
+Search = 9.42https://www.blibli.com/koinonia-products-new-creation-bible-cover-sampul-alkitab-black-l-MTA.1361910.htm
+Scrape = 8.21
+Search = 6.2https://www.blibli.com/mom-rattle-bear-kaos-kaki-MTA.1355293.htm
+Scrape = 7.21
+Search = 5.19https://www.blibli.com/mom-3d-tutu-kaos-kaki-bayi-purple-tosca-tulle-MTA.1357311.htm
+Scrape = 5.71
+Search = 4.85https://www.blibli.com/dj-fashion-0431-troli-koper-tas-anak-MTA.1361150.htm
+Scrape = 5.29
+Search = 3.98https://www.blibli.com/momo-animal-panda-kayu-mainan-puzzle-MTA.1358372.htm
+Scrape = 5.62
+Search = 3.68https://www.blibli.com/arrow-leather-belt-ikat-pinggang-pria-white-125-cm-bp-ar2260fcsa15-b30177004-MTA.1362030.htm
+Scrape = 7
+Search = 2.1https://www.blibli.com/donal-bebek-gober-215-majalah-anak-MTA.1233311.htm
+Scrape = 4.22
+Search = 3.69https://www.blibli.com/thin-optics-key-chain-set-2-0-YUE.47074.00016.html
+Scrape = 4.91
+Search = 4.57https://www.blibli.com/panasonic-kx-tg3411-telephone-wireless-hitam-MTA.0682512.htm
+https://www.blibli.com/everflow-vep-016-sepatu-wedges-wanita-silver-MTA.1117285.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/kahuripan-teh-hitam-celup-premium-3-pcs-MTA.1355580.htm
+Scrape = 5.58
+Search = 4.09https://www.blibli.com/polytron-22d110-tv-led-black-MTA.0430476.htm
+Scrape = 12.13
+Search = 5.96https://www.blibli.com/omiland-motif-zigzag-bantal-menyusui-multifungsi-kuning-MTA.1360775.htm
+Scrape = 5.69
+Search = 9.45https://www.blibli.com/tupperware-lolly-tup-tempat-makan-biru-MTA.0660228.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/sanyo-p-h130b-pompa-air-ILE.55206.00187.html
+Scrape = 4.91
+Search = 3.13https://www.blibli.com/arrow-leather-belt-ikat-pinggang-pria-white-125-cm-bp-ar2260fcsa15-b30177004-MTA.1362030.htm
+Scrape = 4.63
+Search = 2.3https://www.blibli.com/biore-pleasure-peony-pouch-body-foam-450-ml-bundling-per-6-pcs-YUI.48309.00126.html
+Scrape = 5.68
+Search = 5.96https://www.blibli.com/anello-at-b0193a-polyester-tas-ransel-backpack-dark-green-MTA.1359755.htm
+Scrape = 6.05
+Search = 4.64https://www.blibli.com/mamade-kemasan-mini-makaroni-rasa-extreme-hot-makanan-kering-MTA.1357298.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/squline-kursus-bahasa-jepang-intensive-e-voucher-paket-6-bulan-3x-sesi-hari-selama-6-bulan-MTA.1257962.htm
+Scrape = 5.39
+Search = 6.48https://www.blibli.com/babyelle-768-baby-car-seat-red-MTA.1356167.htm
+Scrape = 5.76
+Search = 10.71https://www.blibli.com/mitsubishi-xpander-1-5l-gls-mobil-silver-metallic-MTA.1358654.htm
+Scrape = 5.14
+Search = 6.33https://www.blibli.com/e-print-silky-gold-4r-photo-paper-20-sheet-MTA.1360429.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/kukuk-bn15001-gurita-boneka-biru-15-cm-MTA.1360753.htm
+Scrape = 8.86
+Search = 4.19https://www.blibli.com/key-ring-model-series-c-MTA.1344722.htm
+Scrape = 5.07
+Search = 9.58https://www.blibli.com/samsung-original-stereo-headset-white-HAS.49020.01242.html
+Scrape = 5.46
+Search = 4.13https://www.blibli.com/samsung-mg23h3185pk-smart-moisture-sensor-grill-microwave-23-l-UFE.53685.00109.html
+Scrape = 8.29
+Search = 9.01https://www.blibli.com/koinonia-products-if-anyone-is-in-christ-bible-cover-sampul-alkitab-size-xl-MTA.1361879.htm
+Scrape = 6.93
+Search = 2.17https://www.blibli.com/squline-kursus-bahasa-inggris-intensive-e-voucher-paket-6-bulan-3x-sesi-hari-selama-6-bulan-MTA.1257958.htm
+Scrape = 5.59
+Search = 5.76https://www.blibli.com/adidas-women-originals-superstar-bw3s-slip-on-sepatu-olahraga-wanita-by9140-MTA.1267432.htm
+Scrape = 7.77
+Search = 4.91https://www.blibli.com/oem-motif-kata-ngebut-ibadah-sticker-MTA.1351925.htm
+Scrape = 6.05
+Search = 3.66https://www.blibli.com/brother-lc-400-tinta-printer-yellow-MTA.0757514.htm
+Scrape = 6.43
+Search = 8.45https://www.blibli.com/teater-abnon-babe-e-ticket-15-september-2017-MTA.1352199.htm
+Scrape = 4.85
+Search = 5.56https://www.blibli.com/sharp-new-kirei-ii-series-sj-316nd-fw-kulkas-2-pintu-256-liter-SAE.28670.00673.html
+Scrape = 5.29
+Search = 8.36https://www.blibli.com/smile-genji-shuriken-naruto-3-side-hand-fidget-spinner-grey-MTA.1362360.htm
+Scrape = 5.96
+Search = 5.92https://www.blibli.com/siv-sidemark-emblem-logo-suzuki-aksesoris-body-mobil-emb-sidemark-szk-MTA.1361010.htm
+Scrape = 5.8
+Search = 2.1https://www.blibli.com/adidas-women-training-ultimate-tights-cf2189-MTA.1257540.htm
+Scrape = 6.15
+Search = 6.22https://www.blibli.com/agung-keramik-tulip-cangkir-kopi-soft-green-MTA.1362622.htm
+Scrape = 6.51
+Search = 6.04https://www.blibli.com/sayota-sk-399-elektrik-kettle-silver-1-5-l-600-w-PAO.55023.00013.html
+Scrape = 6.7
+Search = 4.05https://www.blibli.com/basic-ie-700-hd-in-ear-earphone-MTA.1360831.htm
+Scrape = 5.06
+Search = 4.94https://www.blibli.com/miyako-paket-selang-regulator-gas-rms-106m-UTE.18898.00186.html
+Scrape = 4.18
+Search = 4.06https://www.blibli.com/utimi-realistic-silicone-dildo-with-suction-base-7-inch-MTA.1359130.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/lunar-huga-425-sliding-door-shoe-rack-oak-muda-MTA.1360479.htm
+Scrape = 6.42
+Search = 14.9https://www.blibli.com/salt-n-pepper-mens-shirt-green-ss-snp-129-1706-MTA.1260269.htm
+Scrape = 5.94
+Search = 6.67https://www.blibli.com/daily-deals-everlast-mma-evergel-wraps-sarung-tangan-black-EVT.12356.00076.html
+Scrape = 5.98
+Search = 9.47https://www.blibli.com/elfs-shop-boxer-katun-alan-walker-hitam-MTA.1357891.htm
+Scrape = 5.84
+Search = 5.41https://www.blibli.com/ogawa-imoda-truffle-kursi-relaksasi-MTA.1354623.htm
+Scrape = 4.52
+Search = 3.85https://www.blibli.com/modena-ks-3200-sink-tempat-cuci-piring-MTA.0642367.htm
+Scrape = 4.36
+Search = 4.61https://www.blibli.com/kiddy-cupcakes-bantal-bayi-blue-MTA.1360054.htm
+Scrape = 4.2
+Search = 5.91https://www.blibli.com/docus-702-head-stick-golf-gold-MTA.1355968.htm
+Scrape = 4.58
+Search = 5.17https://www.blibli.com/daily-deals-lactogen-4-vanilla-750gr-YUI.48309.00123.html
+Scrape = 4.8
+Search = 3.37https://www.blibli.com/i-angel-teething-pad-dolphin-aksesoris-gendongan-bayi-gray-MTA.1355931.htm
+Scrape = 5.58
+Search = 5.22https://www.blibli.com/velvet-jr-060-c003-owl-story-setelan-kancing-tengah-pendek-celana-pendek-mix-3-pcs-MTA.0779084.htm
+Scrape = 5.04
+Search = 3.61https://www.blibli.com/daily-deals-stereo-desserts-chomilo-desserts-ice-cake-hijau-tua-10-pcs-STD.34302.00028.html
+Scrape = 4.89
+Search = 5.36https://www.blibli.com/hermosa-home-decor-starbuck-line-gelas-susun-set-mug-4-pcs-MTA.1361662.htm
+Scrape = 5.55
+Search = 5.12https://www.blibli.com/ultimate-or-60-03-big-size-travel-bag-6-in-1-organizer-space-set-koper-pink-MTA.1353605.htm
+Scrape = 5.89
+Search = 5.84https://www.blibli.com/3-second-110111612-men-t-shirt-cream-MTA.0813528.htm
+Scrape = 5.44
+Search = 3.84https://www.blibli.com/everflow-vam-101-sepatu-wedges-wanita-tan-MTA.1117276.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/naughty-cock-premium-silicone-realistic-suction-cup-dildo-flesh-8-inch-MTA.1359129.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/national-geographic-traveler-vol-9-8-majalah-MTA.1233980.htm
+Scrape = 4.9
+Search = 6.11https://www.blibli.com/daily-deals-graphix-smart-spin-mop-BLE.13190.00449.html
+Scrape = 4.96
+Search = 3.45https://www.blibli.com/aca-otomate-solitaire-plus-asuransi-mobil-for-daihatsu-ayla-at-mt-tahun-2017-MTA.1351541.htm
+Scrape = 6.49
+Search = 3.15https://www.blibli.com/power-andong-tapak-lebar-velg-racing-for-scoopy-karbu-full-black-14-215-250-MTA.1362094.htm
+Scrape = 5.37
+Search = 3.86https://www.blibli.com/tupperware-eco-botol-minum-500-ml-4-pcs-MTA.0324901.htm
+Scrape = 7.03
+Search = 4.96https://www.blibli.com/branded-outlet-bo-461-baby-gap-t-shirt-anak-UK.0047137.htm
+Scrape = 10.65
+Search = 5.44https://www.blibli.com/3-second-112021712-men-t-shirt-white-MTA.0813660.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/prime-choice-puppy-lamb-rice-makanan-anjing-18-14-kg-MTA.1361178.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/map-voucher-rp-50-000x5-AMS.41658.00052.html
+Scrape = 7.12
+Search = 3.2https://www.blibli.com/lg-tsp10nnw-mesin-cuci-top-loading-putih-10-kg-MTA.1294627.htm
+Scrape = 7.77
+Search = 7.36https://www.blibli.com/philips-rice-cooker-hd-3127-biru-rice-cooker-MTA.0024051.htm
+Scrape = 5.4
+Search = 4.5https://www.blibli.com/babyelle-s370-fame-dark-red-kereta-dorong-bayi-red-MTA.1355460.htm
+Scrape = 5.44
+Search = 5.65https://www.blibli.com/kukuk-bn15001-gurita-boneka-biru-15-cm-MTA.1360753.htm
+Scrape = 6.73
+Search = 4.81https://www.blibli.com/vetto-v304-1-5m-ly-204-stop-kontak-4-lubang-1-5-m-MTA.1361637.htm
+Scrape = 4.64
+Search = 5.18https://www.blibli.com/smile-genji-shuriken-naruto-3-side-hand-fidget-spinner-grey-MTA.1362360.htm
+Scrape = 4.34
+Search = 5.76https://www.blibli.com/specialized-rd-roubaix-comp-sepeda-dark-purple-size-54-acblu-tarblk-94417-5054-MTA.1361500.htm
+Scrape = 5.25
+Search = 3.31https://www.blibli.com/cartens-independence-day-audio-packages-paket-b-MTA.1309352.htm
+Scrape = 7.27
+Search = 8.92https://www.blibli.com/mom-3d-tutu-kaos-kaki-bayi-purple-tosca-tulle-MTA.1357311.htm
+Scrape = 8.11
+Search = 6.5https://www.blibli.com/gulper-dry-bag-black-GAA.34961.00470.html
+Scrape = 7.47
+Search = 9.39https://www.blibli.com/mitsubishi-xpander-1-5l-gls-mobil-silver-metallic-MTA.1358654.htm
+Scrape = 11.84
+Search = 11.41https://www.blibli.com/branded-outlet-bo-461-baby-gap-t-shirt-anak-UK.0047137.htm
+Scrape = 11.76
+Search = 21.81https://www.blibli.com/puriegarden-wheatgrass-benih-tanaman-200-seeds-MTA.1361056.htm
+Scrape = 6.77
+Search = 5.77https://www.blibli.com/cargloss-sircon-supermoto-helm-full-face-sm-orange-MTA.1362260.htm
+Scrape = 6.28
+Search = 6.07https://www.blibli.com/power-andong-tapak-lebar-velg-racing-for-vario-techno-110-hitam-merah-14-215-250-MTA.1362062.htm
+Scrape = 11.43
+Search = 6.64https://www.blibli.com/salt-n-pepper-long-sleeve-mens-shirt-grey-ls-snp-033-1704-MTA.1259313.htm
+Scrape = 10.18
+Search = 6.09https://www.blibli.com/docus-head-stick-golf-rainbow-702-MTA.1355966.htm
+Scrape = 7.69
+Search = 5.74https://www.blibli.com/specialized-rd-diverge-a1-sepeda-black-size-52-blk-char-95417-7252-MTA.1361496.htm
+Scrape = 6.67
+Search = 5.21https://www.blibli.com/fujifilm-mhg-x-t1-hand-grip-kamera-large-WIM.46237.00837.html
+Scrape = 6.47
+Search = 7.68https://www.blibli.com/mintz-zing-spearmint-permen-1-karton-24-sack-MTA.1305084.htm
+
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.blibli.com/pipedream-products-king-cock-dildo-flesh-10-inch-MTA.1359127.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/oem-eling-rasane-kata-jawa-spakbor-batok-cutting-sticker-motor-dan-mobil-MTA.1351920.htm
+Scrape = 11.18
+Search = 4.94https://www.blibli.com/dunlop-touring-r1-175-70r13-ban-mobil-SUR.54898.00119.html
+Scrape = 6.28
+Search = 4.86https://www.blibli.com/thin-optics-key-chain-set-1-5-YUE.47074.00015.html
+Scrape = 6.61
+Search = 6.94https://www.blibli.com/tupperware-minion-set-yellow-MTA.1314320.htm
+Scrape = 6.29
+Search = 5.82https://www.blibli.com/power-andong-tapak-lebar-velg-racing-for-scoopy-karbu-hitam-chrome-14-215-250-MTA.1362085.htm
+
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.blibli.com/layrite-deluxe-pomade-MTA.1357721.htm
+Scrape = 7.88
+Search = 6.03https://www.blibli.com/jfashion-men-s-knit-vest-rompi-rajut-pria-abu-muda-MTA.1353266.htm
+
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.blibli.com/momo-animal-panda-kayu-mainan-puzzle-MTA.1358372.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/ichigo-st-selimut-bayi-blanket-MTA.1357731.htm
+Scrape = 5.51
+Search = 6.28https://www.blibli.com/momo-water-filled-soother-teether-gigitan-bayi-merah-biru-MTA.1356281.htm
+Scrape = 5.8
+Search = 15https://www.blibli.com/masaki-panci-set-stockpot-series-besar-MTA.1359933.htm
+Scrape = 5.74
+Search = 6.84https://www.blibli.com/arai-quantum-j-doohan-reggae-helm-full-face-white-MTA.1360402.htm
+Scrape = 6.22
+Search = 5.57https://www.blibli.com/pioneer-avh-z1050dvd-double-din-headunit-SUM.15438.00621.html
+Scrape = 4.61
+Search = 4.2https://www.blibli.com/cocolatte-h502m-dlx-bns-series-szw-light-coffee-tempat-tidur-bayi-MTA.1355327.htm
+Scrape = 5.35
+Search = 3.26https://www.blibli.com/zwitsal-natural-baby-bath-milk-honey-200-ml-bundling-per-6-pcs-YUI.48309.00138.html
+Scrape = 6.23
+Search = 4.58https://www.blibli.com/electrolux-etb2302mg-lemari-es-silver-2-pintu-230-l-MTA.1356425.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/nine-box-sw-lemari-pakaian-red-MTA.1360685.htm
+Scrape = 5.41
+Search = 3.28https://www.blibli.com/imperion-warrior-7-gaming-keyboard-MTA.1355787.htm
+Scrape = 5.43
+Search = 6.49https://www.blibli.com/tori-tsc-300-barcode-scanner-MTA.1359139.htm
+Scrape = 5.89
+Search = 3.83https://www.blibli.com/adidas-unisex-originals-trefoil-trucker-cap-topi-osfm-bk7308-MTA.1229794.htm
+Scrape = 9.36
+Search = 7.94https://www.blibli.com/bburago-renault-megane-trophy-diecast-MTA.1361438.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/fcenter-lp-2699-lemari-pakaian-bandung-PTD.16053.01020.html
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/adidas-men-football-manchester-united-home-jersey-bs1214-MTA.1257359.htm
+Scrape = 5.94
+Search = 4.46https://www.blibli.com/x12t-procyon-xs-logo-tas-kamera-with-rain-cover-for-mirrorless-black-yellow-MTA.1356122.htm
+Scrape = 5.31
+Search = 5.62https://www.blibli.com/samsung-classic-strap-for-gear-s3-black-MTA.1359098.htm
+Scrape = 6.52
+Search = 9.38https://www.blibli.com/baby-zakumi-hellokitty-jaket-anak-perempuan-tosca-MTA.1357143.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/bburago-a110-1600s-alpine-renault-diecast-MTA.1361646.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/the-sweet-recipe-heart-cake-MTA.1360985.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/mercedes-benz-series-ml-ii-b66957949-key-ring-gantungan-kunci-MTA.1342718.htm
+Scrape = 5.73
+Search = 4.76https://www.blibli.com/mamade-kemasan-mini-makaroni-rasa-jagung-bakar-makanan-kering-MTA.1357211.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/genius-kumon-book-ages-6-7-8-my-book-of-measurement-weight-buku-edukasi-anak-MTA.1360488.htm
+Scrape = 4.82
+Search = 5.74https://www.blibli.com/xtecgo-team-secret-mousepad-gaming-large-400-x-450-x-5mm-MTA.1014597.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/pierre-cardin-tilbury-messanger-bag-tas-pria-maroon-0112820801mar-MTA.1361841.htm
+Scrape = 5.1
+Search = 36.49https://www.blibli.com/adidas-women-training-ultimate-tights-cf2189-MTA.1257540.htm
+Scrape = 5.99
+Search = 5.94https://www.blibli.com/daily-deals-stereo-desserts-red-velvet-desserts-ice-cake-merah-STD.34302.00029.html
+Scrape = 7.07
+Search = 5.5https://www.blibli.com/samsung-me731k-microwave-UFE.53685.00038.html
+Scrape = 4.45
+Search = 4.86https://www.blibli.com/genius-my-book-of-words-for-school-level-1-kumon-buku-anak-ages-4-5-6-MTA.1360336.htm
+Scrape = 5.65
+Search = 7.15https://www.blibli.com/mariza-strawberry-selai-350-g-MTA.1359096.htm
+Scrape = 4.79
+Search = 7.01https://www.blibli.com/tokokadounik-home-dilapisi-kain-gembok-rantai-MTA.0671929.htm
+Scrape = 6.35
+Search = 5.32https://www.blibli.com/japan-house-anpanman-rare-retro-vintage-doll-mainan-boneka-MTA.1354070.htm
+Scrape = 5.83
+Search = 6https://www.blibli.com/panasonic-facsimile-kx-fp701-fax-KOA.14662.00037.html
+Scrape = 5.66
+Search = 4.64https://www.blibli.com/panasonic-kx-tg1611-wireless-telepon-beige-MTA.1359587.htm
+Scrape = 5.25
+Search = 5.84https://www.blibli.com/ogawa-omknee-therapy-brown-MTA.1360758.htm
+Scrape = 5.56
+Search = 13.19https://www.blibli.com/everflow-vam-103-sepatu-wedges-wanita-tan-MTA.1117275.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/oem-sticker-toilet-anak-anjing-tunjuk-decal-dekorasi-dinding-MTA.1350972.htm
+Scrape = 5.56
+Search = 6.95https://www.blibli.com/mini-melissa-polibolha-ii-bb-sepatu-bayi-black-white-MTA.1213250.htm
+Scrape = 6.67
+Search = 3.92https://www.blibli.com/linbell-linptech-wireless-waterproof-door-bell-white-MTA.1345523.htm
+Scrape = 5.55
+Search = 4.07https://www.blibli.com/asus-x540ya-bx101t-notebook-black-dualcore-e1-7010-2gb-500gb-15-6-win10-MTA.1357637.htm
+Scrape = 5.93
+Search = 5.74https://www.blibli.com/sayota-sk-399-elektrik-kettle-silver-1-5-l-600-w-PAO.55023.00013.html
+Scrape = 5.72
+Search = 8.59https://www.blibli.com/wealthy-hybrid-hydrophobic-eropa-standard-set-wiper-mobil-for-c-class-w205-2-pcs-kanan-kiri-MTA.1357467.htm
+Scrape = 9.79
+Search = 2.58https://www.blibli.com/dunlop-enasave-ec300-195-65-r15-ban-mobil-SUR.54898.00113.html
+Scrape = 4.44
+Search = 6.99https://www.blibli.com/bridgestone-turanza-ar-20-t-165-65-r13-ban-mobil-SUR.54898.00108.html
+Scrape = 7.27
+Search = 6.34https://www.blibli.com/ellenov-sally-ddy-7-vddy-wh-black-out-gorden-300-x-260-cm-MTA.1360642.htm
+Scrape = 5.63
+Search = 6.98https://www.blibli.com/attanta-kaiser-234-tripod-black-kaiser-234-TOC.14861.03441.html
+Scrape = 4.93
+Search = 4.4https://www.blibli.com/nhs-wear-tapered-chino-celana-panjang-pria-black-MTA.1350962.htm
+Scrape = 7.3
+Search = 5.09https://www.blibli.com/thin-optics-key-chain-set-2-5-YUE.47074.00017.html
+Scrape = 4.96
+Search = 4.75https://www.blibli.com/jfashion-men-s-knit-vest-rompi-rajut-pria-exo-hitam-MTA.1357276.htm
+Scrape = 6.12
+Search = 4.43https://www.blibli.com/hot-foucs-metallic-jewelry-tattoo-bracelet-MTA.1354776.htm
+Scrape = 5.19
+Search = 8.72https://www.blibli.com/digimart-waxpac-vacum-pembersih-telinga-DIT.35573.00102.html
+Scrape = 5.54
+Search = 9.1https://www.blibli.com/northsider-guji-gigesa-arabica-specialty-coffee-washed-ethiopia-kopi-MTA.1357716.htm
+Scrape = 5.73
+Search = 5.71https://www.blibli.com/arenga-organic-palm-sugar-gula-aren-MTA.1356129.htm
+Scrape = 5.56
+Search = 5.36https://www.blibli.com/baby-zakumi-hellokitty-jaket-anak-perempuan-tosca-MTA.1357143.htm
+Scrape = 5.27
+Search = 3.07https://www.blibli.com/mao-funny-studio-easel-barbie-mainan-edukasi-anak-MTA.1358503.htm
+Scrape = 5.95
+Search = 3.22https://www.blibli.com/melissa-doug-bead-bouquet-kerajinan-tangan-MTA.0654568.htm
+Scrape = 6.8
+Search = 5.16https://www.blibli.com/egif-eg-120-tas-kamera-mirrorless-merah-hitam-eg120-TOC.14861.03445.html
+Scrape = 5.6
+Search = 3.16https://www.blibli.com/docus-701-58-wedge-head-stick-golf-black-MTA.1356114.htm
+Scrape = 5.86
+Search = 6.47https://www.blibli.com/apple-macbook-pro-mpxq2id-a-notebook-space-gray-retina-display-2-3ghz-intel-core-i5-dual-core-8gb-ram-128gb-ssd-13-inch-newest-version-TOE.48858.00153.html
+Scrape = 5.73
+Search = 5.28https://www.blibli.com/samsung-43j5100-tv-led-43-inch-khusus-bandung-SUE.28594.00179.html
+Scrape = 6.57
+Search = 3.76https://www.blibli.com/digital-alliance-g8-revival-mouse-gaming-MTA.1356850.htm
+Scrape = 6.76
+Search = 5.4https://www.blibli.com/thin-optics-key-chain-set-1-5-MTA.1352376.htm
+Scrape = 6.75
+Search = 5.95https://www.blibli.com/honda-crv-2-4-l-prestige-at-tahun-2017-MTA.1351143.htm
+Scrape = 6.1
+Search = 5.08https://www.blibli.com/momo-transport-kendaraan-kayu-mainan-puzzle-MTA.1358677.htm
+Scrape = 5.94
+Search = 5.31https://www.blibli.com/specialized-rd-allez-dsw-sl-sprint-comp-yellow-size-52-mxorg-brtyel-blk-90017-5152-MTA.1361495.htm
+Scrape = 5.77
+Search = 2.22https://www.blibli.com/thin-optics-key-chain-set-1-5-YUE.47074.00015.html
+Scrape = 6.07
+Search = 4.93https://www.blibli.com/zippo-western-lighters-MTA.1362412.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/siv-knl-a301-model-hearts-muffler-head-untuk-knalpot-mobil-universal-pink-MTA.1357993.htm
+Scrape = 6.31
+Search = 6.53https://www.blibli.com/third-party-best-power-standlight-bp3-280-353025-locking-system-tiang-lampu-studio-MTA.0478991.htm
+Scrape = 6.13
+Search = 1.96https://www.blibli.com/siv-knl-a311-motif-kitty-universal-muffler-cutter-aksesoris-knalpot-mobil-merah-MTA.1357867.htm
+Scrape = 6.62
+Search = 3.16https://www.blibli.com/east-bali-cashews-rosella-tea-teh-35-g-MTA.1352180.htm
+Scrape = 8.99
+Search = 4.39https://www.blibli.com/nikon-af-s-35mm-f1-8g-dx-lensa-kamera-resmi-pt-alta-nikindo-ISF.52570.00126.html
+Scrape = 5.92
+Search = 4.66https://www.blibli.com/atn-lp-015-lampu-pilar-minimalis-hitam-MTA.1356151.htm
+Scrape = 7.63
+Search = 3.16https://www.blibli.com/eiger-ls-explorer-topi-MTA.1362107.htm
+Scrape = 5.34
+Search = 25.65https://www.blibli.com/lanjar-jaya-stainless-steel-batang-hanger-gantungan-baju-adjustable-MTA.1350378.htm
+Scrape = 6.68
+Search = 3.07https://www.blibli.com/panasonic-ga-130jak-p-pompa-air-125-w-ILE.55206.00184.html
+Scrape = 4.71
+Search = 3.95https://www.blibli.com/power-andong-tapak-lebar-velg-racing-for-beat-fi-esp-full-black-14-215-250-MTA.1362097.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/everflow-kids-vhr-02-sandal-anak-perempuan-MTA.1094147.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/wacom-intuos-ctl-490-bo-cx-mint-blue-MTA.1318628.htm
+Scrape = 5.44
+Search = 2.72https://www.blibli.com/dunlop-touring-r1-165-65r13-ban-mobil-SUR.54898.00120.html
+Scrape = 5.73
+Search = 6.64https://www.blibli.com/vetto-v2815-mcr-2806-cr-2810-ly-120-ly-108-kabel-roll-5-m-MTA.1361007.htm
+Scrape = 10.76
+Search = 3.81https://www.blibli.com/kkoh-shaem-honey-lemon-tea-minuman-kesehatan-MTA.1360369.htm
+Scrape = 6.11
+Search = 6.83https://www.blibli.com/daily-deals-nobleman-fury-sepatu-futsal-black-UNT.37932.00101.html
+
+                                                                               
+  [GuzzleHttp\Exception\ConnectException]                                      
+  cURL error 6: Could not resolve host: www.sportaways.com; Name or service n  
+  ot known (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)             
+                                                                               
+
+https://www.blibli.com/ronnie-coleman-testogen-xr-240-g-MTA.1357640.htm
+Scrape = 5.97
+Search = 10.16https://www.blibli.com/tokuniku-luck-dog-bulldog-dentist-game-toys-running-man-games-mainan-gigi-bulldog-MTA.1356233.htm
+Scrape = 15.2
+Search = 14.23https://www.blibli.com/ohome-lilin-elektrik-led-light-set-an-t040-dekorasi-rumah-putih-6-pcs-MTA.0306564.htm
+Scrape = 7.13
+Search = 5.81https://www.blibli.com/adidas-smooth-shower-gel-MTA.1355612.htm
+Scrape = 5.4
+Search = 5.82https://www.blibli.com/sigg-little-monkey-botol-minum-0-3-l-MTA.1357860.htm
+Scrape = 8.16
+Search = 6.56https://www.blibli.com/cr7-pelindung-handle-variasi-model-robot-handguard-for-vario-cbs-techno-hitam-MTA.1351201.htm
+Scrape = 7.07
+Search = 13.03https://www.blibli.com/istana-bintang-basket-championship-ring-basket-MTA.0381091.htm
+
+                               
+  [ErrorException]             
+  Undefined variable: new_cat  
+                               
+
+https://www.blibli.com/vetto-v2815-mcr-2806-cr-2810-ly-120-ly-108-kabel-roll-5-m-MTA.1361007.htm
+Scrape = 9.75
+Search = 3.13https://www.blibli.com/daily-deals-denbagoes-lengan-panjang-batik-pakis-hem-batik-atasan-pria-DEB.44101.00117.html
+Scrape = 6.55
+Search = 6.37https://www.blibli.com/puriegarden-f1-semangka-kuning-lonjong-bibit-tanaman-10-benih-MTA.1361686.htm
+Scrape = 7.39
+Search = 6.6https://www.blibli.com/baby-safe-hip-seat-gendongan-bayi-red-MAB.24349.00128.html
+Scrape = 5.33
+Search = 5.3https://www.blibli.com/samsung-galaxy-tab-a-2016-tablet-black-MTA.0279451.htm
+Scrape = 5.75
+Search = 5.37https://www.blibli.com/alivelovearts-magnus-sepatu-high-heels-black-MTA.1361466.htm
+Scrape = 7.32
+Search = 6.44https://www.blibli.com/dunlop-enasave-ec300-185-55-r15-ban-mobil-SUR.54898.00114.html
+Scrape = 6.04
+Search = 5.48https://www.blibli.com/eiger-ls-hawk-eagle-vertical-dompet-MTA.1362034.htm
+Scrape = 6.13
+Search = 4.83https://www.blibli.com/momo-gurita-perekat-bayi-6-pcs-MTA.1353518.htm
+Scrape = 7.37
+Search = 4.85https://www.blibli.com/twl-cosmetics-lentique-professional-eyelashes-1051-MTA.1361469.htm
+Scrape = 6.26
+Search = 8.2https://www.blibli.com/japan-house-anpanman-rare-retro-vintage-doll-mainan-boneka-MTA.1354070.htm
+Scrape = 6.55
+Search = 10.58https://www.blibli.com/gt-man-brief-celana-dalam-pria-green-grey-703bm-MTA.1359240.htm
+Scrape = 6.58
+Search = 3.89https://www.blibli.com/proteam-merdeka-bola-futsal-MTA.1354782.htm
+Scrape = 5.87
+Search = 9.66https://www.blibli.com/dragon-7223-armor-pro-sd-kfz-251-ausf-c-model-kit-1-72-MTA.1271961.htm
+Scrape = 5.52
+Search = 11.02https://www.blibli.com/panasonic-kx-tgb110-wireless-telepon-MTA.1358196.htm
+Scrape = 4.45
+Search = 4.64https://www.blibli.com/kukuk-bn40024-kuda-pelana-boneka-40-cm-MTA.1360598.htm
+Scrape = 9.35
+Search = 5.61https://www.blibli.com/daily-deals-everlast-pro-style-training-glove-blue-14-oz-EVT.12356.00074.html
+Scrape = 10.07
+Search = 5.06https://www.blibli.com/tupperware-hello-kitty-snack-time-MTA.0387442.htm
+Scrape = 6.27
+Search = 8.31https://www.blibli.com/sanyo-p-h130b-pompa-air-ILE.55206.00187.html
+Scrape = 4.87
+Search = 4.05https://www.blibli.com/olay-regenerist-micro-sculpting-serum-50-ml-WM.0000075.htm
+Scrape = 8.68
+Search = 6.23https://www.blibli.com/hermosa-home-decor-starbucks-fracpcino-mug-jar-hijau-tua-MTA.1361111.htm
+Scrape = 5.55
+Search = 7.08https://www.blibli.com/blaster-pop-choful-box-permen-1-karton-6-dus-MTA.1305091.htm
+Scrape = 6.02
+Search = 6.07https://www.blibli.com/icbeads-gubal-kayu-pinus-gelang-18-mm-MTA.1335238.htm
+Scrape = 9.7
+Search = 5.69https://www.blibli.com/mainan-edukasi-wange-designer-classic-58231-mainan-blok-dan-puzzle-625-pcs-MTA.1356810.htm
+Scrape = 6.95
+Search = 6.86https://www.blibli.com/northsider-aceh-gayo-arabika-specialty-coffee-semi-washed-kopi-MTA.1357669.htm
+Scrape = 6.48
+Search = 6.42https://www.blibli.com/anello-at-b0193a-polyester-large-tas-ransel-backpack-white-khaki-MTA.1359753.htm
+Scrape = 7.1
+Search = 4.05https://www.blibli.com/ariston-s3-2422-water-heater-MTA.1063918.htm
+Scrape = 5.42
+Search = 4.08https://www.blibli.com/adidas-men-football-manchester-united-home-jersey-bs1214-MTA.1257359.htm
+Scrape = 6.19
+Search = 6.98https://www.blibli.com/samsung-original-stereo-headset-white-HAS.49020.01242.html
+Scrape = 4.27
+Search = 8.82https://www.blibli.com/dj-fashion-0280-6d-4-in-1-tas-sekolah-anak-MTA.1362148.htm
+Scrape = 5.76
+Search = 5.96https://www.blibli.com/everflow-kids-vhr-01-sandal-anak-perempuan-MTA.1094151.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/siv-knl-a301-model-hearts-muffler-head-untuk-knalpot-mobil-universal-pink-MTA.1357993.htm
+Scrape = 5.91
+Search = 7.38https://www.blibli.com/nine-box-sw-lemari-pakaian-red-MTA.1360685.htm
+Scrape = 5.72
+Search = 3.9https://www.blibli.com/power-andong-tapak-lebar-velg-racing-for-scoopy-fi-esp-hitam-gold-14-215-250-MTA.1362076.htm
+Scrape = 5.86
+Search = 10.54https://www.blibli.com/hp-laserjet-pro-m402n-printer-MTA.0148871.htm
+Scrape = 6.19
+Search = 6.91https://www.blibli.com/guess-w0929l1-kismet-jam-tangan-wanita-silver-MTA.1362575.htm
+Scrape = 5.97
+Search = 7.17https://www.blibli.com/sy-628-5-girl-mia-mini-figure-mainan-blok-puzzle-MTA.1355237.htm
+Scrape = 7.67
+Search = 7.46https://www.blibli.com/all-new-mazda-cx-5-2-5-elite-mobil-jet-black-mica-MTA.1354732.htm
+Scrape = 10.26
+Search = 14.02https://www.blibli.com/dunlop-touring-r1-165-65r13-ban-mobil-SUR.54898.00120.html
+Scrape = 6.49
+Search = 8.4https://www.blibli.com/forceum-octa-235-55-r19-ban-mobil-pasang-ditempat-MTA.1362494.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/rmb-cube-sepeda-anak-16-inch-MTA.1354110.htm
+Scrape = 5.38
+Search = 2.81https://www.blibli.com/momo-animal-panda-kayu-mainan-puzzle-MTA.1358372.htm
+Scrape = 4.96
+Search = 4.19https://www.blibli.com/somita-uv-49mm-filter-lensa-49mm-CPP.18042.02045.html
+Scrape = 4.79
+Search = 8.21https://www.blibli.com/wonderland-hanger-4in1-cherry-gift-set-perlengkapan-bayi-MTA.1355319.htm
+Scrape = 5.25
+Search = 4.43https://www.blibli.com/koinonia-products-for-god-so-loved-the-world-bible-cover-sampul-alkitab-l-MTA.1359641.htm
+Scrape = 6.6
+Search = 3.72https://www.blibli.com/miyo-celana-pendek-bayi-merah-MTA.1356939.htm
+Scrape = 6.68
+Search = 5.39https://www.blibli.com/mainan-edukatif-magnetic-world-puzzles-MTA.1362190.htm
+Scrape = 5.5
+Search = 15.19https://www.blibli.com/cocolatte-1111-minwalk-baby-walker-orange-MTA.1355342.htm
+
+                                   
+  [InvalidArgumentException]       
+  The current node list is empty.  
+                                   
+
+https://www.blibli.com/balonasia-motif-minion-happy-birthday-banner-flag-dekorasi-pesta-MTA.1360560.htm
+Scrape = 5.58
+Search = 3.98https://www.blibli.com/nike-as-m-nk-dry-tee-dbl-track-mind-baju-lari-pria-white-862825-357-MTA.1245343.htm
+Scrape = 7.32
+Search = 2.85https://www.blibli.com/sades-sa-704-sa-704-locust-usb-2-0-soundcard-headset-gaming-with-microphone-biru-MTA.0272799.htm
+Scrape = 5.34
+Search = 6.47https://www.blibli.com/melissa-doug-train-sound-puzzle-MTA.0653238.htm
+Scrape = 6.98
+Search = 9.85https://www.blibli.com/kuartet-nabati-nutritional-yeast-bumbu-masak-vit-b12-vegan-100-g-APV.28033.00359.html
+Scrape = 7.92
+Search = 5.93https://www.blibli.com/ichigo-st-selimut-bayi-blanket-MTA.1357731.htm
+Scrape = 5.76
+Search = 12.41https://www.blibli.com/daily-deals-sony-ps4-the-witcher-3-wild-hunt-complete-edition-dvd-game-STG.21249.00116.html
+Scrape = 6.52
+Search = 4.59https://www.blibli.com/mao-tenda-terowongan-jianhong-mainan-anak-MTA.0113919.htm
+Scrape = 6.7
+Search = 4.53https://www.blibli.com/kenwood-kmm-103-hi-res-car-audio-receiver-headunit-MTA.1356667.htm
+Scrape = 6.48
+Search = 6.2https://www.blibli.com/lunar-lpt-2008-jumbo-2-pintu-motif-lemari-pakaian-sliding-door-MTA.1359595.htm
+Scrape = 9.33
+Search = 4.29

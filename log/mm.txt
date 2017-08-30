@@ -1,0 +1,250 @@
+https://www.mataharimall.com/bamboomedia-smart-teacher-2-0-software-database-soal-dan-materi-mengajar-untuk-guru-dan-pendidik-4993144.html
+Scrape = 127.37
+Search = 6.19https://www.mataharimall.com/anneui-fm5-betty-boop-gold-metal-nail-art-gold-5082289.html
+Scrape = 137.1
+Search = 6.62https://www.mataharimall.com/innovation-mesin-absensi-atau-akses-pintu-sidik-jari-f18-abu-abu-4956323.html
+
+                                                                               
+  [Illuminate\Database\QueryException]                                         
+  SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\xE  
+  2\x80Abua...' for column 'name' at row 1 (SQL: insert into `tags` (`name`,   
+  `slug`, `count`) values (F18 â€Abuabu, , 8))                                 
+                                                                               
+
+                                                                               
+  [PDOException]                                                               
+  SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\xE  
+  2\x80Abua...' for column 'name' at row 1                                     
+                                                                               
+
+https://www.mataharimall.com/petite-mimi-baby-sock-baby-retro-kaos-kaki-isi-6-buah-5083204.html
+Scrape = 124
+Search = 3.79https://www.mataharimall.com/netis-wf2533-300mbps-wireless-n-high-power-router-hitam-5002957.html
+Scrape = 131.83
+Search = 4.53https://www.mataharimall.com/lake-country-force-pads-with-hybrid-foams-white-polishing-pad-5-5inch-4670039.html
+Scrape = 130.65
+Search = 6.76https://www.mataharimall.com/invisible-coats-hydrophobic-coating-for-car-20-ml-5002930.html
+Scrape = 98.98
+Search = 3.26https://www.mataharimall.com/huawei-e5575-modem-wifi-4g-lte-unlocked-free-tsel-14gb-2bln-bypass-hitam-5005203.html
+Scrape = 135.25
+Search = 7.61
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+http://recs.richrelevance.com/rrserver/apiclick?a=a42bddba0a9afe7d&cak=fd782c8a05a40540&ct=https%3A%2F%2Fwww.mataharimall.com%2Fnikon-coolpix-b700-black-4970403.html&vg=35d185ae-6c47-4aff-9c5c-c75789d328b3&stid=165&pti=4&pa=25134&pn=0&pos=27&p=XCM0022000000197601&channelId=fd782c8a05a40540&mvtId=-1&mvtTs=1503898458430
+http://recs.richrelevance.com/rrserver/apiclick?a=a42bddba0a9afe7d&cak=fd782c8a05a40540&ct=https%3A%2F%2Fwww.mataharimall.com%2Ffujifilm-x100f-hitam--4855654.html&vg=35d185ae-6c47-4aff-9c5c-c75789d328b3&stid=165&pti=4&pa=25134&pn=0&pos=10&p=XCM0022000000194101&channelId=fd782c8a05a40540&mvtId=-1&mvtTs=1503898458430
+https://www.mataharimall.com/sembo-sd6535-ass-press-mini-blocks-5086584.html
+Scrape = 133.75
+Search = 4.11
+                             
+  [ErrorException]           
+  Undefined variable: nodes  
+                             
+
+http://mds.mataharimall.com/cardinal-girl-women-s-skinny-fit-jeans-pants-navy-5026099.html
+https://www.mataharimall.com/hippo-power-bank-bee-11000-mah-hitam-5086793.html
+Scrape = 130.79
+Search = 11.51https://www.mataharimall.com/lepin-bricks-25002-fair-castle-multi-colour-5085308.html
+Scrape = 139.25
+Search = 8.2https://www.mataharimall.com/bamboomedia-bahasa-inggris-untuk-anak-seri-2-4995238.html
+Scrape = 148.22
+Search = 6.88
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+http://recs.richrelevance.com/rrserver/apiclick?a=a42bddba0a9afe7d&cak=fd782c8a05a40540&ct=https%3A%2F%2Fwww.mataharimall.com%2Fcanon-eos-1300d-kit-18-55mm-is-ii-hitam-1533788.html&vg=35d185ae-6c47-4aff-9c5c-c75789d328b3&stid=165&pti=4&pa=25134&pn=0&pos=29&p=XCM0022000000127001&channelId=fd782c8a05a40540&mvtId=-1&mvtTs=1503898458430
+
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.mataharimall.com/ardiles-sepatu-sneaker-anak-lampu-monik-merah-5043214.html
+Scrape = 137.62
+Search = 7.26
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+http://recs.richrelevance.com/rrserver/apiclick?a=a42bddba0a9afe7d&cak=fd782c8a05a40540&ct=https%3A%2F%2Fwww.mataharimall.com%2Fcanon-powershot-sx540-hs-1933151.html&vg=35d185ae-6c47-4aff-9c5c-c75789d328b3&stid=165&pti=4&pa=25134&pn=0&pos=23&p=XCM0022000000138601&channelId=fd782c8a05a40540&mvtId=-1&mvtTs=1503898458430
+
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.mataharimall.com/kask-mojito-16-hitam-biru-4759283.html
+Scrape = 120.56
+Search = 7.44https://www.mataharimall.com/michelin-city-grip-pro-ukuran-70-90-14-tubeless-ban-matic-gratis-pentil-tubeless--4996514.html
+Scrape = 144.26
+Search = 3.1https://www.mataharimall.com/maica-leaf-timun-merah-red-cucumber-benih-tanaman-15-benih-4991870.html
+Scrape = 108.9
+Search = 7.32https://www.mataharimall.com/vallery-quincy-sprei-queen-160x200x20-cm-warna-tosca-5080389.html
+Scrape = 105.51
+Search = 7.4https://www.mataharimall.com/huawei-vodafone-gsm-k3765-modem-putih-4872952.html
+Scrape = 101.61
+Search = 5.21https://www.mataharimall.com/rain-x-glass-water-repellent-pelapis-kaca-anti-air-103-ml-4990871.html
+Scrape = 99.85
+Search = 5.16https://www.mataharimall.com/lenovo-s510-0nid-mini-dekstop-tower-hitam-5008719.html
+Scrape = 128.39
+Search = 11.38https://www.mataharimall.com/disney-minnie-mouse-sock-polkadots-girls-2-8-years-red-5021885.html
+Scrape = 94.96
+Search = 10.85https://www.mataharimall.com/glassmear-gloss-1-lusin-180ml-4086143.html
+Scrape = 88.86
+Search = 5.46https://www.mataharimall.com/hp-pavilion-desktop-570-p037d-hitam-5018737.html
+Scrape = 130.22
+Search = 5.87https://www.mataharimall.com/bushido-jeans-bd17pa002pk-straight-cut-jeans-blue-5038656.html
+Scrape = 127.1
+Search = 5.38https://www.mataharimall.com/mama-pad-paket-hemat-breast-premium-38-pcs-2-pak-bps016-5083139.html
+https://www.mataharimall.com/opus-reallyenglish-practical-english-1-1328078.html
+Scrape = 92.73
+Search = 8.25https://www.mataharimall.com/toshiba-ras-07bks-id-ac-split-0-75-pk-putih-5047932.html
+Scrape = 131.46
+Search = 5.7https://www.mataharimall.com/ban-motor-pirelli-angel-scooter-yamaha-aerox-4995923.html
+Scrape = 125.09
+Search = 8.07https://www.mataharimall.com/frisian-flag-susu-kental-manis-vanila-pouch-560gr-5046667.html
+Scrape = 154.62
+Search = 2.99https://www.mataharimall.com/michelin-city-grip-pro-ukuran-90-80-17-tubeless-ban-motor-gratis-pentil-tubeless--4996590.html
+Scrape = 142.09
+Search = 7.41
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.mataharimall.com/oem-kotak-bulat-tempat-obat-pil-kapsul-monte-kancing-manik-perhiasan-coin-multi-colour-5083461.html
+Scrape = 101.63
+Search = 6.93https://www.mataharimall.com/-nutrilon-royal-3-vanila-susu-formula-800g--5081334.html
+Scrape = 131.24
+Search = 34.25
+                             
+  [ErrorException]           
+  Undefined variable: nodes  
+                             
+
+
+                             
+  [ErrorException]           
+  Undefined variable: nodes  
+                             
+
+https://www.mataharimall.com/the-clinic-beautylosophy-paket-face-brightening-central-park-mall--807247.html
+Scrape = 126.76
+Search = 9.46http://recs.richrelevance.com/rrserver/apiclick?a=a42bddba0a9afe7d&cak=fd782c8a05a40540&ct=https%3A%2F%2Fwww.mataharimall.com%2Fcanon-eos-1300d-kit-ef-s-18-55-is-ii-hitam-1583949.html&vg=35d185ae-6c47-4aff-9c5c-c75789d328b3&stid=165&pti=4&pa=25134&pn=0&pos=0&p=XCM0001370000537901&channelId=fd782c8a05a40540&mvtId=-1&mvtTs=1503898458430
+https://www.mataharimall.com/next-up-baju-koko-lengan-pendek-1084-ungu-muda-5053545.html
+Scrape = 130.89
+Search = 9.01https://www.mataharimall.com/samsung-screen-protector-for-galaxy-s8-4672870.html
+Scrape = 144.45
+Search = 10.82
+                             
+  [ErrorException]           
+  Undefined variable: nodes  
+                             
+
+https://www.mataharimall.com/carolina-herrera-square-sunglassess-she540-56-kombinasi-coklat-biru-4982461.html
+Scrape = 101.33
+Search = 8.92https://www.mataharimall.com/voucher-tous-les-jours-apple-pie-5056894.html
+Scrape = 139.57
+Search = 7.22
+                             
+  [ErrorException]           
+  Undefined variable: nodes  
+                             
+
+https://www.mataharimall.com/highpoint-austin-kursi-kantor-w120a-biru-5082136.html
+Scrape = 72.68
+Search = 4.12https://www.mataharimall.com/bamboomedia-vocab-games-bahasa-inggris-pc-game-edukasi-belajar-sambil-bermain-bersama-kiko-5003557.html
+
+                                                                               
+  [Illuminate\Database\QueryException]                                         
+  SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\xE  
+  2\x80' for column 'name' at row 1 (SQL: insert into `tags` (`name`, `slug`,  
+   `count`) values (Inggris â€, , 4))                                          
+                                                                               
+
+                                                                               
+  [PDOException]                                                               
+  SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\xE  
+  2\x80' for column 'name' at row 1                                            
+                                                                               
+
+https://www.mataharimall.com/bolt-mobile-wifi-aquilla-max-khusus-o2o-bz-grm-5000769.html
+Scrape = 114.5
+Search = 8.41https://www.mataharimall.com/lino-kids-backpack-penguin-style-hitam-4971028.html
+Scrape = 48.78
+Search = 7.08https://www.mataharimall.com/lego-75878-speed-champions-bugatti-chiron-multi-colour-5086679.html
+Scrape = 116.18
+Search = 8.09https://www.mataharimall.com/unik-kabel-data-micro-usb-jellico-wave-series-original-kuning-4988945.html
+Scrape = 107.31
+Search = 3.43https://www.mataharimall.com/ivaro-sofa-nice-multi-colour-5079038.html
+Scrape = 130.51
+Search = 5.41https://www.mataharimall.com/oliveinch-short-chino-cream-5082163.html
+Scrape = 138.06
+Search = 4.31https://www.mataharimall.com/tigaduasatu-masker-mulut-untuk-motor-dan-sepeda-hitam-4604425.html
+Scrape = 106.84
+Search = 5.04https://www.mataharimall.com/alldays-mart-sajadah-sholat-impor-motif-bagus-c11-uk-110-x-68-cm-merah-4844805.html
+Scrape = 88.15
+Search = 6.18https://www.mataharimall.com/anneui-fm2-jack-o-lantern-gold-metal-nail-art-gold-5082286.html
+Scrape = 158.63
+Search = 8.58https://www.mataharimall.com/bcare-micro-sd-card-class-6-2gb-512786.html
+
+                                                                               
+  [GuzzleHttp\Exception\ConnectException]                                      
+  cURL error 35: Encountered end of file (see http://curl.haxx.se/libcurl/c/l  
+  ibcurl-errors.html)                                                          
+                                                                               
+
+https://www.mataharimall.com/rain-x-glass-water-repellent-pelapis-kaca-anti-air-103-ml-4990871.html
+Scrape = 130.29
+Search = 5.34https://www.mataharimall.com/gogomart-milk-jus-foldable-cup-holder-tempat-minum-susu-kotak-pink-5085231.html
+Scrape = 130.77
+Search = 4.93https://www.mataharimall.com/asus-notebook-t101ha-gr013t-intel-x5-z83850-2gb-ram-10-1-abu-abu-5074081.html
+Scrape = 85.3
+Search = 4.77https://www.mataharimall.com/smc-program-pencegahan-dan-pemulihan-asam-urat-gout--3320160.html
+Scrape = 122.82
+Search = 5.2http://mds.mataharimall.com/nevada-women-s-basic-pencil-long-denim-pants-hitam-5010918.html
+http://recs.richrelevance.com/rrserver/apiclick?a=a42bddba0a9afe7d&cak=fd782c8a05a40540&ct=https%3A%2F%2Fwww.mataharimall.com%2Fpanasonic-lumix-dmc-ft25-16-mp-putih-74210.html&vg=c188a775-5202-4b55-3183-a3578c923723&stid=165&pti=4&pa=25134&pn=0&pos=3&p=variant_camera_camcorders183527&channelId=fd782c8a05a40540&mvtId=-1&mvtTs=1504082342487
+
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.mataharimall.com/ohome-bunga-artifisial-an-b000282pt-artificial-hortensia-flower-dekorasi-interior-abadi-putih-4891308.html
+Scrape = 99.38
+Search = 2.36https://www.mataharimall.com/unique-stone-jewelry-art-pendant-orgonite-bse030-hijau-5092667.html
+Scrape = 126.23
+Search = 7.56https://www.mataharimall.com/the-clinic-beautylosophy-paket-slimming-cipete--806775.html
+Scrape = 97.8
+Search = 5.65https://www.mataharimall.com/lenovo-yoga-900-6500u-13-3-qhd-touch-intel-core-i7-6500u-ram-8gb-win10-orange-1460085.html
+
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.mataharimall.com/smc-program-pencegahan-stroke-3320150.html
+Scrape = 114.15
+Search = 5.71
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+http://mds.mataharimall.com/cardinal-girl-women-s-shred-detailed-jeans-pants-biru-5026107.html
+https://www.mataharimall.com/promore-bedong-instant-velcro-kuning-5075073.html
+Scrape = 96.75
+Search = 4.74
+                                                        
+  [PDOException]                                        
+  SQLSTATE[HY000]: General error: 5 database is locked  
+                                                        
+
+https://www.mataharimall.com/the-ordinary-coverage-foundation-shade-1-0n-5080077.html
+Scrape = 163.55
+Search = 7.41https://www.mataharimall.com/vallery-quincy-sprei-single-120x200x20-cm-warna-lime-5080369.html

@@ -33,5 +33,7 @@ class ItemCounterController extends Controller
     	 	$counter->update(['count'=> $item]);
     	}
 
+        return "OK";
+
     }
 }
