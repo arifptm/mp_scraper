@@ -12,6 +12,30 @@ use JonnyW\PhantomJs\Client;
 
 class Scraper
 {
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	public function feedProcessor($mk_slug)
 	{
 		$mp = Marketplace::whereSlug($mk_slug)->first();     	
@@ -43,7 +67,7 @@ class Scraper
                 foreach ($crawler->data->products as $item){
                     $title = explode('?trkid=',$item->url);
                     $item = Item::firstOrNew(['item_url' => $title[0]]);
-                    $item->feed_id = $selected_feed->id;
+                    $item['feed_id'] = $selected_feed->id;
                     $item->save();
                 }                    
             }
@@ -157,30 +181,7 @@ class Scraper
      *
      */
 
-    public function getCatId($cats){
-        $root = Category::whereLevel(0)->pluck('name')->toArray();
-        foreach ($cats as $level=>$cat){
-            $replacer = Replacer::whereDepartment($cat)->whereLevel($level)->first();
-            if(count($replacer) > 0){
-                $cat = $replacer->replacer;
-            }
 
-            
-            if($level == 0 && in_array( $cat , $root ) ) {
-                $cat = 'Kategori Lain-lain';
-            }
-
-            $slug = new Slug;
-            $cat_slug = $slug -> createSlug($cat);     
-            
-            $new_cat = Category::firstOrNew([ 'name'=>$cat, 'level'=>$level, 'slug'=>$cat_slug ]);
-            if($level > 0){
-                $new_cat['parent'] = $new_cat->id;
-            }
-            $new_cat->save();
-        }
-        return $new_cat->id;
-    }
 
     /**
      *

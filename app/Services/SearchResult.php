@@ -5,7 +5,7 @@ use Goutte;
 
 class SearchResult
 {
-    public function geevv($key)
+    public static function geevv($key)
     {
 		$q = preg_replace("/[^A-Za-z0-9 ]/", ' ', $key);
 		$q = urlencode($q);
@@ -33,7 +33,7 @@ class SearchResult
 		 			$web = Goutte::request('GET',$val['link']);
 					
 		 			$result .= "<p>";
-		 			$result .= "<a rel='nofollow' href='".$web->getUri()."'>".$val['title']."</a><br />";
+		 			$result .= "<a class='outbound' href='#' data-url='".$web->getUri()."'>".$val['title']."</a><br />";
 		 		}
 		 		$result .= $val['desc'].". ";		
 		 		if ($i == count($results)-1 or $i == 2 ){

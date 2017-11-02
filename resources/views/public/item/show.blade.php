@@ -141,7 +141,7 @@
             @endif
         </div>
         <div class="setitle">Situs yang berhubungan dengan {{ $item -> title }}</div>
-        <div class="se">{!! $item->se !!}</div>
+        <!--<div class="se">{!! $item->se !!}</div> -->
     </div>
 
     <div class="col-sm-5 center zoom-gallery">

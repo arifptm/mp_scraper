@@ -14,11 +14,11 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \App\Console\Commands\ScrapeTokopedia::class,
-        \App\Console\Commands\ScrapeBukalapak::class,
-        \App\Console\Commands\ScrapeBlibli::class,
-        \App\Console\Commands\ScrapeLazada::class,
-        \App\Console\Commands\ScrapeMataharimall::class,
-        \App\Console\Commands\CountItem::class,
+//        \App\Console\Commands\ScrapeBukalapak::class,
+//        \App\Console\Commands\ScrapeBlibli::class,
+//        \App\Console\Commands\ScrapeLazada::class,
+//        \App\Console\Commands\ScrapeMataharimall::class,
+//        \App\Console\Commands\CountItem::class,
     ];
 
     /**

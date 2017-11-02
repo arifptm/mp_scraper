@@ -4,10 +4,13 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Page;
-use App\Services\Slug;
+
+use Cviebrock\EloquentSluggable\Sluggable;
 
 class Page extends Model
 {
+    use Sluggable;
+    
     protected $guarded = ['id'];
 
     public function term(){

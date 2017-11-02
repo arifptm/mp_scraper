@@ -4,7 +4,7 @@ namespace App\Services;
 use App\Item;
 
 class TagService {
-	public function createTag($string)
+	public static function createTag($string)
 	{
 		
 		$filter1 = [			
@@ -43,7 +43,6 @@ class TagService {
 			$p[]=$pecah[0];	
 		}
 		
-
 		return $p;
 
 	}

@@ -10,8 +10,13 @@ use App\Feed;
 use App\Tag;
 use Laravel\Scout\Searchable;
 
+use Cviebrock\EloquentSluggable\Sluggable;
+
 class Item extends Model
 {
+
+    use Sluggable;
+    public function sluggable(){ return [ 'slug' => ['source' => 'title']];}    
 
     use Searchable;
     protected $guarded = ['id'];    

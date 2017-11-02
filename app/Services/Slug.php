@@ -15,7 +15,7 @@ class Slug
             return $slug;
         }
         // Just append numbers like a savage until we find not used.
-        for ($i = 1; $i <= 10; $i++) {
+        for ($i = 1; $i <= 3; $i++) {
             $newSlug = $slug.'-'.$i;
             if (! $allSlugs->contains('slug', $newSlug)) {
                 return $newSlug;

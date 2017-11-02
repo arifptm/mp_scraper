@@ -114,10 +114,12 @@ Route::get('/{slug}', 'ItemController@publicShow')->name('nodes');
 
 
 //DEVELOP
-Route::get('/tes/top', 'ItemCounterController@count');
+Route::get('/t/bl', 'scraper\BukalapakController@scrape');
+Route::get('/t/cl', 'scraper\BukalapakController@cl');
 
+Route::get('/tes/top', 'ItemCounterController@count');
+Route::get('/tes/pz', 'TestController@priceza');
 Route::get('/tes/cek', 'TestController@cek');
-Route::get('/tes/curl', 'TestController@curl');
 Route::get('/tes/cekse', 'TestController@cekse');
 Route::get('/tes/cektp', 'TestController@cektp');
 Route::get('/tes/phantom', 'TestController@phantom');

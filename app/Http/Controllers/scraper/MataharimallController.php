@@ -28,15 +28,14 @@ class MataharimallController extends Controller
 
     public function scrape(){
     	$start= (microtime(true));
-        $start_m = round(memory_get_peak_usage(true)/1024,2);
-
+       $start_m = round(memory_get_peak_usage(true)/1024,2);
         $marketplace = $this->getFeedItems('mataharimall');
         
         $scraper = new Scraper;  
         $item = $scraper->selectItem($marketplace);             
         
         $scraped['item_url'] = $item->item_url;
-        echo $scraped['item_url'];
+        dd($scraped['item_url']);
 
         $body = $scraper->getBody($scraped['item_url']);
         if ($body->getStatus() == 404){

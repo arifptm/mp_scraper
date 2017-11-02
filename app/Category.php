@@ -7,8 +7,13 @@ use App\Item;
 use App\Feed;
 use App\ItemCounter;
 
+use Cviebrock\EloquentSluggable\Sluggable;
+
 class Category extends Model
 {
+    use Sluggable;
+    public function sluggable(){ return [ 'slug' => ['source' => 'name']];}
+
     protected $guarded = ['id'];
     public $timestamps = false;
 

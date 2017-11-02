@@ -4,8 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+use Cviebrock\EloquentSluggable\Sluggable;
+
 class Article extends Model
 {
+    use Sluggable;
+    
 	protected $guarded = ['id'];
 
 	public function setSlugAttribute($val){

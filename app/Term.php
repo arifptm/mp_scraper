@@ -3,10 +3,14 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Services\Slug;
+
+use Cviebrock\EloquentSluggable\Sluggable;
 
 class Term extends Model
 {
+
+    use Sluggable;
+    public function sluggable(){ return [ 'slug' => ['source' => 'name']];}  
 
 	protected $fillable = ['vocabulary_id','name','slug','sort'];
     public $timestamps = false;  

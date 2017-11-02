@@ -132,7 +132,7 @@
                                     <ul id="mapInTab" class="tab-nav clearfix tab-for-detail-page">
                                         <li class="active"><a href="#tab_2-01" data-toggle="tab">Deskripsi</a></li>
                                         <li><a href="#tab_2-02" data-toggle="tab">Detil</a></li>                                                
-                                        <li><a href="#tab_2-03" data-toggle="tab">Info tambahan</a></li>  
+<!--                                        <li><a href="#tab_2-03" data-toggle="tab">Info tambahan</a></li>-->
                                     </ul>
                                     
                                     <div id="myTabContent" class="tab-content">
@@ -148,7 +148,7 @@
                                         </div>
                                         <div class="tab-pane fade pane-se" id="tab_2-03">                                                
                                             <div class="tab-content-inner">                                                    
-                                            {!! $item->se !!}
+<!--                                            {!! $item->se !!}-->
                                             </div>                                                    
                                         </div>
                                     </div>                                                

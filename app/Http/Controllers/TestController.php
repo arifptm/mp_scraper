@@ -23,36 +23,82 @@ use Browser\Casper;
 
 class TestController extends Controller
 {
-
-     public function curl(){
-        $marketplace_slug = 'mataharimall';
-        $marketplace = Marketplace::whereSlug($marketplace_slug)->first();
-        $feed = Feed::whereMarketplace_id($marketplace->id)->whereEnabled(1)->whereProcessed(0);
-        
-        if ($feed->count() != 0){
-            $selected_feed = $feed->get()->random();
+	
+	public function priceza(){
+		$prs = Item::where('se','like',"%href='http%")->take(5)->get();
+		
+		foreach ($prs as $pr){
             
-            $scraper = new Scraper;
-            $scraped = $scraper->letsCurl($selected_feed->url);
-            dd($scraped);
-            $crawler = new Crawler($scraped);
-            if ($crawler->filter('.c-card-product a')->count()){
-                $nodes = $crawler->filter('.c-card-product a')->each(function($node){
-                    return $node->attr('href');
-                });
-            }
+            $crawler = new Crawler($pr->se);
+            
+            $ahr = $crawler->filter('a')->each(function($node){
+                return "<a href='#' data-url='".$node->attr('href')."'>".$node->text()."</a>";
+            });
+            
+            $new = $crawler->filter('p')->each(function($node, $key) use ($ahr){
+                 return "<p>". preg_replace("/<a\s(.+?)>(.+?)<\/a>/is", $ahr[$key] , $node->html())."</p>";
+            });
 
-            if (count($nodes) != 0){
-                foreach ($nodes as $url) {
-                    $item =Item::firstOrNew(['item_url' => $url]);
-                    $item->feed_id = $selected_feed->id;
-                    $item->save();
-                } 
-            }
-        }       
-        return $marketplace;
-     }
-    
+            $new_se = implode("", $new);
+
+            $pr->update(['se'=> $new_se]);  
+            echo $pr->id. "...updated ! <br>";
+            
+	   }	
+
+	}
+	
+
+
+
+	public function priceza_old(){
+		//$prs = Item::wh3ere('se', 'like', '%priceza%')->where('se','not like', '%//www.priceza%')->take(10)->get();
+		$prs = Item::where('se','like',"%href='http://www.priceza.co%")->get();    
+		dd($prs->count());
+		foreach ($prs as $pr){
+			$crawler = new Crawler($pr->se);
+			$ahrefs = $crawler->filter('a')->each(function($node){
+				return $node->attr('href');
+			});
+				
+			$crawler = new Crawler($pr->se);
+			$dataurls = $crawler->filter('a')->each(function($node){
+				return $node->attr('data-url');
+			});
+
+			$new_se = $pr->se;
+			echo $new_se."<hr>";		
+			
+			if (strpos($pr->se, 'data-url') !== false){
+				foreach($dataurls as $k=>$dataurl){
+					$new_se = str_replace ("data-url='".$dataurl."'", "data-url='xxyyzz".$k."'", $new_se);
+					//echo $dataurl."<hr>";
+					//echo $new_se."<hr>";
+				}
+				$new_se = str_ireplace (array('di priceza.co.id','priceza.co.id', 'priceza.co', 'priceza'), '', $new_se);
+				foreach($dataurls as $l=>$dataurl){
+					$new_se = str_replace ("data-url='xxyyzz".$l."'", "data-url='".$dataurl."'", $new_se);
+					//echo $dataurl."<hr>";
+					//echo $new_se."<hr>";
+				}
+			} else {
+				foreach($ahrefs as $m=>$ahref){
+					$new_se = str_replace ("href='".$ahref."'", "href='#' data-url='xxyyzz".$m."'", $new_se);
+					//echo $ahref."<hr>";
+				}
+				$new_se = str_ireplace (array('di priceza.co.id','priceza.co.id','priceza.co', 'priceza'), '', $new_se);
+				foreach($ahrefs as $n=>$ahref){
+					$new_se = str_replace ("data-url='xxyyzz".$n."'", "data-url='".$ahref."'", $new_se);
+					//echo $ahref."<hr>";
+				}								
+			}			
+			echo $new_se;
+			echo "<p>".$pr->id."</p>";
+			$pr->update(['se'=> $new_se]);				
+		}
+	}
+	
+	
     public function cektp(){
         $feed = "https://ace.tokopedia.com/search/product/v3?fshop=1&ob=9&rows=25&device=desktop&source=directory&sc=1759";
         $src = json_decode(file_get_contents($feed));

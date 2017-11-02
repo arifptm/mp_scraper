@@ -28,11 +28,11 @@ class CountItem extends Command
                 }
             }
         }
-        
+
         echo "step1";
         foreach ($category as $k=>$r){
             $item = Item::whereIn('category_id', $r)->count();
-
+             echo "Procesing... $k...   ";
             $counter = ItemCounter::firstOrNew(['category_id'=>$k]);
             
             $counter->update(['count'=> $item]);
